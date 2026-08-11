@@ -114,6 +114,7 @@ private:
 
 	BOOL				ConformAskWay(const void* pData, int nSize, DWORD *pdwID);
 	void				MainLoop();
+	void				RequestGameStatistic();
 	int					ProcessLoginProtocol(const unsigned long lnID, const char* pData, size_t dataLength);
 	BOOL				ProcessSyncReplyProtocol(const unsigned long lnID, const char* pData, size_t dataLength);
 	void				PingClient(const unsigned long lnID);

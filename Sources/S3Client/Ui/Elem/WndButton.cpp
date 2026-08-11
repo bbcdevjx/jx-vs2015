@@ -426,8 +426,18 @@ int	KWndImageTextButton::GetText(char* pBuffer, int nSize)		//»ñÈ¡×Ö·û´®ÄÚÈÝ
 
 void KWndImageTextButton::Set2IntValue(int nNumber1, int nNumber2)
 {
+	const int nScale = 10000;
+	int nRatio = 0;
+	if (nNumber2 > 0)
+	{
+		if (nNumber1 < 0)
+			nNumber1 = 0;
+		else if (nNumber1 > nNumber2)
+			nNumber1 = nNumber2;
+		nRatio = (int)((__int64)nNumber1 * nScale / nNumber2);
+	}
 	if (bPart)
-		m_ImagePart.SetPart(nNumber1, nNumber2);
+		m_ImagePart.SetPart(nRatio, nScale);
 	else
-		m_Image.SetMoveValue(nNumber1, nNumber2);
+		m_Image.SetMoveValue(nRatio, nScale);
 }

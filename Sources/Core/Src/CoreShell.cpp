@@ -109,7 +109,6 @@ int CoreDataChanged(unsigned int uDataId, unsigned int uParam, int nParam)
 	return 0;
 }
 
-
 void KCoreShell::Release()
 {
 	g_ReleaseCore();
@@ -315,7 +314,13 @@ int	KCoreShell::GetGameData(unsigned int uDataId, unsigned int uParam, int nPara
 			case CGOG_SKILL_LIVE:
 			case CGOG_SKILL_SHORTCUT:
 				{
-					int nLevel = Npc[Player[CLIENT_PLAYER_INDEX].m_nIndex].m_SkillList.GetLevel(pObj->Obj.uId);
+					KSkillList& SkillList = Npc[Player[CLIENT_PLAYER_INDEX].m_nIndex].m_SkillList;
+					int nBaseLevel = SkillList.GetLevel(pObj->Obj.uId);
+					int nLevel = (nBaseLevel > 0) ? SkillList.GetCurrentLevel(pObj->Obj.uId) : 0;
+					if (nBaseLevel > 0 && (nLevel <= 0 || nLevel >= MAX_SKILLLEVEL))
+						nLevel = nBaseLevel;
+					if (nLevel >= MAX_SKILLLEVEL)
+						nLevel = MAX_SKILLLEVEL - 1;
 					_ASSERT(nLevel >= 0);
 					if (pObj->Obj.uId >0)
 					{
@@ -413,6 +418,7 @@ int	KCoreShell::GetGameData(unsigned int uDataId, unsigned int uParam, int nPara
 					itoa(Npc[nIndex].m_btRankId, szRankId, 10);
 					g_RankTabSetting.GetString(szRankId, "RANKSTR", "", pInfo->Title, 32);
 				}
+				pInfo->nTranslife = Npc[nIndex].m_byTranslife;
 				pInfo->nRankInWorld = Player[CLIENT_PLAYER_INDEX].m_nWorldStat;
 			}
 		}
@@ -1175,7 +1181,6 @@ int	KCoreShell::OperationRequest(unsigned int uOper, unsigned int uParam, int nP
 			int		nMoney = nParam;
 			int		nSrcRoom, nDesRoom;
 
-
 			if (bIn)
 			{
 				nSrcRoom = room_equipment;
@@ -1581,19 +1586,27 @@ int	KCoreShell::OperationRequest(unsigned int uOper, unsigned int uParam, int nP
 			if (nParam == 0)
 				//to do : modify;
 			{
-				if ( (int)pSkill->uId > 0 )
-					Player[CLIENT_PLAYER_INDEX].SetLeftSkill((int)pSkill->uId);
+				if ((int)pSkill->uId > 0)
+				{
+					ISkill* pAssignSkill = g_SkillManager.GetSkill((int)pSkill->uId, 1);
+					if (pAssignSkill &&
+						(pAssignSkill->GetSkillStyle() == SKILL_SS_Missles ||
+						 pAssignSkill->GetSkillStyle() == SKILL_SS_Melee))
+					{
+						Player[CLIENT_PLAYER_INDEX].SetLeftSkill((int)pSkill->uId);
+					}
+				}
 				else if ((int)(pSkill->uId) == -1) //设置当前物理技能为左技能
 				{
 					int nDetailType = Player[CLIENT_PLAYER_INDEX].m_ItemList.GetWeaponType();
 					int nParticularType = Player[CLIENT_PLAYER_INDEX].m_ItemList.GetWeaponParticular();
 					
 					//近身武器
-					if (nDetailType == 0)
+					if (nDetailType == 0 && nParticularType >= 0 && nParticularType < MAX_MELEEWEAPON_PARTICULARTYPE_NUM)
 					{
 						Player[CLIENT_PLAYER_INDEX].SetLeftSkill(g_nMeleeWeaponSkill[nParticularType]);
 					}//远程武器
-					else if (nDetailType == 1)
+					else if (nDetailType == 1 && nParticularType >= 0 && nParticularType < MAX_RANGEWEAPON_PARTICULARTYPE_NUM)
 					{
 						Player[CLIENT_PLAYER_INDEX].SetLeftSkill(g_nRangeWeaponSkill[nParticularType]);
 					}//空手
@@ -1607,17 +1620,26 @@ int	KCoreShell::OperationRequest(unsigned int uOper, unsigned int uParam, int nP
 			else if (nParam == 1)
 			{
 				if ((int)pSkill->uId > 0)
-					Player[CLIENT_PLAYER_INDEX].SetRightSkill((int)pSkill->uId);
+				{
+					ISkill* pAssignSkill = g_SkillManager.GetSkill((int)pSkill->uId, 1);
+					if (pAssignSkill &&
+						(pAssignSkill->GetSkillStyle() == SKILL_SS_Missles ||
+						 pAssignSkill->GetSkillStyle() == SKILL_SS_Melee ||
+						 pAssignSkill->GetSkillStyle() == SKILL_SS_InitiativeNpcState))
+					{
+						Player[CLIENT_PLAYER_INDEX].SetRightSkill((int)pSkill->uId);
+					}
+				}
 				else if ((int)(pSkill->uId) == -1)
 				{
 					int nDetailType = Player[CLIENT_PLAYER_INDEX].m_ItemList.GetWeaponType();
 					int nParticularType = Player[CLIENT_PLAYER_INDEX].m_ItemList.GetWeaponParticular();
 					
-					if (nDetailType == 0)
+					if (nDetailType == 0 && nParticularType >= 0 && nParticularType < MAX_MELEEWEAPON_PARTICULARTYPE_NUM)
 					{
 						Player[CLIENT_PLAYER_INDEX].SetRightSkill(g_nMeleeWeaponSkill[nParticularType]);
 					}
-					else if (nDetailType == 1)
+					else if (nDetailType == 1 && nParticularType >= 0 && nParticularType < MAX_RANGEWEAPON_PARTICULARTYPE_NUM)
 					{
 						Player[CLIENT_PLAYER_INDEX].SetRightSkill(g_nRangeWeaponSkill[nParticularType]);
 					}
@@ -2167,7 +2189,6 @@ int KCoreShell::FindSelectObject(int x, int y, bool bSelect, int& nObjectIdx, in
 	return false;
 }
 
-
 int KCoreShell::FindSpecialNPC(char* Name, void* pReturn, int& nKind)
 {
 	if (Name == NULL || Name[0] == 0)
@@ -2682,11 +2703,14 @@ int	KCoreShell::TongOperation(unsigned int uOper, unsigned int uParam, int nPara
 		if (uParam)
 		{
 			KUiPlayerItem	*pItem = (KUiPlayerItem*)uParam;
-			nRet = Npc[pItem->nIndex].m_nTongFlag;
+			if (pItem->nIndex == Player[CLIENT_PLAYER_INDEX].m_nIndex)
+				nRet = Player[CLIENT_PLAYER_INDEX].m_cTong.GetRecruitFlag();
+			else if (pItem->nIndex > 0)
+				nRet = Npc[pItem->nIndex].m_nTongFlag;
 		}
 		break;
-	case GTOI_TONG_RECRUIT:     //招人开关
-		//uParam = (int)(bool)bRecruit 是否愿意招人
+	case GTOI_TONG_RECRUIT:     // Recruit advertisement switch
+		nRet = Player[CLIENT_PLAYER_INDEX].m_cTong.ApplyRecruit(uParam != 0);
 		break;
 	case GTOI_TONG_ACTION:         //对帮内成员做的动作，或自己与帮会的关系的改变
 		//uParam = (KTongOperationParam*) pOperParam 动作时的参数
@@ -2720,6 +2744,12 @@ int	KCoreShell::TongOperation(unsigned int uOper, unsigned int uParam, int nPara
 				}
     			Player[CLIENT_PLAYER_INDEX].m_cTong.ApplyAddTong(TargetPlayer.uId);
 			    break;
+		    case TONG_ACTION_DEPOSIT_MONEY:
+				Player[CLIENT_PLAYER_INDEX].m_cTong.ApplyDepositMoney((DWORD)Oper->nData[0]);
+				break;
+		    case TONG_ACTION_WITHDRAW_MONEY:
+				Player[CLIENT_PLAYER_INDEX].m_cTong.ApplyWithdrawMoney((DWORD)Oper->nData[0]);
+				break;
 		    }
 		}
 		break;

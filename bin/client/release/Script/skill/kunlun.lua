@@ -2,34 +2,14 @@
 --¾ßÌå·½·¨£º
 --¸ù¾Ý1¼¶ÊìÁ·¶È£¬Éý¼¶¼ÓËÙ¶È£¬¼¶Êý£¬ÖØ¸´ÉËº¦´ÎÊý£¬·¶Î§£¬¼ÆËã³öÏàÓ¦µÈ¼¶ÊìÁ·¶È
 -- SkillExp(i) = Exp1*a^(i-1)*time*range
+EXP_PER = 60
 function SkillExpFunc(Exp0,a,Level,Time,Range)
 	return floor(Exp0*(a^(Level-1))*Time*Range/2)
 end
 
-extab_aoxue_xiaofeng={{	{1,SkillExpFunc(6860,1.15,1,5,1)},
-							{2,SkillExpFunc(6860,1.15,2,5,1)},
-							{3,SkillExpFunc(6860,1.16,3,5,1)},
-							{4,SkillExpFunc(6860,1.17,4,5,1)},
-							{5,SkillExpFunc(6860,1.18,5,5,1)},
-							{6,SkillExpFunc(6860,1.19,6,5,1)},
-							{7,SkillExpFunc(6860,1.20,7,5,1)},
-							{8,SkillExpFunc(6860,1.21,8,5,1)},
-							{9,SkillExpFunc(6860,1.22,9,5,1)},
-							{10,SkillExpFunc(6860,1.23,10,5,1)},
-							{11,SkillExpFunc(6860,1.24,11,5,1)},
-							{12,SkillExpFunc(6860,1.23,12,5,1)},
-							{13,SkillExpFunc(6860,1.22,13,5,1)},
-							{14,SkillExpFunc(6860,1.21,14,5,1)},
-							{15,SkillExpFunc(6860,1.20,15,5,1)},
-							{16,SkillExpFunc(6860,1.19,16,5,1)},
-							{17,SkillExpFunc(6860,1.18,17,5,1)},
-							{18,SkillExpFunc(6860,1.17,18,5,1)},
-							{19,SkillExpFunc(6860,1.16,19,5,1)},
-							{20,SkillExpFunc(6860,1.15,20,5,1)},
-							}}
 SKILLS={
 	--À¥ÂØ
-	hufeng_fa={ --ºô·ç·¨
+	hufeng_fa={ --Ho phong phap
 		physicsenhance_p={{{1,5},{20,75}}},
 		seriesdamage_p={{{1,1},{20,10}}},
 		lightingdamage_v={
@@ -52,34 +32,32 @@ SKILLS={
 		skill_attackradius={{{1,320},{20,384}}},
 		skill_cost_v={{{1,15},{20,15}}}
 	},
-	kunlun_daofa={ --À¥ÂØµ¶·¨
+	kunlun_daofa={ --Con lon Dao phap
 		addphysicsdamage_p={{{1,35},{20,215}},{{1,-1},{2,-1}},{{1,1},{2,1}}},
 		deadlystrikeenhance_p={{{1,6},{20,50,Conic}},{{1,-1},{2,-1}}}
 	},
-	kunlun_jianfa={ --À¥ÂØ½£·¨
+	kunlun_jianfa={ --Con lon Kiem phap
 		addlightingmagic_v={{{1,19},{20,215}},{{1,-1},{2,-1}}}
 	},
-	qingfeng_fu={ --Çå·ç·û
-		--fastwalkrun_p={{{1,22},{20,60}},{{1,18*120},{20,18*120}}},
-		fastwalkrun_p={{{1,11},{20,30}},{{1,18*120},{20,18*120}}},--½µµÍÇå·ç·ûÒ»°ëÅÜËÙ
+	qingfeng_fu={ --Thanh phong phu
+		fastwalkrun_p={{{1,22},{20,60}},{{1,18*120},{20,18*120}}},
 		skill_cost_v={{{1,40},{20,40}}}
 	},
-	jiban_fu={ --î¿°í·û
-		--fastwalkrun_p={{{1,-22},{20,-52}},{{1,18*20},{20,18*90}}},
-		fastwalkrun_p={{{1,-20},{20,-40},{21,-40}},{{1,18*20},{20,18*90}}},--½µÎª¼õÉÙ40%ÒÆ¶¯ËÙ¶È
+	jiban_fu={ --Ki ban phu
+		fastwalkrun_p={{{1,-22},{20,-52}},{{1,18*20},{20,18*90}}},
 		skill_cost_v={{{1,60},{20,60}}}
 	},
-	baichuan_nahai={ --°Ù´¨ÄÉº£
+	baichuan_nahai={ --Bach Xuyen Nap hai - ko su dung
 		coldres_p={{{1,13},{20,32}},{{1,18*120},{20,18*120}}},
 		physicsres_p={{{1,9},{20,28}},{{1,18*120},{20,18*120}}},
 		skill_cost_v={{{1,12},{20,50}}}
 	},
-	yiqi_sanqing={ --Ò»ÆøÈýÇå
+	yiqi_sanqing={ --Nhat Khi Tam thanh
 		addphysicsdamage_p={{{1,35},{20,215}},{{1,18*120},{20,18*120}},{{1,1},{2,1}}},
 		deadlystrikeenhance_p={{{1,16},{20,35,Conic}},{{1,18*120},{20,18*120}}},
 		skill_cost_v={{{1,80},{20,80}}}
 	},
-	kuanglei_zhendi={ --¿ñÀ×ÕðµØ
+	kuanglei_zhendi={ --Cuong Loi Chan dia
 		lightingdamage_v={
 			[1]={{1,27},{20,315}},
 			[3]={{1,27},{20,315}}
@@ -100,26 +78,18 @@ SKILLS={
 		skill_attackradius={{{1,320},{20,352}}},
 		skill_cost_v={{{1,15},{20,15}}}
 	},
-	tianqing_dizhuo={ --ÌìÇåµØ×Ç
-		lightingres_yan_p={{{1,13},{20,32}},{{1,18*120},{20,18*120}}},
-		fireres_yan_p={{{1,9},{20,28}},{{1,18*120},{20,18*120}}},
-		coldres_yan_p={{{1,13},{20,32}},{{1,18*120},{20,18*120}}},
-		physicsres_yan_p={{{1,9},{20,28}},{{1,18*120},{20,18*120}}},
-		skill_cost_v={{{1,12},{20,90}}},
-		addskilldamage1={--¶ÔÌìÀ×ÕðÔÀ¼¼ÄÜ¼Ó³É
-			[1]={{1,1081},{2,1081}},
-			[3]={{1,3},{20,60}}
-		},
-		addskilldamage2={--¶ÔÀ×¶¯Ç¬À¤¼¼ÄÜ¼Ó³É
-			[1]={{1,1109},{2,1109}},
-			[3]={{1,3},{20,60}}
-		},
+	tianqing_dizhuo={ --Thanh Thien Dia Troc
+		lightingres_p={{{1,13},{20,32}},{{1,18*120},{20,18*120}}},
+		fireres_p={{{1,9},{20,28}},{{1,18*120},{20,18*120}}},
+		coldres_p={{{1,13},{20,32}},{{1,18*120},{20,18*120}}},
+		physicsres_p={{{1,9},{20,28}},{{1,18*120},{20,18*120}}},
+		skill_cost_v={{{1,12},{20,90}}}
 	},
-	qixin_fu={ --ÆúÐÄ·û
+	qixin_fu={ --Khi Tam phu
 		stun_p={{{1,16},{20,35}},{{1,5},{20,36}}},
 		skill_cost_v={{{1,100},{20,100}}}
 	},
-	tianji_xunlei={ --Ìì¼ÊÑ¸À×
+	tianji_xunlei={ --Thien Te Tan Loi
 		lightingdamage_v={
 			[1]={{1,25},{20,550}},
 			[3]={{1,25},{20,550}}
@@ -137,7 +107,7 @@ SKILLS={
 		skill_attackradius={{{1,384},{20,448}}},
 		skill_cost_v={{{1,15},{20,35}}}
 	},
-	kuangfeng_zhoudian={ --¿ñ·çÖèµç
+	kuangfeng_zhoudian={ --Cuong Phong Sau dien
 		seriesdamage_p={{{1,10},{20,50},{21,52}}},
 		physicsenhance_p={{{1,55},{20,386}}},
 		lightingdamage_v={
@@ -157,7 +127,7 @@ SKILLS={
 		skill_attackradius={{{1,448},{20,512},{21,512}}},
 		skill_cost_v={{{1,25},{20,25}}}
 	},
-	wulei_zhengfa={ --ÎåÀ×Õý·¨
+	wulei_zhengfa={ --Ngu Loi Chanh phap
 		seriesdamage_p={{{1,10},{20,50},{21,52}}},
 		lightingdamage_v={
 			[1]={{1,25},{20,937}},
@@ -174,47 +144,41 @@ SKILLS={
 		skill_attackradius={{{1,448},{20,480},{21,480}}},
 		skill_cost_v={{{1,50},{20,90}}}
 	},
-	shuangao_kunlun={ --Ëª°ÁÀ¥ÂØ
+	shuangao_kunlun={ --Suong Ngao con Lon
 		deadlystrikeenhance_p={{{1,6},{30,15,Conic}},{{1,-1},{2,-1}}},
-		castspeed_v={{{1,25},{30,65},{34,73},{35,90},{36,92}},{{1,-1},{30,-1}}},
-		attackspeed_v={{{1,25},{20,65},{33,92},{35,118},{38,124},{39,126}},{{1,-1},{30,-1}}},
+		castspeed_v={{{1,25},{30,65}},{{1,-1},{30,-1}}},
+		attackspeed_v={{{1,25},{20,65}},{{1,-1},{30,-1}}},
 		addlightingmagic_v={{{1,30},{30,315,Conic}},{{1,-1},{2,-1}}},
-		addlightingdamage_v={{{1,45},{30,315,Conic}},{{1,-1},{2,-1}}},
-		me2waterdamage_p={{{1,1},{30,20},{31,20}},{{1,-1},{2,-1}}},--¶ÔË®ÏµÉËº¦Ôö¼Ó£º15%
-		water2medamage_p={{{1,1},{30,20},{31,20}},{{1,-1},{2,-1}}},--¼õÉÙÀ´×ÔË®ÏµµÄÉËº¦£º15%
-		lifemax_yan_v={{{1,8000},{20,8000}},{{1,-1},{10,-1}}},
-		lifemax_yan_p={{{1,21},{35,80},{36,80}},{{1,-1},{30,-1}}},
+		addlightingdamage_v={{{1,45},{30,315,Conic}},{{1,-1},{2,-1}}}
 	},
-	shufu_zhou={ --Êø¸¿Öä
+	shufu_zhou={ --Thuc Phuoc Chu
 		rangedamagereturn_p={{{1,-5},{20,-35}},{{1,18*45},{20,18*120}}},
 		skill_cost_v={{{1,30},{20,40}}}
 	},
-	beiming_daohai={ --±±Ú¤µ½º£
+	beiming_daohai={ --Bac Minh Dao Hai
 		lifereplenish_v={{{1,-1},{20,-15}},{{1,18*45},{20,18*120}}},
 		manareplenish_v={{{1,-1},{20,-20}},{{1,18*45},{20,18*120}}},
 		skill_cost_v={{{1,30},{20,40}}}
 	},
-	qihan_aoxue={ --ÆÛº®°ÁÑ©
-		castspeed_v={{{1,-6},{20,-39},{30,-50},{31,-50}},{{1,18*20},{20,18*60}}},
-		attackspeed_yan_v={{{1,-1},{30,-16},{31,-16}},{{1,18*20},{20,18*60}}},--ÐÂÔö
-		castspeed_yan_v={{{1,-1},{30,-12},{31,-12}},{{1,18*20},{20,18*60}}},--ÐÂÔö
+	qihan_aoxue={ --Khi Han Ngao Tuyet
+		castspeed_v={{{1,-6},{20,-39},{30,-50},{31,-50}},{{1,18*45},{20,18*120}}},
 		skill_cost_v={{{1,30},{20,40}}}
 	},
-	mizhong_huanying={ --ÃÔ×Ù»ÃÓ°
+	mizhong_huanying={ --Me Tung Ao Anh
 		freezetimereduce_p={{{1,-5},{20,-50}},{{1,18*45},{20,18*120}}},
-		stuntimereduce_p={{{1,-1},{30,-30},{31,-30}},{{1,18*45},{20,18*120}}},
+		stuntimereduce_p={{{1,-5},{20,-50}},{{1,18*45},{20,18*120}}},
 		skill_cost_v={{{1,30},{20,40}}}
 	},
-	zuixian_cuogu={ --×íÏÉ´í¹Ç
-		fastwalkrun_p={{{1,-12},{20,-52}},{{1,18*45},{20,18*120}}},
+	zuixian_cuogu={ --Tuy Tien Ta cot
+		--fastwalkrun_p={{{1,-12},{20,-52}},{{1,18*45},{20,18*120}}},
 		freezetimereduce_p={{{1,-5},{20,-50}},{{1,18*45},{20,18*120}}},
-		stuntimereduce_p={{{1,-1},{25,-30},{26,-30}},{{1,18*45},{20,18*120}}},
+		stuntimereduce_p={{{1,-5},{20,-50}},{{1,18*45},{20,18*120}}},
 		lifereplenish_v={{{1,-1},{20,-15}},{{1,18*45},{20,18*120}}},
 		manareplenish_v={{{1,-1},{20,-20}},{{1,18*45},{20,18*120}}},
 		rangedamagereturn_p={{{1,-5},{20,-35}},{{1,18*45},{20,18*120}}},
 		skill_cost_v={{{1,100},{20,160}}}
 	},
-	wusuo_kunlun={ --ÎíËøÀ¥ÂØ
+	wusuo_kunlun={ --Vu Toa Con lon - ko su dung
 		seriesdamage_p={{{1,20},{20,60}}},
 		lightingdamage_v={
 			[1]={{1,10},{20,256}},
@@ -228,10 +192,10 @@ SKILLS={
 			[3]={{1,375},{20,375}}
 		},
 		skill_showevent={{{1,0},{10,0},{10,4},{20,4}}},
-		addskillexp1={{{1,0},{2,0}},{{1,1},{20,10}},{{1,0},{2,0}}},
+		addskillexp1={{{1,0},{2,0}},{{1,EXP_PER},{20,EXP_PER}},{{1,0},{2,0}}},
 		skill_skillexp_v={{{1,20000},{20,84567890,Conic}}},
 	},
-	leidong_jiutian={ --À×¶¯¾ÅÌì
+	leidong_jiutian={ --Loi Dong Cuu Thien
 		seriesdamage_p={{{1,20},{15,20},{20,60},{21,62}}},
 		lightingdamage_v={
 			[1]={{1,80},{15,260},{20,470}},
@@ -248,7 +212,7 @@ SKILLS={
 			[3]={{1,1},{20,35}}
 		},
 		skill_showevent={{{1,0},{10,0},{10,4},{20,4}}},
-		addskillexp1={{{1,0},{2,0}},{{1,1},{20,1}},{{1,0},{2,0}}},
+		addskillexp1={{{1,375},{2,375}},{{1,EXP_PER},{20,EXP_PER}},{{1,0},{2,0}}},
 		skill_skillexp_v={{	{1,SkillExpFunc(5330,1.15,1,8,1)},
 							{2,SkillExpFunc(5330,1.15,2,8,1)},
 							{3,SkillExpFunc(5330,1.16,3,8,1)},
@@ -271,80 +235,14 @@ SKILLS={
 							{20,SkillExpFunc(5330,1.15,20,8,1)},
 						}},
 	},
-	jiankunlun150={ --½£À¥ÂØ150	À×¶¯Ç¬À¤
-		seriesdamage_p={{{1,40},{15,40},{20,80},{21,82}}},
-		--lightingdamage_v={
-		--	[1]={{1,192},{15,624},{20,1130},{23,1737},{26,2040}},
-		--	[3]={{1,192},{15,624},{20,1130},{23,1737},{26,2040}}
-		--},
-		stun_p={{{1,1},{30,20},{31,20}},{{1,1},{20,20},{21,21}}},
-		lightingdamage_v={
-			[1]={{1,222},{15,1074},{20,1730},{23,2427},{26,2820}},		--Ã¿¼¶Ôö¼ÓÀ×ÉË15µã 20160801
-			[3]={{1,222},{15,1074},{20,1730},{23,2427},{26,2820}}
-			--[1]={{1,207},{15,849},{20,1430},{23,2082},{26,2430}},
-			--[3]={{1,207},{15,849},{20,1430},{23,2082},{26,2430}}
-		},	
-	},
-	jiankunlun150fu={ --½£À¥ÂØ150·û  ÌìÀ×ÕðÔÀ
-		seriesdamage_p={{{1,40},{15,40},{20,80},{21,82}}},
-		stun_p={{{1,1},{30,5},{31,5}},{{1,1},{20,20},{21,21}}},
-		--lightingdamage_v={
-		--	[1]={{1,25},{20,250},{23,321},{26,356}},
-		--	[3]={{1,25},{20,250},{23,321},{26,356}}
-		--},
-		lightingdamage_v={
-			[1]={{1,40},{20,550},{23,666},{26,746},{30,1284},{31,1380}},		--Ã¿¼¶Ôö¼ÓÀ×ÉË10µã 20160801
-			[3]={{1,40},{20,550},{23,666},{26,746},{30,1284},{31,1380}}
-			--[1]={{1,30},{20,350},{23,436},{26,486}},
-			--[3]={{1,30},{20,350},{23,436},{26,486}}
-		},
-		skill_cost_v={{{1,48},{15,72},{20,115},{23,166},{26,192}}},
-		skill_eventskilllevel={{{1,1},{20,20}}},
-		skill_vanishedevent={
-			[1]={{1,0},{10,0},{10,1},{20,1}},
-			[3]={{1,1109},{20,1109}}
-		},
-		skill_showevent={{{1,0},{10,0},{10,8},{20,8}}},
-		skill_skillexp_v={{	{1,300},
-												{2,600},
-												{3,1000},
-												{4,1500},
-												{5,2100},
-												{6,2800},
-												{7,3600},
-												{8,4500},
-												{9,5500},
-												{10,6600},
-												{11,7800},
-												{12,9100},
-												{13,10500},
-												{14,12000},
-												{15,13600},
-												{16,15300},
-												{17,17100},
-												{18,19000},
-												{19,21400},
-												{20,90000},
-												{21,120000},
-												{22,150000},
-												{23,200000},
-												{24,250000},
-												{25,300000},
-												{26,390000},
-												}},	
-		addskilldamage1={
-			[1]={{1,1748},{2,1748}},
-			[3]={{1,1},{20,30}}
-		},	
-	},
-	pingdi_hanlei={ --Æ½µØº³À×
+	pingdi_hanlei={ --Binh Dia Ham loi
 		seriesdamage_p={{{1,20},{20,60},{21,62}}},
 		lightingdamage_v={
 			[1]={{1,25},{20,250}},
 			[3]={{1,25},{20,250}}
 		},
 	},
-	aoxue_xiaofeng={ --°ÁÑ©Ð¥·ç
+	aoxue_xiaofeng={ --Ngao Tuyet Tieu phong
 		physicsenhance_p={{{1,5},{15,100},{20,280}}},
 		seriesdamage_p={{{1,20},{15,20},{20,60},{21,62}}},
 		lightingdamage_v={
@@ -369,76 +267,34 @@ SKILLS={
 			[3]={{1,1},{20,35}}
 		},
 		skill_showevent={{{1,0},{10,0},{10,4},{20,4}}},
-		addskillexp1={{{1,0},{2,0}},{{1,1},{20,1}},{{1,0},{2,0}}},
-		skill_skillexp_v=extab_aoxue_xiaofeng,
+		addskillexp1={{{1,372},{2,372}},{{1,EXP_PER},{20,EXP_PER}},{{1,0},{2,0}}},
+		skill_skillexp_v={{	{1,SkillExpFunc(6860,1.15,1,5,1)},
+							{2,SkillExpFunc(6860,1.15,2,5,1)},
+							{3,SkillExpFunc(6860,1.16,3,5,1)},
+							{4,SkillExpFunc(6860,1.17,4,5,1)},
+							--{5,SkillExpFunc(6860,1.18,5,5,1)},
+							--{6,SkillExpFunc(6860,1.19,6,5,1)},
+							--{7,SkillExpFunc(6860,1.20,7,5,1)},
+							--{8,SkillExpFunc(6860,1.21,8,5,1)},
+							--{9,SkillExpFunc(6860,1.22,9,5,1)},
+							--{10,SkillExpFunc(6860,1.23,10,5,1)},
+							--{11,SkillExpFunc(6860,1.24,11,5,1)},
+							--{12,SkillExpFunc(6860,1.23,12,5,1)},
+							--{13,SkillExpFunc(6860,1.22,13,5,1)},
+							--{14,SkillExpFunc(6860,1.21,14,5,1)},
+							--{15,SkillExpFunc(6860,1.20,15,5,1)},
+							{16,SkillExpFunc(6860,1.19,16,5,1)},
+							{17,SkillExpFunc(6860,1.18,17,5,1)},
+							{18,SkillExpFunc(6860,1.17,18,5,1)},
+							{19,SkillExpFunc(6860,1.16,19,5,1)},
+							{20,SkillExpFunc(6860,1.15,20,5,1)},
+							}},
 	},
-	daokunlun150={ --µ¶À¥ÂØ150	 ¾ÅÌìî¸·ç 
-		physicsenhance_p={{{1,11},{15,195},{20,435},{23,708},{26,852},{30,1284},{31,1380}}},		--Ã¿¼¶Ôö¼Ó5%ÎïÀíÉËº¦ 20160801
-		--physicsenhance_p={{{1,6},{15,120},{20,335},{23,593},{26,722}}},
-		seriesdamage_p={{{1,40},{15,40},{20,80},{21,82}}},
-		lightingdamage_v={
-			[1]={{1,48},{15,240},{20,806},{23,1485},{26,1824}},
-			[3]={{1,48},{15,240},{20,806},{23,1485},{26,1824}}
-		},
-		stun_p={{{1,6},{20,30},{21,30}},{{1,1},{20,12},{21,12}}},
-		missle_speed_v={{{1,28},{20,32},{21,32}}},
-		skill_attackradius={{{1,448},{20,512},{21,512}}},
-		skill_cost_v={{{1,30},{20,55},{23,62}}},
-		skill_eventskilllevel={{{1,1},{20,20}}},
---		skill_startevent={
---			[1]={{1,0},{10,0},{10,1},{20,1}},
---			[3]={{1,386},{20,386}}
---		},
-		skill_collideevent={
-			[1]={{1,0},{10,0},{10,1},{20,1}},
-			[3]={{1,1108},{20,1108}}
-		},
-		skill_showevent={{{1,0},{10,0},{10,4},{20,4}}},
-		skill_skillexp_v={{	{1,300},
-												{2,600},
-												{3,1000},
-												{4,1500},
-												{5,2100},
-												{6,2800},
-												{7,3600},
-												{8,4500},
-												{9,5500},
-												{10,6600},
-												{11,7800},
-												{12,9100},
-												{13,10500},
-												{14,12000},
-												{15,13600},
-												{16,15300},
-												{17,17100},
-												{18,19000},
-												{19,21400},
-												{20,90000},
-												{21,120000},
-												{22,150000},
-												{23,200000},
-												{24,250000},
-												{25,300000},
-												{26,390000},
-												}},
-		addskilldamage1={
-			[1]={{1,1748},{2,1748}},
-			[3]={{1,1},{20,30}}
-		},	
-	},
-	daokunlun150_2={ --µ¶À¥ÂØ150µÚ2
-		seriesdamage_p={{{1,40},{20,80},{21,82}}},
-		missle_lifetime_v={{{1,6},{20,24},{21,24}}},
-		lightingdamage_v={
-			[1]={{1,105},{20,395},{23,486},{26,532}},
-			[3]={{1,135},{20,660},{23,825},{26,908}}
-		},
-	},
-	yufeng_shu={ --Ô¦·çÊõ
+	yufeng_shu={ --Ngu phong Thuat - ko su dung
 		seriesdamage_p={{{1,20},{20,60},{21,62}}},
 		physicsenhance_p={{{1,28},{20,282}}},
 	},
-	xiaofeng_sanlianji={ --Ð¥·çÈýÁ¬»÷
+	xiaofeng_sanlianji={ --Khieu phong Tam lien kich
 		seriesdamage_p={{{1,20},{20,60},{21,62}}},
 		missle_lifetime_v={{{1,6},{20,24},{21,24}}},
 		lightingdamage_v={
@@ -446,21 +302,20 @@ SKILLS={
 			[3]={{1,115},{20,550}}
 		},
 	},
-	xuantianwuji={	--ÐþÌìÎÞ¼«
+	xuantianwuji={	--Huyen Thien Vo Cuc
 		dynamicmagicshield_v={{{1,50},{10,230},{15,370},{20,550},{21,550}},{{1,-1},{20,-1}}},
 		returnres_p={{{1,5},{20,30},{21,30}},{{1,-1},{20,-1}}},
-		--skill_cost_v={{{1,80},{20,150}}},		
 	},
-	kunlun120={ --À¥ÂØ120¼¶¼¼ÄÜ
-		autorescueskill={{{1,721*256 + 1},{20,721*256 + 20},{21,721*256 + 21}},{{1,-1},{20,-1}},{{1,20*18*256 + 15},{20,20*18*256 + 70},{21,20*18*256 + 70}}},
+	kunlun120={ --Luong Nghi Chan khi 120
+		autorescueskill={{{1,721*256 + 1},{20,721*256 + 20},{21,721*256 + 21}},{{1,-1},{20,-1}},{{1,20*18*256 + 15},{15,20*18*256 + 60},{20,20*18*256 + 65},{21,20*18*256 + 65}}},
 		skill_desc=
 			function(level)
-				return "Khi sinh lùc thÊp h¬n 25% c?x¸c suÊt <color=orange>"..floor(Link(level,SKILLS.kunlun120.autorescueskill[3]) - 20*18*256).."%<color> ph¸t chiªu L­ìng Nghi Ch©n Kh?\n"..
-				"Ch©n kh?chèng l¹i s¸t th­¬ng gÊp <color=orange>"..floor(Link(level,SKILLS.kunlun120mofadun.staticmagicshield_p[1]) / 100)..
-				" lÇn<color> møc néi lùc trong <color=orange>"..floor(Link(level,SKILLS.kunlun120mofadun.staticmagicshield_p[2]) / 18).." gi©y<color>\n"..
-				" v?t¨ng <color=orange>"..floor((Link(level,SKILLS.kunlun120jiasu.fastwalkrun_p[1]))).."%<color> tèc ®é di chuyÓn trong <color=orange>"
+				return "Khi sinh lùc thÊp h¬n 25% cã x¸c suÊt <color=orange>"..floor(Link(level,SKILLS.kunlun120.autorescueskill[3]) - 20*18*256).."%<color> ph¸t chiªu L­ìng Nghi Ch©n KhÝ \n"..
+				"Ch©n khÝ chèng l¹i s¸t th­¬ng gÊp <color=orange>"..floor(Link(level,SKILLS.kunlun120mofadun.staticmagicshield_p[1]) / 100)..
+				" lÇn<color> møc néi lùc hé thÓ trong <color=orange>"..floor(Link(level,SKILLS.kunlun120mofadun.staticmagicshield_p[2]) / 18).." gi©y<color>\n"..
+				" vµ t¨ng <color=orange>"..floor((Link(level,SKILLS.kunlun120jiasu.fastwalkrun_p[1]))).."%<color> tèc ®é di chuyÓn trong <color=orange>"
 				..floor(Link(level,SKILLS.kunlun120jiasu.fastwalkrun_p[2]) / 18).." gi©y<color>\n"..
-				"Trong vßng <color=orange>"..floor((Link(level,SKILLS.kunlun120.autorescueskill[3]) / (18*256))).." gi©y<color> sau míi c?th?thi triÓn tiÕp"
+				"Trong vßng <color=orange>"..floor((Link(level,SKILLS.kunlun120.autorescueskill[3]) / (18*256))).." gi©y<color> sau míi cã thÓ thi triÓn tiÕp"
 			end,	
 		skill_skillexp_v={{	{1,17851239},
 							{2,19487603},
@@ -484,11 +339,108 @@ SKILLS={
 							{20,620738181},
 							}},		
 	},
-	kunlun120mofadun={ --À¥ÂØ120¼¶¼¼ÄÜÄ§·¨¶Ü
-		staticmagicshield_p={{{1,1800},{20,50000},{21,50050}},{{1,18},{20,5*18},{21,5*18}}},
+	kunlun120mofadun={ --Ma Phap Don 120
+		staticmagicshield_p={{{1,1800},{15,9750},{20,10000},{21,10050}},{{1,5*18},{15,9*18},{20,10*18},{21,10*18}}},
+		skill_eventskilllevel={{{1,1},{20,20}}},
 	},
-	kunlun120jiasu={ --À¥ÂØ120¼¶¼¼ÄÜ¼ÓËÙ
+	kunlun120jiasu={ --Gia Toc 120
 		fastwalkrun_p={{{1,5},{15,30},{20,35},{21,36}},{{1,3*18},{15,9*18},{20,10*18},{21,10*18}}},
+	},
+	jiankunlun150fu={ --Thien Loi Chan Nhac-150
+		seriesdamage_p={{{1,40},{15,40},{20,80},{21,82}}},
+		stun_p={{{1,16},{20,35},{23,41},{26,44}},{{1,1},{20,20},{21,21}}},
+		lightingdamage_v={
+			[1]={{1,25},{20,250},{23,321},{26,356}},
+			[3]={{1,25},{20,250},{23,321},{26,356}}
+		},
+		skill_cost_v={{{1,48},{15,72},{20,115},{23,166},{26,192}}},
+		skill_eventskilllevel={{{1,1},{20,20}}},
+		skill_vanishedevent={
+			[1]={{1,0},{10,0},{10,1},{20,1}},
+			[3]={{1,1109},{20,1109}}
+		},
+		skill_showevent={{{1,0},{10,0},{10,8},{20,8}}},
+		addskillexp1={{{1,1081},{2,1081}},{{1,EXP_PER},{20,EXP_PER}},{{1,0},{2,0}}},
+		skill_skillexp_v={{	{1,10500},
+							{2,12180},
+							{3,14373},
+							{4,17251},
+							{5,21056},
+							{6,26127},
+							{7,32953},
+							{8,42238},
+							{9,55008},
+							{10,72775},
+							{11,97788},
+							{12,133433},
+							{13,184856},
+							{14,259967},
+							{15,371060},
+							{16,537451},
+							{17,789823},
+							{18,1177459},
+							{19,1780405},
+							{20,2730112},
+						}},
+	},
+	jiankunlun150={ --Loi Dong Can khon-150 tang 2
+		seriesdamage_p={{{1,40},{15,40},{20,80},{21,82}}},
+		lightingdamage_v={
+			[1]={{1,192},{15,624},{20,1130},{23,1737},{26,2040}},
+			[3]={{1,192},{15,624},{20,1130},{23,1737},{26,2040}}
+		},
+	},
+	daokunlun150={ --Cuu Thien Cuong Phong-150
+		physicsenhance_p={{{1,6},{15,120},{20,335},{23,593},{26,722}}},
+		seriesdamage_p={{{1,40},{15,40},{20,80},{21,82}}},
+		lightingdamage_v={
+			[1]={{1,48},{15,240},{20,806},{23,1485},{26,1824}},
+			[3]={{1,48},{15,240},{20,806},{23,1485},{26,1824}}
+		},
+		stun_p={{{1,6},{20,30},{21,30}},{{1,1},{20,12},{21,12}}},
+		missle_speed_v={{{1,28},{20,32},{21,32}}},
+		skill_attackradius={{{1,448},{20,512},{21,512}}},
+		skill_cost_v={{{1,30},{20,55},{23,62}}},
+		skill_eventskilllevel={{{1,1},{20,20}}},
+--		skill_startevent={
+--			[1]={{1,0},{10,0},{10,1},{20,1}},
+--			[3]={{1,386},{20,386}}
+--		},
+		skill_collideevent={
+			[1]={{1,0},{10,0},{10,1},{20,1}},
+			[3]={{1,1108},{20,1108}}
+		},
+		skill_showevent={{{1,0},{10,0},{10,4},{20,4}}},
+		addskillexp1={{{1,1080},{2,1080}},{{1,EXP_PER},{20,EXP_PER}},{{1,0},{2,0}}},
+		skill_skillexp_v={{	{1,10500},
+							{2,12180},
+							{3,14373},
+							{4,17251},
+							{5,21056},
+							{6,26127},
+							{7,32953},
+							{8,42238},
+							{9,55008},
+							{10,72775},
+							{11,97788},
+							{12,133433},
+							{13,184856},
+							{14,259967},
+							{15,371060},
+							{16,537451},
+							{17,789823},
+							{18,1177459},
+							{19,1780405},
+							{20,2730112},
+						}},
+	},
+	daokunlun150_2={ --Phong Minh Ngoc Toai-150 tang 2
+		seriesdamage_p={{{1,40},{20,80},{21,82}}},
+		missle_lifetime_v={{{1,6},{20,24},{21,24}}},
+		lightingdamage_v={
+			[1]={{1,105},{20,395},{23,486},{26,532}},
+			[3]={{1,135},{20,660},{23,825},{26,908}}
+		},
 	},
 }
 -----------------------------------------------

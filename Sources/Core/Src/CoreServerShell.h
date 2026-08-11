@@ -123,6 +123,13 @@ enum GAMEDATA_INDEX
 	// 通知core发送某玩家的帮会信息
 	// nParam : player index
 	SGDI_TONG_SEND_SELF_INFO,
+
+	// Set the guild master's temporary recruitment advertisement flag.
+	// uParam: PlayerIndex, nParam: BOOL
+	SGDI_TONG_SET_RECRUIT,
+	// Validate and enrich a guild-fund request from the authenticated player.
+	SGDI_TONG_MONEY_REQUEST,
+	SGDI_TONG_MONEY_RESULT,
 };
 
 #ifdef _STANDALONE

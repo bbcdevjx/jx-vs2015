@@ -360,6 +360,7 @@ int KSkillList::GetLeftSkillSortList(KUiSkillData* pSkillList)
 	pSkillList->uGenre = CGOG_SKILL_SHORTCUT;
 	pSkillList->uId = Npc[Player[CLIENT_PLAYER_INDEX].m_nIndex].GetCurActiveWeaponSkill();//物理技能置前!
 	pSkillList->nData = 0;
+
 	
 	ISkill * pISkill = NULL;
 	KSkill * pOrdinSkill = NULL;
@@ -368,7 +369,7 @@ int KSkillList::GetLeftSkillSortList(KUiSkillData* pSkillList)
 		if (m_Skills[i].SkillId && m_Skills[i].SkillLevel > 0)
 		{
 			_ASSERT(m_Skills[i].SkillId > 0);
-			pISkill = g_SkillManager.GetSkill(m_Skills[i].SkillId, m_Skills[i].SkillLevel);
+			pISkill = g_SkillManager.GetSkill(m_Skills[i].SkillId, m_Skills[i].CurrentSkillLevel);
 			if (!pISkill)
 				continue;
 			
@@ -377,14 +378,13 @@ int KSkillList::GetLeftSkillSortList(KUiSkillData* pSkillList)
 			{
 			case SKILL_SS_Missles:			//	子弹类		本技能用于发送子弹类
 			case SKILL_SS_Melee:
-			case SKILL_SS_InitiativeNpcState:	//	主动类		本技能用于改变当前Npc的主动状态
+				//	主动类		本技能用于改变当前Npc的主动状态
 			//case SKILL_SS_PassivityNpcState:		//	被动类		本技能用于改变Npc的被动状态
 				{
 					pOrdinSkill = (KSkill * ) pISkill;
-					if ((!pOrdinSkill->IsPhysicalSkillId()) &&	
-						(pOrdinSkill->GetSkillLRInfo() == BothSkill) || 
-						(pOrdinSkill->GetSkillLRInfo() == leftOnlySkill)
-						)
+					if ((!pOrdinSkill->IsPhysicalSkillId()) &&
+						((pOrdinSkill->GetSkillLRInfo() == BothSkill) ||
+						 (pOrdinSkill->GetSkillLRInfo() == leftOnlySkill)))
 					{
 						
 					}
@@ -395,11 +395,8 @@ int KSkillList::GetLeftSkillSortList(KUiSkillData* pSkillList)
 				break;
 				
 			case SKILL_SS_Thief:
-				{
-					
-					continue;
-					
-				}break;
+			default:
+				continue;
 			}
 			
 			KUiSkillData * pSkill = pSkillList + nCount;
@@ -424,6 +421,7 @@ int KSkillList::GetRightSkillSortList(KUiSkillData* pSkillList)
 	pSkillList->uGenre = CGOG_SKILL_SHORTCUT;
 	pSkillList->uId = Npc[Player[CLIENT_PLAYER_INDEX].m_nIndex].GetCurActiveWeaponSkill();//物理技能置前!;	 
 	pSkillList->nData = 0;
+
 	ISkill * pISkill = NULL;
 	KSkill * pOrdinSkill = NULL;
 	
@@ -432,7 +430,7 @@ int KSkillList::GetRightSkillSortList(KUiSkillData* pSkillList)
 		if (m_Skills[i].SkillId && m_Skills[i].SkillLevel > 0)
 		{
 			_ASSERT(m_Skills[i].SkillId > 0);
-			pISkill  =  g_SkillManager.GetSkill(m_Skills[i].SkillId, m_Skills[i].SkillLevel);
+			pISkill  =  g_SkillManager.GetSkill(m_Skills[i].SkillId, m_Skills[i].CurrentSkillLevel);
 			if(!pISkill)
 				continue;
 
@@ -446,11 +444,9 @@ int KSkillList::GetRightSkillSortList(KUiSkillData* pSkillList)
 			//case SKILL_SS_PassivityNpcState:		//	被动类		本技能用于改变Npc的被动状态
 				{
 					pOrdinSkill = (KSkill * ) pISkill;
-					if (
-						(!pOrdinSkill->IsPhysicalSkillId()) && 
-						(pOrdinSkill->GetSkillLRInfo() == BothSkill) || 
-						(pOrdinSkill->GetSkillLRInfo() == RightOnlySkill)
-						)
+					if ((!pOrdinSkill->IsPhysicalSkillId()) &&
+						((pOrdinSkill->GetSkillLRInfo() == BothSkill) ||
+						 (pOrdinSkill->GetSkillLRInfo() == RightOnlySkill)))
 					{
 						
 					}
@@ -460,9 +456,8 @@ int KSkillList::GetRightSkillSortList(KUiSkillData* pSkillList)
 				break;
 				
 			case SKILL_SS_Thief:
-				{
-					
-				}break;
+			default:
+				continue;
 			}
 			
 			

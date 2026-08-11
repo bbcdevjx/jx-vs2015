@@ -1,8 +1,8 @@
 Include("\\script\\header\\factionhead.lua")
 
 function main(nNpcIndex)
-	if(nvthegioi(nNpcIndex) == 1) then
-	return end;
+	--if(nvthegioi(nNpcIndex) == 1) then
+	--return end;
 local player_Faction = GetFaction();
 	if (player_Faction == "") then
 		Talk(1,"enroll_select","Gi¸o chñ cña bæn gi¸o lµ Hoµn Nhan Hïng LiÖt. Danh chÊn thiªn h¹! Hoµng ®Õ Kim quèc còng ph¶i nh­êng 3 phÇn. Cao thñ cña bæn gi¸o nhiÒu v« sè! Nh©n tµi ngäa hæ tµng long")

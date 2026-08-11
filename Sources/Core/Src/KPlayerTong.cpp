@@ -47,10 +47,13 @@ void	KPlayerTong::Clear()
 	m_nFigure			= enumTONG_FIGURE_MEMBER;
 	m_nCamp				= 0;
 	m_dwTongNameID		= 0;
+	m_dwMoney			= 0;
+	m_nLevel			= 0;
 	m_szName[0]			= 0;
 	m_szTitle[0]		= 0;
 	m_szMasterName[0]	= 0;
 	m_nApplyTo			= 0;
+	m_bRecruit			= FALSE;
 }
 
 #ifndef _SERVER
@@ -287,7 +290,52 @@ void	KPlayerTong::Create(TONG_CREATE_SYNC *psCreate)
 //-------------------------------------------------------------------------
 BOOL	KPlayerTong::GetOpenFlag()
 {
-	return (m_nFlag && m_nFigure != enumTONG_FIGURE_MEMBER);
+	return (m_nFlag && m_nFigure == enumTONG_FIGURE_MASTER && m_bRecruit);
+}
+
+BOOL	KPlayerTong::SetRecruit(BOOL bRecruit)
+{
+	if (!m_nFlag || m_nFigure != enumTONG_FIGURE_MASTER)
+	{
+		m_bRecruit = FALSE;
+		return FALSE;
+	}
+
+	m_bRecruit = (bRecruit != FALSE);
+	return TRUE;
+}
+
+void KPlayerTong::ChangeMoney(DWORD dwMoney)
+{
+	m_dwMoney = dwMoney;
+	SendSelfInfo();
+}
+
+BOOL KPlayerTong::PrepareMoneyRequest(STONG_SERVER_TO_CORE_MONEY_REQUEST *pRequest)
+{
+	if (!pRequest || !m_nFlag || pRequest->m_dwMoney == 0 || pRequest->m_dwMoney > 0x7fffffff)
+		return FALSE;
+	if (pRequest->m_bWithdraw)
+	{
+		if (m_nFigure != enumTONG_FIGURE_MASTER || m_dwMoney < pRequest->m_dwMoney)
+			return FALSE;
+		int nHeldMoney = Player[m_nPlayerIndex].m_ItemList.GetMoney(room_equipment);
+		if (nHeldMoney < 0 || (DWORD)nHeldMoney > 0x7fffffff - pRequest->m_dwMoney)
+			return FALSE;
+	}
+	else if ((DWORD)Player[m_nPlayerIndex].m_ItemList.GetMoney(room_equipment) < pRequest->m_dwMoney)
+	{
+		return FALSE;
+	}
+	if (m_dwTongNameID == 0)
+		return FALSE;
+	if (!pRequest->m_bWithdraw && !Player[m_nPlayerIndex].Pay((int)pRequest->m_dwMoney))
+		return FALSE;
+	pRequest->m_nPlayerIdx = m_nPlayerIndex;
+	pRequest->m_dwTongNameID = m_dwTongNameID;
+	strncpy(pRequest->m_szName, Npc[Player[m_nPlayerIndex].m_nIndex].Name, sizeof(pRequest->m_szName) - 1);
+	pRequest->m_szName[sizeof(pRequest->m_szName) - 1] = 0;
+	return TRUE;
 }
 #endif
 
@@ -824,6 +872,8 @@ void	KPlayerTong::SendSelfInfo()
 	sInfo.m_btJoinFlag = this->m_nFlag;
 	sInfo.m_btFigure = this->m_nFigure;
 	sInfo.m_btCamp = this->m_nCamp;
+	sInfo.m_dwMoney = this->m_dwMoney;
+	sInfo.m_btLevel = (BYTE)this->m_nLevel;
 	strcpy(sInfo.m_szMaster, this->m_szMasterName);
 	strcpy(sInfo.m_szTitle, this->m_szTitle);
 	strcpy(sInfo.m_szTongName, this->m_szName);
@@ -872,6 +922,8 @@ void	KPlayerTong::SetSelfInfo(TONG_SELF_INFO_SYNC *pInfo)
 	this->m_nFlag = 1;
 	this->m_nFigure = pInfo->m_btFigure;
 	this->m_nCamp = pInfo->m_btCamp;
+	this->m_dwMoney = pInfo->m_dwMoney;
+	this->m_nLevel = pInfo->m_btLevel;
 	Npc[Player[CLIENT_PLAYER_INDEX].m_nIndex].m_Camp = m_nCamp;
 	if (Player[CLIENT_PLAYER_INDEX].m_cTeam.m_nFlag == 0)
 		Npc[Player[CLIENT_PLAYER_INDEX].m_nIndex].m_CurrentCamp = m_nCamp;
@@ -1223,6 +1275,8 @@ void	KPlayerTong::Login(STONG_SERVER_TO_CORE_LOGIN *pLogin)
 	m_nFlag			= 1;
 	m_nFigure		= pLogin->m_nFigure;
 	m_nCamp			= pLogin->m_nCamp;
+	m_dwMoney			= pLogin->m_dwMoney;
+	m_nLevel			= pLogin->m_nLevel;
 	m_dwTongNameID	= g_FileName2Id(pLogin->m_szTongName);
 	m_nApplyTo		= 0;
 	strcpy(m_szName, pLogin->m_szTongName);
@@ -1240,6 +1294,61 @@ void	KPlayerTong::Login(STONG_SERVER_TO_CORE_LOGIN *pLogin)
 void    KPlayerTong::OpenCreateInterface()
 {
 	CoreDataChanged(GDCNI_OPEN_TONG_CREATE_SHEET, 1, 0);
+}
+
+BOOL KPlayerTong::ApplyRecruit(BOOL bRecruit)
+{
+	if (!m_nFlag || m_nFigure != enumTONG_FIGURE_MASTER)
+		return FALSE;
+
+	TONG_APPLY_RECRUIT_COMMAND command;
+	command.ProtocolType = c2s_extendtong;
+	command.m_wLength = sizeof(command) - 1;
+	command.m_btMsgId = enumTONG_COMMAND_ID_APPLY_RECRUIT;
+	command.m_btRecruit = (bRecruit != FALSE);
+
+	if (!g_pClient)
+		return FALSE;
+
+	g_pClient->SendPackToServer(&command, sizeof(command));
+	m_bRecruit = command.m_btRecruit;
+	return TRUE;
+}
+
+BOOL KPlayerTong::ApplyDepositMoney(DWORD dwMoney)
+{
+	if (!m_nFlag || dwMoney == 0 || dwMoney > 0x7fffffff)
+		return FALSE;
+	if ((DWORD)Player[CLIENT_PLAYER_INDEX].m_ItemList.GetMoney(room_equipment) < dwMoney)
+		return FALSE;
+
+	TONG_APPLY_MONEY_COMMAND command;
+	command.ProtocolType = c2s_extendtong;
+	command.m_wLength = sizeof(command) - 1;
+	command.m_btMsgId = enumTONG_COMMAND_ID_DEPOSIT_MONEY;
+	command.m_dwMoney = dwMoney;
+	if (!g_pClient)
+		return FALSE;
+	g_pClient->SendPackToServer(&command, sizeof(command));
+	return TRUE;
+}
+
+BOOL KPlayerTong::ApplyWithdrawMoney(DWORD dwMoney)
+{
+	if (!m_nFlag || m_nFigure != enumTONG_FIGURE_MASTER || dwMoney == 0 || dwMoney > 0x7fffffff)
+		return FALSE;
+	if (m_dwMoney < dwMoney)
+		return FALSE;
+
+	TONG_APPLY_MONEY_COMMAND command;
+	command.ProtocolType = c2s_extendtong;
+	command.m_wLength = sizeof(command) - 1;
+	command.m_btMsgId = enumTONG_COMMAND_ID_WITHDRAW_MONEY;
+	command.m_dwMoney = dwMoney;
+	if (!g_pClient)
+		return FALSE;
+	g_pClient->SendPackToServer(&command, sizeof(command));
+	return TRUE;
 }
 #endif
 

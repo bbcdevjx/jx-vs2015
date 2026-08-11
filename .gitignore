@@ -1,1 +1,10 @@
 /bin/client/release/Data/
+
+# Build artifacts must stay at the solution root.
+/Sources/**/bin/
+/Sources/**/obj/
+/Sources/**/lib/**/*.lib
+/Sources/**/lib/**/*.exp
+/Sources/**/lib/**/*.pdb
+/Sources/**/lib/**/*.dll
+/Sources/**/lib/**/*.exe

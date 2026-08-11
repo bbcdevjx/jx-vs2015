@@ -405,7 +405,6 @@ bool DeleteRole( const char * strUser )
 bool StartBackupTimer(int aTime)
 {//开始运行备份线程
 	DBBackup = new CDBBackup( "database", "roledb", db_table );
-	DBBackup->SaveStatInfo();
 	bool aStartResult = DBBackup->Open(aTime);
 	return aStartResult;
 }

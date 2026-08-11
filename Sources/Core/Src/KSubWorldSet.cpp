@@ -151,7 +151,7 @@ void KSubWorldSet::GetRevivalPosFromId(DWORD dwSubWorldId, int nRevivalId, POINT
 	char	szSection[32];
 	
 	g_SetFilePath("\\settings");
-	IniFile.Load("RevivePos.ini");
+	IniFile.Load("region\\map_revive.ini");
 	sprintf(szSection, "%d", dwSubWorldId);
 	sprintf(szKeyName, "%d", nRevivalId);
 	

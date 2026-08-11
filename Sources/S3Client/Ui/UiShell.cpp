@@ -658,7 +658,7 @@ bool Player_Exp::m_bText = true;
 
 void Player_Exp::UpdateData()
 {
-	int nFull, nCurrLevelExp, nCurrent;
+	__int64 nFull, nCurrLevelExp, nCurrent;
 
 	if (KUiPlayerBar::GetExp(nFull, nCurrLevelExp, nCurrent))
 	{
@@ -688,12 +688,12 @@ void Player_Exp::OnButtonClick()
 
 int Player_Exp::GetToolTipInfo(char* szTip, int nMax)
 {
-	int		nFull, nCurrLevelExp, nCurrent;
+	__int64		nFull, nCurrLevelExp, nCurrent;
 	int		nLen = 0;
 	if (KUiPlayerBar::GetExp(nFull, nCurrLevelExp, nCurrent) && szTip && nMax > 0)
 	{
 		char	szBuffer[64];
-		nLen = sprintf(szBuffer, "经验 %d/%d", nCurrent, nFull);
+		nLen = sprintf(szBuffer, "经验 %I64d/%I64d", nCurrent, nFull);
 		if (nLen <= nMax)
 			memcpy(szTip, szBuffer, nLen);
 		else
@@ -722,7 +722,10 @@ void Player_WorldSort::UpdateData()
 		KUiPlayerBaseInfo	Info;
 		memset(&Info, 0, sizeof(KUiPlayerBaseInfo));
 		g_pCoreShell->GetGameData(GDI_PLAYER_BASE_INFO, (unsigned int)&Info, 0);
-		SetIntText(Info.nRankInWorld, 0);
+		if (Info.nRankInWorld > 0)
+			SetIntText(Info.nRankInWorld, 0);
+		else
+			SetText("?");
 	}
 }
 

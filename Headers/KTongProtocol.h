@@ -30,6 +30,9 @@ enum
 	enumC2S_TONG_CHANGE_MASTER,			// 传位
 	enumC2S_TONG_ACCEPT_MASTER,			// 是否接受传位
 	enumC2S_TONG_GET_LOGIN_DATA,		// 玩家登陆时申请帮会数据
+	// Append-only authoritative guild-fund operations.
+	enumC2S_TONG_DEPOSIT_MONEY,
+	enumC2S_TONG_WITHDRAW_MONEY,
 
 	enumC2S_TONG_NUM,					// 数量
 };
@@ -54,6 +57,7 @@ enum
 	enumS2C_TONG_CHANGE_AS,					// 传位成功，身份改变
 	enumS2C_TONG_CHANGE_MASTER,				// 广播，更换帮主
 	enumS2C_TONG_LOGIN_DATA,				// 玩家登陆时候获得帮会数据
+	enumS2C_TONG_MONEY_RESULT,
 
 	enumS2C_TONG_NUM,					// 数量
 };
@@ -487,12 +491,33 @@ struct STONG_LOGIN_DATA_SYNC : EXTEND_HEADER
 	BYTE	m_btCamp;
 	BYTE	m_btFigure;
 	BYTE	m_btPos;
+	DWORD	m_dwMoney;
+	BYTE	m_btLevel;
 	char	m_szTongName[32];
 	char	m_szTitle[32];
 	char	m_szMaster[32];
 	char	m_szName[32];
 };
 
+
+struct STONG_MONEY_COMMAND : EXTEND_HEADER
+{
+	DWORD	m_dwParam;
+	DWORD	m_dwTongNameID;
+	DWORD	m_dwMoney;
+	char	m_szName[32];
+};
+
+struct STONG_MONEY_RESULT : EXTEND_HEADER
+{
+	DWORD	m_dwParam;
+	DWORD	m_dwTongNameID;
+	DWORD	m_dwAmount;
+	DWORD	m_dwBalance;
+	BYTE	m_btOperation;
+	BYTE	m_btSuccess;
+	char	m_szName[32];
+};
 
 //--------------------------- tong struct end ---------------------------
 

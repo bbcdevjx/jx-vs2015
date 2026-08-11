@@ -290,7 +290,7 @@ struct KNpcFileHead
 //2.存储KNpcFileHead::nNumNpc个以KSPNpc结构表述的npc
 struct KSPNpc
 {
-	int					nTemplateID;	// 模板编号(对应模板文件"\Settings\NpcS.txt"，编号从 0 开始)
+	int					nTemplateID;	// 模板编号(对应模板文件"\Settings\entity\npc_list.ini"，编号从 0 开始)
 	int					nPositionX;
 	int					nPositionY;
 	bool				bSpecialNpc;	// 特殊npc

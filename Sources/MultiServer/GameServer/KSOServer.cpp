@@ -125,6 +125,7 @@ int	g_nTongPCSize[defTONG_PROTOCOL_CLIENT_NUM] =
 	sizeof(STONG_CHANGE_AS_SYNC),			// enumS2C_TONG_CHANGE_AS
 	sizeof(STONG_CHANGE_MASTER_SYNC),		// enumS2C_TONG_CHANGE_MASTER
 	sizeof(STONG_LOGIN_DATA_SYNC),			// enumS2C_TONG_LOGIN_DATA
+	sizeof(STONG_MONEY_RESULT),				// enumS2C_TONG_MONEY_RESULT
 };
 
 
@@ -670,6 +671,8 @@ BOOL KSwordOnLineSever::Init()
 	 */
 	m_Timer.Start();
 	m_nGameLoop = 0;
+	RequestGameStatistic();
+
 	return TRUE;
 }
 
@@ -1387,6 +1390,8 @@ void KSwordOnLineSever::TongMessageProcess(const char *pChar, size_t nSize)
 				sLogin.m_nCamp		= pLogin->m_btCamp;
 				sLogin.m_nFigure	= pLogin->m_btFigure;
 				sLogin.m_nPos		= pLogin->m_btPos;
+				sLogin.m_dwMoney	= pLogin->m_dwMoney;
+				sLogin.m_nLevel		= pLogin->m_btLevel;
 				memcpy(sLogin.m_szTongName, pLogin->m_szTongName, sizeof(pLogin->m_szTongName));
 				memcpy(sLogin.m_szTitle, pLogin->m_szTitle, sizeof(pLogin->m_szTitle));
 				memcpy(sLogin.m_szMaster, pLogin->m_szMaster, sizeof(pLogin->m_szMaster));
@@ -1395,6 +1400,22 @@ void KSwordOnLineSever::TongMessageProcess(const char *pChar, size_t nSize)
 			}
 			break;
 
+		case enumS2C_TONG_MONEY_RESULT:
+			{
+				STONG_MONEY_RESULT *pMoney = (STONG_MONEY_RESULT*)pChar;
+				STONG_SERVER_TO_CORE_MONEY_RESULT result;
+				result.m_nPlayerIdx = (int)pMoney->m_dwParam;
+				result.m_dwTongNameID = pMoney->m_dwTongNameID;
+				result.m_dwAmount = pMoney->m_dwAmount;
+				result.m_dwBalance = pMoney->m_dwBalance;
+				result.m_bWithdraw = (pMoney->m_btOperation != 0);
+				result.m_bSuccess = (pMoney->m_btSuccess != 0);
+				memcpy(result.m_szName, pMoney->m_szName, sizeof(result.m_szName));
+				result.m_szName[sizeof(result.m_szName) - 1] = 0;
+				if (m_pCoreServerShell)
+					m_pCoreServerShell->GetGameData(SGDI_TONG_MONEY_RESULT, (unsigned int)&result, 0);
+			}
+			break;
 		default:
 			break;
 		}
@@ -2370,6 +2391,20 @@ void KSwordOnLineSever::GatewayBoardCastProcess(const char* pData, size_t dataLe
 //#endif
 }
 
+void KSwordOnLineSever::RequestGameStatistic()
+{
+	if (!m_pDatabaseClient)
+		return;
+
+	TProcessData ProcessData;
+	ZeroMemory(&ProcessData, sizeof(ProcessData));
+	ProcessData.nProtoId = c2s_gamestatistic;
+	ProcessData.nDataLen = 1;
+	ProcessData.ulIdentity = -1;
+	ProcessData.pDataBuffer[0] = 0;
+	m_pDatabaseClient->SendPackToServer(&ProcessData, sizeof(TProcessData));
+}
+
 void KSwordOnLineSever::MainLoop()
 {
 #ifndef _STANDALONE
@@ -2385,23 +2420,9 @@ void KSwordOnLineSever::MainLoop()
 //	m_pServer->PreparePackSink();	空函数，没有调用的必要
 	m_pCoreServerShell->Breathe();
 
-// 定期向数据库查询排名情况
-#define	defMAX_STAT_QUERY_TIME		18000 * 20		// 5小时查询
-
-	if ( 0 == ( m_nGameLoop % defMAX_STAT_QUERY_TIME ) )
-	{
-		if (m_pDatabaseClient)
-		{
-			TProcessData	ProcessData;
-			
-			ProcessData.nProtoId = c2s_gamestatistic;
-			ProcessData.nDataLen = 1;
-			ProcessData.ulIdentity = -1;
-			ProcessData.pDataBuffer[0] = 0;
-			m_pDatabaseClient->SendPackToServer(&ProcessData, sizeof(TProcessData));
-		}
-	}
-
+	// JX2022 rank query model: once every hour.
+	if (m_nGameLoop > 0 && (m_nGameLoop % (20 * 60 * 60)) == 0)
+		RequestGameStatistic();
 // 检查玩家是否很长时间没有发PING值了（1min）
 	int lnID = m_nGameLoop % m_nMaxPlayer;
 	int nIndex = m_pGameStatus[lnID].nPlayerIndex;
@@ -3550,6 +3571,42 @@ void KSwordOnLineSever::ProcessPlayerTongMsg(const unsigned long nPlayerIdx, con
 			memcpy(sChange.m_szName, pChange->m_szName, sizeof(pChange->m_szName));
 			if (m_pTongClient)
 				m_pTongClient->SendPackToServer((const void*)&sChange, sizeof(sChange));
+		}
+		break;
+	case enumTONG_COMMAND_ID_DEPOSIT_MONEY:
+	case enumTONG_COMMAND_ID_WITHDRAW_MONEY:
+		{
+			TONG_APPLY_MONEY_COMMAND *pMoney = (TONG_APPLY_MONEY_COMMAND*)pData;
+			if (pMoney->m_wLength + 1 != sizeof(TONG_APPLY_MONEY_COMMAND))
+				break;
+			if (!m_pTongClient)
+				break;
+			STONG_SERVER_TO_CORE_MONEY_REQUEST request;
+			memset(&request, 0, sizeof(request));
+			request.m_nPlayerIdx = nPlayerIdx;
+			request.m_dwMoney = pMoney->m_dwMoney;
+			request.m_bWithdraw = (pMoney->m_btMsgId == enumTONG_COMMAND_ID_WITHDRAW_MONEY);
+			if (!m_pCoreServerShell || !m_pCoreServerShell->GetGameData(SGDI_TONG_MONEY_REQUEST, (unsigned int)&request, 0))
+				break;
+
+			STONG_MONEY_COMMAND relayRequest;
+			memset(&relayRequest, 0, sizeof(relayRequest));
+			relayRequest.ProtocolFamily = pf_tong;
+			relayRequest.ProtocolID = request.m_bWithdraw ? enumC2S_TONG_WITHDRAW_MONEY : enumC2S_TONG_DEPOSIT_MONEY;
+			relayRequest.m_dwParam = nPlayerIdx;
+			relayRequest.m_dwTongNameID = request.m_dwTongNameID;
+			relayRequest.m_dwMoney = request.m_dwMoney;
+			memcpy(relayRequest.m_szName, request.m_szName, sizeof(relayRequest.m_szName));
+			if (m_pTongClient)
+				m_pTongClient->SendPackToServer((const void*)&relayRequest, sizeof(relayRequest));
+		}
+		break;	case enumTONG_COMMAND_ID_APPLY_RECRUIT:
+		{
+			TONG_APPLY_RECRUIT_COMMAND *pRecruit = (TONG_APPLY_RECRUIT_COMMAND*)pData;
+			if (pRecruit->m_wLength + 1 != sizeof(TONG_APPLY_RECRUIT_COMMAND))
+				break;
+			if (m_pCoreServerShell)
+				m_pCoreServerShell->GetGameData(SGDI_TONG_SET_RECRUIT, nPlayerIdx, pRecruit->m_btRecruit != 0);
 		}
 		break;
 	default:

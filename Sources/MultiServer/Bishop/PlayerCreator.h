@@ -16,7 +16,7 @@ public:
 	
 #define	MAX_PLAYERTYPE_VALUE	10
 #define	MAX_NEWPLAYER_BUFFER	5000
-#define	PLAYERCREATOR_FILE		"settings\\player\\newplayerini%02d.ini"
+#define	PLAYERCREATOR_FILE		"settings\\entity\\player_create_new_%02d.ini"
 #define REVIVALID_FILENAME		"settings\\player\\revivalid.ini"
 
 	typedef struct tagRoleGeneratorParam

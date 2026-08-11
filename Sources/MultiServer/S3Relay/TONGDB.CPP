@@ -105,6 +105,9 @@ bool CTongDB::SearchTong(char* aTongName, CTongControl& aTongControl)
 
 	TTongStruct* pTongStruct = (TTongStruct*)aBuffer;
 	aTongControl.m_nCamp = pTongStruct->nCamp;
+	aTongControl.m_dwMoney = pTongStruct->dwMoney;
+	aTongControl.m_nCredit = pTongStruct->nCredit;
+	aTongControl.m_nLevel = pTongStruct->nLevel;
 	strcpy(aTongControl.m_szName, pTongStruct->szName);
 	strcpy(aTongControl.m_szPassword, pTongStruct->szPassword);
 	strcpy(aTongControl.m_szMasterTitle, pTongStruct->szMasterTitle);

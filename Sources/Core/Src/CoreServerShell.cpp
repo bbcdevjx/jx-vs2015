@@ -632,6 +632,27 @@ int	CoreServerShell::GetGameData(unsigned int uDataId, unsigned int uParam, int 
 		
 	// 通知core发送某玩家的帮会信息
 	// nParam : player index
+	case SGDI_TONG_SET_RECRUIT:
+		if (uParam > 0 && uParam < MAX_PLAYER && Player[uParam].m_nIndex > 0) nRet = Player[uParam].m_cTong.SetRecruit(nParam != 0);
+		break;
+	case SGDI_TONG_MONEY_REQUEST:
+		{
+			STONG_SERVER_TO_CORE_MONEY_REQUEST* request = (STONG_SERVER_TO_CORE_MONEY_REQUEST*)uParam;
+			if (request && request->m_nPlayerIdx > 0 && request->m_nPlayerIdx < MAX_PLAYER && Player[request->m_nPlayerIdx].m_nIndex > 0) nRet = Player[request->m_nPlayerIdx].m_cTong.PrepareMoneyRequest(request);
+		}
+		break;
+	case SGDI_TONG_MONEY_RESULT:
+		{
+			STONG_SERVER_TO_CORE_MONEY_RESULT* result = (STONG_SERVER_TO_CORE_MONEY_RESULT*)uParam;
+			if (!result || result->m_nPlayerIdx <= 0 || result->m_nPlayerIdx >= MAX_PLAYER || Player[result->m_nPlayerIdx].m_nIndex <= 0) break;
+			if (strcmp(Npc[Player[result->m_nPlayerIdx].m_nIndex].Name, result->m_szName) != 0) break;
+			if (!result->m_bSuccess && !result->m_bWithdraw) Player[result->m_nPlayerIdx].Earn((int)result->m_dwAmount);
+			if (result->m_bSuccess && result->m_bWithdraw) Player[result->m_nPlayerIdx].Earn((int)result->m_dwAmount);
+			if (result->m_bSuccess) { int idx=PlayerSet.GetFirstPlayer(); while(idx){if(Player[idx].m_cTong.GetTongNameID()==result->m_dwTongNameID) Player[idx].m_cTong.ChangeMoney(result->m_dwBalance);idx=PlayerSet.GetNextPlayer();} }
+			nRet=TRUE;
+		}
+		break;
+
 	case SGDI_TONG_SEND_SELF_INFO:
 		{
 			if (nParam <= 0 || nParam >= MAX_PLAYER)

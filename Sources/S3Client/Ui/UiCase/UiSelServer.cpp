@@ -19,7 +19,7 @@
 #include <crtdbg.h>
 
 #define	SCHEME_INI_SELSERV				"Ñ¡·þÎñÆ÷.ini"
-#define	SERVER_LIST_FILE				"\\Settings\\ServerList.ini"
+#define	SERVER_LIST_FILE				"\\Settings\\conf_gateway.ini"
 
 KUiSelServer* KUiSelServer::m_pSelf = NULL;
 

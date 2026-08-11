@@ -1296,7 +1296,7 @@ void	KNpcAI::ProcessAIType02()
 	}
 
 	// 检测剩余生命是否符合条件，生命太少一定概率使用补血技能或逃跑
-	if (Npc[m_nIndex].m_CurrentLife * 100 / Npc[m_nIndex].m_CurrentLifeMax < pAIParam[1])
+	if ((__int64)Npc[m_nIndex].m_CurrentLife * 100 / Npc[m_nIndex].m_CurrentLifeMax < pAIParam[1])
 	{
 		if (g_RandPercent(pAIParam[2]))	// 是否使用补血技能或逃跑
 		{
@@ -1401,7 +1401,7 @@ void	KNpcAI::ProcessAIType03()
 	}
 
 	// 检测剩余生命是否符合条件，生命太少一定概率使用攻击技能或逃跑
-	if (Npc[m_nIndex].m_CurrentLife * 100 / Npc[m_nIndex].m_CurrentLifeMax < pAIParam[1])
+	if ((__int64)Npc[m_nIndex].m_CurrentLife * 100 / Npc[m_nIndex].m_CurrentLifeMax < pAIParam[1])
 	{
 		if (g_RandPercent(pAIParam[2]))	// 是否使用攻击技能或逃跑
 		{
@@ -1583,7 +1583,7 @@ void	KNpcAI::ProcessAIType05()
 		return;
 
 	// 检测剩余生命是否符合条件，生命太少一定概率使用补血技能或逃跑
-	if (Npc[m_nIndex].m_CurrentLife * 100 / Npc[m_nIndex].m_CurrentLifeMax < pAIParam[1])
+	if ((__int64)Npc[m_nIndex].m_CurrentLife * 100 / Npc[m_nIndex].m_CurrentLifeMax < pAIParam[1])
 	{
 		if (g_RandPercent(pAIParam[2]))	// 是否使用补血技能或逃跑
 		{
@@ -1682,7 +1682,7 @@ void	KNpcAI::ProcessAIType06()
 		return;
 
 	// 检测剩余生命是否符合条件，生命太少一定概率使用攻击技能或逃跑
-	if (Npc[m_nIndex].m_CurrentLife * 100 / Npc[m_nIndex].m_CurrentLifeMax < pAIParam[1])
+	if ((__int64)Npc[m_nIndex].m_CurrentLife * 100 / Npc[m_nIndex].m_CurrentLifeMax < pAIParam[1])
 	{
 		if (g_RandPercent(pAIParam[2]))	// 是否使用攻击技能或逃跑
 		{
@@ -1759,7 +1759,7 @@ void KNpcAI::ProcessAIType1()
 	if (KeepActiveRange())
 		return;
 
-	if (Npc[m_nIndex].m_CurrentLife * 100 / Npc[m_nIndex].m_CurrentLifeMax < pAIParam[0])
+	if ((__int64)Npc[m_nIndex].m_CurrentLife * 100 / Npc[m_nIndex].m_CurrentLifeMax < pAIParam[0])
 	{
 		if (g_RandPercent(pAIParam[1]))
 		{
@@ -1841,7 +1841,7 @@ void KNpcAI::ProcessAIType2()
 	if (KeepActiveRange())
 		return;
 
-	if (Npc[m_nIndex].m_CurrentLife * 100 / Npc[m_nIndex].m_CurrentLifeMax < pAIParam[0])
+	if ((__int64)Npc[m_nIndex].m_CurrentLife * 100 / Npc[m_nIndex].m_CurrentLifeMax < pAIParam[0])
 	{
 		if (g_RandPercent(pAIParam[1]))
 		{
@@ -1929,7 +1929,7 @@ void KNpcAI::ProcessAIType3()
 		return;
 	}
 	
-	if (Npc[m_nIndex].m_CurrentLife * 100 / Npc[m_nIndex].m_CurrentLifeMax < pAIParam[0])
+	if ((__int64)Npc[m_nIndex].m_CurrentLife * 100 / Npc[m_nIndex].m_CurrentLifeMax < pAIParam[0])
 	{
 		if (g_RandPercent(pAIParam[1]))
 		{
@@ -2011,7 +2011,7 @@ void KNpcAI::ProcessAIType4()
 		return;
 	}
 	
-	int nLifePercent = Npc[m_nIndex].m_CurrentLife * 100 / Npc[m_nIndex].m_CurrentLifeMax;
+	int nLifePercent = (__int64)Npc[m_nIndex].m_CurrentLife * 100 / Npc[m_nIndex].m_CurrentLifeMax;
 	if (nLifePercent < pAIParam[0])
 	{
 		if (g_RandPercent(pAIParam[1]))
@@ -2175,7 +2175,7 @@ void KNpcAI::ProcessAIType7()
 
 	int j = GetNearestNpc(relation_ally);
 
-	if (j && Npc[m_nIndex].m_CurrentLife * 100 / Npc[m_nIndex].m_CurrentLifeMax < pAIParam[0])
+	if (j && (__int64)Npc[m_nIndex].m_CurrentLife * 100 / Npc[m_nIndex].m_CurrentLifeMax < pAIParam[0])
 	{
 		if (g_RandPercent(pAIParam[1]))
 		{
@@ -2283,7 +2283,7 @@ void KNpcAI::ProcessAIType9()
 		return;
 	}
 	
-	int nLifePercent = Npc[m_nIndex].m_CurrentLife * 100 / Npc[m_nIndex].m_CurrentLifeMax;
+	int nLifePercent = (__int64)Npc[m_nIndex].m_CurrentLife * 100 / Npc[m_nIndex].m_CurrentLifeMax;
 
 	if (g_RandPercent(pAIParam[0]))
 	{
@@ -2330,7 +2330,7 @@ void KNpcAI::ProcessAIType10()
 		return;
 	}
 	
-	int nLifePercent = Npc[m_nIndex].m_CurrentLife * 100 / Npc[m_nIndex].m_CurrentLifeMax;
+	int nLifePercent = (__int64)Npc[m_nIndex].m_CurrentLife * 100 / Npc[m_nIndex].m_CurrentLifeMax;
 
 	if (nLifePercent < pAIParam[0] && g_RandPercent(pAIParam[1]))
 	{

@@ -18,7 +18,7 @@ extern iCoreShell*		g_pCoreShell;
 UiCaveMap* UiCaveMap::m_pSelf = NULL;
 
 #define		SCHEME_INI_CAVE			"小地图_山洞地图版.ini"
-#define		CAVE_MAP_INFO_FILE		"\\Settings\\MapList.ini"
+#define		CAVE_MAP_INFO_FILE		"\\Settings\\region\\map_list.ini"
 
 void MapToggleStatus();
 

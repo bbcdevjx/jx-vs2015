@@ -168,16 +168,7 @@ relationisvalid:
 
 	if (Npc[nLauncher].IsPlayer())
 	{
-		if (IsPhysical())
-		{
-			int nWeapoinSkill = Npc[nLauncher].GetCurActiveWeaponSkill();
-			if ((DWORD)nWeapoinSkill != m_nId)
-			{
-				return FALSE;
-			}
-		}
-
-		//-2±íÊ¾¼¼ÄÜ²»ÊÜµ±Ç°×°±¸µÄÏÞÖÆ,
+//-2±íÊ¾¼¼ÄÜ²»ÊÜµ±Ç°×°±¸µÄÏÞÖÆ,
 		//-1±íÊ¾¿ÕÊÖÏÞÖÆ
 		//0-99ÊÜÄ³ÖÖ½üÉí¹¥»÷ÀàµÄ×°±¸ÏÞÖÆ È¡ÖµÎª¸Ã×°±¸µÄ¾ßÌåÀà±ðºÅ
 		//100-199ÊÜÄ³ÖÖÔ¶³Ì¹¥»÷ÀàµÄ×°±¸ÏÞÖÆ È¡ÖµÎª¸Ã×°±¸µÄ¾ßÌåÀà±ðºÅ ¼Ó100
@@ -2539,9 +2530,8 @@ BOOL	KSkill::ParseString2MagicAttrib(unsigned long ulLevel, char * szMagicAttrib
 					m_nDamageAttribsNum ++;
 					break;
 				}
-				//return TRUE;
+				return TRUE;
 			}
-			return TRUE;
 			//¸ù¾ÝnValue2Öµ¾ö¶¨×´Ì¬²ÎÊý»¹ÊÇ·Ç×´Ì¬²ÎÊý
 			if (nValue2 == 0) 
 			{
@@ -2774,7 +2764,7 @@ void	KSkill::GetDesc(unsigned long ulSkillId, unsigned long ulCurLevel, char * p
 	
 	strcat(pszMsg, "\n\n");
 	
-	if (!pTempSkill->IsPhysical())
+	if (TRUE)
 	{
 		sprintf(szTemp, "§¼ng cÊp hiÖn thêi: %d", ulCurLevel);
 		strcat(pszMsg, szTemp);
@@ -2794,7 +2784,7 @@ void	KSkill::GetDesc(unsigned long ulSkillId, unsigned long ulCurLevel, char * p
 		{
 		case 1:
 			{
-				strcat(pszMsg, "Trong lóc c­ìi ngùa kh«ng thÓ thi triÓn\n");
+				strcat(pszMsg, "Trong lóc c­ìi ngùa kh«ng th?thi triÓn\n");
 			}
 			break;
 		case 2:
@@ -2807,7 +2797,7 @@ void	KSkill::GetDesc(unsigned long ulSkillId, unsigned long ulCurLevel, char * p
 		}
 	}
 
-	if (!pTempSkill->IsPhysical())
+	if (TRUE)
 	{
 		if (bGetNextLevelDesc)
 		{
@@ -2840,7 +2830,7 @@ void KSkill::GetDescAboutLevel(char * pszMsg)
 			strcat(pszMsg,szTemp);
 			break;
 		case attrib_stamina:
-			sprintf(szTemp, "Tiªu hao thÓ lùc: %d\n", nGetCost);
+			sprintf(szTemp, "Tiªu hao th?lùc: %d\n", nGetCost);
 			strcat(pszMsg,szTemp);
 			break;
 		case attrib_life:
@@ -2853,7 +2843,7 @@ void KSkill::GetDescAboutLevel(char * pszMsg)
 	int nGetAttackRadius = GetAttackRadius();
 	if (nGetAttackRadius)
 	{
-		sprintf(szTemp,"Ph¹m vi hiÖu qu¶: %d\n", nGetAttackRadius);
+		sprintf(szTemp,"Ph¹m vi hiÖu qu? %d\n", nGetAttackRadius);
 		strcat(pszMsg,szTemp);
 	}
 

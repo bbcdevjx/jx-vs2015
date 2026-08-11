@@ -40,15 +40,15 @@ class KIniFile;
 
 enum ITEMGENRE
 {
-	item_equip = 0,			// trang bÞ trªn ng­êi
+	item_equip = 0,			// trang b?trªn ng­êi
 	item_medicine,			// 1 thuèc men
 	item_mine,				// kh«ng xµi
 	item_materials,			// kh«ng xµi
-	item_task,				// 4 vËt phÈm nhiÖm vô
-	item_townportal,		// 5 thæ ®Þa phï
-	item_mascript,			// 6 vËt phÈm cã ma thuËt hoÆc script
-	item_broken,			// 7 trang bÞ h­
-	item_number,			// sè l­îng lo¹i
+	item_task,				// 4 vËt phÈm nhiÖm v?
+	item_townportal,		// 5 th?®Þa ph?
+	item_mascript,			// 6 vËt phÈm c?ma thuËt hoÆc script
+	item_broken,			// 7 trang b?h?
+	item_number,			// s?l­îng lo¹i
 	item_gengold=16,		// dïng ®Ó add item hoµng kim
 	item_genplatina,		// dïng ®Ó add item b¹ch kim
 	item_genpurple,			// dïng ®Ó add item tÝm
@@ -86,21 +86,21 @@ enum MEDICINEDETAILTYPE
 
 typedef struct
 {
-	int		nItemGenre;				// KiÓu item (th«ng sè 1)
-	int		nDetailType;			// th«ng sè 2
-	int		nParticularType;		// th«ng sè 3
+	int		nItemGenre;				// KiÓu item (th«ng s?1)
+	int		nDetailType;			// th«ng s?2
+	int		nParticularType;		// th«ng s?3
 	int		nObjIdx;				// ID trong file obj
-	int		nStack;					// sè xÕp chång
-	int		nMaxStack;				// sè xÕp chång tèi ®a
-	int		nWidth;					// réng «
-	int		nHeight;				// cao «
-	int		nPrice;					// gi¸
+	int		nStack;					// s?xÕp chång
+	int		nMaxStack;				// s?xÕp chång tèi ®a
+	int		nWidth;					// réng ?
+	int		nHeight;				// cao ?
+	int		nPrice;					// gi?
 	int		nLevel;					// cÊp
-	int		nSeries;				// ngò hµnh
+	int		nSeries;				// ng?hµnh
 	char	szItemName[80];			// tªn
 #ifndef _SERVER
 	char	szImageName[80];		// h×nh spr
-	char	szIntro[240];			// ®o¹n m« t¶
+	char	szIntro[240];			// ®o¹n m?t?
 #endif
 } KItemCommonAttrib;
 
@@ -117,18 +117,18 @@ private:
 	KItemCommonAttrib	m_CommonAttrib;			// thuéc tÝnh chung
 
 public:
-	KItemNormalAttrib	m_aryBaseAttrib[7];		// thuéc tÝnh c¬ b¶n
+	KItemNormalAttrib	m_aryBaseAttrib[7];		// thuéc tÝnh c?b¶n
 	KItemNormalAttrib	m_aryRequireAttrib[6];	// thuéc tÝnh yªu cÇu
 	KItemNormalAttrib	m_aryMagicAttrib[6];	// thuéc tÝnh ma ph¸p
-	KItemNormalAttrib	m_aryMagicAttribEx[2];	// thuéc tÝnh ma ph¸p më réng
+	KItemNormalAttrib	m_aryMagicAttribEx[2];	// thuéc tÝnh ma ph¸p m?réng
 private:
 	UINT	m_dwID;								// ID t¹o ra t¨ng dÇn
 	int		m_nCurrentDur;						// ®é bÒn hiÖn t¹i
-	int		m_nExType;					//ph©n lo¹i më réng: th­êng, hoµng kim, tÝm, . . .
-	int		m_nGenParam;					//th«ng sè khi t¹o (ID hoµng kim)
-	int		m_nGroupId;					//sè bé hoµng kim, hoÆc skillid cña item magicscrippt
-	int		m_nExGroupId;				//sè bé hoµng kim më réng
-	int		m_nGroupSerial;				//sè thø tù tõng mãn trong 1 bé
+	int		m_nExType;					//ph©n lo¹i m?réng: th­êng, hoµng kim, tÝm, . . .
+	int		m_nGenParam;					//th«ng s?khi t¹o (ID hoµng kim)
+	int		m_nGroupId;					//s?b?hoµng kim, hoÆc skillid cña item magicscrippt
+	int		m_nExGroupId;				//s?b?hoµng kim m?réng
+	int		m_nGroupSerial;				//s?th?t?tõng mãn trong 1 b?
 #ifdef _SERVER
 	BOOL	m_bCanSell;
 #endif
@@ -154,6 +154,7 @@ public:
 	int		GetGenre() const { return m_CommonAttrib.nItemGenre; };
 	int		GetSeries() const { return m_CommonAttrib.nSeries; };
 	int		GetParticular() const { return m_CommonAttrib.nParticularType; };
+	int		GetParticularMelee();
 	int		GetLevel() const { return m_CommonAttrib.nLevel; };
 	int SetLevel(int nLevel) { m_CommonAttrib.nLevel = nLevel; return m_CommonAttrib.nLevel; };
 	void	SetSeries(int nSeries) { m_CommonAttrib.nSeries = nSeries; };

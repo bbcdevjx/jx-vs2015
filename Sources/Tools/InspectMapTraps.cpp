@@ -30,7 +30,7 @@ int main()
     KIniFile ini;
     char mapPath[260] = {0};
     g_SetFilePath("\\settings");
-    if (!ini.Load("MapList.ini") ||
+    if (!ini.Load("region\\map_list.ini") ||
         !ini.GetString("List", "53", "", mapPath, sizeof(mapPath))) return 3;
 
     char worldFile[300];

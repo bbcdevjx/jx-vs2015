@@ -593,6 +593,32 @@ void	KPlayerChat::ServerSendChat(int nPlayerIdx, BYTE* pProtocol)
 					break;
 				m_nTimer = 0;
 
+				DWORD dwTongNameID = Player[nPlayerIdx].m_cTong.GetTongNameID();
+				if (!dwTongNameID)
+					return;
+
+				PLAYER_SEND_CHAT_SYNC sChat;
+				sChat.ProtocolType = s2c_playersendchat;
+				sChat.m_btCurChannel = pChat->m_btCurChannel;
+				sChat.m_btNameLen = strlen(Npc[Player[nPlayerIdx].m_nIndex].Name);
+				sChat.m_btChatPrefixLen = pChat->m_btChatPrefixLen;
+				sChat.m_wSentenceLen = pChat->m_wSentenceLen;
+				sChat.m_dwSourceID = Npc[Player[nPlayerIdx].m_nIndex].m_dwID;
+				sChat.m_wLength = sizeof(PLAYER_SEND_CHAT_SYNC) - 1 - sizeof(sChat.m_szSentence) + sChat.m_btNameLen + sChat.m_btChatPrefixLen + sChat.m_wSentenceLen;
+				memcpy(&sChat.m_szSentence[0], Npc[Player[nPlayerIdx].m_nIndex].Name, sChat.m_btNameLen);
+				memcpy(&sChat.m_szSentence[sChat.m_btNameLen], &pChat->m_szSentence[0], sChat.m_btChatPrefixLen);
+				memcpy(&sChat.m_szSentence[sChat.m_btNameLen + sChat.m_btChatPrefixLen], &pChat->m_szSentence[pChat->m_btChatPrefixLen], sChat.m_wSentenceLen);
+
+				int nTargetIdx = PlayerSet.GetFirstPlayer();
+				while (nTargetIdx)
+				{
+					if (Player[nTargetIdx].m_cTong.GetTongNameID() == dwTongNameID &&
+						(Player[nTargetIdx].m_cChat.m_dwTakeChannel & g_dwChannelOr[CHAT_CUR_CHANNEL_TONG]))
+					{
+						g_pServer->PackDataToClient(Player[nTargetIdx].m_nNetConnectIdx, (BYTE*)&sChat, sChat.m_wLength + 1);
+					}
+					nTargetIdx = PlayerSet.GetNextPlayer();
+				}
 			}
 			break;
 		case CHAT_CUR_CHANNEL_SCREENSINGLE:
@@ -687,7 +713,7 @@ void	KPlayerChat::GetChat(PLAYER_SEND_CHAT_SYNC *pChat)
 	{
 	case CHAT_CUR_CHANNEL_ALL:
 		{
-			if (pChat->m_dwSourceID == Player[CLIENT_PLAYER_INDEX].m_dwID)
+			if (pChat->m_dwSourceID == Npc[Player[CLIENT_PLAYER_INDEX].m_nIndex].m_dwID)
 				return;
 			memcpy(Param.cChatPrefix, &pChat->m_szSentence[pChat->m_btNameLen], pChat->m_btChatPrefixLen);
 			memcpy(Param.szName, &pChat->m_szSentence[0], pChat->m_btNameLen);
@@ -712,7 +738,7 @@ void	KPlayerChat::GetChat(PLAYER_SEND_CHAT_SYNC *pChat)
 		break;
 	case CHAT_CUR_CHANNEL_SINGLE:
 		{
-			if (pChat->m_dwSourceID == Player[CLIENT_PLAYER_INDEX].m_dwID)
+			if (pChat->m_dwSourceID == Npc[Player[CLIENT_PLAYER_INDEX].m_nIndex].m_dwID)
 				return;
 			CChatFriend	*pFriend = NULL;
 			pFriend = this->GetFriendNode(pChat->m_dwSourceID);
@@ -800,7 +826,7 @@ void	KPlayerChat::GetChat(PLAYER_SEND_CHAT_SYNC *pChat)
 		break;
 	case CHAT_CUR_CHANNEL_TONG:
 		{
-			if (pChat->m_dwSourceID == Player[CLIENT_PLAYER_INDEX].m_dwID)
+			if (pChat->m_dwSourceID == Npc[Player[CLIENT_PLAYER_INDEX].m_nIndex].m_dwID)
 				return;
 			memcpy(Param.cChatPrefix, &pChat->m_szSentence[pChat->m_btNameLen], pChat->m_btChatPrefixLen);
 			memcpy(Param.szName, &pChat->m_szSentence[0], pChat->m_btNameLen);
@@ -1029,7 +1055,7 @@ void	KPlayerChat::LoadTakeChannelInfo(char *lpszName)
 	g_UnitePathAndName(szPath, CHAT_CHANNEL_INFO_FILE_NAME, szBuf);
 	if (!cChannel.Load(szBuf))
 	{
-		m_dwTakeChannel |= g_dwChannelOr[CHAT_CUR_CHANNEL_TEAM] | g_dwChannelOr[CHAT_CUR_CHANNEL_FACTION] | g_dwChannelOr[CHAT_CUR_CHANNEL_SCREENSINGLE];
+		m_dwTakeChannel |= g_dwChannelOr[CHAT_CUR_CHANNEL_TEAM] | g_dwChannelOr[CHAT_CUR_CHANNEL_FACTION] | g_dwChannelOr[CHAT_CUR_CHANNEL_TONG] | g_dwChannelOr[CHAT_CUR_CHANNEL_SCREENSINGLE];
 		this->SaveTakeChannelInfo(lpszName);
 		this->SendTakeChannel();
 		return;
@@ -2158,8 +2184,10 @@ int		KPlayerChat::SendSelectChannelList(KUiChatChannel *pList, int nCount)
 				// 一般人不能使用这个频道
 				nTempCount++;
 				break;
+			
 			case CHAT_CUR_CHANNEL_TONG:
-				// 帮派目前还没有
+				if (Player[CLIENT_PLAYER_INDEX].m_cTong.CheckIn())
+					nTempCount++;
 				break;
 			case CHAT_CUR_CHANNEL_SCREENSINGLE:
 				// 这个频道不是用来选择的，通过别的操作自动选定
@@ -2228,7 +2256,15 @@ int		KPlayerChat::SendSelectChannelList(KUiChatChannel *pList, int nCount)
 			}
 			break;
 		case CHAT_CUR_CHANNEL_TONG:
-			// 帮派目前还没有
+			if (Player[CLIENT_PLAYER_INDEX].m_cTong.CheckIn())
+			{
+				pList[nTempCount].nChannelNo = CHAT_CUR_CHANNEL_TONG;
+				pList[nTempCount].uChannelId = Player[CLIENT_PLAYER_INDEX].m_cTong.GetTongNameID();
+				pList[nTempCount].nChannelIndex = 0;
+				memset(pList[nTempCount].cTitle, 0, sizeof(pList[nTempCount].cTitle));
+				strcpy(pList[nTempCount].cTitle, CHAT_CHANNEL_NAME_TONG);
+				nTempCount++;
+			}
 			break;
 		case CHAT_CUR_CHANNEL_SCREENSINGLE:
 			// 这个频道不是用来选择的，通过别的操作自动选定
@@ -2280,8 +2316,9 @@ int		KPlayerChat::SendTakeChannelList(KUiChatChannel *pList, int nCount)
 				// 这个频道如果订阅了，只有在门派中才起作用
 				nTempCount++;
 				break;
+			
 			case CHAT_CUR_CHANNEL_TONG:
-				// 帮派目前还没有
+				nTempCount++;
 				break;
 			case CHAT_CUR_CHANNEL_SCREENSINGLE:
 				// 这个频道如果不订阅，别人就无法直接在屏幕内联系你
@@ -2328,8 +2365,14 @@ int		KPlayerChat::SendTakeChannelList(KUiChatChannel *pList, int nCount)
 			strcpy(pList[nTempCount].cTitle, CHAT_TAKE_CHANNEL_NAME_FACTION);
 			nTempCount++;
 			break;
+		
 		case CHAT_CUR_CHANNEL_TONG:
-			// 帮派目前还没有
+			pList[nTempCount].nChannelNo = CHAT_CUR_CHANNEL_TONG;
+			pList[nTempCount].uChannelId = Player[CLIENT_PLAYER_INDEX].m_cTong.GetTongNameID();
+			pList[nTempCount].nChannelIndex = this->CheckTakeChannel(i);
+			memset(pList[nTempCount].cTitle, 0, sizeof(pList[nTempCount].cTitle));
+			strcpy(pList[nTempCount].cTitle, CHAT_TAKE_CHANNEL_NAME_TONG);
+			nTempCount++;
 			break;
 		case CHAT_CUR_CHANNEL_SCREENSINGLE:
 			pList[nTempCount].nChannelNo = i;

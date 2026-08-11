@@ -56,6 +56,7 @@ public:
 	BOOL			AcceptMaster(STONG_ACCEPT_MASTER_COMMAND *pAccept);
 
 	BOOL			GetLoginData(STONG_GET_LOGIN_DATA_COMMAND *pLogin, STONG_LOGIN_DATA_SYNC *pSync);
+	BOOL			ChangeMoney(STONG_MONEY_COMMAND *pMoney, STONG_MONEY_RESULT *pResult);
 public:
 };
 

@@ -72,7 +72,7 @@ private:
 	KWndText32	m_LeftDamage, m_RightDamage, m_Attack, m_Defence, m_MoveSpeed, m_AttackSpeed;
 	KWndText32	m_PhyDef, m_CoolDef, m_LightDef, m_FireDef, m_PoisonDef;
 	KWndText32	m_Level, m_StatusDesc;
-	KWndText32	m_Luck, m_Prestige, m_WorldRank, m_PKValue;
+	KWndText32	m_Luck, m_Prestige, m_TransLife, m_WorldRank, m_PKValue;
 	KWndButton	m_BtnLock, m_BtnBind, m_BtnUnBind;
 	KWndText80	m_ClickHere;
 	KWndButton	m_OpenItemPad;

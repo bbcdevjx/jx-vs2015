@@ -35,7 +35,7 @@ typedef struct
 	BYTE	ProtocolType;
 	BYTE	WalkSpeed;
 	BYTE	RunSpeed;
-	BYTE	AttackSpeed;
+	WORD	AttackSpeed;
 	BYTE	CastSpeed;
 	short	HelmType;
 	short	ArmorType;
@@ -43,6 +43,7 @@ typedef struct
 	short	MantleType;
 	BYTE	HorseType;
 	BYTE	RankID;
+	BYTE	Translife;
 	DWORD	ID;
 	BYTE	m_btSomeFlag;	// 0x01 PKFlag 0x02 FightModeFlag 0x04 SleepModeFlag
 //	BYTE	m_btPKFlag;
@@ -59,7 +60,7 @@ typedef struct
 	int		ManaMax;
 	BYTE	WalkSpeed;			// 是否只要传一份就够了（只改变一个或是同时改变）
 	BYTE	RunSpeed;
-	BYTE	AttackSpeed;
+	WORD	AttackSpeed;
 	BYTE	CastSpeed;			// 是否考虑不改变施法速度，或施法速度等于攻击速度
 	short	HelmType;
 	short	ArmorType;
@@ -67,6 +68,7 @@ typedef struct
 	short	MantleType;
 	BYTE	HorseType;
 	BYTE	RankID;
+	BYTE	Translife;
 	BYTE	m_btSomeFlag;	// 0x01 PKFlag 0x02 FightModeFlag 0x04 SleepModeFlag 0x08 TongOpenFlag
 //	BYTE	FightMode;
 //	BYTE	m_btPKFlag;
@@ -241,7 +243,7 @@ typedef struct
 typedef struct
 {
 	BYTE	ProtocolType;		// 协议名称
-	int		m_nExp;				// 当前经验
+	__int64		m_nExp;				// 当前经验
 } PLAYER_EXP_SYNC;				// 玩家同步经验
 
 typedef struct
@@ -480,7 +482,7 @@ typedef struct
 {
 	BYTE	ProtocolType;		// 协议名称
 	BYTE	m_btLevel;			// 当前等级
-	int		m_nExp;				// 当前经验
+	__int64		m_nExp;				// 当前经验
 	int		m_nAttributePoint;	// 剩余属性点
 	int		m_nSkillPoint;		// 剩余技能点
 	int		m_nBaseLifeMax;		// 当前最大生命值
@@ -658,20 +660,21 @@ typedef struct
 	BYTE			m_btSex;			// 性别
 	BYTE			m_btKind;			// Npc的类型
 	BYTE			m_btSeries;			// Npc的五行系
-	WORD			m_wLifeMax;			// Npc的最大生命
-	WORD			m_wStaminaMax;		// Npc的最大体力
-	WORD			m_wManaMax;			// Npc的最大内力
+	int				m_wLifeMax;			// Npc的最大生命
+	int				m_wStaminaMax;		// Npc的最大体力
+	int				m_wManaMax;			// Npc的最大内力
 	int				m_HeadImage;
 	// player 部分
-	WORD			m_wAttributePoint;	// 未分配属性点
+	int				m_wAttributePoint;	// 未分配属性点
 	WORD			m_wSkillPoint;		// 未分配技能点
-	WORD			m_wStrength;		// 玩家的基本力量（决定基本伤害）
-	WORD			m_wDexterity;		// 玩家的基本敏捷（决定命中、体力）
-	WORD			m_wVitality;		// 玩家的基本活力（决定生命、体力）
-	WORD			m_wEngergy;			// 玩家的基本精力（决定内力）
+	int				m_wStrength;		// 玩家的基本力量（决定基本伤害）
+	int				m_wDexterity;		// 玩家的基本敏捷（决定命中、体力）
+	int				m_wVitality;		// 玩家的基本活力（决定生命、体力）
+	int				m_wEngergy;			// 玩家的基本精力（决定内力）
 	WORD			m_wLucky;			// 玩家的基本幸运值
-	int				m_nExp;				// 当前经验值(当前等级在npc身上)
-	DWORD			m_dwLeadExp;		// 统率力经验值
+	__int64				m_nExp;				// 当前经验值(当前等级在npc身上)
+		BYTE			m_byTranslife;
+DWORD			m_dwLeadExp;		// 统率力经验值
 
 	// 门派
 	BYTE			m_btCurFaction;		// 当前门派
@@ -1761,11 +1764,33 @@ typedef struct
 	int		m_nCamp;
 	int		m_nFigure;
 	int		m_nPos;
+	DWORD	m_dwMoney;
+	int		m_nLevel;
 	char	m_szTongName[32];
 	char	m_szTitle[32];
 	char	m_szMaster[32];
 	char	m_szName[32];
 } STONG_SERVER_TO_CORE_LOGIN;
+
+typedef struct
+{
+	int m_nPlayerIdx;
+	DWORD m_dwTongNameID;
+	DWORD m_dwMoney;
+	BOOL m_bWithdraw;
+	char m_szName[32];
+} STONG_SERVER_TO_CORE_MONEY_REQUEST;
+
+typedef struct
+{
+	int m_nPlayerIdx;
+	DWORD m_dwTongNameID;
+	DWORD m_dwAmount;
+	DWORD m_dwBalance;
+	BOOL m_bWithdraw;
+	BOOL m_bSuccess;
+	char m_szName[32];
+} STONG_SERVER_TO_CORE_MONEY_RESULT;
 
 // 玩家申请建立帮会 用扩展协议
 typedef struct
@@ -1785,6 +1810,9 @@ typedef struct
 	BYTE	m_btMsgId;
 	DWORD	m_dwNpcID;
 } TONG_APPLY_ADD_COMMAND;
+
+typedef struct { BYTE ProtocolType; WORD m_wLength; BYTE m_btMsgId; BYTE m_btRecruit; } TONG_APPLY_RECRUIT_COMMAND;
+typedef struct { BYTE ProtocolType; WORD m_wLength; BYTE m_btMsgId; DWORD m_dwMoney; } TONG_APPLY_MONEY_COMMAND;
 
 // 玩家申请加入帮会 用扩展协议
 typedef struct
@@ -1834,6 +1862,8 @@ typedef struct
 	WORD	m_wLength;
 	BYTE	m_btMsgId;
 	BYTE	m_btCamp;
+	DWORD	m_dwMoney;
+	BYTE	m_btLevel;
 	char	m_szTongName[32];
 	char	m_szTitle[32];
 	char	m_szMaster[32];
@@ -1951,6 +1981,8 @@ typedef struct
 	BYTE	m_btJoinFlag;
 	BYTE	m_btFigure;
 	BYTE	m_btCamp;
+	DWORD	m_dwMoney;
+	BYTE	m_btLevel;
 	char	m_szTongName[32];
 	char	m_szTitle[32];
 	char	m_szMaster[32];

@@ -361,7 +361,7 @@ bool KScenePlaceC::OpenPlace(int nPlaceIndex)
 	char		Buff[128];
 
 //	g_SetFilePath(ALL_PALCE_ROOT_FOLDER);
-	if (Ini.Load("\\settings\\MapList.ini") == FALSE)
+	if (Ini.Load("\\settings\\region\\map_list.ini") == FALSE)
 		return false;
 
 	itoa(nPlaceIndex, Index, 10);

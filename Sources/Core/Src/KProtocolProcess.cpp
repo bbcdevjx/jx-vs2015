@@ -1868,6 +1868,7 @@ void KProtocolProcess::SyncPlayer(BYTE* pMsg)
 	Npc[nIdx].m_CurrentWalkSpeed	= pPlaySync->WalkSpeed;
 	Npc[nIdx].m_Kind				= kind_player;
 	Npc[nIdx].m_btRankId			= pPlaySync->RankID;
+	Npc[nIdx].m_byTranslife			= pPlaySync->Translife;
 	Npc[nIdx].m_HorseType			= (char)pPlaySync->HorseType;
 	if (Npc[nIdx].m_HorseType < 0)
 		Npc[nIdx].m_bRideHorse = FALSE;
@@ -1905,6 +1906,7 @@ void KProtocolProcess::SyncPlayerMin(BYTE* pMsg)
 	Npc[nIdx].m_MantleType			= pPlaySync->MantleType;
 	Npc[nIdx].m_Kind				= kind_player;
 	Npc[nIdx].m_btRankId			= pPlaySync->RankID;
+	Npc[nIdx].m_byTranslife			= pPlaySync->Translife;
 	Npc[nIdx].m_HorseType			= (char)pPlaySync->HorseType;
 	if (Npc[nIdx].m_HorseType < 0)
 		Npc[nIdx].m_bRideHorse = FALSE;
@@ -2132,7 +2134,7 @@ void	KProtocolProcess::s2cUpdateNpcState(BYTE * pMsg)
 	NPC_SYNC_STATEINFO * pInfo = (NPC_SYNC_STATEINFO*) pMsg;
 	int nIndex = NpcSet.SearchID(pInfo->m_ID);	
 	
-	if (nIndex > 0 && !Npc[nIndex].IsPlayer() && Npc[nIndex].m_RegionIndex >= 0)
+	if (nIndex > 0 && Npc[nIndex].m_RegionIndex >= 0)
 	{
 		Npc[nIndex].SetNpcState(pInfo->m_btStateInfo);
 	}

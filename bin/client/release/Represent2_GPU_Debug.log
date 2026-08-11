@@ -1,0 +1,15 @@
+[22:26:32] Represent2 GPU presenter: FALLBACK to legacy DirectDraw Blt - reason: no window / minimized
+[22:26:33] Represent2 GPU presenter: ACTIVE (D3D9)
+[02:27:00] Represent2 GPU presenter: FALLBACK to legacy DirectDraw Blt - reason: no window / minimized
+[04:07:58] Represent2 GPU presenter: FALLBACK to legacy DirectDraw Blt - reason: DrawAndPresent failed
+[04:07:58] Represent2 GPU presenter: FALLBACK to legacy DirectDraw Blt - reason: device lost
+[04:08:03] Represent2 GPU presenter: ACTIVE (D3D9)
+[04:08:04] Represent2 GPU presenter: ACTIVE (D3D9)
+[04:08:33] Represent2 GPU presenter: FALLBACK to legacy DirectDraw Blt - reason: no window / minimized
+[04:08:37] Represent2 GPU presenter: FALLBACK to legacy DirectDraw Blt - reason: no window / minimized
+[04:31:19] Represent2 GPU presenter: FALLBACK to legacy DirectDraw Blt - reason: DrawAndPresent failed
+[04:31:25] Represent2 GPU presenter: ACTIVE (D3D9)
+[05:35:59] Represent2 GPU presenter: FALLBACK to legacy DirectDraw Blt - reason: no window / minimized
+[05:36:08] Represent2 GPU presenter: FALLBACK to legacy DirectDraw Blt - reason: no window / minimized
+[05:36:14] Represent2 GPU presenter: ACTIVE (D3D9)
+[05:36:26] Represent2 GPU presenter: ACTIVE (D3D9)

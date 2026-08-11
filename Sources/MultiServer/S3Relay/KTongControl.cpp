@@ -1255,6 +1255,8 @@ BOOL	CTongControl::GetLoginData(STONG_GET_LOGIN_DATA_COMMAND *pLogin, STONG_LOGI
 		return FALSE;
 
 	pSync->m_btCamp		= this->m_nCamp;
+	pSync->m_dwMoney		= this->m_dwMoney;
+	pSync->m_btLevel		= (BYTE)this->m_nLevel;
 	strcpy(pSync->m_szTongName, this->m_szName);
 	strcpy(pSync->m_szMaster, this->m_szMasterName);
 	strcpy(pSync->m_szName, pLogin->m_szName);
@@ -1379,3 +1381,43 @@ BOOL	CTongControl::SearchOne(char *lpszName, STONG_ONE_LEADER_INFO *pInfo)
 
 
 
+
+BOOL CTongControl::ChangeMoney(STONG_MONEY_COMMAND *pMoney, STONG_MONEY_RESULT *pResult)
+{
+	if (!pMoney || !pResult || pMoney->m_dwTongNameID != m_dwNameID)
+		return FALSE;
+	if (pMoney->m_dwMoney == 0 || pMoney->m_dwMoney > 0x7fffffff)
+		return FALSE;
+
+	pResult->ProtocolFamily = pf_tong;
+	pResult->ProtocolID = enumS2C_TONG_MONEY_RESULT;
+	pResult->m_dwParam = pMoney->m_dwParam;
+	pResult->m_dwTongNameID = m_dwNameID;
+	pResult->m_dwAmount = pMoney->m_dwMoney;
+	pResult->m_dwBalance = m_dwMoney;
+	pResult->m_btOperation = (pMoney->ProtocolID == enumC2S_TONG_WITHDRAW_MONEY);
+	pResult->m_btSuccess = FALSE;
+	memcpy(pResult->m_szName, pMoney->m_szName, sizeof(pResult->m_szName));
+	pResult->m_szName[sizeof(pResult->m_szName) - 1] = 0;
+
+	if (pMoney->ProtocolID == enumC2S_TONG_DEPOSIT_MONEY)
+	{
+		if (m_dwMoney > 0xffffffff - pMoney->m_dwMoney)
+			return FALSE;
+		m_dwMoney += pMoney->m_dwMoney;
+	}
+	else if (pMoney->ProtocolID == enumC2S_TONG_WITHDRAW_MONEY)
+	{
+		if (g_String2Id(pMoney->m_szName) != m_dwMasterID)
+			return FALSE;
+		if (m_dwMoney < pMoney->m_dwMoney)
+			return FALSE;
+		m_dwMoney -= pMoney->m_dwMoney;
+	}
+	else
+	{
+		return FALSE;
+	}
+	pResult->m_dwBalance = m_dwMoney;
+	return TRUE;
+}

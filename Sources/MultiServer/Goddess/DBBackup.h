@@ -24,9 +24,10 @@ public:
 		char Name[20];
 		//char Account[32];
 		int Level;
+		int Translife;
 		int Money;
 		int Sect;			//门派
-		int FightExp;
+		__int64 FightExp;
 		int KillNum;
 		BYTE Sort;
 	};
@@ -76,7 +77,7 @@ public:
 	bool IsWorking();					//线程是否在工作
 	bool IsBackuping();				//备份是否在工作
 	bool ManualBackup();				//手工备份
-	void SaveStatInfo();			//把游戏世界等级排名写到指定玩家角色中
+	static void SaveStatInfo();			//把游戏世界等级排名写到指定玩家角色中
 };
 
 #endif // !defined(DBBACKUP_H)

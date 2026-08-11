@@ -1111,6 +1111,32 @@ int KItem::GetTotalMagicLevel()
 	return nRet;
 }
 
+int KItem::GetParticularMelee()
+{
+	int nParticularTypeMellee = m_CommonAttrib.nParticularType;
+	if (m_CommonAttrib.nObjIdx == 9)
+		nParticularTypeMellee = 0;
+	else if (m_CommonAttrib.nObjIdx == 10)
+		nParticularTypeMellee = 1;
+	else if (m_CommonAttrib.nObjIdx == 11)
+		nParticularTypeMellee = 2;
+	else if (m_CommonAttrib.nObjIdx == 12)
+		nParticularTypeMellee = 3;
+	else if (m_CommonAttrib.nObjIdx == 13)
+		nParticularTypeMellee = 4;
+	else if (m_CommonAttrib.nObjIdx == 14)
+		nParticularTypeMellee = 5;
+	else if (m_CommonAttrib.nDetailType == 1)
+	{
+		if (nParticularTypeMellee == 3)
+			nParticularTypeMellee = 0;
+		else if (nParticularTypeMellee == 4)
+			nParticularTypeMellee = 1;
+		else if (nParticularTypeMellee == 5)
+			nParticularTypeMellee = 2;
+	}
+	return nParticularTypeMellee;
+}
 int KItem::GetRepairPrice()
 {
 	if (ItemSet.m_sRepairParam.nMagicScale == 0)

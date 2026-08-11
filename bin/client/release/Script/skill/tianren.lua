@@ -3,6 +3,7 @@
 --¾ßÌå·½·¨£º
 --¸ù¾Ý1¼¶ÊìÁ·¶È£¬Éý¼¶¼ÓËÙ¶È£¬¼¶Êý£¬ÖØ¸´ÉËº¦´ÎÊý£¬·¶Î§£¬¼ÆËã³öÏàÓ¦µÈ¼¶ÊìÁ·¶È
 -- SkillExp(i) = Exp1*a^(i-1)*time*range
+EXP_PER = 14
 function SkillExpFunc(Exp0,a,Level,Time,Range)
 	return floor(Exp0*(a^(Level-1))*Time*Range/2)
 end
@@ -10,7 +11,7 @@ end
 
 SKILLS={
 	--ÌìÈÌ
-	canyang_ruxue={ --²ÐÑôÈçÑª
+	canyang_ruxue={ --Tan Duong Nhu Huyet
 		seriesdamage_p={{{1,1},{20,10}}},
 		physicsenhance_p={{{1,5},{20,55}}},
 		firedamage_v={
@@ -33,23 +34,23 @@ SKILLS={
 		skill_attackradius={{{1,320},{20,384}}},
 		skill_cost_v={{{1,8},{20,8}}}
 	},
-	tianren_daofa={ --ÌìÈÌµ¶·¨
+	tianren_daofa={ --Thien Nhan Dao phap
 		addfiremagic_v={{{1,15},{20,215}},{{1,-1},{2,-1}}}
 	},
-	tianren_maofa={ --ÌìÈÌÃ¬·¨
+	tianren_maofa={ --Thien Nhan mau phap
 		addphysicsdamage_p={{{1,15},{20,215}},{{1,-1},{2,-1}},{{1,3},{2,3}}},
 		attackratingenhance_p={{{1,35},{20,272}},{{1,-1},{2,-1}}},
 		deadlystrikeenhance_p={{{1,6},{20,35}},{{1,-1},{2,-1}}}
 	},
-	huolian_fenhua={ --»ðÁ«·Ù»ª
+	huolian_fenhua={ --Hoa lien Phan Hoa
 		meleedamagereturn_p={{{1,-5},{20,-35}},{{1,18*40},{20,18*120}}},
 		skill_cost_v={{{1,12},{20,12}}}
 	},
-	huanying_feihu={ --»ÃÓ°·Éºü
+	huanying_feihu={ --Ao Anh Phi ho
 		attackratingenhance_p={{{1,-15},{20,-132}},{{1,18*40},{20,18*120}}},
 		skill_cost_v={{{1,20},{20,20}}}
 	},
-	tuishan_tianhai={ --ÍÆÉ½Ìîº£
+	tuishan_tianhai={ --Thoi Son dien Hai
 		seriesdamage_p={{{1,5},{20,30}}},
 		firedamage_v={
 			[1]={{1,5},{20,45}},
@@ -65,11 +66,11 @@ SKILLS={
 		},
 		skill_cost_v={{{1,32},{20,50}}}
 	},
-	feihong_wuji={ --·ÉºèÎÞ¼£
+	feihong_wuji={ --Phi Hong vo tich
 		adddefense_v={{{1,-150},{20,-1100}},{{1,18*40},{20,18*120}}},
 		skill_cost_v={{{1,25},{20,25}}}
 	},
-	liehuo_qingtian={ --ÁÒ»ðÇéÌì
+	liehuo_qingtian={ --Liet Hoa tinh thien
 		seriesdamage_p={{{1,5},{20,30}}},
 		physicsenhance_p={{{1,15},{20,75}}},
 		firedamage_v={
@@ -88,7 +89,7 @@ SKILLS={
 		skill_attackradius={{{1,384},{20,448}}},
 		skill_cost_v={{{1,25},{20,25}}}
 	},
-	toutian_huanri={ --ÍµÌì»»ÈÕ
+	toutian_huanri={ --Thau thien hoan nhat
 		seriesdamage_p={{{1,10},{20,50},{21,52}}},
 		physicsenhance_p={{{1,25},{20,231}}},
 		deadlystrike_p={{{1,4},{20,55}}},
@@ -111,11 +112,11 @@ SKILLS={
 		skill_attackradius={{{1,78},{20,78}}},
 		skill_cost_v={{{1,12},{20,20}}}
 	},
-	limo_duopo={ --À÷Ä§¶áÆÇ
+	limo_duopo={ --Lich Ma doat hon
 		addphysicsdamage_p={{{1,-25},{20,-215}},{{1,18*40},{20,18*120}},{{1,6},{20,6}}},
 		skill_cost_v={{{1,30},{20,30}}}
 	},
-	tanzhi_lieyan={ --µ¯Ö¸ÁÒÑæ
+	tanzhi_lieyan={ --Don chi liet diem
 		firedamage_v={
 			[1]={{1,30},{20,225}},
 			[3]={{1,30},{20,225}}
@@ -137,10 +138,10 @@ SKILLS={
 		skill_attackradius={{{1,320},{20,384}}},
 		skill_cost_v={{{1,20},{20,30}}}
 	},
-	wuxing_zhen={ --ÎåÐÐÕó
+	wuxing_zhen={ --Ngu hanh tran, khong su dung
 		adddefense_v={{{1,75},{20,550}},{{1,18},{20,18}}},
 	},
-	moyan_qisha={ --Ä§Ñ×ÆßÉ±
+	moyan_qisha={ --Ma Diem that sat
 		seriesdamage_p={{{1,10},{20,50},{21,52}}},
 		firedamage_v={
 			[1]={{1,35},{20,637}},
@@ -159,31 +160,23 @@ SKILLS={
 		skill_attackradius={{{1,320},{20,384}}},
 		skill_cost_v={{{1,20},{20,30}}}
 	},
-	tianmo_jieti={ --ÌìÄ§½âÌå
+	tianmo_jieti={ --Thien Ma Giai the
 		adddefense_v={{{1,75},{30,850}},{{1,18*120},{30,18*360}}},
-		attackratingenhance_p={{{1,65},{30,600}},{{1,18*120},{30,18*360}}},
-		--fasthitrecover_v={{{1,5},{20,40}},{{1,18*120},{20,18*360}}},
-		fasthitrecover_yan_v={{{1,5},{20,49},{21,49}},{{1,18*120},{20,18*360}}},
+		attackratingenhance_p={{{1,65},{30,500}},{{1,18*120},{30,18*360}}},
+		fasthitrecover_v={{{1,5},{20,40}},{{1,18*120},{20,18*360}}},
 		addfiremagic_v={{{1,20},{30,315}},{{1,18*120},{30,18*360}}},
 		addfiredamage_v={{{1,20},{30,315}},{{1,18*120},{30,18*360}}},
-		fireenhance_p={{{1,1},{39,110},{40,110}},{{1,18*120},{30,18*360}}},
+		fireenhance_p={{{1,31},{30,100}},{{1,18*120},{30,18*360}}},
 --		lifemax_p={{{1,-11},{20,-30},{30,-20},{40,10},{41,10}},{{1,18*45},{30,18*180}}},
-		--attackspeed_v={{{1,26},{30,102},{33,109},{35,134},{38,138},{41,145},{42,163},{43,165}},{{1,18*120},{30,18*360}}},
-		attackspeed_yan_v={{{1,0},{38,0},{39,60},{40,60}},{{1,18*120},{30,18*360}}},--Ôö¼ÓÍâ¹¦ÏµÎä¹¦³öÕÐ¶¯×÷£¨Ñô£©
-		castspeed_v={{{1,26},{30,81},{33,86},{35,101},{36,103}},{{1,18*120},{30,18*360}}},
-		lifemax_yan_p={{{1,60},{20,60}},{{1,18*45},{30,18*180}}},
-		me2metaldamage_p={{{1,1},{30,20},{31,20}},{{1,-1},{2,-1}}},--¶Ô½ðÏµÉËº¦Ôö¼Ó£º15%
-		metal2medamage_p={{{1,1},{30,20},{31,20}},{{1,-1},{2,-1}}},--¼õÉÙÀ´×Ô½ðÏµµÄÉËº¦£º15%
-		returnres_p={{{1,20},{20,20}},{{1,-1},{20,-1}}},
-		attackratingenhance_v={{{1,100},{30,5000}},{{1,-1},{2,-1}}},
+		attackspeed_v={{{1,26},{30,102}},{{1,18*120},{30,18*360}}},
+		castspeed_v={{{1,26},{30,81}},{{1,18*120},{30,18*360}}},
 		skill_cost_v={{{1,100},{20,100}}}
 	},
-	beisu_qingfeng={ --±¯ËÖÇå·ç
-		fasthitrecover_v={{{1,-6},{20,-30},{23,-34},{28,-34},{29,-35}},{{1,18*40},{20,18*120}}},
-		fasthitrecover_yan_v={{{1,-6},{28,-18},{29,-18}},{{1,18*40},{20,18*120}}},
+	beisu_qingfeng={ --Bi to thanh phong
+		fasthitrecover_v={{{1,-6},{20,-30}},{{1,18*40},{20,18*120}}},
 		skill_cost_v={{{1,20},{20,20}}}
 	},
-	yunlong_ji={ --ÔÆÁú»÷
+	yunlong_ji={ --Van Long Kich
 		physicsenhance_p={{{1,45},{20,445}}},
 		seriesdamage_p={{{1,20},{15,20},{20,60},{21,62}}},
 		deadlystrike_p={{{1,4},{20,65}}},
@@ -207,7 +200,7 @@ SKILLS={
 --			[3]={{1,378},{20,378}}
 --		},
 --		skill_showevent={{{1,0},{10,0},{10,1},{20,1}}},
-		addskillexp1={{{1,0},{2,0}},{{1,1},{20,1}},{{1,0},{2,0}}},
+		addskillexp1={{{1,361},{2,361}},{{1,EXP_PER},{20,EXP_PER}},{{1,0},{2,0}}},
 		skill_skillexp_v={{	{1,SkillExpFunc(11600,1.15,1,1,1)},
 							{2,SkillExpFunc(11600,1.15,2,1,1)},
 							{3,SkillExpFunc(11600,1.16,3,1,1)},
@@ -230,7 +223,131 @@ SKILLS={
 							{20,SkillExpFunc(11600,1.15,20,1,1)},
 							}},
 	},
-	zhanren150={ --Õ½ÈÌ150
+	fenghuo_liantian={ --Phong Hoa lien thanh - khong su dung
+		seriesdamage_p={{{1,20},{20,60}}},
+		firedamage_v={
+			[1]={{1,5},{20,40}},
+			[3]={{1,5},{20,40}}
+		},
+	},
+	tianwai_liuxing={ --Thien Ngoai luu tinh
+		seriesdamage_p={{{1,20},{15,20},{20,60},{21,62}}},
+		firedamage_v={
+			[1]={{1,11},{15,200},{20,462}},
+			[3]={{1,11},{15,200},{20,462}}
+		},
+		skill_attackradius={{{1,448},{20,480},{21,480}}},
+		skill_cost_v={{{1,20},{20,50}}},
+		skill_eventskilllevel={{{1,1},{20,20}}},
+		skill_vanishedevent={
+			[1]={{1,0},{10,0},{10,1},{20,1}},
+			[3]={{1,363},{20,363}}
+		},
+		addskilldamage1={
+			[1]={{1,1076},{2,1076}},
+			[3]={{1,1},{20,55}}
+		},
+		skill_showevent={{{1,0},{10,0},{10,8},{20,8}}},
+		addskillexp1={{{1,362},{2,362}},{{1,EXP_PER},{20,EXP_PER}},{{1,0},{2,0}}},
+		skill_skillexp_v={{	{1,SkillExpFunc(4085,1.15,1,3,1)},
+							{2,SkillExpFunc(4085,1.15,2,3,1)},
+							{3,SkillExpFunc(4085,1.16,3,3,1)},
+							{4,SkillExpFunc(4085,1.17,4,3,1)},
+							{5,SkillExpFunc(4085,1.18,5,3,1)},
+							{6,SkillExpFunc(4085,1.19,6,3,1)},
+							{7,SkillExpFunc(4085,1.20,7,3,1)},
+							{8,SkillExpFunc(4085,1.21,8,3,1)},
+							{9,SkillExpFunc(4085,1.22,9,3,1)},
+							{10,SkillExpFunc(4085,1.23,10,3,1)},
+							{11,SkillExpFunc(4085,1.24,11,3,1)},
+							{12,SkillExpFunc(4085,1.23,12,3,1)},
+							{13,SkillExpFunc(4085,1.22,13,3,1)},
+							{14,SkillExpFunc(4085,1.21,14,3,1)},
+							{15,SkillExpFunc(4085,1.20,15,3,1)},
+							{16,SkillExpFunc(4085,1.19,16,3,1)},
+							{17,SkillExpFunc(4085,1.18,17,3,1)},
+							{18,SkillExpFunc(4085,1.17,18,3,1)},
+							{19,SkillExpFunc(4085,1.16,19,3,1)},
+							{20,SkillExpFunc(4085,1.15,20,3,1)},
+						}},
+	},
+	yehuo_fencheng={ --Nghiep Hoa phan thanh
+		seriesdamage_p={{{1,20},{20,60},{21,62}}},--plus
+		firedamage_v={
+			[1]={{1,21},{20,320}},
+			[3]={{1,21},{20,320}}
+		},
+--		skill_eventskilllevel={{{1,1},{20,20}}},
+--		skill_startevent={
+--			[1]={{1,0},{15,0},{15,1},{20,1}},
+--			[3]={{1,379},{20,379}}
+--		},
+--		skill_showevent={{{1,0},{15,0},{15,1},{20,1}}},
+	},
+--	moyan_zaitian={ --Ä§Ñ×ÔÚÌì
+--		seriesdamage_p={{{1,20},{20,60}}},
+--		firedamage_v={
+--			[1]={{1,10},{20,80}},
+--			[3]={{1,10},{20,80}}
+--		},
+--	},
+	shehun_luanxin={ --Nhiep hon loan tam
+		attackratingenhance_p={{{1,-12},{20,-128}},{{1,18*40},{20,18*120}}},
+		adddefense_v={{{1,-80},{20,-800}},{{1,18*40},{20,18*120}}},
+		addphysicsdamage_p={{{1,-15},{20,-215}},{{1,18*40},{20,18*120}},{{1,6},{20,6}}},
+		fasthitrecover_v={{{1,-6},{20,-30}},{{1,18*40},{20,18*120}}},
+		lifereplenish_v={{{1,-1},{20,-15}},{{1,18*40},{20,18*120}}},
+		deadlystrikeenhance_p={{{1,-6},{20,-35}},{{1,18*40},{20,18*120}}},
+		skill_cost_v={{{1,60},{20,120}}},
+	},
+	tianren120={ --ÌìÈÌ120¼¶¼¼ÄÜ
+		skill_cost_v={{{1,25},{20,80},{21,80}}},
+		skill_mintimepercastonhorse_v={{{1,45*18},{15,25*18},{20,20*18},{21,20*18}}},
+		skill_mintimepercast_v={{{1,45*18},{15,25*18},{20,20*18},{21,20*18}}},
+		autodeathskill={{{1,723*256 + 41},{20,723*256 + 60},{21,723*256 + 60}},{{1,-1},{20,-1}},{{1,100},{2,100}}},
+		skill_eventskilllevel={{{1,1},{20,20}}},
+		--randmove={{{1,1},{20,1}},{{1,1*18},{20,5*18},{21,93}}},
+		--missle_missrate={{{1,65},{15,20},{20,15},{21,14}}},
+		skill_desc=
+			function(level)
+				return "Thêi gian kh«i phôc chiªu thøc: <color=orange>"..floor(Link(level,SKILLS.tianren120.skill_mintimepercast_v[1]) / 18).." gi©y<color>\n"..
+				"Thêi gian kh«i phôc chiªu thøc trªn ngùa: <color=orange>"..floor(Link(level,SKILLS.tianren120.skill_mintimepercastonhorse_v[1]) / 18).." gi©y<color>\n"..
+				"X¸c suÊt <color=orange>"..floor(100 -Link(level,SKILLS.quntisuijizoudong.missle_missrate[1])).."%<color> khiÕn cho tèi ®a "..
+				floor(Link(level,SKILLS.quntisuijizoudong.missle_hitcount[1])).." môc tiªu gÇn bÞ ho¶ng lo¹n trong <color=orange>"..
+				floor(Link(level,SKILLS.quntisuijizoudong.randmove[2]) / 18).." gi©y<color>\n"..
+				"Sau khi chÕt cã x¸c suÊt <color=orange>"..floor(Link(level,SKILLS.tianren120.autodeathskill[3])).."%<color> khiÕn cho tèi ®a "..
+				floor(Link(level,SKILLS.quntisuijizoudong.missle_hitcount[1])).." môc tiªu gÇn bÞ ho¶ng lo¹n trong <color=orange>"..
+				floor(Link(level,SKILLS.quntisuijizoudong.randmove[2]) / 18).." gi©y<color>\n"..
+				"Trong lóc ho¶ng lo¹n kh«ng thÓ tÊn c«ng vµ di chuyÓn"
+			end,
+		skill_skillexp_v={{	{1,17851239},
+							{2,19487603},
+							{3,22760330},
+							{4,27669421},
+							{5,34214875},
+							{6,42396694},
+							{7,52214875},
+							{8,63669421},
+							{9,76760330},
+							{10,91487603},
+							{11,107851239},
+							{12,135669421},
+							{13,174942148},
+							{14,225669421},
+							{15,274418181},
+							{16,344618181},
+							{17,425738181},
+							{18,517778181},
+							{19,620738181},
+							{20,620738181},
+							}},	
+	},
+	quntisuijizoudong={ --Quyet chu' hoan loan 120
+		randmove={{{1,1},{20,1}},{{1,1*18},{15,3*18},{20,4*18},{21,4*18},{40,4*18},{41,1*18},{55,3*18},{60,4*18},{61,4*18}}},
+		missle_missrate={{{1,65},{15,20},{20,15},{21,15},{40,15},{41,0},{60,0}}},
+		missle_hitcount={{{1,6},{20,6}}},
+	},
+	zhanren150={ --Giang Hai no Lan -150
 		physicsenhance_p={{{1,55},{20,535},{23,686},{26,762}}},
 		seriesdamage_p={{{1,40},{15,40},{20,80},{21,82}}},
 		deadlystrike_p={{{1,6},{20,80},{23,103},{26,115}}},
@@ -249,7 +366,7 @@ SKILLS={
 		skill_desc=
 			function(level)
 				local szTime = format("%.2f", (floor(Link(level,SKILLS.zhanren150.randmove[2])*100/18 )/100))
-				return "T¨ng thªm h×nh thøc thø hai <color=blue> ma ©m kÝch <color> vµ <color=orange>"..floor(100 -Link(level,SKILLS.zhanren150.missle_missrate[1])).."%<color>Tû lÖ khiÕn cho ®èi ph­¬ng khiÕp sî"..
+				return "T¨ng thªm h×nh thøc thø hai <color=blue>Ma ©m kÝch<color>\nvíi <color=orange>"..floor(100 -Link(level,SKILLS.zhanren150.missle_missrate[1])).."%<color> tû lÖ khiÕn cho ®èi ph­¬ng khiÕp sî "..
 						"<color=orange>"..szTime.." gi©y<color>\n"
 			end,
 		skill_eventskilllevel={{{1,1},{20,20}}},
@@ -283,78 +400,17 @@ SKILLS={
 												{23,200000},
 												{24,250000},
 												{25,300000},
-												{26,390000},
-												}},
-		addskilldamage1={
-			[1]={{1,1746},{2,1746}},
-			[3]={{1,1},{20,30}}
-		},													
+												}},	
 	},
-	fenghuo_liantian={ --·é»ðÁ¬Ìì
-		seriesdamage_p={{{1,20},{20,60}}},
-		firedamage_v={
-			[1]={{1,5},{20,40}},
-			[3]={{1,5},{20,40}}
-		},
-	},
-	tianwai_liuxing={ --ÌìÍâÁ÷ÐÇ
-		seriesdamage_p={{{1,20},{15,20},{20,60},{21,62}}},
-		firedamage_v={
-			[1]={{1,11},{15,200},{20,462}},
-			[3]={{1,11},{15,200},{20,462}}
-		},
-		skill_attackradius={{{1,448},{20,480},{21,480}}},
-		skill_cost_v={{{1,20},{20,50}}},
-		skill_eventskilllevel={{{1,1},{20,20}}},
-		skill_vanishedevent={
-			[1]={{1,0},{10,0},{10,1},{20,1}},
-			[3]={{1,363},{20,363}}
-		},
-		addskilldamage1={
-			[1]={{1,1076},{2,1076}},
-			[3]={{1,1},{20,55}}
-		},
-		skill_showevent={{{1,0},{10,0},{10,8},{20,8}}},
-		addskillexp1={{{1,0},{2,0}},{{1,1},{20,1}},{{1,0},{2,0}}},
-		skill_skillexp_v={{	{1,SkillExpFunc(4085,1.15,1,3,1)},
-							{2,SkillExpFunc(4085,1.15,2,3,1)},
-							{3,SkillExpFunc(4085,1.16,3,3,1)},
-							{4,SkillExpFunc(4085,1.17,4,3,1)},
-							{5,SkillExpFunc(4085,1.18,5,3,1)},
-							{6,SkillExpFunc(4085,1.19,6,3,1)},
-							{7,SkillExpFunc(4085,1.20,7,3,1)},
-							{8,SkillExpFunc(4085,1.21,8,3,1)},
-							{9,SkillExpFunc(4085,1.22,9,3,1)},
-							{10,SkillExpFunc(4085,1.23,10,3,1)},
-							{11,SkillExpFunc(4085,1.24,11,3,1)},
-							{12,SkillExpFunc(4085,1.23,12,3,1)},
-							{13,SkillExpFunc(4085,1.22,13,3,1)},
-							{14,SkillExpFunc(4085,1.21,14,3,1)},
-							{15,SkillExpFunc(4085,1.20,15,3,1)},
-							{16,SkillExpFunc(4085,1.19,16,3,1)},
-							{17,SkillExpFunc(4085,1.18,17,3,1)},
-							{18,SkillExpFunc(4085,1.17,18,3,1)},
-							{19,SkillExpFunc(4085,1.16,19,3,1)},
-							{20,SkillExpFunc(4085,1.15,20,3,1)},
-						}},
-	},
-	moren150={ --Ä§ÈÌ150	¼²»ðÁÇÔ­
+	moren150={ --Tat Hoa Lieu nguyen -150
 		seriesdamage_p={{{1,40},{15,40},{20,80},{21,82}}},
-		--firedamage_v={
-		--	[1]={{1,45},{20,760},{23,985},{26,1098}},
-		--	[3]={{1,45},{20,760},{23,985},{26,1098}}
-		--},
-		--fatallystrike_p={{{1,10},{20,30}}},
-		--¼õÉÙÖÂÃüÒ»»÷ÂÊ£¬Ôö¼Ó»ð¹¥ÉËº¦
 		firedamage_v={
-			[1]={{1,90},{20,1200},{23,1530},{26,1760},{30,4448},{31,4756}},		--»ðÉËÃ¿¼¶Ôö¼Ó10µã 20160801
-			[3]={{1,90},{20,1200},{23,1530},{26,1760},{30,4448},{31,4756}}
-			--[1]={{1,80},{20,1000},{23,1300},{26,1500}},
-			--[3]={{1,80},{20,1000},{23,1300},{26,1500}}
+			[1]={{1,45},{20,760},{23,985},{26,1098}},
+			[3]={{1,45},{20,760},{23,985},{26,1098}}
 		},
-		--fatallystrike_p={{{1,10},{20,25}}},
+		fatallystrike_p={{{1,10},{20,30}}},
 		missle_speed_v={{{1,0},{20,0}}},
-		skill_attackradius={{{1,448},{20,512}}},		--¼¼ÄÜ·¶Î§´Ó480µ÷Õûµ½512 20160801
+		skill_attackradius={{{1,448},{20,480}}},
 		skill_cost_v={{{1,25},{20,36},{23,39}}},
 		skill_skillexp_v={{	{1,300},
 												{2,600},
@@ -381,88 +437,7 @@ SKILLS={
 												{23,200000},
 												{24,250000},
 												{25,300000},
-												{26,390000},
 												}},	
-		addskilldamage1={
-			[1]={{1,1746},{2,1746}},
-			[3]={{1,1},{20,30}}
-		},		
-	},
-	yehuo_fencheng={ --Òµ»ð·Ù³Ç
-		seriesdamage_p={{{1,20},{20,60},{21,62}}},
-		firedamage_v={
-			[1]={{1,21},{20,320}},
-			[3]={{1,21},{20,320}}
-		},
---		skill_eventskilllevel={{{1,1},{20,20}}},
---		skill_startevent={
---			[1]={{1,0},{15,0},{15,1},{20,1}},
---			[3]={{1,379},{20,379}}
---		},
---		skill_showevent={{{1,0},{15,0},{15,1},{20,1}}},
-	},
---	moyan_zaitian={ --Ä§Ñ×ÔÚÌì
---		seriesdamage_p={{{1,20},{20,60}}},
---		firedamage_v={
---			[1]={{1,10},{20,80}},
---			[3]={{1,10},{20,80}}
---		},
---	},
-	shehun_luanxin={ --Éã»êÂÒÐÄ
-		attackratingenhance_p={{{1,-12},{20,-128}},{{1,18*40},{20,18*120}}},
-		adddefense_v={{{1,-80},{20,-800}},{{1,18*40},{20,18*120}}},
-		addphysicsdamage_p={{{1,-15},{20,-215}},{{1,18*40},{20,18*120}},{{1,6},{20,6}}},
-		fasthitrecover_yan_v={{{1,-3},{20,-10},{21,-10}},{{1,18*40},{20,18*120}}},
-		--fasthitrecover_v={{{1,-6},{20,-30}},{{1,18*40},{20,18*120}}},
-		lifereplenish_v={{{1,-1},{20,-15}},{{1,18*40},{20,18*120}}},
-		deadlystrikeenhance_p={{{1,-6},{20,-35}},{{1,18*40},{20,18*120}}},
-		skill_cost_v={{{1,60},{20,120}}},
-	},
-	tianren120={ --ÌìÈÌ120¼¶¼¼ÄÜ
-		skill_cost_v={{{1,25},{20,80},{21,80}}},
-		skill_mintimepercastonhorse_v={{{1,45*18},{20,15*18},{21,15*18}}},
-		skill_mintimepercast_v={{{1,45*18},{20,15*18},{21,15*18}}},
-		autodeathskill={{{1,723*256 + 41},{20,723*256 + 60},{21,723*256 + 60}},{{1,-1},{20,-1}},{{1,100},{2,100}}},
-		--randmove={{{1,1},{20,1}},{{1,1*18},{20,5*18},{21,93}}},
-		--missle_missrate={{{1,65},{15,20},{20,15},{21,14}}},
-		skill_desc=
-			function(level)
-				return "Thêi gian kh«i phôc chiªu thøc: <color=orange>"..floor(Link(level,SKILLS.tianren120.skill_mintimepercast_v[1]) / 18).." gi©y<color>\n"..
-				"Thêi gian kh«i phôc chiªu thøc trªn ngùa: <color=orange>"..floor(Link(level,SKILLS.tianren120.skill_mintimepercastonhorse_v[1]) / 18).." gi©y<color>\n"..
-				"X¸c suÊt <color=orange>"..floor(100 -Link(level,SKILLS.quntisuijizoudong.missle_missrate[1])).."%<color> khiÕn cho tèi ®a "..
-				floor(Link(level,SKILLS.quntisuijizoudong.missle_hitcount[1])).." môc tiªu gÇn bÞ ho¶ng lo¹n trong <color=orange>"..
-				floor(Link(level,SKILLS.quntisuijizoudong.randmove[2]) / 18).." gi©y<color>\n"..
-				"Sau khi chÕt cã x¸c suÊt <color=orange>"..floor(Link(level,SKILLS.tianren120.autodeathskill[3])).."%<color> khiÕn cho tèi ®a "..
-				floor(Link(level,SKILLS.quntisuijizoudong.missle_hitcount[1])).." môc tiªu gÇn bÞ ho¶ng lo¹n trong <color=orange>"..
-				floor(Link(level,SKILLS.quntisuijizoudong.randmove[2]) / 18).." gi©y<color>\n"..
-				"Trong lóc ho¶ng lo¹n kh«ng thÓ tÊn c«ng vµ di chuyÓn \n"
-			end,
-		skill_skillexp_v={{	{1,17851239},
-							{2,19487603},
-							{3,22760330},
-							{4,27669421},
-							{5,34214875},
-							{6,42396694},
-							{7,52214875},
-							{8,63669421},
-							{9,76760330},
-							{10,91487603},
-							{11,107851239},
-							{12,135669421},
-							{13,174942148},
-							{14,225669421},
-							{15,274418181},
-							{16,344618181},
-							{17,425738181},
-							{18,517778181},
-							{19,620738181},
-							{20,620738181},
-							}},	
-	},
-	quntisuijizoudong={ --ÈºÌåËæ»ú×ß¶¯
-		randmove={{{1,1},{20,1}},{{1,1*18},{15,3*18},{20,4*18},{21,4*18},{40,4*18},{41,1*18},{55,3*18},{60,4*18},{61,4*18}}},
-		missle_missrate={{{1,65},{15,20},{20,15},{21,15},{40,15},{41,0},{60,0}}},
-		missle_hitcount={{{1,6},{20,6}}},
 	},
 }
 -----------------------------------------------

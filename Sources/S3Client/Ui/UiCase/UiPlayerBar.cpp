@@ -1721,7 +1721,7 @@ void KUiPlayerBar::ReplaceSpecialName(char* szDest, size_t nDestSize, char* szSr
 }
 
 
-bool KUiPlayerBar::GetExp(int& nFull, int& nCurrLevelExp, int& nCurrentExp)
+bool KUiPlayerBar::GetExp(__int64& nFull, __int64& nCurrLevelExp, __int64& nCurrentExp)
 {
 	if (m_pSelf)
 	{

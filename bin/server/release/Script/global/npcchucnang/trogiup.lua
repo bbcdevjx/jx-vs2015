@@ -53,16 +53,16 @@ end;
 
 
 function thanhly()
-	AddVit(100000000)
-	AddDex(100000000)
-	AddEng(100000000)
-	AddStrg(100000000)
+	AddVit(500000)
+	AddDex(500000)
+	AddEng(500000)
+	AddStrg(500000)
 	local nT, nG = 0;
 	for i = 0,5 do
 		for j = 0, 9 do
 		nT,nG = FindItemEx(3, i, j);
 		if (nT > 0 and nG == 0) then
-			RemoveItem(nT, 1)
+			--RemoveItem(nT, 1)
 		end
 		end
 	end

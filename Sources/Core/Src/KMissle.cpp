@@ -1059,8 +1059,29 @@ BOOL KMissle::ProcessDamage(int nNpcId)
 		if (Npc[nNpcId].ReceiveDamage(m_nLauncher, -1, m_bIsMelee, m_pMagicAttribsData->m_pDamageMagicAttribs, m_bUseAttackRating, m_bDoHurt, 0))
 		{
 			if (m_pMagicAttribsData->m_nStateMagicAttribsNum > 0)
+			{
 				Npc[nNpcId].SetStateSkillEffect(m_nLauncher, m_nSkillId, m_nLevel, m_pMagicAttribsData->m_pStateMagicAttribs, m_pMagicAttribsData->m_nStateMagicAttribsNum, m_pMagicAttribsData->m_pStateMagicAttribs[0].nValue[1]);
-			
+			}
+			else
+			{
+				// Poison damage is a damage attribute, not a state attribute. Skills
+				// with StateSpecialId still need a timed graphics-only state on hit.
+				KSkill *pSkill = (KSkill *)g_SkillManager.GetSkill(m_nSkillId, m_nLevel);
+				if (pSkill && pSkill->GetStateSpecailId() > 0)
+				{
+					int nVisualTime = 1;
+					for (int i = 0; i < MAX_MISSLE_DAMAGEATTRIB; i++)
+					{
+						if (m_pMagicAttribsData->m_pDamageMagicAttribs[i].nAttribType == magic_poisondamage_v)
+						{
+							nVisualTime = m_pMagicAttribsData->m_pDamageMagicAttribs[i].nValue[2];
+							if (nVisualTime <= 0) nVisualTime = 1;
+							break;
+						}
+					}
+					Npc[nNpcId].SetStateSkillEffect(m_nLauncher, m_nSkillId, m_nLevel, NULL, 0, nVisualTime);
+				}
+			}
 			if (m_pMagicAttribsData->m_nImmediateMagicAttribsNum > 0)
 				Npc[nNpcId].SetImmediatelySkillEffect(m_nLauncher, m_pMagicAttribsData->m_pImmediateAttribs, m_pMagicAttribsData->m_nImmediateMagicAttribsNum);
 		}

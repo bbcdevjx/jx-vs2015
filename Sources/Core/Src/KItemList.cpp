@@ -2330,7 +2330,7 @@ void KItemList::RemoveAll()
 int KItemList::GetWeaponParticular()
 {
 	if (m_EquipItem[itempart_weapon])
-		return Item[m_EquipItem[itempart_weapon]].GetParticular();
+		return Item[m_EquipItem[itempart_weapon]].GetParticularMelee();
 	return -1;
 }
 

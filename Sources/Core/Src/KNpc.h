@@ -198,6 +198,7 @@ public:
 	int					m_Series;				// Npc的系
 	int					m_Height;				// Npc的高度(跳跃的时候非零)
 	BYTE				m_btRankId;
+	BYTE				m_byTranslife;
 	int					m_nStature;				//Tall 
 
 	BYTE				m_btStateInfo[MAX_NPC_RECORDER_STATE];	// Npc当前最新的几个状态 

@@ -20,7 +20,7 @@
 #include <crtdbg.h>
 
 #define	SCHEME_INI_SELSERV			"选新手村.ini"
-#define	PLACE_LIST_FILE				"\\Settings\\NativePlaceList.ini"
+#define	PLACE_LIST_FILE				"\\Settings\\region\\map_native.ini"
 
 KUiSelNativePlace* KUiSelNativePlace::m_pSelf = NULL;
 

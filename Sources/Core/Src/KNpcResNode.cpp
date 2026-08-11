@@ -46,7 +46,7 @@ BOOL	KNpcResNode::Init(char *lpszNpcName, CActionName *cActionName, CActionName 
     const char *pcszTemp = NULL;
 
 	strcpy(m_szNpcName, lpszNpcName);
-	// 载入文件 人物类型.txt
+	// 载入文件 entity_type.txt
 //	g_SetFilePath(RES_INI_FILE_PATH);
 	if ( !KindFile.Load(NPC_RES_KIND_FILE_NAME) )
 		return FALSE;
@@ -120,19 +120,19 @@ BOOL	KNpcResNode::Init(char *lpszNpcName, CActionName *cActionName, CActionName 
 		}
 		if(nFindNo == 2)
 		{
-			strcpy(m_nSectInfo[10].szSectResName, "男主角左手武器_effect.txt");
-			strcpy(m_nSectInfo[10].szSectSprInfoName, "男主角左手武器信息_effect.txt");
-			strcpy(m_nSectInfo[11].szSectResName, "男主角右手武器_effect.txt");
-			strcpy(m_nSectInfo[11].szSectSprInfoName, "男主角右手武器信息_effect.txt");
+			strcpy(m_nSectInfo[10].szSectResName, "player_male_left_weapon_effect.txt");
+			strcpy(m_nSectInfo[10].szSectSprInfoName, "player_male_left_weapon_info_effect.txt");
+			strcpy(m_nSectInfo[11].szSectResName, "player_male_right_weapon_effect.txt");
+			strcpy(m_nSectInfo[11].szSectSprInfoName, "player_male_right_weapon_info_effect.txt");
 			m_nSectInfo[10].nFlag = 1;
 			m_nSectInfo[11].nFlag = 1;
 		}
 		else
 		{
-			strcpy(m_nSectInfo[10].szSectResName, "女主角左手武器_effect.txt");
-			strcpy(m_nSectInfo[10].szSectSprInfoName, "女主角左手武器信息_effect.txt");
-			strcpy(m_nSectInfo[11].szSectResName, "女主角右手武器_effect.txt");
-			strcpy(m_nSectInfo[11].szSectSprInfoName, "女主角右手武器信息_effect.txt");
+			strcpy(m_nSectInfo[10].szSectResName, "player_female_left_weapon_effect.txt");
+			strcpy(m_nSectInfo[10].szSectSprInfoName, "player_female_left_weapon_info_effect.txt");
+			strcpy(m_nSectInfo[11].szSectResName, "player_female_right_weapon_effect.txt");
+			strcpy(m_nSectInfo[11].szSectSprInfoName, "player_female_right_weapon_info_effect.txt");
 			m_nSectInfo[10].nFlag = 1;
 			m_nSectInfo[11].nFlag = 1;
 		}

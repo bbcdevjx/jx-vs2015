@@ -64,7 +64,7 @@ KPakList	g_PakList;
 #define CLIENTWEAPONSKILL_TABFILE		"\\settings\\ClientWeaponSkill.txt"	
 KTabFile g_ClientWeaponSkillTabFile;
 
-#define ADJUSTCOLOR_TABFILE				"\\settings\\AdjustColor.txt"	
+#define ADJUSTCOLOR_TABFILE				"\\settings\\conf_color.txt"	
 unsigned int		InitAdjustColorTab();
 
 unsigned int	* g_pAdjustColorTab = NULL;
@@ -279,7 +279,6 @@ CORE_API void g_InitCore()
 			}
 		}
 	}
-
 #ifndef TOOLVERSION
 	if (!BuySell.Init())
 	{
@@ -393,7 +392,7 @@ BOOL	InitNpcSetting()
 	//g_pNpcTemplate = new KNpcTemplate[nNpcTemplateNum * MAX_NPC_LEVEL]; //0,0为起点
 	memset(g_pNpcTemplate, 0, sizeof(void*) * MAX_NPCSTYLE * MAX_NPC_LEVEL);
 	
-	// 载入文件 人物类型.txt
+	// 载入文件 entity_type.txt
 //	g_SetFilePath(RES_INI_FILE_PATH);
 	if ( !g_NpcKindFile.Load(NPC_RES_KIND_FILE_NAME) )
 	{

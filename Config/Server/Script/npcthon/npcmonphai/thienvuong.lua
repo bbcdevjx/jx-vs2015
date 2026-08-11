@@ -1,11 +1,11 @@
 Include("\\script\\header\\factionhead.lua")
 Include("\\script\\header\\taskid.lua")
-Include("\\script\\npckhac\\hoanhson\\doccokiem.lua");
+--Include("\\script\\npckhac\\hoanhson\\doccokiem.lua");
 function main(nNpcIndex)
-	if(nvthegioi(nNpcIndex) == 1) then
-	return end;
-	if (nvbalang() == 1) then
-	return end;
+	--if(nvthegioi(nNpcIndex) == 1) then
+	--return end;
+	--if (nvbalang() == 1) then
+	--return end;
 local player_Faction = GetFaction();
 	if (player_Faction == "") then
 		Talk(3, "enroll_select", "Bang chñ D­¬ng Anh vâ nghÖ cao c­êng, gan d¹ h¬n ng­êi, kh«ng kÐm g× tu mi nam tö!", "Bæn m«n quy luËt uy nghiªm, ng­êi ®«ng thÕ m¹nh! Kh«ng ai trong thiªn h¹ d¸m coi khinh!", "Bæn bang võa chèng Kim võa kh¸ng Tèng! Huynh ®Ö ®Òu xuÊt th©n lµ d©n nghÌo, phiªu b¹t giang hå lµ v× kÕ sinh nhai! Ai lµm vua bän ta ch¶ cÇn quan t©m")

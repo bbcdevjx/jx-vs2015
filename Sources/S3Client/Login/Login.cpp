@@ -17,7 +17,7 @@
 #include "../../Engine/Src/Cryptography/EDOneTimePad.h"
 #include "time.h"
 
-#define	SERVER_LIST_FILE				"\\Settings\\ServerList.ini"
+#define	SERVER_LIST_FILE				"\\Settings\\conf_gateway.ini"
 
 KLogin		g_LoginLogic;
 

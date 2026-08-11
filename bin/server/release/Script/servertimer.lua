@@ -9,11 +9,16 @@ Include("\\script\\header\\tongkim.lua");
 Include("\\script\\event\\demhuyhoang\\event.lua");
 Include("\\script\\event\\hoadang\\lib.lua");
 Include("\\script\\player\\playerlogin.lua");
-MSG_LIENDAU = "Vâ l©m kiÖt xuÊt %d ®· ®Õn giai ®o¹n b¸o danh. C¸c cao thñ mau nhanh ch©n ®¨ng kı thi ®Êu!"
+MSG_LIENDAU = "V?l©m kiÖt xuÊt %d ®· ®Õn giai ®o¹n b¸o danh. C¸c cao th?mau nhanh ch©n ®¨ng k?thi ®Êu!"
 Yr,Mth,Dy,Hr,Mn,Se = 0,0,0,0,0,0;
+GLOBAL_RANK_LAST_MINUTE = -1;
 
 function main()
 	Yr,Mth,Dy,Hr,Mn,Se = GetTime();
+	local nRankMinute = Hr * 60 + Mn;
+	if (mod(Mn, 5) == 0 and GLOBAL_RANK_LAST_MINUTE ~= nRankMinute) then
+		GLOBAL_RANK_LAST_MINUTE = nRankMinute;
+	end;
 	if ((Hr == 0) and (Mn == 0)) then
 		RLSvTask()
 	end
@@ -37,7 +42,7 @@ function main()
 		active_hoadang()
 		--xo so'
 		active_somayman()
-		--tongkim nªn ®Æt ë dßng cuèi cïng
+		--tongkim nªn ®Æt ?dßng cuèi cïng
 		active_tongkim()
 	end;
 end;
@@ -152,7 +157,7 @@ function active_somayman()
 		for i=DATA_DCBEGIN,DATA_DCEND do
 		SetData(i,random(99));
 		end
-		Msg2SubWorld("HiÖn t¹i ®· cã kÕt qu¶ 'con sè may m¾n'. Quı ®ång ®¹o xem t¹i <color=yellow>ThÇn Tµi<color> (BiÖn Kinh 220/190).");
+		Msg2SubWorld("HiÖn t¹i ®· c?kÕt qu?'con s?may m¾n'. Qu?®ång ®¹o xem t¹i <color=yellow>ThÇn Tµi<color> (BiÖn Kinh 220/190).");
 	end;
 end;
 
@@ -166,7 +171,7 @@ function active_tongkim()
 			SubWorld = nSubWorldId;
 			OpenMission(1,TONGKIM_KIND[TONGKIM_TIMER[i][2]],2,0,1,3)
 			SetMission(0,TONGKIM_TIMER[i][2])
-			AddCountNews("TrËn ®¸nh Tèng Kim h×nh thøc "..GetMissionName(1).." ®ang hÕt søc c¨ng th¼ng, tr­íc m¾t ®ang ë giai ®o¹n b¸o danh, nh÷ng ai muèn tham chiÕn xin h·y nhanh chãng ®Õn T­¬ng D­¬ng hoÆc Chu Tiªn trÊn ®¨ng kı b¸o danh; HoÆc sö dông Tèng Kim chiªu th­ ®Ó nhanh chãng ®Õn ®iÓm b¸o danh. §iÒu kiÖn tham gia: ®¼ng cÊp tõ 40. phİ b¸o danh 3000 l­îng",3);
+			AddCountNews("TrËn ®¸nh Tèng Kim h×nh thøc "..GetMissionName(1).." ®ang hÕt søc c¨ng th¼ng, tr­íc m¾t ®ang ?giai ®o¹n b¸o danh, nh÷ng ai muèn tham chiÕn xin h·y nhanh chãng ®Õn T­¬ng D­¬ng hoÆc Chu Tiªn trÊn ®¨ng k?b¸o danh; HoÆc s?dông Tèng Kim chiªu th?®Ó nhanh chãng ®Õn ®iÓm b¸o danh. §iÒu kiÖn tham gia: ®¼ng cÊp t?40. ph?b¸o danh 3000 l­îng",3);
 			AddCountNews2(10222,3)
 			StartMissionTimer(1,1, 10*1080)--so phut de chinh thuc bat dau
 			if(GetMissionV(0) == 1) then
@@ -182,8 +187,8 @@ function active_tongkim()
 	if (RestTK > 0) then
 		Minute = floor(RestTK/1080);
 		if(Minute == 7 or Minute == 3) then
-		AddCountNews(format("Tèng Kim ®¹i chiÕn ph­¬ng thøc %s ®ang trong thêi gian b¸o danh, mäi ng­êi h·y mau ®Õn T­¬ng D­¬ng hoÆc Chu Tiªn trÊn ®Ó b¸o danh, hoÆc cã thÓ dïng Tèng Kim chiªu th­ ®Ó trùc tiÕp ®Õn ®iÓm b¸o danh. §iÒu kiÖn tham gia: ®¼ng cÊp tõ 40, phİ b¸o danh 3000 l­îng. Sau khi khai chiÕn, nÕu tæng sè ng­êi ch­a ®ñ vÉn cã thÓ tiÕp tôc b¸o danh!",GetMissionName(1)));
-		AddCountNews2(format("Thêi gian b¸o danh Tèng Kim cßn l¹i lµ %d phót.",Minute),3)
+		AddCountNews(format("Tèng Kim ®¹i chiÕn ph­¬ng thøc %s ®ang trong thêi gian b¸o danh, mäi ng­êi h·y mau ®Õn T­¬ng D­¬ng hoÆc Chu Tiªn trÊn ®Ó b¸o danh, hoÆc c?th?dïng Tèng Kim chiªu th?®Ó trùc tiÕp ®Õn ®iÓm b¸o danh. §iÒu kiÖn tham gia: ®¼ng cÊp t?40, ph?b¸o danh 3000 l­îng. Sau khi khai chiÕn, nÕu tæng s?ng­êi ch­a ®ñ vÉn c?th?tiÕp tôc b¸o danh!",GetMissionName(1)));
+		AddCountNews2(format("Thêi gian b¸o danh Tèng Kim cßn l¹i l?%d phót.",Minute),3)
 		end
 	end
 	end

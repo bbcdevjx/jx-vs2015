@@ -22,12 +22,8 @@
 //#include "MyAssert.H"
 #include "KTaskFuns.h"
 
-
 // 是否将数据库存取档的数据保存下来以供调试
 //#define DEBUGOPT_DB_ROLEDATA_OUT 
-
-
-
 
 KList g_DBMsgList;
 
@@ -250,7 +246,6 @@ int	KPlayer::LoadPlayerBaseInfo(BYTE  * pRoleBuffer, BYTE * &pCurData, unsigned 
 #define PLAYER_MALE_NPCTEMPLATEID		-1
 #define PLAYER_FEMALE_NPCTEMPLATEID		-2
 
-
 	nLevel = pRoleData->BaseInfo.ifightlevel;
 	nSex = pRoleData->BaseInfo.bSex;
 	if (nSex)
@@ -312,6 +307,10 @@ label_retry:
 	pNpc->m_Kind = kind_player;
 	pNpc->SetPlayerIdx(m_nPlayerIndex);
 	pNpc->m_Level = nLevel;
+	int nTranslife = (int)pRoleData->BaseInfo.ifighttranslife;
+	if (nTranslife < 0 || nTranslife > MAX_TRANSLIFE_VALUE)
+		nTranslife = 0;
+	pNpc->m_byTranslife = (BYTE)nTranslife;
 
 	//玩家信息
 	strcpy(pNpc->Name, pRoleData->BaseInfo.szName);
@@ -338,7 +337,12 @@ label_retry:
 	this->SetBaseDefence();
 
 	//玩家等级信息
-	m_nExp			= pRoleData->BaseInfo.fightexp;
+	// Keep the legacy DB record layout intact. ifinishgame stores a tagged high word.
+	const unsigned int nExpTag = (unsigned int)pRoleData->BaseInfo.ifinishgame;
+	if ((nExpTag & 0xffff0000U) == 0x4a580000U)
+		 m_nExp = ((__int64)(short)(nExpTag & 0xffffU) << 32) | (unsigned int)pRoleData->BaseInfo.fightexp;
+	else
+		 m_nExp = pRoleData->BaseInfo.fightexp;
 	m_nNextLevelExp = PlayerSet.m_cLevelAdd.GetLevelExp(pNpc->m_Level);
 	m_dwLeadLevel	= pRoleData->BaseInfo.ileadlevel;
 	m_dwLeadExp		= pRoleData->BaseInfo.ileadexp;
@@ -591,7 +595,6 @@ int	KPlayer::LoadPlayerItemList(BYTE * pRoleBuffer , BYTE* &pItemBuffer, unsigne
 		return 0;
 }
 
-
 int	KPlayer::LoadPlayerFightSkillList(BYTE * pRoleBuffer, BYTE * &pFightBuffer, unsigned int& nParam)
 {
 	KASSERT(pRoleBuffer);
@@ -778,8 +781,12 @@ int	KPlayer::SavePlayerBaseInfo(BYTE * pRoleBuffer)
 //	pRoleData->BaseInfo.iweaponres = pNpc->m_WeaponType;
 	
 	//玩家等级信息
-	pRoleData->BaseInfo.fightexp = m_nExp;
+	// Store signed 64-bit EXP as low 32 bits plus a tagged signed high word.
+	const unsigned __int64 nStoredExp = (unsigned __int64)m_nExp;
+	pRoleData->BaseInfo.fightexp = (int)(nStoredExp & 0xffffffffU);
+	pRoleData->BaseInfo.ifinishgame = (int)(0x4a580000U | ((unsigned int)(nStoredExp >> 32) & 0xffffU));
 	pRoleData->BaseInfo.ifightlevel = pNpc->m_Level;
+	pRoleData->BaseInfo.ifighttranslife = pNpc->m_byTranslife;
 	
 	pRoleData->BaseInfo.ileadlevel = m_dwLeadLevel;
 	pRoleData->BaseInfo.ileadexp =	m_dwLeadExp;
@@ -1002,7 +1009,6 @@ int	KPlayer::SavePlayerFriendList(BYTE * pRoleBuffer)
 	return 1;
 }
 
-
 int	KPlayer::SavePlayerTaskList(BYTE * pRoleBuffer)
 {
 	_ASSERT(pRoleBuffer);
@@ -1041,9 +1047,7 @@ int	KPlayer::SavePlayerTaskList(BYTE * pRoleBuffer)
 		pNode = (KIndexNode*)pNode->GetNext();
 	}
 	
-	
 	g_TimerTask.SaveTask(this);
-
 
 	TDBTaskData * pTaskData = (TDBTaskData *)(pRoleBuffer + pRoleData->dwTaskOffset);
 	for (int i = 0; i < MAX_TASK; i ++)
@@ -1061,4 +1065,3 @@ int	KPlayer::SavePlayerTaskList(BYTE * pRoleBuffer)
 	return 1;
 }
 #endif
-

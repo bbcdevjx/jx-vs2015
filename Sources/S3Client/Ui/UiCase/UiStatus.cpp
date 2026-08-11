@@ -32,7 +32,7 @@ static struct UE_CTRL_MAP
 }CtrlItemMap[_ITEM_COUNT] =
 {
 	{ UIEP_HEAD,		"Cap"		},	//nãn
-	{ UIEP_HAND,		"Weapon"	},	//vò khÝ
+	{ UIEP_HAND,		"Weapon"	},	//v?kh?
 	{ UIEP_NECK,		"Necklace"	},	//d©y chuyÒn
 	{ UIEP_FINESSE,		"Bangle"	},	//bao tay
 	{ UIEP_BODY,		"Cloth"		},	//¸o
@@ -42,7 +42,7 @@ static struct UE_CTRL_MAP
 	{ UIEP_WAIST_DECOR,	"Pendant"	},	//ngäc béi
 	{ UIEP_FOOT,		"Shoes"		},	//giµy
 	{ UIEP_HORSE,		"Horse"		},	//ngùa
-	{ UIEP_MASK,		"Mask"		},	//mÆt n¹
+	{ UIEP_MASK,		"Mask"		},	//mÆt n?
 	{ UIEP_MANTLE,		"Mantle"	},	//phi phong
 	{ UIEP_SIGNET,		"Signet"	},	//Ên
 	{ UIEP_SHIPIN,		"Shipin"	},	//trang søc
@@ -142,6 +142,7 @@ void KUiStatus::Initialize()
 	AddChild(&m_Face);
 	AddChild(&m_Luck);
 	AddChild(&m_Prestige);
+	AddChild(&m_TransLife);
 	AddChild(&m_WorldRank);
 	AddChild(&m_PKValue);
 	AddChild(&m_BtnLock);
@@ -230,6 +231,7 @@ void KUiStatus::LoadScheme(class KIniFile* pIni)
 	m_ClickHere.Init(pIni, "ClickHere");
 	m_Luck.Init(pIni, "Luck");
 	m_Prestige.Init(pIni, "Prestige");
+	m_TransLife.Init(pIni, "TransLife");
 	m_WorldRank.Init(pIni, "WorldRank");
 	m_PKValue.Init(pIni, "PKValue");
 	m_BtnLock.Init(pIni, "BtnLock");
@@ -317,6 +319,11 @@ void KUiStatus::UpdateBaseData()
 	//m_Agname.SetText(Info.Agname);
 	m_Name  .SetText(Info.Name);
 	m_Title .SetText(Info.Title);
+	m_TransLife.SetIntText(Info.nTranslife);
+	if (Info.nRankInWorld > 0)
+		m_WorldRank.SetIntText(Info.nRankInWorld);
+	else
+		m_WorldRank.SetText("?");
 }
 
 void KUiStatus::UpdateRuntimeInfo(KUiPlayerRuntimeInfo* pInfo)
@@ -327,7 +334,9 @@ void KUiStatus::UpdateRuntimeInfo(KUiPlayerRuntimeInfo* pInfo)
 		m_Mana		.Set2IntText(pInfo->nMana, pInfo->nManaFull, '/');
 		m_Stamina	.Set2IntText(pInfo->nStamina, pInfo->nStaminaFull, '/');
 		//m_Angry		.Set2IntText(pInfo->nAngry, pInfo->nAngryFull, '/');
-		m_Experience.Set2IntText(pInfo->nExperience, pInfo->nExperienceFull, '/');
+		char szExperience[64];
+		sprintf(szExperience, "%I64d/%I64d", pInfo->nExperience, pInfo->nExperienceFull);
+		m_Experience.SetText(szExperience);
 		//Info.byAction & PA_RIDE
 	}
 }

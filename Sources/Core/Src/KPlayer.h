@@ -168,8 +168,8 @@ public:
 	int				m_nCurEngergy;				// 玩家的当前精力（决定内力）
 	int				m_nCurLucky;				// 玩家的当前运气（影响得到装备的好坏）
 
-	int				m_nExp;						// 当前经验值(当前等级在npc身上)
-	int				m_nNextLevelExp;			// 下一级经验值
+	__int64			m_nExp;						// 当前经验值(当前等级在npc身上)
+	__int64			m_nNextLevelExp;			// 下一级经验值
 
 	DWORD			m_dwLeadExp;				// 统率力经验值
 	DWORD			m_dwLeadLevel;				// 统率力等级
@@ -235,7 +235,7 @@ public:
 
 	void			AddExp(int nExp, int nTarLevel);		// 增加经验(原始数据，还未经过处理)
 	void			AddSelfExp(int nExp, int nTarLevel);	// 增加经验(不需要再经过队伍分配的处理，但需要考虑被砍死npc的等级)
-	void			DirectAddExp(int nExp);					// 直接增加经验值，不考虑其他因素
+	void			DirectAddExp(__int64 nExp);					// 直接增加经验值，不考虑其他因素
 	void			LevelUp();
 #ifdef _SERVER
 	void			SetLevel(int nLevel);
@@ -329,7 +329,7 @@ public:
 	void			SyncCurPlayer(BYTE* pMsg);
 	void			s2cLevelUp(BYTE* pMsg);
 	void			s2cGetCurAttribute(BYTE* pMsg);
-	void			s2cSetExp(int nExp);
+	void			s2cSetExp(__int64 nExp);
 	void			s2cSyncMoney(BYTE* pMsg);
 	void			s2cTradeApplyStart(BYTE* pMsg);
 	void			CheckObject(int nIdx);

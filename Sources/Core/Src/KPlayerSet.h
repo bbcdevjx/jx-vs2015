@@ -26,7 +26,7 @@ typedef struct
 class KLevelAdd
 {
 private:
-	int		m_nLevelExp[MAX_LEVEL];				// 升级经验
+	__int64	m_nLevelExp[MAX_LEVEL];				// 升级经验
 	int		m_nLifePerLevel[MAX_SERIES];			// 每个系升级加生命点
 	int		m_nStaminaPerLevel[MAX_SERIES];			// 每个系升级加体力点
 	int		m_nManaPerLevel[MAX_SERIES];			// 每个系升级加内力点
@@ -42,7 +42,7 @@ private:
 public:
 	KLevelAdd();
 	BOOL		Init();
-	int			GetLevelExp(int nLevel);
+	__int64		GetLevelExp(int nLevel);
 	int			GetLifePerLevel(int nSeries);
 	int			GetStaminaPerLevel(int nSeries);
 	int			GetManaPerLevel(int nSeries);

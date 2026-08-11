@@ -1,0 +1,20 @@
+
+*
+***** S3RelayServer Start (@ 2026/08/12 04:52:25.798) >>>>>
+*
+
+[2026/08/12 05:17:13] 1 -- Add Relay(64.62.197.77 : 41874) Client 0 ! -- Count 1
+[2026/08/12 05:17:13] 2 -- DB Connect 0 is busy !
+[2026/08/12 05:17:13] 3 -- [S3PDB_MSSQLServer_Connection::DoSql COM error: IDispatch error #3092
+[2026/08/12 05:17:13] 4 -- DB Connect 0 is free !
+[2026/08/12 05:17:13] 5 -- Remove Relay Client 0 ! -- Count 0
+[2026/08/12 05:20:22] 6 -- Add Relay(85.217.149.35 : 51322) Client 1 ! -- Count 1
+[2026/08/12 05:20:22] 7 -- DB Connect 0 is busy !
+[2026/08/12 05:20:22] 8 -- [S3PDB_MSSQLServer_Connection::DoSql COM error: IDispatch error #3092
+[2026/08/12 05:20:22] 9 -- DB Connect 0 is free !
+[2026/08/12 05:20:22] 10 -- Remove Relay Client 1 ! -- Count 0
+
+*
+***** S3RelayServer Stop (@ 2026/08/12 05:36:54.412) <<<<<
+*
+

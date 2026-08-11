@@ -84,11 +84,11 @@ enum ITEM_PART
 
 enum ITEMEXTENDTYPE
 {
-	extype_normal = 0,		// trang bŞ b×nh th­êng
+	extype_normal = 0,		// trang b?b×nh th­êng
 	extype_gold,			// hoµng kim 1
 	extype_platina,			// b¹ch kim 2
 	extype_purple,			// ®å tİm 3
-	extype_number,			// sè l­îng lo¹i
+	extype_number,			// s?l­îng lo¹i
 };
 
 typedef struct
@@ -240,7 +240,7 @@ enum ITEM_IN_ENVIRO_PROP
 	IIEP_SPECIAL,		//ÌØ¶¨µÄ²»Í¬Çé¿ö
 };
 
-#define	GOD_MAX_OBJ_TITLE_LEN	1536	//128ÁÙÊ±¸ÄÎª1024ÎªÁË¼æÈİ¾É´úÂë to be modified
+#define	GOD_MAX_OBJ_TITLE_LEN	2048	//128ÁÙÊ±¸ÄÎª1024ÎªÁË¼æÈİ¾É´úÂë to be modified
 #define	GOD_MAX_OBJ_PROP_LEN	516
 #define	GOD_MAX_OBJ_DESC_LEN	516
 
@@ -473,12 +473,17 @@ struct KUiChatMessage
 //==================================
 //	Ö÷½ÇµÄÒ»Ğ©²»Ò×±äµÄÊı¾İ
 //==================================
+#ifndef MAX_TRANSLIFE_VALUE
+#define MAX_TRANSLIFE_VALUE 10
+#endif
+
 struct KUiPlayerBaseInfo
 {
 	char	Agname[32];	//´ÂºÅ
 	char	Name[32];	//Ãû×Ö
 	char	Title[32];	//³ÆºÅ
 	int		nCurFaction;// µ±Ç°¼ÓÈëÃÅÅÉ id £¬Èç¹ûÎª -1 £¬µ±Ç°Ã»ÓĞÔÚÃÅÅÉÖĞ
+	int		nTranslife;	// reincarnation level
 	int		nRankInWorld;//½­ºşÅÅÃûÖµ,ÖµÎª0±íÊ¾Î´ÉÏÅÅÃû°å
 	unsigned int nCurTong;// µ±Ç°¼ÓÈë°ïÅÉname id £¬Èç¹ûÎª 0 £¬µ±Ç°Ã»ÓĞÔÚ°ïÅÉÖĞ
 };
@@ -496,9 +501,9 @@ struct KUiPlayerRuntimeInfo
 	int		nStamina;			//ÌåÁ¦
 	int		nAngryFull;			//Å­ÂúÖµ
 	int		nAngry;				//Å­
-	int		nExperienceFull;	//¾­ÑéÂúÖµ
-	int		nExperience;		//µ±Ç°¾­ÑéÖµ
-	int		nCurLevelExperience;//µ±Ç°¼¶±ğÉı¼¶ĞèÒªµÄ¾­ÑéÖµ
+	__int64	nExperienceFull;	//¾­ÑéÂúÖµ
+	__int64	nExperience;		//µ±Ç°¾­ÑéÖµ
+	__int64	nCurLevelExperience;//µ±Ç°¼¶±ğÉı¼¶ĞèÒªµÄ¾­ÑéÖµ
 
 	unsigned char	byActionDisable;//ÊÇ·ñ²»¿É½øĞĞ¸÷ÖÖ¶¯×÷£¬ÎªÃ¶¾ÙPLAYER_ACTION_LISTÈ¡ÖµµÄ×éºÏ
 	unsigned char	byAction;	//ÕıÔÚ½øĞĞµÄĞĞÎª¶¯×÷£¬ÎªÃ¶¾ÙPLAYER_ACTION_LISTÈ¡ÖµµÄ×éºÏ
@@ -563,7 +568,7 @@ struct KUiPlayerImmedItemSkill
 enum UI_EQUIPMENT_POSITION
 {
 	UIEP_HEAD = 0,		 //nãn
-	UIEP_HAND = 1,		 //vò khİ
+	UIEP_HAND = 1,		 //v?kh?
 	UIEP_NECK = 2,		 //d©y chuyÒn
 	UIEP_FINESSE = 3,	 //bao tay
 	UIEP_BODY = 4,		 //¸o
@@ -573,7 +578,7 @@ enum UI_EQUIPMENT_POSITION
 	UIEP_WAIST_DECOR = 8,//ngäc béi
 	UIEP_FOOT = 9,		 //giµy
 	UIEP_HORSE = 10,	 //ngùa
-	UIEP_MASK = 11,		//mÆt n¹
+	UIEP_MASK = 11,		//mÆt n?
 	UIEP_MANTLE = 12,	//phi phong
 	UIEP_SIGNET = 13,	//Ên
 	UIEP_SHIPIN = 14,	//trang søc
@@ -955,6 +960,8 @@ enum TONG_ACTION_TYPE
 	TONG_ACTION_LEAVE,         //Àë°ï
 	TONG_ACTION_RECRUIT,       //ÕĞÈË×´Ì¬
 	TONG_ACTION_APPLY,         //ÉêÇë¼ÓÈë
+	TONG_ACTION_DEPOSIT_MONEY,
+	TONG_ACTION_WITHDRAW_MONEY,
 };
 
 //¶Ô°ïÄÚ³ÉÔ±×öµÄ¶¯×÷£¬»ò¸Ä±ä×Ô¼ºÓë°ï»áµÄ¹ØÏµµÄ¶¯×÷Ê±µÄ²ÎÊı

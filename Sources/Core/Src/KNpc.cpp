@@ -46,6 +46,8 @@ extern KLuaScript		*g_pNpcLevelScript;
 
 #define	ATTACKACTION_EFFECT_PERCENT		60	// 发技能动作完成百分之多少才真正发出来
 #define	MIN_JUMP_RANGE					0
+#define	MIN_DOMELEE_RANGE				20
+#define	MIN_BLURMOVE_SPEED				1
 #define	ACCELERATION_OF_GRAVITY			10
 
 #define		SHOW_CHAT_WIDTH				24
@@ -187,6 +189,7 @@ void KNpc::Init()
 	m_TrapScriptID = 0;
 
 	m_btRankId					= 0;
+	m_byTranslife				= 0;
 	m_LifeMax					= 100;		// Npc的最大生命
 	m_LifeReplenish				= 0;		// Npc的生命回复速度
 	m_ManaMax					= 100;		// Npc的最大内力
@@ -635,19 +638,23 @@ BOOL KNpc::ProcessState()
 		// 打坐中
 		if (m_Doing == do_sit)
 		{
-			int nLifeAdd = m_CurrentLifeMax * 3 / 1000;
-			if (nLifeAdd <= 0)
+			int nLifeAdd = m_CurrentLifeMax / 10000;
+			if (nLifeAdd < 1)
 				nLifeAdd = 1;
-			m_CurrentLife += nLifeAdd;
-			if (m_CurrentLife > m_CurrentLifeMax)
-				m_CurrentLife = m_CurrentLifeMax;
+			if (m_CurrentLife < m_CurrentLifeMax)
+				m_CurrentLife = (nLifeAdd >= m_CurrentLifeMax - m_CurrentLife) ? m_CurrentLifeMax : m_CurrentLife + nLifeAdd;
 
-			int nManaAdd = m_CurrentManaMax * 3 / 1000;
-			if (nManaAdd <= 0)
+			int nManaAdd = m_CurrentManaMax / 10000;
+			if (nManaAdd < 1)
 				nManaAdd = 1;
-			m_CurrentMana += nManaAdd;
-			if (m_CurrentMana > m_CurrentManaMax)
-				m_CurrentMana = m_CurrentManaMax;
+			if (m_CurrentMana < m_CurrentManaMax)
+				m_CurrentMana = (nManaAdd >= m_CurrentManaMax - m_CurrentMana) ? m_CurrentManaMax : m_CurrentMana + nManaAdd;
+
+			int nStaminaAdd = m_CurrentStaminaMax / 10000;
+			if (nStaminaAdd < 1)
+				nStaminaAdd = 1;
+			if (m_CurrentStamina < m_CurrentStaminaMax)
+				m_CurrentStamina = (nStaminaAdd >= m_CurrentStaminaMax - m_CurrentStamina) ? m_CurrentStaminaMax : m_CurrentStamina + nStaminaAdd;
 
 //			if (m_CurrentLife >= m_CurrentLifeMax && m_CurrentMana >= m_CurrentManaMax)
 //				this->SendCommand(do_stand);
@@ -1552,7 +1559,10 @@ void KNpc::DoRun()
 void KNpc::OnRun()
 {
 	WaitForFrame();
-	ServeMove(m_CurrentRunSpeed);
+	if (m_Doing == do_runattack)
+		ServeMove(m_CurrentRunSpeed + 50);
+	else
+		ServeMove(m_CurrentRunSpeed);
 }
 
 void KNpc::DoSit()
@@ -3507,25 +3517,10 @@ void KNpc::SetAuraSkill(int nSkillID)
 	m_ActiveAuraID = nSkillID;
 
 #ifdef _SERVER
-	if (m_ActiveAuraID)
-	{
-		int nStateSpecialId = 0;
-		KSkill * pOrdinSkill = (KSkill *) g_SkillManager.GetSkill(nSkillID, nCurLevel);
-		
-		if (pOrdinSkill)
-        {
-			nStateSpecialId = pOrdinSkill->GetStateSpecailId();
-        }
-		
-		if (nStateSpecialId) m_btStateInfo[m_nNextStatePos] = nStateSpecialId;
-		if ((++m_nNextStatePos) >= MAX_NPC_RECORDER_STATE) m_nNextStatePos = 0;
-		BroadCastState();
-	}
-	else
-	{
-		UpdateNpcStateInfo();
-		BroadCastState();
-	}
+	// Rebuild the complete state list whenever the aura changes. This removes
+	// stale aura graphics and broadcasts the authoritative current state.
+	UpdateNpcStateInfo();
+	BroadCastState();
 #endif
 
 #ifndef _SERVER
@@ -3590,6 +3585,15 @@ BOOL KNpc::SendSyncData(int nClient)
 	}
 	g_DebugLog("[Sync]%d:%s<%d> request to %d. size:%d", SubWorld[m_SubWorldIndex].m_dwCurrentTime, Name, m_Kind, nClient, NpcSync.m_wLength + 1);
 
+	// A client entering the area after an aura/state was enabled must receive
+	// the current graphics as part of the initial NPC synchronization.
+	NPC_SYNC_STATEINFO StateInfo;
+	StateInfo.ProtocolType = (BYTE)s2c_syncnpcstate;
+	StateInfo.m_ID = m_dwID;
+	for (int i = 0; i < MAX_NPC_RECORDER_STATE; i++)
+		StateInfo.m_btStateInfo[i] = m_btStateInfo[i];
+	g_pServer->PackDataToClient(nClient, (BYTE *)&StateInfo, sizeof(StateInfo));
+
 	if (IsPlayer())
 	{
 		PLAYER_SYNC	PlayerSync;
@@ -3600,7 +3604,7 @@ BOOL KNpc::SendSyncData(int nClient)
 		PlayerSync.HelmType			= (short)m_HelmType;
 		PlayerSync.WeaponType		= (short)m_WeaponType;
 		PlayerSync.MantleType		= (short)m_MantleType;
-		PlayerSync.AttackSpeed		= (BYTE)m_AttackSpeed;
+		PlayerSync.AttackSpeed		= (WORD)(m_AttackSpeed < 0 ? 0 : (m_AttackSpeed > 0xffff ? 0xffff : m_AttackSpeed));
 		PlayerSync.CastSpeed		= (BYTE)m_CastSpeed;
 		if(m_bRideHorse)
 			PlayerSync.HorseType		= (BYTE)m_HorseType;
@@ -3609,6 +3613,7 @@ BOOL KNpc::SendSyncData(int nClient)
 		PlayerSync.RunSpeed			= (BYTE)m_CurrentRunSpeed;
 		PlayerSync.WalkSpeed		= (BYTE)m_CurrentWalkSpeed;
 		PlayerSync.RankID			= (BYTE)m_btRankId;
+		PlayerSync.Translife		= m_byTranslife;
 		PlayerSync.m_btSomeFlag		= 0;
 		if (Player[m_nPlayerIdx].m_cPK.GetNormalPKState())
 			PlayerSync.m_btSomeFlag |= 0x01;
@@ -3692,7 +3697,7 @@ void KNpc::NormalSync()
 		PlayerSync.ID			= m_dwID;
 		PlayerSync.Mana			= m_CurrentMana;
 		PlayerSync.ManaMax		= m_CurrentManaMax;
-		PlayerSync.AttackSpeed	= (BYTE)m_CurrentAttackSpeed;
+		PlayerSync.AttackSpeed	= (WORD)(m_CurrentAttackSpeed < 0 ? 0 : (m_CurrentAttackSpeed > 0xffff ? 0xffff : m_CurrentAttackSpeed));
 		PlayerSync.CastSpeed	= (BYTE)m_CurrentCastSpeed;
 		PlayerSync.RunSpeed		= (BYTE)m_CurrentRunSpeed;
 		PlayerSync.WalkSpeed	= (BYTE)m_CurrentWalkSpeed;
@@ -3705,6 +3710,7 @@ void KNpc::NormalSync()
 		else
 			PlayerSync.HorseType		= (BYTE)(-1);
 		PlayerSync.RankID		= (BYTE)m_btRankId;
+		PlayerSync.Translife	= m_byTranslife;
 
 		PlayerSync.m_btSomeFlag	= 0;
 		if (Player[m_nPlayerIdx].m_cPK.GetNormalPKState())
@@ -3730,7 +3736,7 @@ void KNpc::NormalSync()
 		sSync.ProtocolType = s2c_syncnpcminplayer;
 		sSync.m_dwNpcID = m_dwID;
 		if (m_CurrentLife > 0 && m_CurrentLifeMax > 0)
-			sSync.m_btLifePerCent = (BYTE)((m_CurrentLife << 7) / m_CurrentLifeMax);
+			sSync.m_btLifePerCent = (BYTE)(((__int64)m_CurrentLife << 7) / m_CurrentLifeMax);
 		else
 			sSync.m_btLifePerCent = 0;
 //		sSync.m_nRegionID = SubWorld[m_SubWorldIndex].m_Region[m_RegionIndex].m_RegionID;
@@ -4161,7 +4167,7 @@ int	KNpc::PaintMana(int nHeightOffset)
 	int nWid = 38;
 	int nHei = 5;
 	KRUShadow	Blood;
-	int nX = m_CurrentMana * 100 / m_CurrentManaMax;
+	int nX = (int)((__int64)m_CurrentMana * 100 / m_CurrentManaMax);
 	if (nX >= 50)
 	{
 		Blood.Color.Color_b.r = 0;
@@ -4684,7 +4690,7 @@ BOOL	KNpc::DoRunAttack()
 		}
 		m_Dir = g_GetDirIndex(x, y, tx, ty);
 #endif
-		m_Frames.nTotalFrame = m_AttackFrame * 100 / (100 + m_CurrentAttackSpeed);
+		m_Frames.nTotalFrame = 0;
 		m_Frames.nCurrentFrame = 0;
 		m_Doing = do_runattack;
 		break;
@@ -4709,7 +4715,6 @@ BOOL	KNpc::DoRunAttack()
 
 void	KNpc::OnRunAttack()
 {
-				
 	if (m_SpecialSkillStep == 0)
 	{
 		OnRun();
@@ -4726,7 +4731,22 @@ void	KNpc::OnRunAttack()
 		
 		}
 		else
+		{
+			KSkill * pSkill = (KSkill*)GetActiveSkill();
+			if (!pSkill) 
+                return ;
+			
+            int nCurPhySkillId = pSkill->GetChildSkillId();//GetCurActiveWeaponSkill();
+			if (nCurPhySkillId > 0)
+			{
+				KSkill * pOrdinSkill = (KSkill *) g_SkillManager.GetSkill(nCurPhySkillId, pSkill->m_ulLevel, SKILL_SS_Missles);
+				if (pOrdinSkill)
+                {
+				    pOrdinSkill->Cast(m_Index, m_SkillParam1, m_SkillParam2);
+                }
+			}
 			m_nCurrentMeleeTime ++;
+		}
 
 		m_ProcessAI = 0;
 	}
@@ -5126,7 +5146,7 @@ void KNpc::DeathPunish(int nMode, int nBelongPlayer)
 			// 经验减少
 			if (Player[m_nPlayerIdx].m_nExp > 0)
 			{
-				int nSubExp;
+				__int64 nSubExp;
 				if (m_Level <= 10)
 					nSubExp = (PlayerSet.m_cLevelAdd.GetLevelExp(m_Level) * 2) / 100;
 				else
@@ -5175,7 +5195,7 @@ void KNpc::DeathPunish(int nMode, int nBelongPlayer)
 				nPKValue = MAX_DEATH_PUNISH_PK_VALUE;
 
 			// 经验减少
-			int		nLevelExp = PlayerSet.m_cLevelAdd.GetLevelExp(m_Level);
+			__int64	nLevelExp = PlayerSet.m_cLevelAdd.GetLevelExp(m_Level);
 			Player[m_nPlayerIdx].DirectAddExp( -(nLevelExp * PlayerSet.m_sPKPunishParam[nPKValue].m_nExp / 100) );
 
 			// 钱减少
@@ -5677,18 +5697,46 @@ void	KNpc::BroadCastState()
 #ifndef _SERVER
 void	KNpc::SetNpcState(BYTE* pNpcState)
 {
-	ClearNpcState();
-
+	// Replace only visual nodes received through NPC state broadcasts. Keep
+	// local gameplay state nodes synchronized by STATE_EFFECT_SYNC intact.
+	KStateNode *pNode = (KStateNode *)m_StateSkillList.GetHead();
+	while (pNode)
+	{
+		KStateNode *pNext = (KStateNode *)pNode->GetNext();
+		if (pNode->m_SkillID == 0)
+		{
+			pNode->Remove();
+			delete pNode;
+		}
+		pNode = pNext;
+	}
 	if (!pNpcState)
-		return ;
+		return;
 	for (int i = 0; i < MAX_NPC_RECORDER_STATE; i++)
 	{
-		if (*(pNpcState + i) != 0)
+		const int nStateGraphics = pNpcState[i];
+		if (nStateGraphics == 0)
+			continue;
+		BOOL bExists = FALSE;
+		pNode = (KStateNode *)m_StateSkillList.GetHead();
+		while (pNode)
 		{
-			KStateNode * pNewNode = new KStateNode;
-			pNewNode->m_StateGraphics = *(pNpcState + i);
-			m_StateSkillList.AddTail(pNewNode);
+			if (pNode->m_StateGraphics == nStateGraphics)
+			{
+				bExists = TRUE;
+				break;
+			}
+			pNode = (KStateNode *)pNode->GetNext();
 		}
+		if (bExists)
+			continue;
+		KStateNode *pNewNode = new KStateNode;
+		memset(pNewNode->m_State, 0, sizeof(pNewNode->m_State));
+		pNewNode->m_SkillID = 0;
+		pNewNode->m_Level = 0;
+		pNewNode->m_LeftTime = -1;
+		pNewNode->m_StateGraphics = nStateGraphics;
+		m_StateSkillList.AddTail(pNewNode);
 	}
 }
 #endif
@@ -6188,11 +6236,11 @@ int		KNpc::GetCurActiveWeaponSkill()
 		int nParticularType = Player[m_nPlayerIdx].m_ItemList.GetWeaponParticular();
 		
 		//近身武器
-		if (nDetailType == 0)
+		if (nDetailType == 0 && nParticularType >= 0 && nParticularType < MAX_MELEEWEAPON_PARTICULARTYPE_NUM)
 		{
 			nSkillId = g_nMeleeWeaponSkill[nParticularType];
 		}//远程武器
-		else if (nDetailType == 1)
+		else if (nDetailType == 1 && nParticularType >= 0 && nParticularType < MAX_RANGEWEAPON_PARTICULARTYPE_NUM)
 		{
 			nSkillId = g_nRangeWeaponSkill[nParticularType];
 		}//空手

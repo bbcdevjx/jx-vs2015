@@ -94,7 +94,7 @@ public:
 	void	UpdateItem(int nIndex, unsigned int uGenre, unsigned int uId);	//变更物品摆换
 	void	UpdateSkill(int nIndex, unsigned int uGenre, unsigned int uId);	//变更快捷技能
 
-	static	bool		GetExp(int& nFull, int& nCurrLevelExp, int& nCurrentExp);
+	static	bool		GetExp(__int64& nFull, __int64& nCurrLevelExp, __int64& nCurrentExp);
 
 	static BOOL			LoadPrivateSetting(KIniFile* pFile);
 	static int			SavePrivateSetting(KIniFile* pFile);
@@ -171,7 +171,7 @@ private:
 	
 	char			m_szSelfName[32];	//自己的名字
 
-	int				m_nExperienceFull;
-	int				m_nCurLevelExperience;
-	int				m_nExperience;
+	__int64			m_nExperienceFull;
+	__int64			m_nCurLevelExperience;
+	__int64			m_nExperience;
 };

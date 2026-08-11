@@ -204,6 +204,7 @@ bool CPlayerCreator::GetRoleDataFromIni(BYTE* pData, const char* szFileName)
 	//玩家等级信息
 	pRoleData->BaseInfo.fightexp	= cFile.ReadInteger("ROLE", "ifightexp", 0);
 	pRoleData->BaseInfo.ifightlevel	= cFile.ReadInteger("ROLE", "ifightlevel", 0);
+	pRoleData->BaseInfo.ifighttranslife = 0;
 	pRoleData->BaseInfo.ileadlevel	= cFile.ReadInteger("ROLE", "ileadlevel", 0);
 	pRoleData->BaseInfo.ileadexp	= cFile.ReadInteger("ROLE", "ileadexp", 0);
 

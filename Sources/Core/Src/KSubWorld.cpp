@@ -502,7 +502,7 @@ BOOL KSubWorld::LoadMap(int nId)
 
 	m_SubWorldID = nId;
 	g_SetFilePath("\\settings");
-	IniFile.Load("MapList.ini");
+	IniFile.Load("region\\map_list.ini");
 	sprintf(szKeyName, "%d", nId);
 	IniFile.GetString("List", szKeyName, "", szPathName, sizeof(szPathName));
 
@@ -607,7 +607,7 @@ BOOL KSubWorld::LoadMap(int nId, int nRegion)
 		//char	szKeyName[32], szPathName[FILE_NAME_LENGTH];
 
 		//g_SetFilePath("\\settings");
-		//IniFile.Load("MapList.ini");
+		//IniFile.Load("region\\map_list.ini");
 		//sprintf(szKeyName, "%d", nId);
 		//IniFile.GetString("List", szKeyName, "", szPathName, sizeof(szPathName));
 		//sprintf(m_szMapPath, "\\maps\\%s", szPathName);

@@ -24,6 +24,8 @@ int	g_nTongPSSize[defTONG_PROTOCOL_SERVER_NUM] =
 	sizeof(STONG_CHANGE_MASTER_COMMAND),		// enumC2S_TONG_CHANGE_MASTER
 	sizeof(STONG_ACCEPT_MASTER_COMMAND),		// enumC2S_TONG_ACCEPT_MASTER
 	sizeof(STONG_GET_LOGIN_DATA_COMMAND),		// enumC2S_TONG_GET_LOGIN_DATA
+	sizeof(STONG_MONEY_COMMAND),				// enumC2S_TONG_DEPOSIT_MONEY
+	sizeof(STONG_MONEY_COMMAND),				// enumC2S_TONG_WITHDRAW_MONEY
 };
 
 //------------------------- tong struct size end ---------------------------
@@ -345,6 +347,15 @@ void CTongConnect::Proc0_Tong(const void* pData, size_t size)
 		}
 		break;
 
+	case enumC2S_TONG_DEPOSIT_MONEY:
+	case enumC2S_TONG_WITHDRAW_MONEY:
+		{
+			STONG_MONEY_COMMAND *pMoney = (STONG_MONEY_COMMAND*)pData;
+			STONG_MONEY_RESULT result;
+			g_cTongSet.ChangeMoney(pMoney, &result);
+			this->SendPackage((const void*)&result, sizeof(result));
+		}
+		break;
 	default:
 		break;
 	}

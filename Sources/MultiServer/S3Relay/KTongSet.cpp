@@ -472,3 +472,37 @@ BOOL	CTongSet::SearchOne(DWORD dwTongNameID, char *lpszName, STONG_ONE_LEADER_IN
 
 
 
+
+BOOL CTongSet::ChangeMoney(STONG_MONEY_COMMAND *pMoney, STONG_MONEY_RESULT *pResult)
+{
+	if (!pMoney || !pResult || !m_pcTong)
+		return FALSE;
+	memset(pResult, 0, sizeof(*pResult));
+	pResult->ProtocolFamily = pf_tong;
+	pResult->ProtocolID = enumS2C_TONG_MONEY_RESULT;
+	pResult->m_dwParam = pMoney->m_dwParam;
+	pResult->m_dwTongNameID = pMoney->m_dwTongNameID;
+	pResult->m_dwAmount = pMoney->m_dwMoney;
+	pResult->m_btOperation = (pMoney->ProtocolID == enumC2S_TONG_WITHDRAW_MONEY);
+	memcpy(pResult->m_szName, pMoney->m_szName, sizeof(pResult->m_szName));
+	pResult->m_szName[sizeof(pResult->m_szName) - 1] = 0;
+
+	for (int i = 0; i < m_nTongPointSize; i++)
+	{
+		CTongControl *pTong = m_pcTong[i];
+		if (!pTong || pTong->m_dwNameID != pMoney->m_dwTongNameID)
+			continue;
+		DWORD dwOldMoney = pTong->m_dwMoney;
+		if (!pTong->ChangeMoney(pMoney, pResult))
+			return FALSE;
+		if (!g_cTongDB.ChangeTong(*pTong))
+		{
+			pTong->m_dwMoney = dwOldMoney;
+			pResult->m_dwBalance = dwOldMoney;
+			return FALSE;
+		}
+		pResult->m_btSuccess = TRUE;
+		return TRUE;
+	}
+	return FALSE;
+}

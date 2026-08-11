@@ -54,6 +54,7 @@ struct TRoleBaseInfo
 	BYTE	cIsExchange;
 // --------------------- add by spe 2003/07/19 -----------------------
 	BYTE	cPkStatus;
+	BYTE	ifighttranslife;				// reincarnation level; occupies the legacy padding byte
 // -------------------------------------------------------------------
 	int		ijoincount;
 	int		isectrole;

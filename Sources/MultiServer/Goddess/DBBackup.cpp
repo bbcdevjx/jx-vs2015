@@ -104,8 +104,8 @@ void CDBBackup::ListSort(
 				aSourse = aRoleList[j].Money;
 				break;
 			case stLevel:
-				aDest = (__int64)tmpData->Level * 0xffffffff + (__int64)tmpData->FightExp;
-				aSourse = (__int64)aRoleList[j].Level * 0xffffffff + (__int64)aRoleList[j].FightExp;
+				aDest = (__int64)(tmpData->Level + tmpData->Translife * 200) * 0xffffffff + (__int64)tmpData->FightExp;
+				aSourse = (__int64)(aRoleList[j].Level + aRoleList[j].Translife * 200) * 0xffffffff + (__int64)aRoleList[j].FightExp;
 				break;
 			case stKiller:
 				aDest = tmpData->KillNum;
@@ -125,8 +125,13 @@ void CDBBackup::RoleDataCopy(TRoleList* Desc, TRoleData* Source)
 	Desc->Sect = Source->BaseInfo.nSect;
 	Desc->Money = Source->BaseInfo.imoney + Source->BaseInfo.isavemoney;
 	Desc->Level = Source->BaseInfo.ifightlevel;
+	Desc->Translife = Source->BaseInfo.ifighttranslife;
 	Desc->KillNum = Source->BaseInfo.nKillPeopleNumber;
-	Desc->FightExp = Source->BaseInfo.fightexp;
+	const unsigned int tag = (unsigned int)Source->BaseInfo.ifinishgame;
+	if ((tag & 0xffff0000U) == 0x4a580000U)
+		Desc->FightExp = ((__int64)(short)(tag & 0xffffU) << 32) | (unsigned int)Source->BaseInfo.fightexp;
+	else
+		Desc->FightExp = Source->BaseInfo.fightexp;
 }
 
 char* CDBBackup::LoadFilterName()
@@ -206,18 +211,9 @@ bool CDBBackup::Open(int aTime)
 		return false;//创建线程失败
 	}
 	
-	char aAppPath[MAX_PATH] = {0};
-	getcwd(aAppPath,MAX_PATH);
-	strcat(aAppPath,"\\StatData.dat");
-	//读取旧排名
-	memset(&newGameStatData,0,sizeof(CDBBackup::TStatData));
-	FILE* aStatFile = fopen(aAppPath,"rb");
-	if(aStatFile)
-	{		
-		int a = fread(&newGameStatData, 1, sizeof(CDBBackup::TStatData), aStatFile);
-		fclose(aStatFile);
-	}
-	MakeSendStatData();
+	// Build the JX2022 statistic table before Goddess serves GameServer.
+	// Backup also creates StatData.dat and writes nWorldStat into the role DB.
+	Backup();
 	
 	return true;
 }
@@ -290,24 +286,12 @@ bool CDBBackup::ManualBackup()
 }
 
 DWORD WINAPI CDBBackup::TimerThreadFunc( LPVOID lpParam )
-{//备份计时线程
+{
 	IsThreadWorking = true;
 	while(true)
 	{
-		SYSTEMTIME aSysTime;
-		GetLocalTime(&aSysTime);
-		if(aSysTime.wHour == BackupTime)
-		{	
-			if(IsTimeToBackup) Backup();
-			IsTimeToBackup = false;
-		}
-		else
-		{
-			IsTimeToBackup = true;
-		}
-		
-		Sleep(1000 * 60 * 30);
-		//Sleep(BackupTime);
+		Sleep(1000 * 60 * 60);
+		Backup();
 	}
 	IsThreadWorking = false;
 	return 0;
@@ -632,113 +616,10 @@ void CDBBackup::Backup()
 	
 	SAFE_DELETE_ARRAY(RoleFilterList);
 	///////////////以下为对统计数据的处理//////////////////////////////////////////////////////
-	char aAppPath[MAX_PATH] = {0};
-	getcwd(aAppPath,MAX_PATH);
-	strcat(aAppPath,"\\StatData.dat");
-	//读取旧排名
-	memset(&oldGameStatData,0,sizeof(CDBBackup::TStatData));
-	FILE* aStatFile = fopen(aAppPath,"rb");
-	if(aStatFile)
-	{		
-		int a = fread(&oldGameStatData, 1, sizeof(CDBBackup::TStatData), aStatFile);
-		fclose(aStatFile);
-	}
-	
-	newGameStatData = aStatData;
-	
-	//找出前十名的oldGameStatData中的排名（或名次上升还是下降）
-	for(i=0;i<10;++i)
-	{
-		int aIndex;
-		//等级
-		aIndex = CDBBackup::GetIndexByName(
-				newGameStatData.LevelStat[i].Name,oldGameStatData.LevelStat, LEVELSTATNUM);
-		if(aIndex != -1)
-		{
-			if(i < aIndex)
-				newGameStatData.LevelStat[i].Sort = 1;
-			else if(i > aIndex)
-				newGameStatData.LevelStat[i].Sort = 255;
-			else
-				newGameStatData.LevelStat[i].Sort = 0;
-		}
-		else
-			newGameStatData.LevelStat[i].Sort = 1;
-
-		//金钱
-		aIndex = CDBBackup::GetIndexByName(
-				newGameStatData.MoneyStat[i].Name,oldGameStatData.MoneyStat, MONEYSTATNUM);
-		if(aIndex != -1)
-		{
-			if(i < aIndex)
-				newGameStatData.MoneyStat[i].Sort = 1;
-			else if(i > aIndex)
-				newGameStatData.MoneyStat[i].Sort = 255;
-			else
-				newGameStatData.MoneyStat[i].Sort = 0;
-		}
-		else
-			newGameStatData.MoneyStat[i].Sort = 1;
-
-		//杀人数
-		aIndex = CDBBackup::GetIndexByName(
-				newGameStatData.KillerStat[i].Name,oldGameStatData.KillerStat, KILLERSTATNUM);
-		if(aIndex != -1)
-		{
-			if(i < aIndex)
-				newGameStatData.KillerStat[i].Sort = 1;
-			else if(i > aIndex)
-				newGameStatData.KillerStat[i].Sort = 255;
-			else
-				newGameStatData.KillerStat[i].Sort = 0;
-		}
-		else
-			newGameStatData.KillerStat[i].Sort = 1;
-
-		for(j=0;j<11;++j)
-		{//各个门派
-			//等级
-			aIndex = CDBBackup::GetIndexByName(
-					newGameStatData.LevelStatBySect[j][i].Name,oldGameStatData.LevelStatBySect[j], SECTMAXSTATNUM);
-			if(aIndex != -1)
-			{
-				if(i < aIndex)
-					newGameStatData.LevelStatBySect[j][i].Sort = 1;
-				else if(i > aIndex)
-					newGameStatData.LevelStatBySect[j][i].Sort = 255;
-				else
-					newGameStatData.LevelStatBySect[j][i].Sort = 0;
-			}
-			else
-				newGameStatData.LevelStatBySect[j][i].Sort = 1;
-
-			//金钱
-			aIndex = CDBBackup::GetIndexByName(
-					newGameStatData.MoneyStatBySect[j][i].Name,oldGameStatData.MoneyStatBySect[j], SECTMAXSTATNUM);
-			if(aIndex != -1)
-			{
-				if(i < aIndex)
-					newGameStatData.MoneyStatBySect[j][i].Sort = 1;
-				else if(i > aIndex)
-					newGameStatData.MoneyStatBySect[j][i].Sort = 255;
-				else
-					newGameStatData.MoneyStatBySect[j][i].Sort = 0;
-			}
-			else
-				newGameStatData.MoneyStatBySect[j][i].Sort = 1;
-		}
-	}
-	
-	//储存新排名
-	aStatFile = fopen(aAppPath,"wb");
-	if(aStatFile)
-	{
-		int a = fwrite(&newGameStatData, 1, sizeof(CDBBackup::TStatData), aStatFile);
-
-		fclose(aStatFile);
-	}
-
-	MakeSendStatData();//把统计数据写到发送给客户端的统计数据结构中
+	// Build the JX2022 statistic table before Goddess serves GameServer.
+	// Backup also creates StatData.dat and writes nWorldStat into the role DB.
+	Backup();
+	SaveStatInfo();//把统计数据写到发送给客户端的统计数据结构中
 
 	//test===========
 	if(IS_OUTPUT_LOG){//是否输出统计数据
@@ -809,7 +690,7 @@ void CDBBackup::MakeSendStatData()
 	for(i=0;i<10;++i)
 	{
 		strcpy(SendStatData.LevelStat[i].Name, newGameStatData.LevelStat[i].Name);
-		SendStatData.LevelStat[i].nValue = newGameStatData.LevelStat[i].Level;
+		SendStatData.LevelStat[i].nValue = newGameStatData.LevelStat[i].Level + newGameStatData.LevelStat[i].Translife * 200;
 		SendStatData.LevelStat[i].bySort = newGameStatData.LevelStat[i].Sort;
 
 		strcpy(SendStatData.MoneyStat[i].Name, newGameStatData.MoneyStat[i].Name);

@@ -18,10 +18,13 @@ private:
 	int			m_nFlag;			// 是否加入帮会
 	int			m_nFigure;			// 帮会中的身份
 	int			m_nCamp;			// 帮会阵营
-	DWORD		m_dwTongNameID;		// 帮会名字符串转换成的 dword
+	DWORD		m_dwTongNameID;
+	DWORD		m_dwMoney;
+	int			m_nLevel;		// 帮会名字符串转换成的 dword
 	char		m_szName[32];		// 帮会名称
 	char		m_szTitle[32];		// 当前称号
-	int			m_nApplyTo;			// 如果已经向某个帮会申请加入，帮主的 playerindex
+	int			m_nApplyTo;
+	BOOL		m_bRecruit;		// Temporary recruitment advertisement flag			// 如果已经向某个帮会申请加入，帮主的 playerindex
 
 public:
 	char		m_szMasterName[32];	// 帮主名字
@@ -39,6 +42,9 @@ public:
 	int			CheckIn() {return m_nFlag;};
 	int			GetCamp() {return m_nCamp;};
 	int			GetFigure() {return m_nFigure;};
+	BOOL		GetRecruitFlag() {return m_bRecruit;};
+	DWORD		GetMoney() {return m_dwMoney;};
+	int			GetLevel() {return m_nLevel;};
 
 	// 是否有权力查询队长信息
 	BOOL		CanGetManagerInfo(DWORD dwTongNameID);
@@ -79,6 +85,9 @@ public:
 	void		SetSelfInfo(TONG_SELF_INFO_SYNC *pInfo);
 	
 	void        OpenCreateInterface();
+	BOOL		ApplyRecruit(BOOL bRecruit);
+	BOOL		ApplyDepositMoney(DWORD dwMoney);
+	BOOL		ApplyWithdrawMoney(DWORD dwMoney);
 #endif
 
 #ifdef _SERVER
@@ -88,6 +97,9 @@ public:
 	BOOL		Create(int nCamp, char *lpszTongName);
 	// 头上是否需要顶找人标志
 	BOOL		GetOpenFlag();
+	BOOL		SetRecruit(BOOL bRecruit);
+	BOOL		PrepareMoneyRequest(STONG_SERVER_TO_CORE_MONEY_REQUEST *pRequest);
+	void		ChangeMoney(DWORD dwMoney);
 	// 转发加入帮会申请给对方客户端
 	BOOL		TransferAddApply(DWORD dwNpcID);
 	// 发消息通知拒绝某人申请

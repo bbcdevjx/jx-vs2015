@@ -6,7 +6,7 @@
 #include "GameDataDef.h"
 #include "KFaction.h"
 
-#define		MAGICDESC_FILE		"\\settings\\MagicDesc.Ini"
+#define		MAGICDESC_FILE		"\\settings\\item\\item_magic_desc.ini"
 extern const char * g_MagicID2String(int nAttrib);
 const char MAGIC_ATTRIB_STRING[][100] = 
 {

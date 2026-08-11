@@ -53,6 +53,13 @@ extern int LuaGetNpcTalk(Lua_State *L);
 #define		PLAYER_LEVEL_1_EXP				48
 #define		PLAYER_LEVEL_ADD_ATTRIBUTE		5
 #define		PLAYER_LEVEL_ADD_SKILL			1
+
+static int ClampPlayerInt64(__int64 nValue)
+{
+	if (nValue > 0x7fffffff) return 0x7fffffff;
+	if (nValue < -2147483647i64 - 1) return (-2147483647 - 1);
+	return (int)nValue;
+}
 #define		PLAYER_SHARE_EXP_DISTANCE		768
 #define		PLAYER_TEAM_EXP_ADD				50
 
@@ -73,7 +80,6 @@ extern int LuaGetNpcTalk(Lua_State *L);
 #define		BASE_HIT_RECOVER				6
 
 #define		TOWN_PORTAL_TIME				1800
-
 
 KPlayer	Player[MAX_PLAYER];
 int		g_nLastNetMsgLoop;
@@ -141,7 +147,6 @@ void	KPlayer::Release()
 	m_nObjectIdx = 0;
 	m_bWaitingPlayerFeedBack = false;
 	m_btTryExecuteScriptTimes = 0;	//
-
 
 #ifdef _SERVER
 	m_bUseReviveIdWhenLogin = 0;
@@ -279,7 +284,6 @@ void	KPlayer::Active()
 
 #endif
 }
-
 
 void	KPlayer::ProcessMsg(KWorldMsgNode *lpMsg)
 {
@@ -451,7 +455,6 @@ void KPlayer::ProcessMouse(int x, int y, int Key, MOUSE_BUTTON nButton)
 			//			m_nPeapleIdx = 0;
 			//????Object / Enemy / Ally ???????????????????id
 
-
 			if (pISkill->IsTargetAlly())
 			{
 				FindSelectNpc(x, y, relation_ally);
@@ -533,7 +536,6 @@ void KPlayer::ProcessMouse(int x, int y, int Key, MOUSE_BUTTON nButton)
 		return;
 	}
 
-
 	if (Key == 0)
 	{
 		int nRelation = NpcSet.GetRelation(m_nIndex, m_nPeapleIdx);
@@ -598,7 +600,6 @@ void KPlayer::Walk(int nDir, int nSpeed)
 			SendClientCmdWalk(nX, nY);
 	}
 }
-
 
 void KPlayer::TurnLeft()
 {
@@ -678,7 +679,6 @@ int	KPlayer::NetCommandPlayerTalk(BYTE * pProtocol)
 	return 0;
 }
 
-
 BOOL KPlayer::ConformIdx(int nIdx)
 {
 	if (nIdx == m_nIndex || nIdx == 0)
@@ -717,7 +717,6 @@ BOOL KPlayer::IsLoginTimeOut()
 
 	return FALSE;
 }
-
 
 void KPlayer::LoginTimeOut()
 {
@@ -825,8 +824,9 @@ BOOL KPlayer::SendSyncData(int &nStep, unsigned int &nParam)
 		sSync.m_wDexterity = this->m_nDexterity;
 		sSync.m_wVitality = this->m_nVitality;
 		sSync.m_wEngergy = this->m_nEngergy;
-		sSync.m_wLucky = this->m_nLucky;
+		sSync.m_wLucky = (WORD)(this->m_nLucky < 0 ? 0 : (this->m_nLucky > 0xffff ? 0xffff : this->m_nLucky));
 		sSync.m_nExp = this->m_nExp;
+		sSync.m_byTranslife = Npc[m_nIndex].m_byTranslife;
 		sSync.m_dwLeadExp = this->m_dwLeadExp;
 		sSync.m_btCurFaction = this->m_cFaction.m_nCurFaction;
 		sSync.m_btFirstFaction = this->m_cFaction.m_nFirstAddFaction;
@@ -957,7 +957,6 @@ void KPlayer::GetLoginRevivalPos(int *lpnSubWorld, int *lpnMpsX, int *lpnMpsY)
 	*lpnMpsY = m_sLoginRevivalPos.m_nMpsY;
 }
 
-
 void KPlayer::GetDeathRevivalPos(int *lpnSubWorld, int *lpnMpsX, int *lpnMpsY)
 {
 	*lpnSubWorld = m_sDeathRevivalPos.m_nSubWorldID;
@@ -977,7 +976,6 @@ void	KPlayer::CloseTimer()							//??????????
 	m_TimerTask.CloseTimer();
 }
 #endif
-
 
 #ifdef _SERVER
 //------------------------------------------------------------------------------
@@ -1649,7 +1647,6 @@ pMapPos->nOffY = nOffY;
 }*/
 #endif
 
-
 #ifdef _SERVER
 //-------------------------------------------------------------------------
 //	?????????????¦¶????????npc id??player index
@@ -1799,7 +1796,7 @@ void	KPlayer::AddBaseStrength(int nData)
 	{
 		m_nStrength += nData;
 		m_nAttributePoint -= nData;
-		m_nCurStrength += nData;
+		m_nCurStrength = ClampPlayerInt64((__int64)m_nCurStrength + nData);
 
 		UpdataCurData();
 		SetNpcPhysicsDamage();
@@ -1825,7 +1822,7 @@ void	KPlayer::AddBaseDexterity(int nData)
 	{
 		m_nDexterity += nData;
 		m_nAttributePoint -= nData;
-		m_nCurDexterity += nData;
+		m_nCurDexterity = ClampPlayerInt64((__int64)m_nCurDexterity + nData);
 
 		SetNpcAttackRating();
 		SetNpcDefence();
@@ -1852,12 +1849,21 @@ void	KPlayer::AddBaseVitality(int nData)
 {
 	if (nData > 0 && nData <= m_nAttributePoint)
 	{
+		const int nLifePerPoint = PlayerSet.m_cLevelAdd.GetLifePerVitality(Npc[m_nIndex].m_Series);
+		const int nStaminaPerPoint = PlayerSet.m_cLevelAdd.GetStaminaPerVitality(Npc[m_nIndex].m_Series);
+		const __int64 nLifeAdd = (__int64)nLifePerPoint * nData;
+		const __int64 nStaminaAdd = (__int64)nStaminaPerPoint * nData;
+		if ((__int64)m_nVitality + nData > 0x7fffffff ||
+			(__int64)m_nCurVitality + nData > 0x7fffffff ||
+			nLifeAdd < 0 || (__int64)Npc[m_nIndex].m_LifeMax + nLifeAdd > 0x7fffffff ||
+			nStaminaAdd < 0 || (__int64)Npc[m_nIndex].m_StaminaMax + nStaminaAdd > 0x7fffffff)
+			return;
 		m_nVitality += nData;
 		m_nAttributePoint -= nData;
-		m_nCurVitality += nData;
+		m_nCurVitality = ClampPlayerInt64((__int64)m_nCurVitality + nData);
 
-		Npc[m_nIndex].AddBaseLifeMax(PlayerSet.m_cLevelAdd.GetLifePerVitality(Npc[m_nIndex].m_Series) * nData);
-		Npc[m_nIndex].AddBaseStaminaMax(PlayerSet.m_cLevelAdd.GetStaminaPerVitality(Npc[m_nIndex].m_Series) * nData);
+		Npc[m_nIndex].AddBaseLifeMax((int)nLifeAdd);
+		Npc[m_nIndex].AddBaseStaminaMax((int)nStaminaAdd);
 		UpdataCurData();
 
 		// ?????????????????
@@ -1882,7 +1888,7 @@ void	KPlayer::AddBaseEngergy(int nData)
 	{
 		m_nEngergy += nData;
 		m_nAttributePoint -= nData;
-		m_nCurEngergy += nData;
+		m_nCurEngergy = ClampPlayerInt64((__int64)m_nCurEngergy + nData);
 
 		Npc[m_nIndex].AddBaseManaMax(PlayerSet.m_cLevelAdd.GetManaPerEnergy(Npc[m_nIndex].m_Series) * nData);
 		UpdataCurData();
@@ -1905,27 +1911,27 @@ void	KPlayer::AddBaseEngergy(int nData)
 #ifdef _SERVER
 void KPlayer::SetBaseStrength(int nData)
 {
-	m_nStrength += nData; m_nCurStrength += nData; UpdataCurData(); SetNpcPhysicsDamage();
+	m_nStrength = ClampPlayerInt64((__int64)m_nStrength + nData); m_nCurStrength = ClampPlayerInt64((__int64)m_nCurStrength + nData); UpdataCurData(); SetNpcPhysicsDamage();
 	PLAYER_ATTRIBUTE_SYNC s = {0}; s.ProtocolType=s2c_playersyncattribute; s.m_btAttribute=ATTRIBUTE_STRENGTH; s.m_nBasePoint=m_nStrength; s.m_nCurPoint=m_nCurStrength; s.m_nLeavePoint=m_nAttributePoint;
 	g_pServer->PackDataToClient(m_nNetConnectIdx,(BYTE*)&s,sizeof(s));
 }
 void KPlayer::SetBaseDexterity(int nData)
 {
-	m_nDexterity += nData; m_nCurDexterity += nData; SetNpcAttackRating(); SetNpcDefence(); UpdataCurData(); SetNpcPhysicsDamage();
+	m_nDexterity = ClampPlayerInt64((__int64)m_nDexterity + nData); m_nCurDexterity = ClampPlayerInt64((__int64)m_nCurDexterity + nData); SetNpcAttackRating(); SetNpcDefence(); UpdataCurData(); SetNpcPhysicsDamage();
 	PLAYER_ATTRIBUTE_SYNC s = {0}; s.ProtocolType=s2c_playersyncattribute; s.m_btAttribute=ATTRIBUTE_DEXTERITY; s.m_nBasePoint=m_nDexterity; s.m_nCurPoint=m_nCurDexterity; s.m_nLeavePoint=m_nAttributePoint;
 	g_pServer->PackDataToClient(m_nNetConnectIdx,(BYTE*)&s,sizeof(s));
 }
 void KPlayer::SetBaseVitality(int nData)
 {
-	m_nVitality += nData; m_nCurVitality += nData;
-	Npc[m_nIndex].AddBaseLifeMax(PlayerSet.m_cLevelAdd.GetLifePerVitality(Npc[m_nIndex].m_Series)*nData);
-	Npc[m_nIndex].AddBaseStaminaMax(PlayerSet.m_cLevelAdd.GetStaminaPerVitality(Npc[m_nIndex].m_Series)*nData); UpdataCurData();
+	m_nVitality = ClampPlayerInt64((__int64)m_nVitality + nData); m_nCurVitality = ClampPlayerInt64((__int64)m_nCurVitality + nData);
+	Npc[m_nIndex].AddBaseLifeMax(ClampPlayerInt64((__int64)PlayerSet.m_cLevelAdd.GetLifePerVitality(Npc[m_nIndex].m_Series) * nData));
+	Npc[m_nIndex].AddBaseStaminaMax(ClampPlayerInt64((__int64)PlayerSet.m_cLevelAdd.GetStaminaPerVitality(Npc[m_nIndex].m_Series) * nData)); UpdataCurData();
 	PLAYER_ATTRIBUTE_SYNC s = {0}; s.ProtocolType=s2c_playersyncattribute; s.m_btAttribute=ATTRIBUTE_VITALITY; s.m_nBasePoint=m_nVitality; s.m_nCurPoint=m_nCurVitality; s.m_nLeavePoint=m_nAttributePoint;
 	g_pServer->PackDataToClient(m_nNetConnectIdx,(BYTE*)&s,sizeof(s));
 }
 void KPlayer::SetBaseEngergy(int nData)
 {
-	m_nEngergy += nData; m_nCurEngergy += nData; Npc[m_nIndex].AddBaseManaMax(PlayerSet.m_cLevelAdd.GetManaPerEnergy(Npc[m_nIndex].m_Series)*nData); UpdataCurData();
+	m_nEngergy = ClampPlayerInt64((__int64)m_nEngergy + nData); m_nCurEngergy = ClampPlayerInt64((__int64)m_nCurEngergy + nData); Npc[m_nIndex].AddBaseManaMax(ClampPlayerInt64((__int64)PlayerSet.m_cLevelAdd.GetManaPerEnergy(Npc[m_nIndex].m_Series) * nData)); UpdataCurData();
 	PLAYER_ATTRIBUTE_SYNC s = {0}; s.ProtocolType=s2c_playersyncattribute; s.m_btAttribute=ATTRIBUTE_ENGERGY; s.m_nBasePoint=m_nEngergy; s.m_nCurPoint=m_nCurEngergy; s.m_nLeavePoint=m_nAttributePoint;
 	g_pServer->PackDataToClient(m_nNetConnectIdx,(BYTE*)&s,sizeof(s));
 }
@@ -1935,7 +1941,7 @@ void	KPlayer::ChangeCurStrength(int nData)
 	/*	if (m_nCurStrength + nData < m_nStrength)
 	return;
 	*/
-	m_nCurStrength += nData;
+	m_nCurStrength = ClampPlayerInt64((__int64)m_nCurStrength + nData);
 	SetNpcPhysicsDamage();
 	// ?????????????????
 }
@@ -1948,18 +1954,17 @@ void	KPlayer::ChangeCurDexterity(int nData)
 	/*	if (m_nCurDexterity + nData < 0)
 	return;
 	*/
-	m_nCurDexterity += nData;
+	m_nCurDexterity = ClampPlayerInt64((__int64)m_nCurDexterity + nData);
 
-	int nRating = nData * 4;
-	Npc[m_nIndex].m_CurrentAttackRating += nRating;
+	int nRating = ClampPlayerInt64((__int64)nData * 4);
+	Npc[m_nIndex].m_CurrentAttackRating = ClampPlayerInt64((__int64)Npc[m_nIndex].m_CurrentAttackRating + nRating);
 
 	int nDefence = nData / 4;
-	Npc[m_nIndex].m_CurrentDefend += nDefence;
+	Npc[m_nIndex].m_CurrentDefend = ClampPlayerInt64((__int64)Npc[m_nIndex].m_CurrentDefend + nDefence);
 
 	SetNpcPhysicsDamage();
 
 }
-
 
 //-------------------------------------------------------------------------
 //	?????????????(?? nData §³?? 0 ???????)
@@ -1969,10 +1974,10 @@ void	KPlayer::ChangeCurVitality(int nData)
 	/*	if (nData + m_nAttributePoint < 0)
 	return;
 	*/
-	m_nCurVitality += nData;
+	m_nCurVitality = ClampPlayerInt64((__int64)m_nCurVitality + nData);
 #ifdef _SERVER
-	Npc[m_nIndex].AddCurLifeMax(PlayerSet.m_cLevelAdd.GetLifePerVitality(Npc[m_nIndex].m_Series) * nData);
-	Npc[m_nIndex].AddCurStaminaMax(PlayerSet.m_cLevelAdd.GetStaminaPerVitality(Npc[m_nIndex].m_Series) * nData);
+	Npc[m_nIndex].AddCurLifeMax(ClampPlayerInt64((__int64)PlayerSet.m_cLevelAdd.GetLifePerVitality(Npc[m_nIndex].m_Series) * nData));
+	Npc[m_nIndex].AddCurStaminaMax(ClampPlayerInt64((__int64)PlayerSet.m_cLevelAdd.GetStaminaPerVitality(Npc[m_nIndex].m_Series) * nData));
 #endif	
 }
 
@@ -1984,9 +1989,9 @@ void	KPlayer::ChangeCurEngergy(int nData)
 	/*	if (m_nAttributePoint + nData < 0)
 	return;
 	*/
-	m_nCurEngergy += nData;
+	m_nCurEngergy = ClampPlayerInt64((__int64)m_nCurEngergy + nData);
 #ifdef _SERVER
-	Npc[m_nIndex].AddCurManaMax(PlayerSet.m_cLevelAdd.GetManaPerEnergy(Npc[m_nIndex].m_Series) * nData);
+	Npc[m_nIndex].AddCurManaMax(ClampPlayerInt64((__int64)PlayerSet.m_cLevelAdd.GetManaPerEnergy(Npc[m_nIndex].m_Series) * nData));
 #endif	
 }
 
@@ -2040,7 +2045,7 @@ void	KPlayer::SetNpcAttackRating()
 {
 	int		nRating;
 
-	nRating = m_nDexterity * 4 - 28;
+	nRating = ClampPlayerInt64((__int64)m_nDexterity * 4 - 28);
 	Npc[m_nIndex].SetBaseAttackRating(nRating);
 }
 
@@ -2179,7 +2184,6 @@ SharePlace:
 	int		k, nGetExp;
 	k = 100 + nTotalPlayer * 15;
 
-
 	// ????????‚B??
 	if (nShareFlag[0])
 	{
@@ -2302,7 +2306,7 @@ void	KPlayer::AddSelfExp(int nExp, int nTarLevel)
 //-------------------------------------------------------------------------
 //	????????????????????????????????
 //-------------------------------------------------------------------------
-void	KPlayer::DirectAddExp(int nExp)
+void	KPlayer::DirectAddExp(__int64 nExp)
 {
 	if (nExp > 0 && Npc[m_nIndex].m_Level >= MAX_LEVEL)
 		return;
@@ -2877,7 +2881,7 @@ void	KPlayer::ApplyAddBaseAttribute(int nAttribute, int nNo)
 {
 	if (nAttribute < 0 || nAttribute > 3)
 		return;
-	if (nNo <= 0 || nNo >= 255)
+	if (nNo <= 0 || nNo > m_nAttributePoint)
 		return;
 	PLAYER_ADD_BASE_ATTRIBUTE_COMMAND	sAdd;
 	sAdd.ProtocolType = c2s_playeraddbaseattribute;
@@ -3432,7 +3436,6 @@ void	KPlayer::TaskSetClearVal(int nNo, int nVal)
 }
 #endif
 
-
 #ifndef _SERVER
 void	KPlayer::SetDefaultImmedSkill()
 {
@@ -3441,12 +3444,12 @@ void	KPlayer::SetDefaultImmedSkill()
 	int nParticularType = Player[CLIENT_PLAYER_INDEX].m_ItemList.GetWeaponParticular();
 
 	//????????
-	if (nDetailType == 0)
+	if (nDetailType == 0 && nParticularType >= 0 && nParticularType < MAX_MELEEWEAPON_PARTICULARTYPE_NUM)
 	{
 		Player[CLIENT_PLAYER_INDEX].SetLeftSkill(g_nMeleeWeaponSkill[nParticularType]);
 		Player[CLIENT_PLAYER_INDEX].SetRightSkill(g_nMeleeWeaponSkill[nParticularType]);
 	}//???????
-	else if (nDetailType == 1)
+	else if (nDetailType == 1 && nParticularType >= 0 && nParticularType < MAX_RANGEWEAPON_PARTICULARTYPE_NUM)
 	{
 		Player[CLIENT_PLAYER_INDEX].SetLeftSkill(g_nRangeWeaponSkill[nParticularType]);
 		Player[CLIENT_PLAYER_INDEX].SetRightSkill(g_nRangeWeaponSkill[nParticularType]);
@@ -3460,7 +3463,8 @@ void	KPlayer::SetDefaultImmedSkill()
 
 void	KPlayer::SetLeftSkill(int nSkillID)
 {
-	if (Npc[Player[CLIENT_PLAYER_INDEX].m_nIndex].m_SkillList.GetCurrentLevel(nSkillID) <= 0) return;
+	int nWeaponSkillID = Npc[Player[CLIENT_PLAYER_INDEX].m_nIndex].GetCurActiveWeaponSkill();
+	if (nSkillID != nWeaponSkillID && Npc[Player[CLIENT_PLAYER_INDEX].m_nIndex].m_SkillList.GetCurrentLevel(nSkillID) <= 0) return;
 	m_nLeftSkillID = nSkillID;
 
 	KUiGameObject Info;
@@ -3471,7 +3475,8 @@ void	KPlayer::SetLeftSkill(int nSkillID)
 
 void	KPlayer::SetRightSkill(int nSkillID)
 {
-	if (Npc[Player[CLIENT_PLAYER_INDEX].m_nIndex].m_SkillList.GetCurrentLevel(nSkillID) <= 0) return;
+	int nWeaponSkillID = Npc[Player[CLIENT_PLAYER_INDEX].m_nIndex].GetCurActiveWeaponSkill();
+	if (nSkillID != nWeaponSkillID && Npc[Player[CLIENT_PLAYER_INDEX].m_nIndex].m_SkillList.GetCurrentLevel(nSkillID) <= 0) return;
 	m_nRightSkillID = nSkillID;
 	// ?????????????
 	ISkill * pOrdinSkill = g_SkillManager.GetSkill(nSkillID, 1);
@@ -3498,10 +3503,7 @@ void KPlayer::UpdateWeaponSkill()
 	if (m_nLeftSkillID > 0)
 	{
 		ISkill * pISkill = g_SkillManager.GetSkill(m_nLeftSkillID, 1);
-		if (!pISkill)
-			return;
-
-		if (pISkill->IsPhysical())
+		if (pISkill && pISkill->IsPhysical())
 		{
 			SetLeftSkill(Npc[m_nIndex].GetCurActiveWeaponSkill());
 		}
@@ -3510,10 +3512,7 @@ void KPlayer::UpdateWeaponSkill()
 	if (m_nRightSkillID > 0)
 	{
 		ISkill * pISkill = (KSkill *)g_SkillManager.GetSkill(m_nRightSkillID, 1);
-		if (!pISkill)
-			return;
-
-		if (pISkill->IsPhysical())
+		if (pISkill && pISkill->IsPhysical())
 		{
 			SetRightSkill(Npc[m_nIndex].GetCurActiveWeaponSkill());
 		}
@@ -3591,7 +3590,6 @@ void	KPlayer::AddSkillPoint(BYTE* pProtocol)
 	if (nSkillIndex == 0)
 		return;
 	nSkillLevel = Npc[m_nIndex].m_SkillList.GetSkillIdxLevel(nSkillIndex);
-
 
 	if (m_nSkillPoint >= pAdd->m_nAddPoint && nSkillIndex)//&& nSkillLevel + pAdd->m_nAddPoint <= MAX_SKILLLEVEL
 	{
@@ -3674,7 +3672,6 @@ void	KPlayer::AddSkillPoint(BYTE* pProtocol)
 			g_pServer->PackDataToClient(m_nNetConnectIdx, (BYTE*)&sSkill, sizeof(PLAYER_SKILL_LEVEL_SYNC));
 		}
 	}
-
 
 }
 #endif
@@ -4619,7 +4616,6 @@ void KPlayer::Revive(int nType)
 	Npc[m_nIndex].SendCommand(do_revive);
 }
 
-
 void KPlayer::RestoreLiveData()
 {
 	Npc[m_nIndex].RestoreNpcBaseInfo();
@@ -4675,7 +4671,6 @@ void	KPlayer::LaunchPlayer()
 }
 #endif
 
-
 BOOL	KPlayer::ExecuteScript(char * ScriptFileName, char * szFunName, int nParam)
 {
 	if (!ScriptFileName || !ScriptFileName[0] || !szFunName || !szFunName[0]) return FALSE;
@@ -4701,8 +4696,6 @@ BOOL	KPlayer::ExecuteScript(DWORD dwScriptId, char * szFunName, int nParam)
 	m_btTryExecuteScriptTimes = 0;
 	m_bWaitingPlayerFeedBack = false;
 	Npc[m_nIndex].m_ActionScriptID = 0;
-	}
-	}
 	}
 
 	if (!bCanExecuteScript) return FALSE;
@@ -4774,8 +4767,6 @@ BOOL	KPlayer::ExecuteScript(DWORD dwScriptId, char * szFunName, char *  szParams
 	m_bWaitingPlayerFeedBack = false;
 	Npc[m_nIndex].m_ActionScriptID = 0;
 	}
-	}
-	}
 
 	bCanExecuteScript = true;//test
 
@@ -4840,7 +4831,6 @@ BOOL	KPlayer::ExecuteScript(DWORD dwScriptId, char * szFunName, char *  szParams
 	return TRUE;
 }
 
-
 BOOL	KPlayer::ExecuteScript(char * ScriptFileName, char * szFunName, char *  szParams)
 {
 	if (!ScriptFileName || !ScriptFileName[0] || !szFunName || !szFunName[0]) return FALSE;
@@ -4857,7 +4847,6 @@ BOOL	KPlayer::DoScript(char * ScriptCommand)
 
 	//GM Standand Script Functions 
 	Script->Load("\\script\\gmscript.lua");
-
 
 	Lua_PushNumber(Script->m_LuaState, m_nPlayerIndex);
 	Script->SetGlobalName(SCRIPT_PLAYERINDEX);
@@ -4876,7 +4865,6 @@ BOOL	KPlayer::DoScript(char * ScriptCommand)
 	delete Script; //Question!
 	return FALSE;
 }
-
 
 void	KPlayer::DoScriptAction(PLAYER_SCRIPTACTION_SYNC * pUIInfo) //?????????UI????
 {
@@ -5153,7 +5141,6 @@ void	KPlayer::OnScriptAction(PLAYER_SCRIPTACTION_SYNC * pMsg)
 						strcpy(pSpeakList[i].sInformation, g_GetStringRes(atoi(pAnswer), szString, sizeof(szString)));
 					}
 
-
 					if (i < pScriptAction->m_bOptionNum - 1)
 						strcpy(pSpeakList[i].sConfirmText, "????");
 					else
@@ -5218,7 +5205,6 @@ void	KPlayer::OnScriptAction(PLAYER_SCRIPTACTION_SYNC * pMsg)
 				g_GetStringRes(*(int *)pScriptAction->m_pContent, Record.sContent, sizeof(Record.sContent));
 				Record.uValue = *(unsigned int*)(Record.sContent + sizeof(int));
 			}
-
 
 			Record.nContentLen = TEncodeText(Record.sContent, strlen(Record.sContent));
 
@@ -5370,7 +5356,6 @@ void	KPlayer::OnScriptAction(PLAYER_SCRIPTACTION_SYNC * pMsg)
 	break;
 	}
 
-
 }
 #endif
 
@@ -5413,7 +5398,6 @@ void	KPlayer::DialogNpc(BYTE * pProtocol)
 void	KPlayer::s2cTradeChangeState(BYTE* pMsg)
 {
 	TRADE_CHANGE_STATE_SYNC	*pTrade = (TRADE_CHANGE_STATE_SYNC*)pMsg;
-
 
 	switch (m_cMenuState.m_nState)
 	{
@@ -5706,7 +5690,7 @@ void	KPlayer::s2cGetCurAttribute(BYTE* pMsg)
 #endif
 
 #ifndef _SERVER
-void	KPlayer::s2cSetExp(int nExp)
+void	KPlayer::s2cSetExp(__int64 nExp)
 {
 	if (nExp > m_nExp)
 	{
@@ -5892,6 +5876,7 @@ void	KPlayer::SyncCurPlayer(BYTE* pMsg)
 
 	Npc[m_nIndex].m_Kind = kind_player;
 	Npc[m_nIndex].m_Level = (DWORD)PlaySync->m_btLevel;
+	Npc[m_nIndex].m_byTranslife = PlaySync->m_byTranslife;
 	Npc[m_nIndex].m_nSex = PlaySync->m_btSex;
 	Npc[m_nIndex].m_Series = PlaySync->m_btSeries;
 	Npc[m_nIndex].SetPlayerIdx(CLIENT_PLAYER_INDEX);
@@ -5978,7 +5963,6 @@ void	KPlayer::SetFirstDamage()
 {
 	int nDamageBase;
 
-
 	nDamageBase = m_nCurStrength / STRENGTH_SET_DAMAGE_VALUE + 1;
 
 	Npc[m_nIndex].m_PhysicsDamage.nValue[0] = nDamageBase;
@@ -6005,7 +5989,7 @@ void	KPlayer::SetFirstDamage()
 
 void	KPlayer::SetBaseAttackRating()
 {
-	Npc[m_nIndex].m_AttackRating = m_nDexterity * 4 - 28;
+	Npc[m_nIndex].m_AttackRating = ClampPlayerInt64((__int64)m_nDexterity * 4 - 28);
 }
 
 void	KPlayer::SetBaseDefence()
@@ -6180,7 +6164,6 @@ void KPlayer::GetEchoDamage(int* nMin, int* nMax, int nType)
 	}
 
 	BOOL	bIsPhysical = pOrdinSkill->IsPhysical();
-
 
 	pMagicData = pOrdinSkill->GetDamageAttribs();
 

@@ -10,26 +10,6 @@
 #endif
 
 #include <winsock2.h>
-#include <winsock2.h>
-#include <winsock2.h>
-#include <winsock2.h>
-#include <winsock2.h>
-#include <winsock2.h>
-#include <winsock2.h>
-#include <winsock2.h>
-#include <winsock2.h>
-#include <winsock2.h>
-#include <winsock2.h>
-#include <winsock2.h>
-#include <winsock2.h>
-#include <winsock2.h>
-#include <winsock2.h>
-#include <winsock2.h>
-#include <winsock2.h>
-#include <winsock2.h>
-#include <winsock2.h>
-#include <winsock2.h>
-#include <winsock2.h>
 #include "KWin32.h"
 #include "KEngine.h"
 #include "KDebug.h"
@@ -197,7 +177,6 @@ int LuaModifyRepute(Lua_State *L)
 //		KPlayerChat::SendSystemInfo(1, nPlayerIndex, MESSAGE_SYSTEM_ANNOUCE_HEAD, (char *) szMsg, strlen(szMsg) );
 	}
 	
-	
 	return 0;	
 }
 
@@ -248,7 +227,6 @@ lab_subworldid2idx:
 	Lua_PushNumber(L, nTargetSubWorld);
 	return 1;
 }
-
 
 int LuaSubWorldIndexToID(Lua_State * L)
 {
@@ -424,7 +402,6 @@ int LuaSelectUI(Lua_State * L)
 	Player[nPlayerIndex].DoScriptAction(&UiInfo);
 	return 0;
 }
-
 
 //PutMsg(szMsg/MsgId)
 int LuaCheckRoom(Lua_State * L)
@@ -823,7 +800,6 @@ int LuaAddNote(Lua_State * L)
 	
 	int nParam2 = 0;
 	
-	
 	if  (Lua_IsNumber(L,1))
 	{
 		nMainInfo = (int)Lua_ValueToNumber(L,1);
@@ -922,7 +898,6 @@ int LuaTalkUI(Lua_State * L)
 	}
 	else
 		return 0;
-	
 	
 	//获得实际传入的选项的个数
 	if (nOptionNum > nParamNum - 2) 
@@ -1068,7 +1043,6 @@ int LuaSetTaskValue(Lua_State * L)
 	Player[nPlayerIndex].m_cTask.SetSaveVal(nValueIndex, nValue);
 	return 0;
 }
-
 
 #ifndef _SERVER
 #define MAX_TEMPVALUENUM_INCLIENT 500
@@ -1233,7 +1207,6 @@ lab_getmissionresttime:
 	Lua_PushNumber(L, RestTime);
 	return 1;
 }
-
 
 //**************************************************************************************************************************************************************
 //												组队脚本
@@ -1478,13 +1451,10 @@ int LuaGetNewWorldPos(Lua_State * L)
 	else
 	{
 		Lua_PushNumber(L, 0);
-		Lua_PushNumber(L, 0);
-		Lua_PushNumber(L, 0);
 		return 3;
 	}
 	return 3;
 }
-
 
 int LuaDropItem(Lua_State *L)
 {
@@ -1972,7 +1942,6 @@ int LuaGetTaskItemCount(Lua_State * L)
 	return 1;
 }
 
-
 /*
 DelItem (nPlayerIndex, nItemTemplateId)
 <= 2 th玭g s? x鉧 item_task theo s?lng
@@ -2128,8 +2097,6 @@ int LuaDelMagic(Lua_State * L)
 	return 0;
 	
 }
-
-
 
 int LuaHaveMagic(Lua_State * L)
 {
@@ -2327,8 +2294,6 @@ nNpcIndex AddNpc(nNpcTemplateId,nLevel, nSubWorldIndex, nPosX, nPosY )
   nNpcIndex:增加后，将返回该Npc在游戏世界的Index，如果不成功返回nil 
 */
 
-
-
 int LuaAddNpc(Lua_State * L)
 {
 	char * pName = NULL;
@@ -2420,7 +2385,6 @@ int LuaSetNpcPos(Lua_State * L)
 	return 0;
 }
 
-
 /*SetNpcDthSct (nNpcIndex, map, “*.txt” )
 功能：设置NPC死亡脚本
 参数：
@@ -2445,7 +2409,6 @@ int LuaSetNpcName(Lua_State * L)
 	strcpy(Npc[nNpcIndex].Name, Lua_ValueToString(L,2));
 	return 0;
 }
-
 
 /*
 SetRevivalPos(subworldid = -1, revid )
@@ -2523,7 +2486,6 @@ int LuaGetPlayerRevivalPos(Lua_State * L)
 //**********************************************************************************************
 //							主角属性获得
 //**********************************************************************************************
-
 
 #define MacroFun_GetPlayerInfoInt(L, MemberName) { int nPlayerIndex = GetPlayerIndex(L);\
 	if (nPlayerIndex > 0){	int nNpcIndex = Player[nPlayerIndex].m_nIndex;	if (nNpcIndex > 0)Lua_PushNumber(L, Npc[nNpcIndex].MemberName);\
@@ -2617,8 +2579,6 @@ int LuaOpenTong(Lua_State * L)
 #endif
 	return 0;
 }
-
-
 
 //门派
 int LuaGetPlayerFaction(Lua_State * L)
@@ -2718,7 +2678,6 @@ int LuaSetPlayerColdResist(Lua_State * L)
 			break;
 		}
 		
-		
 	} 
 	return 0;
 	
@@ -2754,7 +2713,6 @@ int LuaSetPlayerFireResist(Lua_State * L)
 	if (nPlayerIndex > 0)
 	{
 		
-		
 		int nValue = (int)Lua_ValueToNumber(L,2);
 		if (nValue < 0) nValue = 0;
 		if (nValue > Npc[Player[nPlayerIndex].m_nIndex].m_FireResistMax) nValue = Npc[Player[nPlayerIndex].m_nIndex].m_FireResistMax;
@@ -2775,12 +2733,10 @@ int LuaSetPlayerFireResist(Lua_State * L)
 			break;
 		}
 		
-		
 	} 
 	return 0;
 	
 }
-
 
 int LuaGetPlayerLightResist(Lua_State * L)
 {
@@ -2836,7 +2792,6 @@ int LuaSetPlayerLightResist(Lua_State * L)
 	return 0;
 }
 
-
 int LuaGetPlayerPoisonResist(Lua_State * L)
 {
 	int nPlayerIndex = GetPlayerIndex(L);
@@ -2889,7 +2844,6 @@ int LuaSetPlayerPoisonResist(Lua_State * L)
 		
 	} 
 	
-	
 	return 0;
 	
 }
@@ -2920,8 +2874,6 @@ int LuaGetPlayerPhysicsResist(Lua_State * L)
 		Lua_PushNil(L);
 	return 1;
 }
-
-
 
 int LuaSetPlayerPhysicsResist(Lua_State * L)
 {
@@ -2955,7 +2907,6 @@ int LuaSetPlayerPhysicsResist(Lua_State * L)
 	return 0;
 	
 }
-
 
 //经验值*********************************************************************
 int LuaGetPlayerExp(Lua_State *L)
@@ -2996,9 +2947,9 @@ int LuaAddOwnExp(Lua_State * L)
 	int nPlayerIndex = GetPlayerIndex(L);				
 	if (nPlayerIndex > 0)								
 	{									
-		int nExp = (int)Lua_ValueToNumber(L,1);
+		__int64 nExp = (__int64)Lua_ValueToNumber(L,1);
 		if (nExp >= 0)
-			Player[nPlayerIndex].DirectAddExp((int)Lua_ValueToNumber(L,1));
+			Player[nPlayerIndex].DirectAddExp(nExp);
 	}
 	return 0;
 }
@@ -3077,7 +3028,6 @@ int LuaGetPlayerLifeReplenish(Lua_State * L)
 	MacroFun_GetPlayerInfoInt( L, m_LifeReplenish);
 }
 
-
 int LuaGetPlayerMana(Lua_State * L)
 {
 	int nPlayerIndex = GetPlayerIndex(L);
@@ -3131,7 +3081,6 @@ int LuaGetPlayerStamina(Lua_State * L)
 		Lua_PushNil(L);
 	return 1;
 }
-
 
 int LuaGetPlayerManaReplenish(Lua_State * L)
 {
@@ -3191,7 +3140,6 @@ int LuaGetPlayerName(Lua_State * L)
 	
 }
 
-
 int LuaGetPlayerID(Lua_State * L)
 {
 	int nPlayerIndex = GetPlayerIndex(L);
@@ -3231,8 +3179,6 @@ int LuaGetPlayerLeadLevel(Lua_State * L)
 	
 	return 1;
 }
-
-
 
 int LuaGetPlayerRestAttributePoint(Lua_State * L)
 {
@@ -3499,7 +3445,6 @@ int LuaPlayerPrePayMoney(Lua_State *L)
 	return 1;
 }
 
-
 int LuaPlayerExecuteScript(Lua_State * L)
 {
 	
@@ -3550,7 +3495,6 @@ int LuaSetPlayerChatForbiddenFlag(Lua_State * L)
 	Player[nPlayerIndex].SetChatForbiddenFlag(nFlag);
 	return 0;
 }
-
 
 int LuaKickOutPlayer(Lua_State *L)
 {
@@ -3631,11 +3575,8 @@ int LuaKillNpc(Lua_State * L)
 	DamageMagicAttribs[0].nAttribType = magic_attackrating_v;
 	DamageMagicAttribs[0].nValue[0] = 50000;
 	
-	
-	
 	DamageMagicAttribs[1].nAttribType = magic_ignoredefense_p;
 	DamageMagicAttribs[1].nValue[0] = 1;
-	
 	
 	DamageMagicAttribs[2].nValue[0] = 50000;
 	DamageMagicAttribs[2].nValue[2] = 50000;
@@ -3657,7 +3598,6 @@ int LuaKillPlayer(Lua_State * L)
 	
 	DamageMagicAttribs[1].nAttribType = magic_ignoredefense_p;
 	DamageMagicAttribs[1].nValue[0] = 1;
-	
 	
 	DamageMagicAttribs[2].nValue[0] = 50000;
 	DamageMagicAttribs[2].nValue[2] = 50000;
@@ -3755,9 +3695,6 @@ int GetObjIndex(Lua_State * L)
 	}
     return nIndex;
 }
-
-
-
 
 int  LuaMessage(Lua_State * L)
 {
@@ -3947,7 +3884,6 @@ int LuaGetCity(Lua_State * L)
 	return 0;
 }
 
-
 int LuaGetPriceToWayPoint(Lua_State *L)
 {
 	
@@ -4058,7 +3994,6 @@ int LuaSetObjPropState(Lua_State *L)
 	Object[nIndex].SetState(nState);
 	return 0;
 }
-
 
 int	LuaGetServerName(Lua_State * L)
 {
@@ -4252,7 +4187,6 @@ lab_getmissionvalue:
 	Lua_PushNumber(L, nResultValue);
 	return 1;
 }
-
 
 // SetMissionValue(mapid/mapname, valueid, value)
 int LuaSetGlobalMissionValue(Lua_State * L)
@@ -4924,8 +4858,6 @@ int LuaSetPlayerRevivalOptionWhenLogout(Lua_State * L)
 	return 0;
 }
 
-
-
 int LuaSetPlayerPKValue(Lua_State * L)
 {
 	if (Lua_GetTopIndex(L) < 1) 
@@ -4956,7 +4888,6 @@ lab_getplayerpkvalue:
 	Lua_PushNumber(L, nPKValue);
 	return 1;
 }
-
 
 int	LuaGetCurNpcIndex(Lua_State * L)
 {
@@ -5007,8 +4938,6 @@ int LuaRANDOMC(Lua_State * L)
 	}
 	return 1;
 }
-
-
 
 //showladder(count, ladderid1, ladderid2.....)
 int LuaShowLadder(Lua_State * L)
@@ -5077,7 +5006,6 @@ int LuaMakeEnemy(Lua_State * L)
 	return 0;
 }
 
-
 int LuaAddLeadExp(Lua_State * L)
 {
 	if (Lua_GetTopIndex(L) < 1)
@@ -5144,7 +5072,6 @@ int LuaAddPropPoint(Lua_State * L)
 	Player[nPlayerIndex].m_nAttributePoint += nPropPoint;
 	return 0;
 }
-
 
 //PayExtPoint
 int LuaPayExtPoint(Lua_State * L)
@@ -5320,8 +5247,6 @@ int LuaSetDeathPunish(Lua_State * L)
 	return 0;
 }
 
-
-
 int LuaHideNpc(Lua_State * L)
 {
 	if (Lua_GetTopIndex(L) < 2)
@@ -5397,9 +5322,6 @@ int LuaFadeOutMusic(Lua_State * L)
 {
 	return 0;
 }
-
-
-
 
 int LuaAddTrap(Lua_State *L)
 {
@@ -5772,6 +5694,24 @@ int LuaGetNumber(Lua_State * L)
 	return 1;
 }
 #ifdef _SERVER
+int LuaAddPlayerTranslifeValue(Lua_State* L)
+{
+	int p = GetPlayerIndex(L);
+	if (p <= 0 || Lua_GetTopIndex(L) < 1) { Lua_PushNumber(L, 0); return 1; }
+	int value = (int)Npc[Player[p].m_nIndex].m_byTranslife + (int)Lua_ValueToNumber(L, 1);
+	if (value < 0) value = 0;
+	if (value > MAX_TRANSLIFE_VALUE) value = MAX_TRANSLIFE_VALUE;
+	Npc[Player[p].m_nIndex].m_byTranslife = (BYTE)value;
+	Lua_PushNumber(L, value);
+	return 1;
+}
+
+int LuaGetPlayerTranslifeValue(Lua_State* L)
+{
+	int p = GetPlayerIndex(L);
+	Lua_PushNumber(L, p > 0 ? Npc[Player[p].m_nIndex].m_byTranslife : 0);
+	return 1;
+}
 int LuaSetPlayerStrength(Lua_State* L) { int p=GetPlayerIndex(L); if(p>0 && Lua_GetTopIndex(L)>=1) Player[p].SetBaseStrength((int)Lua_ValueToNumber(L,1)); return 0; }
 int LuaSetPlayerDexterity(Lua_State* L) { int p=GetPlayerIndex(L); if(p>0 && Lua_GetTopIndex(L)>=1) Player[p].SetBaseDexterity((int)Lua_ValueToNumber(L,1)); return 0; }
 int LuaSetPlayerVitality(Lua_State* L) { int p=GetPlayerIndex(L); if(p>0 && Lua_GetTopIndex(L)>=1) Player[p].SetBaseVitality((int)Lua_ValueToNumber(L,1)); return 0; }
@@ -5825,6 +5765,8 @@ TLua_Funcs GameScriptFuns[] =
 	{"GetNumber",			LuaGetNumber},
 #ifdef _SERVER
 	{"RANDOM",			LuaRANDOM},
+	{"AddTranslife", LuaAddPlayerTranslifeValue},
+	{"GetTranslife", LuaGetPlayerTranslifeValue},
 #endif
 	{"SetNpcValue",		LuaSetNpcParam},
 	{"GetNpcValue",		LuaGetNpcParam},
@@ -5913,7 +5855,6 @@ TLua_Funcs GameScriptFuns[] =
 	
 	{"SubWorldID2Idx",	LuaSubWorldIDToIndex}, //SubWorldID2Idx
 	{"SubWorldIdx2ID",	LuaSubWorldIndexToID}, //SubWorldIdx2ID
-	
 	
 	{"AddLeadExp",		LuaAddLeadExp},
 	{"GetLeadLevel",	LuaGetLeadLevel},
@@ -6013,7 +5954,6 @@ TLua_Funcs GameScriptFuns[] =
 	{"SetPropState",	LuaSetObjPropState},//SetPropState( hide = 1) hide obj
 	{"GetServerName",	LuaGetServerName},
 	
-	
 	//------------------Station Script ---------------
 	{"GetWharfName",	LuaGetDockName},
 	{"GetWharfCount",	LuaGetDockCount},
@@ -6082,7 +6022,6 @@ TLua_Funcs GameScriptFuns[] =
 	//-------------------------------------------------
 	{"RANDOMC",				LuaRANDOMC},
 	
-	
 	{"AddProp",		LuaAddPropPoint},//加玩家属性点
 	{"GetProp",		LuaGetRestPropPoint },
 	
@@ -6123,7 +6062,6 @@ TLua_Funcs GameScriptFuns[] =
 	{"FadeInMusic",LuaFadeInMusic},
 	{"FadeOutMusic",LuaFadeOutMusic},
 };
-
 
 TLua_Funcs WorldScriptFuns[] =// 非指对玩家的脚本指令集
 {
@@ -6170,7 +6108,6 @@ TLua_Funcs WorldScriptFuns[] =// 非指对玩家的脚本指令集
 	//{"Msg2MSGroup", LuaMissionMsg2Group},
 	//{"Msg2MSAll", LuaMissionMsg2All},
 	//{"Msg2MSPlayer", LuaMissionMsg2Player},
-
 
 }; 
 

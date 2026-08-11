@@ -512,7 +512,7 @@ void KPlayerSet::ProcessClientMessage(int nIndex, const char* pChar, int nSize)
 //---------------------------------------------------------------------------
 KLevelAdd::KLevelAdd()
 {
-	memset(m_nLevelExp, 0, sizeof(int) * MAX_LEVEL);
+	memset(m_nLevelExp, 0, sizeof(m_nLevelExp));
 	memset(m_nLifePerLevel, 0, sizeof(int) * series_num);
 	memset(m_nManaPerLevel, 0, sizeof(int) * series_num);
 	memset(m_nStaminaPerLevel, 0, sizeof(int) * series_num);
@@ -532,7 +532,11 @@ BOOL	KLevelAdd::Init()
 		return FALSE;
 	for (i = 0; i < MAX_LEVEL; i++)
 	{
-		LevelExp.GetInteger(i + 2, 2, 0, &m_nLevelExp[i]);
+		char szExp[32];
+		LevelExp.GetString(i + 2, 2, "0", szExp, sizeof(szExp));
+		m_nLevelExp[i] = _atoi64(szExp);
+		if (m_nLevelExp[i] < 0)
+			m_nLevelExp[i] = 0;
 	}
 
 	KTabFile	LevelAdd;
@@ -561,7 +565,7 @@ BOOL	KLevelAdd::Init()
 //	功能：获得某等级的升级经验
 //	参数：nLevel  目标等级
 //---------------------------------------------------------------------------
-int		KLevelAdd::GetLevelExp(int nLevel)
+__int64 KLevelAdd::GetLevelExp(int nLevel)
 {
 	if (nLevel < 1 || nLevel > MAX_LEVEL)
 		return 0;

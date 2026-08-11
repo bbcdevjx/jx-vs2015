@@ -131,6 +131,7 @@ public:
 	BOOL				IsTargetEnemy()const{return m_bTargetEnemy;};
 	BOOL				IsTargetAlly()const{return m_bTargetAlly;};
 	BOOL				IsTargetObj()const{return m_bTargetObj;};
+	int					GetParam1()const{return m_nValue1;};
 	BOOL				IsNeedShadow()const{	return m_bNeedShadow;};
 	int					GetMaxTimes()const{  return m_nMaxTimes;};
 	static	int			GetSkillIdFromName(char * szSkillName);
