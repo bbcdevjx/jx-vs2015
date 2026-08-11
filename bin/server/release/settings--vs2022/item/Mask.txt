@@ -1,0 +1,840 @@
+Ãû³Æ	ItemGenre	DetailType	ParticularType	¶¯»­ÎÄ¼şÃû	¶ÔÓ¦Îï¼şË÷Òı	¿í¶È	¸ß¶È	ËµÃ÷ÎÄ×Ö	ÎåĞĞÊôĞÔ	¼Û¸ñ	µÈ¼¶	»ù´¡ÊôĞÔ1ÀàĞÍ	»ù´¡ÊôĞÔ1×îĞ¡Öµ	»ù´¡ÊôĞÔ1×î´óÖµ	»ù´¡ÊôĞÔ2ÀàĞÍ	»ù´¡ÊôĞÔ2×îĞ¡Öµ	»ù´¡ÊôĞÔ2×î´óÖµ	»ù´¡ÊôĞÔ3ÀàĞÍ	»ù´¡ÊôĞÔ3×îĞ¡Öµ	»ù´¡ÊôĞÔ3×î´óÖµ	»ù´¡ÊôĞÔ4ÀàĞÍ	»ù´¡ÊôĞÔ4×îĞ¡Öµ	»ù´¡ÊôĞÔ4×î´óÖµ	»ù´¡ÊôĞÔ5ÀàĞÍ	»ù´¡ÊôĞÔ5×îĞ¡Öµ	»ù´¡ÊôĞÔ5×î´óÖµ	»ù´¡ÊôĞÔ6ÀàĞÍ	»ù´¡ÊôĞÔ6×îĞ¡Öµ	»ù´¡ÊôĞÔ6×î´óÖµ	»ù´¡ÊôĞÔ7ÀàĞÍ	»ù´¡ÊôĞÔ7×îĞ¡Öµ	»ù´¡ÊôĞÔ7×î´óÖµ	ĞèÇóÊôĞÔ1ÀàĞÍ	ĞèÇóÊôĞÔ1ÊıÖµ	ĞèÇóÊôĞÔ2ÀàĞÍ	ĞèÇóÊôĞÔ2ÊıÖµ	ĞèÇóÊôĞÔ3ÀàĞÍ	ĞèÇóÊôĞÔ3ÊıÖµ	ĞèÇóÊôĞÔ4ÀàĞÍ	ĞèÇóÊôĞÔ4ÊıÖµ	ĞèÇóÊôĞÔ5ÀàĞÍ	ĞèÇóÊôĞÔ5ÊıÖµ	ĞèÇóÊôĞÔ6ÀàĞÍ	ĞèÇóÊôĞÔ6ÊıÖµ
+MÆt n¹ - L¹c Quang	0	11	0	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Ng©n Nha	0	11	1	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - S­¬ng §ao	0	11	2	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - L·nh §ao	0	11	3	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Hµn Th­¬ng	0	11	4	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - B«n L«i	0	11	5	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §éc Bé	0	11	6	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Gi¸ng Chïy	0	11	7	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Xİch Ch­ëng	0	11	8	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Lang Bæng	0	11	9	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Tr­¬ng T«ng Chİnh	0	11	10	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - DiÖu Nh­	0	11	11	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - LiÔu Thanh Thanh	0	11	12	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - PhiÕn Kh¸ch	0	11	13	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Lam Y Y	0	11	14	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Cæ B¸ch	0	11	15	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §¹o Thanh Ch©n Nh©n	0	11	16	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Gia LuËt TŞ Ly	0	11	17	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Hoµn Nhan TuyÕt Y	0	11	18	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §oan Méc DuÖ	0	11	19	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Chung Linh Tó	0	11	20	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Hµ Linh Phiªu	0	11	21	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - M¹nh Th­¬ng L­¬ng	0	11	22	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §«ng B¾c Hæ	0	11	23	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Hoa Nam Hæ	0	11	24	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - B¹ch Hæ	0	11	25	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Kim TiÒn B¸o	0	11	26	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - TuyÕt B¸o	0	11	27	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Sãi x¸m	0	11	28	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Sãi ®á	0	11	29	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thanh lang	0	11	30	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Sãi tuyÕt	0	11	31	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Hå Ly	0	11	32	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Hång Hå	0	11	33	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Heo rõng	0	11	34	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Nhİm	0	11	35	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Voi Ch©u ¸	0	11	36	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Voi Hoµng Hµ	0	11	37	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - GÊu n©u	0	11	38	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - GÊu ®en	0	11	39	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ -Tr©u rõng	0	11	40	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - D­¬ng Tö Ng¹c	0	11	41	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Th»n l»n ®á	0	11	42	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Nh·n Kİnh M·ng xµ	0	11	43	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - R¾n xanh	0	11	44	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Kim Hoµn M·ng Xµ	0	11	45	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Xİch LuyÖn M·ng Xµ	0	11	46	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Kim §iªu	0	11	47	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Th­¬ng ¦ng	0	11	48	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - KÒn kÒn	0	11	49	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - D¬i chóa	0	11	50	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - D¬i chóa ®á	0	11	51	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - D¬i Dong	0	11	52	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - D¬i hót m¸u	0	11	53	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Kim Miªu	0	11	54	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - X¸ LŞ	0	11	55	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Ho¸n Hïng	0	11	56	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Linh Miªu	0	11	57	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Tµng Vùc HÇu	0	11	58	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - KhØ x¸m	0	11	59	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - H¾c DiÖp HÇu	0	11	60	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Kim T¬ HÇu	0	11	61	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Sµi	0	11	62	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - TuyÕt Qu¸i	0	11	63	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Cãc	0	11	64	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - H­¬u ®èm	0	11	65	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Heo tr¾ng	0	11	66	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Bß c¹p	0	11	67	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - NhÖn	0	11	68	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - RÕt	0	11	69	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ¤ng Giµ N«el (®á)	0	11	70	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thiªn Sø Gi¸ng Sinh (®á)	0	11	71	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §Çu «ng ®Şa	0	11	72	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Nam S­	0	11	73	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - B¾c S­	0	11	74	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Long Ch©u	0	11	75	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §Çu Rång	0	11	76	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Th©n Rång	0	11	77	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §u«i Rång	0	11	78	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Bé Hi TrÇn	0	11	79	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - KiÒu §Ønh Thiªn	0	11	80	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §iªu DŞch §ao	0	11	81	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - T©y M«n Giíi	0	11	82	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - HÇu KhÊt KiÕm	0	11	83	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - øng KhiÕu Phong	0	11	84	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Viªn NiÖm TŞch	0	11	85	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Ch÷ Thiªn MÉn	0	11	86	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - V­¬ng T¸	0	11	87	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - HuyÒn Gi¸c §¹i S­	0	11	88	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	2																																	
+MÆt n¹ - §­êng BÊt NhiÔm	0	11	89	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	3																																	
+MÆt n¹ - B¹ch Doanh Doanh	0	11	90	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	4																																	
+MÆt n¹ - Thanh TuyÖt S­ Th¸i	0	11	91	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	5																																	
+MÆt n¹ - Yªn HiÓu Tr¸i	0	11	92	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	6																																	
+MÆt n¹ - Hµ Nh©n Ng·	0	11	93	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	7																																	
+MÆt n¹ - §¬n T­ Nam	0	11	94	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	8																																	
+MÆt n¹ - TuyÒn C¬ Tö	0	11	95	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	9																																	
+MÆt n¹ - Hµn M«ng	0	11	96	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	10																																	
+MÆt n¹ (1 lÇn) - ThiÕu Niªn L«i KiÕm	0	11	97	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ (1 lÇn) - ThiÕu Niªn TiÕu S­¬ng	0	11	98	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ (1 lÇn) - ThiÕu Niªn Háa NhËn	0	11	99	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ (1 lÇn) - ThiÕu Niªn H¶i §­êng	0	11	100	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ (1 lÇn) - ThiÕu Niªn Kim Phong	0	11	101	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ThiÕu Niªn L«i KiÕm	0	11	102	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ThiÕu Niªn TiÕu S­¬ng	0	11	103	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ThiÕu Niªn Háa NhËn	0	11	104	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ThiÕu Niªn H¶i §­êng	0	11	105	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ThiÕu Niªn Kim Phong	0	11	106	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ (1 lÇn) - Thanh Niªn L«i KiÕm	0	11	107	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ (1 lÇn) - Thanh Niªn TiÕu S­¬ng	0	11	108	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ (1 lÇn) - Thanh Niªn Háa NhËn	0	11	109	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ (1 lÇn) - Thanh Niªn H¶i §­êng	0	11	110	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ (1 lÇn) - Thanh Niªn Kim Phong	0	11	111	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thanh Niªn L«i KiÕm	0	11	112	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thanh Niªn TiÕu S­¬ng	0	11	113	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thanh Niªn Háa NhËn	0	11	114	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thanh Niªn H¶i §­êng	0	11	115	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thanh Niªn Kim Phong	0	11	116	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thµnh Niªn L«i KiÕm	0	11	117	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thµnh Niªn TiÕu S­¬ng	0	11	118	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thµnh Niªn Háa NhËn	0	11	119	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thµnh Niªn H¶i §­êng	0	11	120	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thµnh Niªn Kim Phong	0	11	121	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Tinh Linh (Lôc)	0	11	122	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - T©n Niªn HiÖp Kh¸ch	0	11	123	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - T©n Niªn HiÖp N÷	0	11	124	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thá tr¾ng	0	11	125	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - TuÇn Léc	0	11	126	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Tinh Linh (xanh)	0	11	127	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Tinh Linh (tİm)	0	11	128	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Tinh Linh (®á)	0	11	129	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Tinh Linh (vµng)	0	11	130	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ¤ng Giµ N«el (xanh)	0	11	131	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ¤ng Giµ N«el (Hång phÊn)	0	11	132	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ¤ng Giµ N«el (tr¾ng)	0	11	133	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ¤ng Giµ N«el (vµng)	0	11	134	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thiªn Sø Gi¸ng Sinh (xanh)	0	11	135	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thiªn Sø Gi¸ng Sinh (Hång phÊn)	0	11	136	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thiªn Sø Gi¸ng Sinh (tr¾ng)	0	11	137	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thiªn Sø Gi¸ng Sinh (vµng)	0	11	138	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Tr­¬ng T«ng Chİnh	0	11	139	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - DiÖu Nh­	0	11	140	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - LiÔu Thanh Thanh	0	11	141	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - PhiÕn Kh¸ch	0	11	142	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Lam Y Y	0	11	143	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Cæ B¸ch	0	11	144	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §¹o Thanh Ch©n Nh©n	0	11	145	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Gia LuËt TŞ Ly	0	11	146	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Hoµn Nhan TuyÕt Y	0	11	147	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §oan Méc DuÖ	0	11	148	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Chung Linh Tó	0	11	149	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Hµ Linh Phiªu	0	11	150	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - M¹nh Th­¬ng L­¬ng	0	11	151	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §«ng B¾c Hæ	0	11	152	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Hoa Nam Hæ	0	11	153	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - B¹ch Hæ	0	11	154	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Kim TiÒn B¸o	0	11	155	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - TuyÕt B¸o	0	11	156	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Sãi x¸m	0	11	157	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Sãi ®á	0	11	158	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thanh lang	0	11	159	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Sãi tuyÕt	0	11	160	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Hå Ly	0	11	161	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Hång Hå	0	11	162	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Heo rõng	0	11	163	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Nhİm	0	11	164	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Voi Ch©u ¸	0	11	165	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Voi Hoµng Hµ	0	11	166	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - GÊu n©u	0	11	167	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - GÊu ®en	0	11	168	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ -Tr©u rõng	0	11	169	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - D­¬ng Tö Ng¹c	0	11	170	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Th»n l»n ®á	0	11	171	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Nh·n Kİnh M·ng xµ	0	11	172	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - R¾n xanh	0	11	173	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Kim Hoµn M·ng Xµ	0	11	174	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Xİch LuyÖn M·ng Xµ	0	11	175	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Kim §iªu	0	11	176	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Th­¬ng ¦ng	0	11	177	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - KÒn kÒn	0	11	178	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - D¬i chóa	0	11	179	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - D¬i chóa ®á	0	11	180	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - D¬i Dong	0	11	181	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - D¬i hót m¸u	0	11	182	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Kim Miªu	0	11	183	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - X¸ LŞ	0	11	184	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Ho¸n Hïng	0	11	185	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Linh Miªu	0	11	186	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Tµng Vùc HÇu	0	11	187	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - KhØ x¸m	0	11	188	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - H¾c DiÖp HÇu	0	11	189	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Kim T¬ HÇu	0	11	190	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Sµi	0	11	191	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - TuyÕt Qu¸i	0	11	192	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Cãc	0	11	193	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - H­¬u ®èm	0	11	194	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Heo tr¾ng	0	11	195	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Bß c¹p	0	11	196	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - NhÖn	0	11	197	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - RÕt	0	11	198	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ¤ng Giµ N«el (®á)	0	11	199	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thiªn Sø Gi¸ng Sinh (®á)	0	11	200	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §Çu «ng ®Şa	0	11	201	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Nam S­	0	11	202	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - B¾c S­	0	11	203	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Long Ch©u	0	11	204	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §Çu Rång	0	11	205	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Th©n Rång	0	11	206	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §u«i Rång	0	11	207	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - V­¬ng T¸	0	11	208	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - HuyÒn Gi¸c §¹i S­	0	11	209	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	2																																	
+MÆt n¹ - §­êng BÊt NhiÔm	0	11	210	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	3																																	
+MÆt n¹ - B¹ch Doanh Doanh	0	11	211	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	4																																	
+MÆt n¹ - Thanh TuyÖt S­ Th¸i	0	11	212	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	5																																	
+MÆt n¹ - Yªn HiÓu Tr¸i	0	11	213	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	6																																	
+MÆt n¹ - Hµ Nh©n Ng·	0	11	214	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	7																																	
+MÆt n¹ - §¬n T­ Nam	0	11	215	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	8																																	
+MÆt n¹ - TuyÒn C¬ Tö	0	11	216	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	9																																	
+MÆt n¹ - Hµn M«ng	0	11	217	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	10																																	
+MÆt n¹ (1 lÇn) - ThiÕu Niªn L«i KiÕm	0	11	218	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ (1 lÇn) - ThiÕu Niªn TiÕu S­¬ng	0	11	219	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ (1 lÇn) - ThiÕu Niªn Háa NhËn	0	11	220	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ (1 lÇn) - ThiÕu Niªn H¶i §­êng	0	11	221	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ (1 lÇn) - ThiÕu Niªn Kim Phong	0	11	222	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ThiÕu Niªn L«i KiÕm	0	11	223	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ThiÕu Niªn TiÕu S­¬ng	0	11	224	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ThiÕu Niªn Háa NhËn	0	11	225	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ThiÕu Niªn H¶i §­êng	0	11	226	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ThiÕu Niªn Kim Phong	0	11	227	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ (1 lÇn) - Thanh Niªn L«i KiÕm	0	11	228	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ (1 lÇn) - Thanh Niªn TiÕu S­¬ng	0	11	229	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ (1 lÇn) - Thanh Niªn Háa NhËn	0	11	230	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ (1 lÇn) - Thanh Niªn H¶i §­êng	0	11	231	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ (1 lÇn) - Thanh Niªn Kim Phong	0	11	232	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thanh Niªn L«i KiÕm	0	11	233	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thanh Niªn TiÕu S­¬ng	0	11	234	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thanh Niªn Háa NhËn	0	11	235	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thanh Niªn H¶i §­êng	0	11	236	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thanh Niªn Kim Phong	0	11	237	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thµnh Niªn L«i KiÕm	0	11	238	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thµnh Niªn TiÕu S­¬ng	0	11	239	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thµnh Niªn Háa NhËn	0	11	240	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thµnh Niªn H¶i §­êng	0	11	241	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thµnh Niªn Kim Phong	0	11	242	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Tinh Linh (Lôc)	0	11	243	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - T©n Niªn HiÖp Kh¸ch	0	11	244	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - T©n Niªn HiÖp N÷	0	11	245	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thá tr¾ng	0	11	246	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - TuÇn Léc	0	11	247	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Tinh Linh (xanh)	0	11	248	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Tinh Linh (tİm)	0	11	249	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Tinh Linh (®á)	0	11	250	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Tinh Linh (vµng)	0	11	251	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ¤ng Giµ N«el (xanh)	0	11	252	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ¤ng Giµ N«el (Hång phÊn)	0	11	253	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ¤ng Giµ N«el (tr¾ng)	0	11	254	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ¤ng Giµ N«el (vµng)	0	11	255	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thiªn Sø Gi¸ng Sinh (xanh)	0	11	256	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thiªn Sø Gi¸ng Sinh (Hång phÊn)	0	11	257	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thiªn Sø Gi¸ng Sinh (tr¾ng)	0	11	258	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thiªn Sø Gi¸ng Sinh (vµng)	0	11	259	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - H¹ Thµnh	0	11	260	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - T« Tõ Hinh	0	11	261	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §­êng Thiªn T©m	0	11	262	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Niªn Thó	0	11	263	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - H¹ Thµnh	0	11	264	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - T« Tõ Hinh	0	11	265	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §­êng Thiªn T©m	0	11	266	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - T©y B¾c S¬n tÆc ®Çu lÜnh	0	11	267	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - T©y Nam S¬n tÆc ®Çu lÜnh	0	11	268	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Giang Nam S¬n tÆc ®Çu lÜnh	0	11	269	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §«ng B¾c S¬n tÆc ®Çu lÜnh	0	11	270	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Hoa B¾c S¬n tÆc ®Çu lÜnh	0	11	271	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Nam Bé S¬n tÆc ®Çu lÜnh	0	11	272	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - S¬n tÆc ®Çu lÜnh	0	11	273	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - T©y B¾c S¬n tÆc Gi¸p	0	11	274	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - T©y B¾c S¬n tÆc Êt	0	11	275	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - T©y Nam S¬n tÆc Gi¸p	0	11	276	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - T©y Nam S¬n tÆc Êt	0	11	277	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Giang Nam S¬n tÆc Gi¸p	0	11	278	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Giang Nam S¬n tÆc Êt	0	11	279	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Hoa Nam S¬n tÆc Gi¸p	0	11	280	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Hoa Nam S¬n tÆc Êt	0	11	281	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §«ng B¾c S¬n tÆc Gi¸p	0	11	282	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §«ng B¾c S¬n tÆc Êt	0	11	283	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Hoa B¾c S¬n tÆc Gi¸p	0	11	284	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Hoa B¾c S¬n tÆc Êt	0	11	285	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Trung Nguyªn S¬n tÆc Gi¸p	0	11	286	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Trung Nguyªn S¬n tÆc Êt	0	11	287	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - S¬n tÆc Gi¸p	0	11	288	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - S¬n tÆc Êt	0	11	289	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - S¬n tÆc Bİnh	0	11	290	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - S¬n tÆc §inh	0	11	291	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - S¬n tÆc MËu	0	11	292	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - S¬n tÆc Kû	0	11	293	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - S¬n tÆc Canh	0	11	294	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Qu¸i thó	0	11	295	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Méc nh©n	0	11	296	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §ång nh©n	0	11	297	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - N÷ thİch kh¸ch	0	11	298	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - DiÖu Nh­	0	11	299	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - DiÖu Èn	0	11	300	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - DiÖp B¨ng H©n	0	11	301	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - TÇn û Phong	0	11	302	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - T¹ V©n La	0	11	303	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thanh Liªn Tö	0	11	304	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §ång TŞch Nhan	0	11	305	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Ngôy LiÔu ¤ng	0	11	306	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Hßa Th­îng chiÕn ®Êu	0	11	307	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - La Khu«ng Sinh	0	11	308	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §­êng Cõu	0	11	309	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §­êng Nhµn	0	11	310	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §­êng V©n	0	11	311	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §­êng D·	0	11	312	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - H¹ Thµnh	0	11	313	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - H¾c DiÖn Lang Qu©n	0	11	314	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §å DŞ	0	11	315	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Ni c« chiÕn ®Êu	0	11	316	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Kim Quèc Quan viªn	0	11	317	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Long B¸t	0	11	318	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - LiÖu Kú	0	11	319	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Phông HÊp Nh­	0	11	320	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Tõ Tù Lùc	0	11	321	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - KiÕm ThËp Tam	0	11	322	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - YÕn Cöu	0	11	323	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Bµnh Liªn §øc	0	11	324	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - L­u Phi Long	0	11	325	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - M¹c TiÓu Oanh	0	11	326	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §µm Tam Tho¸i	0	11	327	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Nam trung niªn ThÇn bİ	0	11	328	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Long Ngò	0	11	329	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Lé Tr­êng Thiªn	0	11	330	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Lôc l©m	0	11	331	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Phan Nh­ Long	0	11	332	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - M«ng Cæ Vâ sÜ	0	11	333	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thñy TÆc	0	11	334	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Hµ Hoa §¹o	0	11	335	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Long Truy Vò	0	11	336	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Liªu §Şnh	0	11	337	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - L¹c Quang	0	11	338	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Ng©n Nha	0	11	339	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - S­¬ng §ao	0	11	340	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - L·nh §ao	0	11	341	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Hµn Th­¬ng	0	11	342	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - B«n L«i	0	11	343	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §éc Bé	0	11	344	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Gi¸ng Chïy	0	11	345	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Xİch Ch­ëng	0	11	346	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Lang Bæng	0	11	347	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Bé Hi TrÇn	0	11	348	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - KiÒu §Ønh Thiªn	0	11	349	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §iªu DŞch §ao	0	11	350	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - T©y M«n Giíi	0	11	351	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - HÇu KhÊt KiÕm	0	11	352	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - øng KhiÕu Phong	0	11	353	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Viªn NiÖm TŞch	0	11	354	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Ch÷ Thiªn MÉn	0	11	355	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - %Thiªn V­¬ng%	0	11	356	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Lo¹n thÕ anh hµo	0	11	357	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Truy mÖnh c­ sü	0	11	358	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ThÇn tiªn	0	11	359	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Nga chiÕn huyÕt	0	11	360	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Hå ®iÖp bèi bèi	0	11	361	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Ngäc mai lÇu	0	11	362	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thanh h­¬ng	0	11	363	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Cæ ®¹o phong	0	11	364	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Nh· háa n÷ nh©n	0	11	365	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ ngôy trang	0	11	366	\spr\item\equip\mask\yrmj_03.spr	379	1	1	Mang vµo sÏ nhËn ®­îc 1 kü n¨ng ngôy trang, sö dông víi nh÷ng ng­êi ch¬i kh¸c cã thÓ biÕn thµnh h×nh d¸ng cña hä		0	1																																	
+VINAGAME_GM	0	11	367	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+TaiwanGAME_GM	0	11	368	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - L¹c Quang	0	11	369	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Ng©n Nha	0	11	370	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - S­¬ng §ao	0	11	371	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - L·nh §ao	0	11	372	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Hµn Th­¬ng	0	11	373	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - B«n L«i	0	11	374	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §éc Bé	0	11	375	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Gi¸ng Chïy	0	11	376	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Xİch Ch­ëng	0	11	377	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Lang Bæng	0	11	378	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Tr­¬ng T«ng Chİnh	0	11	379	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - LiÔu Thanh Thanh	0	11	380	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - PhiÕn Kh¸ch	0	11	381	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - HuyÒn Gi¸c §¹i S­	0	11	382	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	2																																	
+MÆt n¹ - Long Ngò	0	11	383	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §ao song phông	0	11	384	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Mé Dung YÕn	0	11	385	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Tö hiÖp	0	11	386	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - B¹ch th¹ch ®¹o tr­ëng	0	11	387	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Khai th¹ch ®¹i s­	0	11	388	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §­êng thÇn	0	11	389	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - NguyÖt dao dao	0	11	390	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - YÕn triÖu	0	11	391	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - LiÔu Phi Yªn	0	11	392	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Long thËp tam gia	0	11	393	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ¤ng Giµ N«el (®á)	0	11	394	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thiªn Sø Gi¸ng Sinh (®á)	0	11	395	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Tinh Linh (Lôc)	0	11	396	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ¤ng Giµ N«el (xanh)	0	11	397	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ¤ng Giµ N«el (Hång phÊn)	0	11	398	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ¤ng Giµ N«el (tr¾ng)	0	11	399	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ¤ng Giµ N«el (vµng)	0	11	400	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thiªn Sø Gi¸ng Sinh (xanh)	0	11	401	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thiªn Sø Gi¸ng Sinh (Hång phÊn)	0	11	402	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thiªn Sø Gi¸ng Sinh (tr¾ng)	0	11	403	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thiªn Sø Gi¸ng Sinh (vµng)	0	11	404	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - TuÇn Léc	0	11	405	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - T©n Niªn HiÖp Kh¸ch	0	11	406	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - T©n Niªn HiÖp N÷	0	11	407	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - D· TÈu	0	11	408	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - C¸t t­êng b¶o b¶o	0	11	409	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Nh­ ı b¶o b¶o	0	11	410	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Niªn thó b¶o b¶o	0	11	411	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ThiÕu Niªn L«i KiÕm	0	11	412	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ThiÕu Niªn TiÕu S­¬ng	0	11	413	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ThiÕu Niªn Háa NhËn	0	11	414	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ThiÕu Niªn H¶i §­êng	0	11	415	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ThiÕu Niªn Kim Phong	0	11	416	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - B¹ch thµnh quËn chñ	0	11	417	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Lam linh c«ng tö	0	11	418	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - TÇn bµ bµ	0	11	419	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §«ng tö	0	11	420	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Tinh Linh (xanh)	0	11	421	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Tinh Linh (tİm)	0	11	422	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Tinh Linh (®á)	0	11	423	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Tinh Linh (vµng)	0	11	424	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Hoµng TuyÕt Nh©n	0	11	425	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Tö TuyÕt Nh©n	0	11	426	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Lôc TuyÕt Nh©n	0	11	427	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ Cæ Thiªn KhuyÕt	0	11	428	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ Chİnh Ng«n	0	11	429	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ ChiÕu NhËt MiÖn	0	11	430	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ §­êng H¹o	0	11	431	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ DiÖu NhÊt	0	11	432	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ LÖ ChiÕt Mai	0	11	433	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ §o¹n Méc Ly	0	11	434	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ B¹ch Lang	0	11	435	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ TÇn HiÓu Th­	0	11	436	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ L¨ng Tiªu Tö	0	11	437	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ L­¬ng Mi Nhi	0	11	438	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thanh Niªn L«i KiÕm	0	11	439	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thanh Niªn TiÕu S­¬ng	0	11	440	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Thanh Niªn H¶i §­êng	0	11	441	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - §Çu «ng ®Şa	0	11	442	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ Long L·o Hæ	0	11	443	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ Th­¬ng Gi¶i HËu	0	11	444	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ Xu©n Ng­u	0	11	445	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ §¹i T­íng qu©n	0	11	446	\spr\item\equip\mask\yrmj_04.spr	379	1	1	Thiªn H¹ V« §Şch		0	1																																	
+MÆt n¹ Nguyªn so¸i	0	11	447	\spr\item\equip\mask\yrmj_04.spr	379	1	1	Vâ L©m Chİ T«n		0	1																																	
+MÆt n¹ h»ng nga	0	11	448	\spr\item\equip\mask\yrmj_02.spr	379	1	1	<<Î´·­Òë>>		0	1																																	
+<<Î´·­Òë>>	0	11	449	\spr\item\equip\mask\yrmj_02.spr	379	1	1	<<Î´·­Òë>>		0	1																																	
+MÆt n¹ §¹i T­íng qu©n	0	11	450	\spr\item\equip\mask\yrmj_04.spr	379	1	1	Thiªn H¹ V« §Şch		0	1																																	
+MÆt n¹ - Háa V©n Hæ	0	11	451	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		100	1																																	
+MÆt n¹ - Sãi ®á	0	11	452	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		100	1																																	
+MÆt n¹ - S¬n TÆc §Çu Môc	0	11	453	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		100	1																																	
+MÆt n¹ Cöu MÖnh	0	11	454	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Thä d÷ thiªn tÒ		0	1																																	
+MÆt n¹ Quû ¶nh	0	11	455	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Quû ¶nh truy tinh		0	1																																	
+MÆt n¹ - Vò n­¬ng gi¸ng sinh	0	11	456	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Chim c¸nh côt	0	11	457	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - GÊu tuyÕt gi¸ng sinh	0	11	458	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - L©m D· Tóy Thanh Phong	0	11	459	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi mang vµo sÏ biÕn thµnh thî s¨n choµng ¸o da hæ víi t­ thÕ rÊt hiªn ngang		0	1																																	
+MÆt n¹ - S¬n Gi¶n TiÕu Hång TrÇn	0	11	460	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi mang vµo sÏ biÕn thµnh nµng thî s¨n choµng ¸o da hæ víi t­ thÕ rÊt kiÒu diÔm		0	1																																	
+MÆt n¹ - Chİ T«n Vâ L©m ThiÕu HiÖp	0	11	461	\spr\item\equip\mask\yrmj_02.spr	379	1	1	½£ÍøVIP×¨ÓÃ		0	1																																	
+MÆt n¹ - Chİ T«n Vâ L©m N÷ HiÖp	0	11	462	\spr\item\equip\mask\yrmj_02.spr	379	1	1	½£ÍøVIP×¨ÓÃ		0	1																																	
+MÆt n¹ -Tö §oan (Cöu MÖnh)	0	11	463	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ -Tö Vò (Cöu MÖnh)	0	11	464	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ -Tö §oan (Tr­êng C«ng)	0	11	465	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ -Tö Vò (Tr­êng C«ng)	0	11	466	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ -Tö §oan (Kiªn NhÉn)	0	11	467	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ -Tö Vò (Kiªn NhÉn)	0	11	468	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Cæ TruyÒn	0	11	469	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - ¸o Dµi	0	11	470	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ KiÕm Phong (cöu mÖnh)	0	11	471	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ V©n Hµ (cöu mÖnh)	0	11	472	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ KiÕm Phong (tr­êng c«ng)	0	11	473	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ V©n Hµ (tr­êng c«ng)	0	11	474	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ KiÕm Phong (kiªn nhÉn)	0	11	475	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ V©n Hµ (kiªn nhÉn)	0	11	476	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - B¹ch thµnh quËn chñ	0	11	477	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Lam linh c«ng tö	0	11	478	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ Tr­êng C«ng	0	11	479	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ Kiªn Ng¹nh	0	11	480	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Vâ L©m Chİ T«n	0	11	481	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo vµo sÏ nh©n ®­îc vâ c«ng c¸i thÕ		0	1																																	
+MÆt n¹ - Anh hïng chiÕn tr­êng	0	11	482	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Khi sö dông sÏ gia t¨ng gÊp 3 lÇn ®iÓm tİch lòy khi tham gia Tèng Kim		0	1																																	
+MÆt N¹ DŞ Dung - Thiªn Sø Nguyªn §¸n ( ®á )	0	11	483	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt N¹ DŞ Dung - Thiªn Sø Nguyªn §¸n ( vµng )	0	11	484	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt N¹ DŞ Dung - Thiªn Sø Nguyªn §¸n ( xanh )	0	11	485	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt N¹ DŞ Dung - Thiªn Sø L·o Nh©n ( ®á )	0	11	486	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt N¹ DŞ Dung - Thiªn Sø L·o Nh©n ( vµng )	0	11	487	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt N¹ DŞ Dung - Thiªn Sø L·o Nh©n ( xanh )	0	11	488	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt N¹ DŞ Dung - Tinh Linh Nguyªn §¸n ( ®á )	0	11	489	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt N¹ DŞ Dung - Tinh Linh Nguyªn §¸n ( vµng )	0	11	490	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt N¹ DŞ Dung - Tinh Linh Nguyªn §¸n ( xanh )	0	11	491	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Chİ T«n Vâ L©m ThiÕu HiÖp	0	11	492	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt n¹ - Chİ T«n Vâ L©m N÷ HiÖp	0	11	493	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+Phï Tang DiÖn Tr¸o	0	11	494	\spr\item\equip\mask\yrmj_02.spr	379	1	1	T­¬ng truyÒn ®©y lµ lo¹i mÆt n¹ bİ truyÒn mµ c¸c Èn gi¶ phï tang th­êng dïng		0	1																																	
+HiÖp Kh¸ch DiÖn Tr¸o	0	11	495	\spr\item\equip\mask\yrmj_02.spr	379	1	1	ThuËt c¶i trang khã mµ nhËn biÕt ®­îc bªn trong Èn chøa c¸i g×		0	1																																	
+MÆt n¹ - B¹ch Doanh Doanh	0	11	496	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - B¹ch thµnh quËn chñ	0	11	497	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - Chung Linh Tó	0	11	498	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - Cæ B¸ch	0	11	499	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - §ao song phông	0	11	500	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - §¹o Thanh Ch©n Nh©n	0	11	501	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - DiÖu Nh­	0	11	502	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - §oan Méc DuÖ	0	11	503	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - §«ng tö	0	11	504	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - §­êng BÊt NhiÔm	0	11	505	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - §­êng thÇn	0	11	506	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - §­êng Thiªn T©m	0	11	507	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - Gia LuËt TŞ Ly	0	11	508	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - Hµ Linh Phiªu	0	11	509	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - Hµ Nh©n Ng·	0	11	510	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - H¹ Thµnh	0	11	511	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - Heo tr¾ng	0	11	512	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - H­¬u ®èm	0	11	513	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - HuyÒn Gi¸c §¹i S­	0	11	514	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - Lam linh c«ng tö	0	11	515	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - Lam Y Y	0	11	516	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - LiÔu Phi Yªn	0	11	517	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - LiÔu Thanh Thanh	0	11	518	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - Long thËp tam gia	0	11	519	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - M¹nh Th­¬ng L­¬ng	0	11	520	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - Mé Dung YÕn	0	11	521	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - NguyÖt dao dao	0	11	522	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - PhiÕn Kh¸ch	0	11	523	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - T©n Niªn HiÖp Kh¸ch	0	11	524	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - T©n Niªn HiÖp N÷	0	11	525	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - Thanh Niªn H¶i §­êng	0	11	526	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - Thµnh Niªn H¶i §­êng	0	11	527	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - Thanh Niªn Háa NhËn	0	11	528	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - Thµnh Niªn Háa NhËn	0	11	529	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - Thanh Niªn Kim Phong	0	11	530	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - Thµnh Niªn Kim Phong	0	11	531	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - Thanh Niªn L«i KiÕm	0	11	532	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - Thµnh Niªn L«i KiÕm	0	11	533	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - Thanh Niªn TiÕu S­¬ng	0	11	534	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - Thµnh Niªn TiÕu S­¬ng	0	11	535	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - Thanh TuyÖt S­ Th¸i	0	11	536	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - ThiÕu Niªn H¶i §­êng	0	11	537	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - ThiÕu Niªn Háa NhËn	0	11	538	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - ThiÕu Niªn Kim Phong	0	11	539	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - ThiÕu Niªn L«i KiÕm	0	11	540	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - ThiÕu Niªn TiÕu S­¬ng	0	11	541	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - T« Tõ Hinh	0	11	542	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - Tr­¬ng T«ng Chİnh	0	11	543	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - Tö hiÖp	0	11	544	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - TuyÒn C¬ Tö	0	11	545	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - Voi Ch©u ¸	0	11	546	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - Voi Hoµng Hµ	0	11	547	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - V­¬ng T¸	0	11	548	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - Yªn HiÓu Tr¸i	0	11	549	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ - YÕn triÖu	0	11	550	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ ChiÕu NhËt MiÖn	0	11	551	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ DiÖu NhÊt	0	11	552	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ §o¹n Méc Ly	0	11	553	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ §­êng H¹o	0	11	554	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ h»ng nga	0	11	555	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ L¨ng Tiªu Tö	0	11	556	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ LÖ ChiÕt Mai	0	11	557	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ Xu©n Ng­u	0	11	558	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+Ò×ÈİÃæ¾ß-Áú¾ÅÌì	0	11	559	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+Ò×ÈİÃæ¾ß-Áú¾ÅÌì£¨±äÉí£©	0	11	560	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt n¹ V­¬ng Gi¶	0	11	561	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo vµo sÏ nh©n ®­îc vâ c«ng c¸i thÕ		0	1																																	
+Ò×ÈİÃæ¾ß-Õ½Áú»Í¼×(ÄĞ)	0	11	562	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+Ò×ÈİÃæ¾ß-Õ½Áú»Í¼×(Å®)	0	11	563	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+Ò×ÈİÃæ¾ß-ºúì³	0	11	564	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+Ò×ÈİÃæ¾ß-ÃçÈôÀ¼	0	11	565	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Mang vµo sÏ biÕn thµnh NPC		0	1																																	
+MÆt N¹-TriÖu MÉn	0	11	566	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt N¹-KiÒu Phong	0	11	567	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt N¹-NhËm Doanh Doanh	0	11	568	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt N¹-Chu ChØ Nh­îc	0	11	569	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt N¹-TiÓu Long N÷	0	11	570	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt N¹-Qu¸ch T­¬ng	0	11	571	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt N¹-Hoµng Dung	0	11	572	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt N¹-Qu¸ch TÜnh	0	11	573	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt N¹-Tr­¬ng V« Kş	0	11	574	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt N¹-Tr­¬ng Tam Phong	0	11	575	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt N¹-Ngäc Thè	0	11	576	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+MÆt N¹-Kú L©n	0	11	577	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo lªn ng­êi sÏ trë thµnh h×nh d¹ng cña NPC nµy		0	1																																	
+È­ÉÙÁÖ-³õ¿úÃÅ¾¶	0	11	578	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÉÙÁ¿µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+¹÷ÉÙÁÖ-³õ¿úÃÅ¾¶	0	11	579	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÉÙÁ¿µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+µ¶ÉÙÁÖ-³õ¿úÃÅ¾¶	0	11	580	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÉÙÁ¿µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+µ¶ÌìÍõ-³õ¿úÃÅ¾¶	0	11	581	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÉÙÁ¿µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+´¸ÌìÍõ-³õ¿úÃÅ¾¶	0	11	582	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÉÙÁ¿µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+Ç¹ÌìÍõ-³õ¿úÃÅ¾¶	0	11	583	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÉÙÁ¿µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+½£¶ëÃ¼-³õ¿úÃÅ¾¶	0	11	584	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÉÙÁ¿µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+ÕÆ¶ëÃ¼-³õ¿úÃÅ¾¶	0	11	585	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÉÙÁ¿µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+µ¶´äÑÌ-³õ¿úÃÅ¾¶	0	11	586	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÉÙÁ¿µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+ÄÚ´äÑÌ-³õ¿úÃÅ¾¶	0	11	587	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÉÙÁ¿µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+ÕÆÎå¶¾-³õ¿úÃÅ¾¶	0	11	588	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÉÙÁ¿µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+µ¶Îå¶¾-³õ¿úÃÅ¾¶	0	11	589	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÉÙÁ¿µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+·Éµ¶ÌÆ-³õ¿úÃÅ¾¶	0	11	590	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÉÙÁ¿µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+åó¼ıÌÆ-³õ¿úÃÅ¾¶	0	11	591	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÉÙÁ¿µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+·ÉïÚÌÆ-³õ¿úÃÅ¾¶	0	11	592	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÉÙÁ¿µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+ÕÆØ¤°ï-³õ¿úÃÅ¾¶	0	11	593	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÉÙÁ¿µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+¹÷Ø¤°ï-³õ¿úÃÅ¾¶	0	11	594	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÉÙÁ¿µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+Õ½ÌìÈÌ-³õ¿úÃÅ¾¶	0	11	595	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÉÙÁ¿µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+Ä§ÌìÈÌ-³õ¿úÃÅ¾¶	0	11	596	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÉÙÁ¿µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+ÆøÎäµ±-³õ¿úÃÅ¾¶	0	11	597	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÉÙÁ¿µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+½£Îäµ±-³õ¿úÃÅ¾¶	0	11	598	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÉÙÁ¿µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+µ¶À¥ÂØ-³õ¿úÃÅ¾¶	0	11	599	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÉÙÁ¿µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+½£À¥ÂØ-³õ¿úÃÅ¾¶	0	11	600	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÉÙÁ¿µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+È­ÉÙÁÖ-µÇÌÃÈëÊÒ	0	11	601	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÒ»¶¨µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+¹÷ÉÙÁÖ-µÇÌÃÈëÊÒ	0	11	602	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÒ»¶¨µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+µ¶ÉÙÁÖ-µÇÌÃÈëÊÒ	0	11	603	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÒ»¶¨µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+µ¶ÌìÍõ-µÇÌÃÈëÊÒ	0	11	604	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÒ»¶¨µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+´¸ÌìÍõ-µÇÌÃÈëÊÒ	0	11	605	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÒ»¶¨µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+Ç¹ÌìÍõ-µÇÌÃÈëÊÒ	0	11	606	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÒ»¶¨µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+½£¶ëÃ¼-µÇÌÃÈëÊÒ	0	11	607	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÒ»¶¨µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+ÕÆ¶ëÃ¼-µÇÌÃÈëÊÒ	0	11	608	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÒ»¶¨µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+µ¶´äÑÌ-µÇÌÃÈëÊÒ	0	11	609	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÒ»¶¨µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+ÄÚ´äÑÌ-µÇÌÃÈëÊÒ	0	11	610	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÒ»¶¨µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+ÕÆÎå¶¾-µÇÌÃÈëÊÒ	0	11	611	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÒ»¶¨µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+µ¶Îå¶¾-µÇÌÃÈëÊÒ	0	11	612	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÒ»¶¨µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+·Éµ¶ÌÆ-µÇÌÃÈëÊÒ	0	11	613	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÒ»¶¨µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+åó¼ıÌÆ-µÇÌÃÈëÊÒ	0	11	614	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÒ»¶¨µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+·ÉïÚÌÆ-µÇÌÃÈëÊÒ	0	11	615	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÒ»¶¨µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+ÕÆØ¤°ï-µÇÌÃÈëÊÒ	0	11	616	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÒ»¶¨µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+¹÷Ø¤°ï-µÇÌÃÈëÊÒ	0	11	617	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÒ»¶¨µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+Õ½ÌìÈÌ-µÇÌÃÈëÊÒ	0	11	618	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÒ»¶¨µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+Ä§ÌìÈÌ-µÇÌÃÈëÊÒ	0	11	619	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÒ»¶¨µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+ÆøÎäµ±-µÇÌÃÈëÊÒ	0	11	620	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÒ»¶¨µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+½£Îäµ±-µÇÌÃÈëÊÒ	0	11	621	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÒ»¶¨µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+µ¶À¥ÂØ-µÇÌÃÈëÊÒ	0	11	622	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÒ»¶¨µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+½£À¥ÂØ-µÇÌÃÈëÊÒ	0	11	623	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÒ»¶¨µÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+È­ÉÙÁÖ-³öÉñÈë»¯	0	11	624	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÇ¿´óµÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+¹÷ÉÙÁÖ-³öÉñÈë»¯	0	11	625	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÇ¿´óµÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+µ¶ÉÙÁÖ-³öÉñÈë»¯	0	11	626	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÇ¿´óµÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+µ¶ÌìÍõ-³öÉñÈë»¯	0	11	627	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÇ¿´óµÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+´¸ÌìÍõ-³öÉñÈë»¯	0	11	628	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÇ¿´óµÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+Ç¹ÌìÍõ-³öÉñÈë»¯	0	11	629	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÇ¿´óµÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+½£¶ëÃ¼-³öÉñÈë»¯	0	11	630	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÇ¿´óµÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+ÕÆ¶ëÃ¼-³öÉñÈë»¯	0	11	631	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÇ¿´óµÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+µ¶´äÑÌ-³öÉñÈë»¯	0	11	632	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÇ¿´óµÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+ÄÚ´äÑÌ-³öÉñÈë»¯	0	11	633	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÇ¿´óµÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+ÕÆÎå¶¾-³öÉñÈë»¯	0	11	634	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÇ¿´óµÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+µ¶Îå¶¾-³öÉñÈë»¯	0	11	635	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÇ¿´óµÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+·Éµ¶ÌÆ-³öÉñÈë»¯	0	11	636	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÇ¿´óµÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+åó¼ıÌÆ-³öÉñÈë»¯	0	11	637	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÇ¿´óµÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+·ÉïÚÌÆ-³öÉñÈë»¯	0	11	638	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÇ¿´óµÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+ÕÆØ¤°ï-³öÉñÈë»¯	0	11	639	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÇ¿´óµÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+¹÷Ø¤°ï-³öÉñÈë»¯	0	11	640	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÇ¿´óµÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+Õ½ÌìÈÌ-³öÉñÈë»¯	0	11	641	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÇ¿´óµÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+Ä§ÌìÈÌ-³öÉñÈë»¯	0	11	642	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÇ¿´óµÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+ÆøÎäµ±-³öÉñÈë»¯	0	11	643	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÇ¿´óµÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+½£Îäµ±-³öÉñÈë»¯	0	11	644	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÇ¿´óµÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+µ¶À¥ÂØ-³öÉñÈë»¯	0	11	645	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÇ¿´óµÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+½£À¥ÂØ-³öÉñÈë»¯	0	11	646	\spr\item\equip\mask\yrmj_01.spr	379	1	1	´÷ÉÏºó¼´¿ÉÒ×Èİ³É¸ÃNPCµÄÑù×Ó£¬²¢»ñµÃÇ¿´óµÄÊôĞÔÄÜÁ¦ÌáÉı¡£		100	1																																	
+MÆt n¹ chiÕn tr­êng V­¬ng Gi¶	0	11	647	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng V­¬ng Gi¶ - ThiÕu L©m	0	11	648	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng V­¬ng Gi¶ - Thiªn V­¬ng	0	11	649	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng V­¬ng Gi¶ - Ngò §éc	0	11	650	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng V­¬ng Gi¶ - §­êng M«n	0	11	651	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng V­¬ng Gi¶ - Nga My	0	11	652	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng V­¬ng Gi¶ - Thóy Yªn	0	11	653	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng V­¬ng Gi¶ - Thiªn NhÉn	0	11	654	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng V­¬ng Gi¶ - C¸i Bang	0	11	655	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng V­¬ng Gi¶ - Vâ §ang	0	11	656	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng V­¬ng Gi¶ - C«n Lu©n	0	11	657	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+ThiÕu L©m QuyÒn - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	658	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh		100	1																																	
+ThiÕu L©m C«n - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	659	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh		100	1																																	
+ThiÕu L©m §ao - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	660	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh		100	1																																	
+Thiªn V­¬ng §ao - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	661	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh		100	1																																	
+Thiªn V­¬ng Chïy - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	662	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh		100	1																																	
+Thiªn V­¬ng Th­¬ng - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	663	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh		100	1																																	
+Nga My KiÕm - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	664	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh		100	1																																	
+Nga My Ch­ëng - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	665	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh		100	1																																	
+Thóy Yªn §ao - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	666	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh		100	1																																	
+Thóy Yªn Néi - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	667	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh		100	1																																	
+Ngò §éc Ch­ëng - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	668	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh		100	1																																	
+Ngò §éc §ao - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	669	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh		100	1																																	
+§­êng M«n Phi §ao - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	670	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh		100	1																																	
+§­êng M«n Tô TiÔn - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	671	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+§­êng M«n Phi Tiªu - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	672	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+C¸i Bang Ch­ëng - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	673	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+C¸i Bang C«n - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	674	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Thiªn NhÉn ChiÕn - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	675	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Thiªn NhÉn Ma - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	676	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Vâ §ang Khİ - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	677	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Vâ §ang KiÕm - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	678	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+C«n Lu©n §ao - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	679	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+C«n Lu©n KiÕm - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	680	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+ThiÕu L©m QuyÒn - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	681	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+ThiÕu L©m C«n - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	682	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+ThiÕu L©m §ao - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	683	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Thiªn V­¬ng §ao - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	684	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Thiªn V­¬ng Chïy - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	685	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Thiªn V­¬ng Th­¬ng - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	686	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Nga My KiÕm - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	687	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Nga My Ch­ëng - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	688	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Thóy Yªn §ao - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	689	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Thóy Yªn Néi - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	690	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Ngò §éc Ch­ëng - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	691	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Ngò §éc §ao - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	692	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+§­êng M«n Phi §ao - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	693	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+§­êng M«n Tô TiÔn - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	694	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+§­êng M«n Phi Tiªu - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	695	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+C¸i Bang Ch­ëng - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	696	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+C¸i Bang C«n - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	697	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Thiªn NhÉn ChiÕn - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	698	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Thiªn NhÉn Ma - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	699	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Vâ §ang Khİ - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	700	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Vâ §ang KiÕm - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	701	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+C«n Lu©n §ao - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	702	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+C«n Lu©n KiÕm - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	703	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+ThiÕu L©m QuyÒn - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	704	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+ThiÕu L©m C«n - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	705	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+ThiÕu L©m §ao - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	706	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+Thiªn V­¬ng §ao - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	707	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+Thiªn V­¬ng Chïy - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	708	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+Thiªn V­¬ng Th­¬ng - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	709	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+Nga My KiÕm - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	710	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+Nga My Ch­ëng - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	711	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+Thóy Yªn §ao - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	712	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+Thóy Yªn Néi - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	713	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+Ngò §éc Ch­ëng - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	714	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+Ngò §éc §ao - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	715	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+§­êng M«n Phi §ao - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	716	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+§­êng M«n Tô TiÔn - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	717	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+§­êng M«n Phi Tiªu - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	718	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+C¸i Bang Ch­ëng - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	719	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+C¸i Bang C«n - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	720	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+Thiªn NhÉn ChiÕn - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	721	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+Thiªn NhÉn Ma - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	722	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+Vâ §ang Khİ - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	723	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+Vâ §ang KiÕm - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	724	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+C«n Lu©n §ao - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	725	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+C«n Lu©n KiÕm - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	726	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+ThiÕu L©m QuyÒn - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	727	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+ThiÕu L©m C«n - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	728	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+ThiÕu L©m §ao - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	729	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Thiªn V­¬ng §ao - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	730	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Thiªn V­¬ng Chïy - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	731	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Thiªn V­¬ng Th­¬ng - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	732	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Nga My KiÕm - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	733	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Nga My Ch­ëng - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	734	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Thóy Yªn §ao - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	735	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Thóy Yªn Néi - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	736	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Ngò §éc Ch­ëng - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	737	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Ngò §éc §ao - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	738	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+§­êng M«n Phi §ao - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	739	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+§­êng M«n Tô TiÔn - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	740	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+§­êng M«n Phi Tiªu - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	741	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+C¸i Bang Ch­ëng - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	742	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+C¸i Bang C«n - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	743	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Thiªn NhÉn ChiÕn - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	744	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Thiªn NhÉn Ma - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	745	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Vâ §ang Khİ - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	746	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Vâ §ang KiÕm - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	747	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+C«n Lu©n §ao - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	748	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+C«n Lu©n KiÕm - ChiÕn tr­êng ThËp Nh©n §Şch	0	11	749	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 İt n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+ThiÕu L©m QuyÒn - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	750	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+ThiÕu L©m C«n - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	751	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+ThiÕu L©m §ao - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	752	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Thiªn V­¬ng §ao - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	753	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Thiªn V­¬ng Chïy - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	754	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Thiªn V­¬ng Th­¬ng - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	755	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Nga My KiÕm - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	756	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Nga My Ch­ëng - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	757	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Thóy Yªn §ao - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	758	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Thóy Yªn Néi - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	759	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Ngò §éc Ch­ëng - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	760	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Ngò §éc §ao - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	761	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+§­êng M«n Phi §ao - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	762	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+§­êng M«n Tô TiÔn - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	763	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+§­êng M«n Phi Tiªu - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	764	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+C¸i Bang Ch­ëng - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	765	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+C¸i Bang C«n - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	766	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Thiªn NhÉn ChiÕn - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	767	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Thiªn NhÉn Ma - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	768	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Vâ §ang Khİ - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	769	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+Vâ §ang KiÕm - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	770	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+C«n Lu©n §ao - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	771	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+C«n Lu©n KiÕm - ChiÕn tr­êng B¸ch Nh©n §Şch	0	11	772	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ 1 l­îng nhÊt ®Şnh n©ng cÊp n¨ng lùc thuéc tİnh	5	100	1																																	
+ThiÕu L©m QuyÒn - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	773	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+ThiÕu L©m C«n - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	774	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+ThiÕu L©m §ao - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	775	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+Thiªn V­¬ng §ao - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	776	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+Thiªn V­¬ng Chïy - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	777	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+Thiªn V­¬ng Th­¬ng - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	778	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+Nga My KiÕm - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	779	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+Nga My Ch­ëng - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	780	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+Thóy Yªn §ao - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	781	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+Thóy Yªn Néi - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	782	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+Ngò §éc Ch­ëng - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	783	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+Ngò §éc §ao - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	784	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+§­êng M«n Phi §ao - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	785	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+§­êng M«n Tô TiÔn - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	786	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+§­êng M«n Phi Tiªu - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	787	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+C¸i Bang Ch­ëng - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	788	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+C¸i Bang C«n - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	789	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+Thiªn NhÉn ChiÕn - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	790	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+Thiªn NhÉn Ma - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	791	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+Vâ §ang Khİ - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	792	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+Vâ §ang KiÕm - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	793	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+C«n Lu©n §ao - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	794	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+C«n Lu©n KiÕm - ChiÕn tr­êng Thiªn Nh©n §Şch	0	11	795	\spr\item\equip\mask\yrmj_01.spr	379	1	1	Tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n, vµ n©ng cÊp n¨ng lùc thuéc tİnh c­êng ®¹i	5	100	1																																	
+MÆt n¹ Th¸nh Gi¶ - ThiÕu L©m	0	11	796	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ Th¸nh Gi¶ - Thiªn V­¬ng	0	11	797	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ Th¸nh Gi¶ - Ngò §éc	0	11	798	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ Th¸nh Gi¶ - §­êng M«n	0	11	799	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ Th¸nh Gi¶ - Nga My	0	11	800	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ Th¸nh Gi¶ - Thóy Yªn	0	11	801	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ Th¸nh Gi¶ - Thiªn NhÉn	0	11	802	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ Th¸nh Gi¶ - C¸i Bang	0	11	803	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ Th¸nh Gi¶ - Vâ §ang	0	11	804	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ Th¸nh Gi¶ - C«n Lu©n	0	11	805	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng Th¸nh Gi¶	0	11	806	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng Th¸nh Gi¶ - ThiÕu L©m	0	11	807	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng Th¸nh Gi¶ - Thiªn V­¬ng	0	11	808	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng Th¸nh Gi¶ - Ngò §éc	0	11	809	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng Th¸nh Gi¶ - §­êng M«n	0	11	810	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng Th¸nh Gi¶ - Nga My	0	11	811	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng Th¸nh Gi¶ - Thóy Yªn	0	11	812	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng Th¸nh Gi¶ - Thiªn NhÉn	0	11	813	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng Th¸nh Gi¶ - C¸i Bang	0	11	814	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng Th¸nh Gi¶ - Vâ §ang	0	11	815	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng Th¸nh Gi¶ - C«n Lu©n	0	11	816	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng Hoµng Gi¶	0	11	817	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng Hoµng Gi¶ - ThiÕu L©m	0	11	818	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng Hoµng Gi¶ - Thiªn V­¬ng	0	11	819	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng Hoµng Gi¶ - Ngò §éc	0	11	820	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng Hoµng Gi¶ - §­êng M«n	0	11	821	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng Hoµng Gi¶ - Nga My	0	11	822	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng Hoµng Gi¶ - Thóy Yªn	0	11	823	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng Hoµng Gi¶ - Thiªn NhÉn	0	11	824	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng Hoµng Gi¶ - C¸i Bang	0	11	825	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng Hoµng Gi¶ - Vâ §ang	0	11	826	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng Hoµng Gi¶ - C«n Lu©n	0	11	827	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng B¸ Gi¶	0	11	828	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng B¸ Gi¶ - ThiÕu L©m	0	11	829	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng B¸ Gi¶ - Thiªn V­¬ng	0	11	830	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng B¸ Gi¶ - Ngò §éc	0	11	831	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng B¸ Gi¶ - §­êng M«n	0	11	832	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng B¸ Gi¶ - Nga My	0	11	833	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng B¸ Gi¶ - Thóy Yªn	0	11	834	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng B¸ Gi¶ - Thiªn NhÉn	0	11	835	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng B¸ Gi¶ - C¸i Bang	0	11	836	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng B¸ Gi¶ - Vâ §ang	0	11	837	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	
+MÆt n¹ chiÕn tr­êng B¸ Gi¶ - C«n Lu©n	0	11	838	\spr\item\equip\mask\yrmj_02.spr	379	1	1	Sau khi ®eo xong sÏ nhËn ®­îc vâ c«ng c¸i thÕ, tham gia chiÕn tr­êng Tèng Kim cã thÓ nhËn ®­îc ®iÓm tİch lòy Tèng Kim nhiÒu h¬n		0	1																																	

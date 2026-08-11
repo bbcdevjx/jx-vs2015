@@ -1,0 +1,201 @@
+Name	DataID	Kind	ScriptName	ImageName	SoundName	LifeTime	Layer	Height	SkillKind	SkillCamp	SkillRange	SkillCastTime	SkillID	SkillLevel	LightRadius	LightRed	LightGreen	LightBlue	LightAlpha	LightReflectType	ImageTotalFrame	ImageCurFrame	ImageTotalDir	ImageCurDir	ImageInterval	ImageCgXpos	ImageCgYpos	Bar0	Bar1	Bar2	Bar3	Bar4	Bar5	Bar6	Bar7	Bar8	Bar9	Bar10	Bar11	Bar12	Bar13	Bar14	ImageDropName	ImageDropTotalFrame	ImageDropCurFrame	ImageDropTotalDir	ImageDropCurDir	ImageDropInterval(Ö¡¼ä¸ô£©	ImageDropCgXpos	ImageDropCgYpos
+±¦Ïä1	1	Box		\spr\obj\box\box001.spr		0	0	0	Cycle_Image_Static	4	0	0	0	0	0	0	0	0	0	0	2	0	2	0	80	32	50	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+±¦Ïä2	2	Box		\spr\obj\box\box002.spr		0	0	20	Cycle_Image_Static	4	0	0	0	0	0	0	0	0	0	0	2	0	2	0	80	38	59	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0								
+¸æÊ¾ÅÆ1	3	Box		\spr\obj\signpost\signpost001.spr		0	0	0	Auto_Image_Static	4	0	0	0	0	0	0	0	0	0	0	2	0	2	0	80	97	149	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0								
+¸æÊ¾ÅÆ2	4	Box		\spr\obj\signpost\signpost002.spr		0	0	0	Auto_Image_Dir	4	0	0	0	0	0	0	0	0	0	0	2	0	2	0	80	88	129	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0								
+¸æÊ¾ÅÆ3	5	Box		\spr\obj\signpost\signpost003.spr		0	0	0	Auto_Image_Target	4	0	0	0	0	0	0	0	0	0	0	2	0	2	0	80	56	107	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0								
+Â·±ê1	6	Box		\spr\obj\signpost\signpost004.spr		0	0	0	Auto_Delay_Static	4	0	0	0	0	0	0	0	0	0	0	2	0	2	0	80	42	90	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0								
+Â·±ê2	7	Box		\spr\obj\signpost\signpost005.spr		0	0	0	Auto_Delay_Dir	4	0	0	0	0	0	0	0	0	0	0	2	0	2	0	80	22	38	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0								
+Â·±ê3	8	Box		\spr\obj\signpost\signpost006.spr		0	0	0	Auto_Delay_Target	4	0	0	0	0	0	0	0	0	0	0	2	0	2	0	80	52	176	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0								
+½£	9	Item		\spr\obj\item\obj_wq_001.spr		3000	0	8	Cycle_Image_Static	4	0	0	0	0	0	0	0	0	0	0	8	7	1	0	5	60	105	0	0	0	0	0	0	0	1	4	0	3	2	0	0	0	\spr\obj\item\obj_wq_fall_001.spr	13	0	1	0	7	60	105
+µ¶	10	Item		\spr\obj\item\obj_wq_002.spr		3000	0	8	Cycle_Image_Static	4	0	0	0	0	0	0	0	0	0	0	8	7	1	0	5	70	110	0	0	0	5	4	0	1	1	4	3	1	2	0	0	0	\spr\obj\item\obj_wq_fall_002.spr	13	0	1	0	7	70	110
+¹÷°ô	11	Item		\spr\obj\item\obj_wq_003.spr		3000	0	4	Cycle_Image_Static	4	0	0	0	0	0	0	0	0	0	0	8	7	1	0	5	50	100	0	0	0	0	0	0	5	1	0	3	2	0	0	0	0	\spr\obj\item\obj_wq_fall_003.spr	12	0	1	0	7	50	100
+Ç¹	12	Item		\spr\obj\item\obj_wq_004.spr		3000	0	4	Cycle_Image_Static	4	0	0	0	0	0	0	0	0	0	0	8	7	1	0	5	80	112	0	0	0	5	4	0	3	1	4	0	3	2	0	0	0	\spr\obj\item\obj_wq_fall_004.spr	16	0	1	0	9	80	112
+´¸	13	Item		\spr\obj\item\obj_wq_005.spr		3000	0	2	Auto_Image_Target	4	0	0	0	0	0	0	0	0	0	0	8	7	1	0	9	60	115	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	\spr\obj\item\obj_wq_fall_005.spr	9	0	1	0	9	60	115
+Ë«µ¶	14	Item		\spr\obj\item\obj_wq_006.spr		3000	0	8	Cycle_Image_Static	4	0	0	0	0	0	0	0	0	0	0	8	7	1	0	9	60	130	0	0	0	5	1	4	3	1	1	0	3	2	0	0	0	\spr\obj\item\obj_wq_fall_006.spr	11	0	1	0	11	60	130
+·ÉïÚ	15	Item		\spr\obj\item\obj_wq_007.spr		3000	0	2	Cycle_Image_Static	4	0	0	0	0	0	0	0	0	0	0	7	6	1	0	9	60	115	0	0	0	5	4	0	3	1	0	0	0	0	0	0	0	\spr\obj\item\obj_wq_fall_007.spr	9	0	1	0	10	60	115
+¹­	16	Item		\spr\obj\item\obj_wq_008.spr		3000	0	1	Cycle_Image_Static	4	0	0	0	0	0	0	0	0	0	0	7	6	1	0	9	60	115	0	0	0	5	4	0	3	1	4	0	3	2	0	0	0	\spr\obj\item\obj_wq_fall_008.spr	9	0	1	0	10	60	115
+°µÆ÷Ï»	17	Item		\spr\obj\item\obj_wq_009.spr		3000	0	8	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	7	6	1	0	9	60	110	0	0	0	5	4	0	3	1	4	0	3	2	0	0	0	\spr\obj\item\obj_wq_fall_009.spr	9	0	1	0	10	60	110
+ºìÒ©Æ¿	18	Item		\spr\obj\item\obj_yp_001.spr		3000	0	4	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	7	6	1	0	8	60	115	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	\spr\obj\item\obj_yp_fall_001.spr	9	0	1	0	10	60	115
+°×Ò©Æ¿	19	Item		\spr\obj\item\obj_yp_002.spr		3000	0	4	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	7	6	1	0	8	60	115	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	\spr\obj\item\obj_yp_fall_002.spr	9	0	1	0	10	60	115
+À¶Ò©Æ¿	20	Item		\spr\obj\item\obj_yp_003.spr		3000	0	4	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	7	6	1	0	8	60	110	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	\spr\obj\item\obj_yp_fall_003.spr	9	0	1	0	10	60	110
+¾ÆÌ³×Ó	21	Item		\spr\obj\item\obj_yp_004.spr		3000	0	4	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	7	6	1	0	8	60	115	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	\spr\obj\item\obj_yp_fall_004.spr	9	0	1	0	10	60	115
+»Æ²¼ÒÂ	22	Item		\spr\obj\item\obj_zb_001.spr		3000	0	4	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	7	6	1	0	9	50	105	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0	\spr\obj\item\obj_zb_fall_001.spr	7	0	1	0	10	50	105
+°×îø¼×	23	Item		\spr\obj\item\obj_zb_002.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	7	6	1	0	9	55	110	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0	\spr\obj\item\obj_zb_fall_002.spr	7	0	1	0	10	55	110
+À¶²¼ÒÂ	24	Item		\spr\obj\item\obj_zb_003.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	7	6	1	0	9	50	105	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0	\spr\obj\item\obj_zb_fall_003.spr	7	0	1	0	10	50	105
+½ðîø¼×	25	Item		\spr\obj\item\obj_zb_004.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	7	6	1	0	9	55	150	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0	\spr\obj\item\obj_zb_fall_004.spr	7	0	1	0	10	55	150
+ÄÐÑ¥	26	Item		\spr\obj\item\obj_zb_005.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	7	6	1	0	9	55	110	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0	\spr\obj\item\obj_zb_fall_005.spr	7	0	1	0	10	55	110
+Å®Ð¬	27	Item		\spr\obj\item\obj_zb_006.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	8	6	1	0	9	60	115	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	\spr\obj\item\obj_zb_fall_006.spr	8	0	1	0	10	60	115
+À¶É«²¼Ã±	28	Item		\spr\obj\item\obj_zb_007.spr		3000	0	4	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	7	6	1	0	9	60	110	0	0	0	0	0	0	5	1	4	3	1	2	0	0	0	\spr\obj\item\obj_zb_fall_007.spr	7	0	1	0	10	60	110
+¸Ö¿ø	29	Item		\spr\obj\item\obj_zb_008.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	7	6	1	0	9	60	110	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0	\spr\obj\item\obj_zb_fall_008.spr	7	0	1	0	10	60	110
+·¢ô¢	30	Item		\spr\obj\item\obj_zb_009.spr		3000	0	4	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	8	7	1	0	9	60	115	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	\spr\obj\item\obj_zb_fall_009.spr	8	0	1	0	10	60	115
+½ð¿ø	31	Item		\spr\obj\item\obj_zb_010.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	7	6	1	0	9	60	110	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0	\spr\obj\item\obj_zb_fall_010.spr	7	0	1	0	10	60	110
+²¼Ñü´ø	32	Item		\spr\obj\item\obj_zb_011.spr		3000	0	4	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	7	6	1	0	9	60	110	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	\spr\obj\item\obj_zb_fall_011.spr	7	0	1	0	10	60	110
+½ðÊôÑü´ø	33	Item		\spr\obj\item\obj_zb_fall_012.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	9	8	1	0	9	60	110	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0	\spr\obj\item\obj_zb_fall_012.spr	7	0	1	0	10	60	110
+»¤Íó	34	Item		\spr\obj\item\obj_zb_fall_013.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	9	8	1	0	9	60	110	0	0	0	0	0	0	0	1	4	0	3	2	0	0	0	\spr\obj\item\obj_zb_fall_013.spr	7	0	1	0	10	60	110
+Óñïí	35	Item		\spr\obj\item\obj_zb_014.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	7	6	1	0	9	60	115	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	\spr\obj\item\obj_zb_fall_014.spr	7	0	1	0	10	60	115
+ÏîÁ´	36	Item		\spr\obj\item\obj_zb_015.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	7	6	1	0	9	60	115	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	\spr\obj\item\obj_zb_fall_015.spr	7	0	1	0	10	60	115
+½äÖ¸	37	Item		\spr\obj\item\obj_it_´«ËÍ.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	7	6	1	0	9	60	115	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	\spr\obj\item\obj_zb_fall_016.spr	7	0	1	0	13	60	115
+ÍÁµØ·û	38	Item		\spr\obj\item\wj-br.spr		3000	0	4	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	4	3	1	0	16	137	128	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	\spr\obj\item\obj_it_´«ËÍ_fall.spr	19	0	1	0	15	140	124
+´«ËÍµã	39	Box		\spr\obj\box\transport.spr		3000	0	8	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	15	9	1	0	120	60	115	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	1	0	0	0	0
+ring	40	Item		\spr\obj\item\wj-ri.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	12	11	1	0	3	60	112	0	0	0	0	5	4	0	1	2	0	0	0	0	0	0			0	1	0			
+potionred	41	Item		\spr\obj\item\wj-po1.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	10	9	1	0	3	61	109	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0			0	1	0			
+potionblue	42	Item		\spr\obj\item\wj-po2.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	10	9	1	0	3	60	109	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0			0	1	0			
+ani001	43	Body		\spr\obj\corpse\ani001_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	158	183	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2			0	1	0			
+ani002	44	Body		\spr\obj\corpse\ani002_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	176	179	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2			0	1	0			
+ani003	45	Body		\spr\obj\corpse\ani003_die_corpse.spr		3000	0	4	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	159	179	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2			0	1	0			
+ani004	46	Body		\spr\obj\corpse\ani004_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	161	169	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2			0	1	0			
+ani005	47	Body		\spr\obj\corpse\ani005_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	177	182	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2			0	1	0			
+ani006	48	Body		\spr\obj\corpse\ani006_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	179	186	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2			0	1	0
+ani007	49	Body		\spr\obj\corpse\ani007_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	159	184	0	0	0	5	1	4	1	1	1	1	1	1	3	1	2			0	1	0
+ani008	50	Body		\spr\obj\corpse\ani008_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	187	187	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2			0	1	0
+ani009	51	Body		\spr\obj\corpse\ani009_die_corpse.spr		3000	0	4	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	177	165	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2			0	1	0
+ani010	52	Body		\spr\obj\corpse\ani010_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	178	166	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2			0	1	0
+ani011	53	Body		\spr\obj\corpse\ani011_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	183	168	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2			0	1	0
+ani012	54	Body		\spr\obj\corpse\ani012_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	172	187	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0			0	1	0
+ani015	55	Body		\spr\obj\corpse\ani015_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	186	192	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0			0	1	0
+ani019	56	Body		\spr\obj\corpse\ani019_die_corpse.spr		3000	0	4	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	175	174	5	4	0	1	1	4	1	1	1	3	1	2	0	0	0			0	1	0
+ani020	57	Body		\spr\obj\corpse\ani020_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	4	173	192	5	4	0	1	1	4	1	1	1	1	1	2	3	2	0			0	1	0
+ani021	58	Body		\spr\obj\corpse\ani021_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	186	171	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1			0	1	0
+ani022	59	Body		\spr\obj\corpse\ani022_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	8	187	167	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1			0	1	0
+ani023	60	Body		\spr\obj\corpse\ani023_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	186	169	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1			0	1	0
+ani024	61	Body		\spr\obj\corpse\ani024_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	188	169	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1			0	1	0
+ani027	62	Body		\spr\obj\corpse\ani027_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	160	167	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2			0	1	0
+ani029	63	Body		\spr\obj\corpse\ani029_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	8	158	156	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0			0	1	0
+ani030	64	Body		\spr\obj\corpse\ani030_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	184	193	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2			0	1	0
+ani031	65	Body		\spr\obj\corpse\ani031_die_corpse.spr		3000	0	4	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	160	189	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0			0	1	0
+ani032	66	Body		\spr\obj\corpse\ani032_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	165	187	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0			0	1	0
+ani033	67	Body		\spr\obj\corpse\ani033_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	161	188	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1			0	1	0
+ani034	68	Body		\spr\obj\corpse\ani034_die_corpse.spr		3000	0	1	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	148	191	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1			0	1	0
+ani035	69	Body		\spr\obj\corpse\ani035_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	158	166	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1			0	1	0
+ani036	70	Body		\spr\obj\corpse\ani036_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	161	190	1	1	4	1	1	1	1	1	1	1	1	1	3	1	1			0	1	0
+ani038	71	Body		\spr\obj\corpse\ani038_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	156	189	5	4	0	1	1	4	1	1	1	1	1	1	3	1	2			0	1	0
+ani040	72	Body		\spr\obj\corpse\ani040_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	4	150	178	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0			0	1	0
+ani041	73	Body		\spr\obj\corpse\ani041_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	159	187	1	4	0	1	1	1	1	1	1	1	1	1	1	1	2			0	1	0
+ani042	74	Body		\spr\obj\corpse\ani042_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	4	159	183	0	0	0	1	1	1	1	1	1	1	1	1	0	0	0			0	1	0
+ani043	75	Body		\spr\obj\corpse\ani043_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	159	180	0	0	0	1	1	1	1	1	1	1	1	1	0	0	0			0	1	0
+ani045	76	Body		\spr\obj\corpse\ani045_DIE_corpse.spr		3000	0	1	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	160	187	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0			0	1	0
+ani046	77	Body		\spr\obj\corpse\ani046_DIE_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	8	160	187	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0			0	1	0
+ani047	78	Body		\spr\obj\corpse\ani047_DIE_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	158	191	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0			0	1	0
+ani048	79	Body		\spr\obj\corpse\ani048_DIE_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	162	184	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0			0	1	0
+ani050	80	Body		\spr\obj\corpse\ani050_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	171	161	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0			0	1	0
+ani053	81	Body		\spr\obj\corpse\ani053_DIE_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	157	181	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0			0	1	0
+ani054	82	Body		\spr\obj\corpse\ani054_DIE_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	160	167	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0			0	1	0
+ani055	83	Body		\spr\obj\corpse\ani055_DIE_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	159	174	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0			0	1	0
+ani056	84	Body		\spr\obj\corpse\ani056_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	4	156	169	1	1	4	1	1	1	1	1	1	1	1	1	1	1	1			0	1	0
+ani057	85	Body		\spr\obj\corpse\ani057_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	4	155	165	1	1	4	1	1	1	1	1	1	1	1	1	1	1	2			0	1	0
+ani061	86	Body		\spr\obj\corpse\ani061_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	187	191	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0			0	1	0
+ani062	87	Body		\spr\obj\corpse\ani062_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	211	202	4	0	0	1	1	4	1	1	1	1	1	1	0	0	0			0	1	0
+ani063	88	Body		\spr\obj\corpse\ani063_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	4	169	185	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0			0	1	0
+ani064	89	Body		\spr\obj\corpse\ani064_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	167	196	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0			0	1	0
+ani065	90	Body		\spr\obj\corpse\ani065_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	167	185	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0			0	1	0
+ani066	91	Body		\spr\obj\corpse\ani066_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	156	164	1	4	0	1	1	1	1	1	1	1	1	1	1	1	1			0	1	0
+enemy005	92	Body		\spr\obj\corpse\enemy005_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	4	160	185	5	4	0	1	1	4	1	1	1	3	1	2	0	0	0			0	1	0
+enemy006	93	Body		\spr\obj\corpse\enemy006_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	4	150	188	5	4	0	1	1	4	1	1	1	1	1	1	3	1	2			0	1	0
+enemy007	94	Body		\spr\obj\corpse\enemy007_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	162	182	5	4	0	1	1	4	1	1	1	1	1	1	3	1	2			0	1	0
+enemy008	95	Body		\spr\obj\corpse\enemy008_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	167	168	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0			0	1	0
+enemy009	96	Body		\spr\obj\corpse\enemy009_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	162	176	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0			0	1	0
+enemy011	97	Body		\spr\obj\corpse\enemy011_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	10	158	187	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0			0	1	0
+enemy013	98	Body		\spr\obj\corpse\enemy013_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	4	133	196	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0			0	1	0
+enemy015	99	Body		\spr\obj\corpse\enemy015_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	153	185	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0			0	1	0
+enemy017	100	Body		\spr\obj\corpse\enemy017_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	4	158	164	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2			0	1	0
+enemy019	101	Body		\spr\obj\corpse\enemy019_DIE_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	144	177	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2			0	1	0
+enemy020	102	Body		\spr\obj\corpse\enemy020_DIE_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	154	186	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2			0	1	0
+enemy021	103	Body		\spr\obj\corpse\enemy021_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	4	198	226	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2			0	1	0
+enemy022	104	Body		\spr\obj\corpse\enemy022_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	165	168	5	4	0	1	1	4	1	1	1	1	1	2	3	2	0			0	1	0
+enemy023	105	Body		\spr\obj\corpse\enemy023_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	115	219	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1			0	1	0
+enemy024	106	Body		\spr\obj\corpse\enemy024_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	127	208	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2			0	1	0
+enemy025	107	Body		\spr\obj\corpse\enemy025_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	134	160	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0			0	1	0
+enemy026	108	Body		\spr\obj\corpse\enemy026_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	4	135	163	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0			0	1	0
+enemy028	109	Body		\spr\obj\corpse\enemy028_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	197	229	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2			0	1	0
+enemy029	110	Body		\spr\obj\corpse\enemy029_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	4	151	179	0	0	0	1	1	1	1	1	1	1	1	1	0	0	0			0	1	0
+enemy031	111	Body		\spr\obj\corpse\enemy031_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	4	137	221	5	1	4	1	1	1	1	1	1	1	1	1	1	1	1			0	1	0
+enemy032	112	Body		\spr\obj\corpse\enemy032_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	175	208	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0			0	1	0
+enemy034	113	Body		\spr\obj\corpse\enemy034_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	157	205	5	4	0	1	1	4	1	1	1	1	1	1	3	1	2			0	1	0
+enemy035	114	Body		\spr\obj\corpse\enemy035_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	8	148	194	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1					
+enemy036	115	Body		\spr\obj\corpse\enemy036_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	8	147	191	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2					
+enemy040	116	Body		\spr\obj\corpse\enemy040_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	158	182	5	4	0	1	1	4	1	1	1	1	1	1	3	1	2					
+enemy043	117	Body		\spr\obj\corpse\enemy043_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	159	178	5	4	0	1	1	4	1	1	1	1	1	1	3	1	2					
+enemy044	118	Body		\spr\obj\corpse\enemy044_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	4	157	168	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1					
+enemy046	119	Body		\spr\obj\corpse\enemy046_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	183	230	1	1	4	1	1	1	1	1	1	1	1	1	1	1	1					
+enemy047	120	Body		\spr\obj\corpse\enemy047_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	4	155	208	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2					
+enemy048	121	Body		\spr\obj\corpse\enemy048_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	4	160	164	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2					
+enemy050	122	Body		\spr\obj\corpse\enemy050_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	157	186	0	0	0	1	1	1	1	1	1	1	1	1	0	0	0					
+enemy051	123	Body		\spr\obj\corpse\enemy051_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	158	181	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2					
+enemy052	124	Body		\spr\obj\corpse\enemy052_die_corpse.spr		3000	0	4	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	152	195	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2					
+enemy053	125	Body		\spr\obj\corpse\enemy053_die_corpse.spr		3000	0	4	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	159	179	0	5	4	5	1	1	1	1	1	3	1	2	0	0	0					
+enemy054	126	Body		\spr\obj\corpse\enemy054_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	159	168	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0					
+enemy055	127	Body		\spr\obj\corpse\enemy055_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	157	201	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2					
+enemy056	128	Body		\spr\obj\corpse\enemy056_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	8	209	202	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0
+enemy057	129	Body		\spr\obj\corpse\enemy057_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	155	209	0	5	4	5	1	1	1	1	1	1	1	1	3	1	2
+enemy059	130	Body		\spr\obj\corpse\enemy059_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	197	178	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0
+enemy060	131	Body		\spr\obj\corpse\enemy060_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	161	202	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy061	132	Body		\spr\obj\corpse\enemy061_die_corpse.spr		3000	0	4	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	160	202	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy064	133	Body		\spr\obj\corpse\enemy064_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	157	206	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0
+enemy065	134	Body		\spr\obj\corpse\enemy065_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	156	212	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy066	135	Body		\spr\obj\corpse\enemy066_die_corpse.spr		3000	0	4	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	8	161	208	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy067	136	Body		\spr\obj\corpse\enemy067_die_corpse.spr		3000	0	4	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	136	212	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy068	137	Body		\spr\obj\corpse\enemy068_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	159	178	0	0	0	5	1	4	1	1	1	1	1	1	3	1	1
+enemy069	138	Body		\spr\obj\corpse\enemy069_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	12	169	187	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0
+enemy070	139	Body		\spr\obj\corpse\enemy070_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	135	208	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy072	140	Body		\spr\obj\corpse\enemy072_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	161	177	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy073	141	Body		\spr\obj\corpse\enemy073_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	145	215	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy074	142	Body		\spr\obj\corpse\enemy074_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	173	194	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0
+enemy075	143	Body		\spr\obj\corpse\enemy075_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	157	199	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy076	144	Body		\spr\obj\corpse\enemy076_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	160	171	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy077	145	Body		\spr\obj\corpse\enemy077_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	169	172	5	4	0	1	1	4	1	1	1	3	1	1	0	3	2
+enemy078	146	Body		\spr\obj\corpse\enemy078_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	10	161	172	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0
+enemy079	147	Body		\spr\obj\corpse\enemy079_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	133	221	0	5	4	5	1	1	1	1	1	1	1	1	3	1	2
+enemy080	148	Body		\spr\obj\corpse\enemy080_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	159	176	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0
+enemy081	149	Body		\spr\obj\corpse\enemy081_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	8	157	170	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy082	150	Body		\spr\obj\corpse\enemy082_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	162	191	5	1	4	1	1	1	1	1	1	1	1	1	1	1	2
+enemy083	151	Body		\spr\obj\corpse\enemy083_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	182	220	0	0	0	0	0	0	5	1	4	1	1	2	3	2	0
+enemy085	152	Body		\spr\obj\corpse\enemy085_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	154	157	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy086	153	Body		\spr\obj\corpse\enemy086_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	130	225	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy088	154	Body		\spr\obj\corpse\enemy088_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	143	214	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy089	155	Body		\spr\obj\corpse\enemy089_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	158	178	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy091	156	Body		\spr\obj\corpse\enemy091_die_corpse.spr		3000	0	4	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	161	208	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy093	157	Body		\spr\obj\corpse\enemy093_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	153	168	1	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy094	158	Body		\spr\obj\corpse\enemy094_DIE_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	154	211	5	4	0	1	1	4	1	1	1	1	1	1	3	1	2
+enemy095	159	Body		\spr\obj\corpse\enemy095_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	158	181	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy096	160	Body				3000	0	4	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	8	0	0	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0
+enemy096x	161	Body		\spr\obj\corpse\enemy096x_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	4	161	195	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy097	162	Body		\spr\obj\corpse\enemy097_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	173	179	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0
+enemy097x	163	Body		\spr\obj\corpse\enemy097x_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	157	178	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy098	164	Body		\spr\obj\corpse\enemy098_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	152	173	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy100	165	Body		\spr\obj\corpse\enemy100_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	200	181	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0
+enemy101	166	Body		\spr\obj\corpse\enemy101_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	4	170	193	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0
+enemy103	167	Body		\spr\obj\corpse\enemy103_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	161	188	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy104	168	Body		\spr\obj\corpse\enemy104_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	159	174	5	4	0	1	1	4	1	1	1	1	1	1	3	1	2
+enemy105	169	Body		\spr\obj\corpse\enemy105_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	160	173	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy107	170	Body		\spr\obj\corpse\enemy107_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	161	153	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy109	171	Body		\spr\obj\corpse\enemy109_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	159	204	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy110	172	Body		\spr\obj\corpse\enemy110_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	159	169	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy120	173	Body		\spr\obj\corpse\enemy120_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	184	225	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0
+enemy121	174	Body		\spr\obj\corpse\enemy121_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	161	166	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy122	175	Body		\spr\obj\corpse\enemy122_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	151	154	1	1	0	1	1	4	1	1	1	1	1	1	3	1	2
+enemy123	176	Body		\spr\obj\corpse\enemy123_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	169	168	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0
+enemy124	177	Body		\spr\obj\corpse\enemy124_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	163	204	0	0	0	5	1	4	1	1	1	3	1	1	0	3	2
+enemy125	178	Body		\spr\obj\corpse\enemy125_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	159	209	5	4	0	1	1	4	1	1	1	1	1	1	3	1	2
+enemy126	179	Body		\spr\obj\corpse\enemy126_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	156	175	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy127	180	Body		\spr\obj\corpse\enemy127_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	163	220	5	1	4	1	1	1	1	1	1	1	1	2	3	2	0
+enemy128	181	Body		\spr\obj\corpse\enemy128_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	230	190	0	0	5	1	1	1	1	1	1	1	1	1	0	0	0
+enemy129	182	Body		\spr\obj\corpse\enemy129_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	181	223	5	4	0	1	1	4	1	1	1	1	1	1	3	1	2
+enemy130	183	Body		\spr\obj\corpse\enemy130_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	136	197	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy131	184	Body		\spr\obj\corpse\enemy131_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	4	154	169	0	0	0	1	1	1	1	1	1	1	1	1	0	0	0
+enemy132	185	Body		\spr\obj\corpse\enemy132_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	172	223	5	4	0	1	1	4	1	1	1	1	1	1	3	1	2
+enemy133	186	Body		\spr\obj\corpse\enemy133_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	4	137	202	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy135	187	Body		\spr\obj\corpse\enemy135_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	127	206	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0
+enemy136	188	Body		\spr\obj\corpse\enemy136_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	8	155	209	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy137	189	Body		\spr\obj\corpse\enemy137_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	158	182	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy138	190	Body		\spr\obj\corpse\enemy138_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	4	160	171	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy140	191	Body		\spr\obj\corpse\enemy140_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	161	207	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy141	192	Body		\spr\obj\corpse\enemy141_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	158	160	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0
+enemy142	193	Body		\spr\obj\corpse\enemy142_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	163	168	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0
+enemy143	194	Body		\spr\obj\corpse\enemy143_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	157	177	0	0	0	5	1	4	1	1	1	1	1	1	3	1	2
+enemy144	195	Body		\spr\obj\corpse\enemy144_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	8	112	193	4	0	0	1	1	4	1	1	1	1	1	1	0	0	3
+enemy145	196	Body		\spr\obj\corpse\enemy145_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	2	226	192	0	0	0	1	1	1	1	1	1	1	1	1	0	0	0
+enemy146	197	Body		\spr\obj\corpse\enemy146_die_corpse.spr		3000	0	3	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	159	178	0	5	4	5	1	1	1	1	1	1	1	1	3	1	2
+enemy148	198	Body		\spr\obj\corpse\enemy148_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	159	207	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy149	199	Body		\spr\obj\corpse\enemy149_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	165	164	5	1	4	1	1	1	1	1	1	1	1	1	3	1	2
+enemy150	200	Body		\spr\obj\corpse\enemy150_die_corpse.spr		3000	0	2	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	64	0	8	0	6	158	156	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0

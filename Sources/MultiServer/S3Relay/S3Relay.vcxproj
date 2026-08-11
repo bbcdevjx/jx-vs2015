@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Client Debug|Win32"><Configuration>Client Debug</Configuration><Platform>Win32</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Client Release|Win32"><Configuration>Client Release</Configuration><Platform>Win32</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Server Debug|Win32"><Configuration>Server Debug</Configuration><Platform>Win32</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Server Release|Win32"><Configuration>Server Release</Configuration><Platform>Win32</Platform></ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals"><ProjectGuid>{F7B7F105-5889-ABBA-DFCA-65B6ED63A5E9}</ProjectGuid><RootNamespace>S3Relay</RootNamespace><WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion></PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Client Debug|Win32'" Label="Configuration"><ConfigurationType>Application</ConfigurationType><UseDebugLibraries>true</UseDebugLibraries><PlatformToolset>v140</PlatformToolset><CharacterSet>MultiByte</CharacterSet></PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Client Release|Win32'" Label="Configuration"><ConfigurationType>Application</ConfigurationType><UseDebugLibraries>false</UseDebugLibraries><PlatformToolset>v140</PlatformToolset><CharacterSet>MultiByte</CharacterSet></PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Server Debug|Win32'" Label="Configuration"><ConfigurationType>Application</ConfigurationType><UseDebugLibraries>true</UseDebugLibraries><PlatformToolset>v140</PlatformToolset><CharacterSet>MultiByte</CharacterSet></PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Server Release|Win32'" Label="Configuration"><ConfigurationType>Application</ConfigurationType><UseDebugLibraries>false</UseDebugLibraries><PlatformToolset>v140</PlatformToolset><CharacterSet>MultiByte</CharacterSet></PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets"><Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" /></ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup><JXRoot>$(SolutionDir)</JXRoot><JXBuildSide Condition="'$(Configuration)'=='Server Debug' Or '$(Configuration)'=='Server Release'">server</JXBuildSide><JXBuildSide Condition="'$(JXBuildSide)'==''">client</JXBuildSide><JXBuildFlavor Condition="'$(Configuration)'=='Client Debug' Or '$(Configuration)'=='Server Debug'">debug</JXBuildFlavor><JXBuildFlavor Condition="'$(JXBuildFlavor)'==''">release</JXBuildFlavor><JXLibraryOutputDir>$(JXRoot)lib\$(JXBuildSide)\$(JXBuildFlavor)\</JXLibraryOutputDir><JXBinaryOutputDir>$(JXRoot)bin\$(JXBuildSide)\$(JXBuildFlavor)\</JXBinaryOutputDir><OutDir Condition="'$(ConfigurationType)'=='StaticLibrary'">$(JXLibraryOutputDir)</OutDir><OutDir Condition="'$(ConfigurationType)'!='StaticLibrary'">$(JXBinaryOutputDir)</OutDir><IntDir>$(JXRoot)obj\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir><TargetName>S3Relay</TargetName></PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Client Debug|Win32'"><ClCompile><WarningLevel>Level3</WarningLevel><Optimization>Disabled</Optimization><AdditionalIncludeDirectories>.;Src;;$(JXRoot)Headers;$(JXRoot)Lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories><PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32_LEAN_AND_MEAN;WINVER=0x0500;_WIN32_WINNT=0x0500;_MBCS;_TESTING;_WINDOWS;_WORKMODE_SINGLETHREAD;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions><PrecompiledHeader>NotUsing</PrecompiledHeader><ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope><AdditionalOptions>/FS /Zc:sizedDealloc- %(AdditionalOptions)</AdditionalOptions><DisableSpecificWarnings>4996;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings></ClCompile><Link><AdditionalOptions>/INCREMENTAL:NO %(AdditionalOptions)</AdditionalOptions><AdditionalDependencies>$(JXLibraryOutputDir)Engine.lib;$(JXLibraryOutputDir)Common.lib;$(JXLibraryOutputDir)LuaLibDll.lib;libdb41s.lib;legacy_stdio_definitions.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies><AdditionalLibraryDirectories>$(ProjectDir);$(JXLibraryOutputDir);$(JXBinaryOutputDir);$(JXRoot)Lib;$(JXRoot)Lib\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories><IgnoreSpecificDefaultLibraries>LIBC.lib;stlport_vc6_static.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries><ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers><GenerateDebugInformation>true</GenerateDebugInformation><ImportLibrary>$(JXLibraryOutputDir)$(TargetName).lib</ImportLibrary></Link></ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Client Release|Win32'"><ClCompile><WarningLevel>Level3</WarningLevel><Optimization>MaxSpeed</Optimization><AdditionalIncludeDirectories>.;Src;;$(JXRoot)Headers;$(JXRoot)Lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories><PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32_LEAN_AND_MEAN;WINVER=0x0500;_WIN32_WINNT=0x0500;_MBCS;_TESTING;_WINDOWS;_WORKMODE_SINGLETHREAD;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions><PrecompiledHeader>NotUsing</PrecompiledHeader><ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope><AdditionalOptions>/FS /Zc:sizedDealloc- %(AdditionalOptions)</AdditionalOptions><DisableSpecificWarnings>4996;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings></ClCompile><Link><AdditionalOptions>/INCREMENTAL:NO %(AdditionalOptions)</AdditionalOptions><AdditionalDependencies>$(JXLibraryOutputDir)Engine.lib;$(JXLibraryOutputDir)Common.lib;$(JXLibraryOutputDir)LuaLibDll.lib;libdb41s.lib;legacy_stdio_definitions.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies><AdditionalLibraryDirectories>$(ProjectDir);$(JXLibraryOutputDir);$(JXBinaryOutputDir);$(JXRoot)Lib;$(JXRoot)Lib\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories><IgnoreSpecificDefaultLibraries>LIBC.lib;stlport_vc6_static.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries><ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers><GenerateDebugInformation>true</GenerateDebugInformation><ImportLibrary>$(JXLibraryOutputDir)$(TargetName).lib</ImportLibrary></Link></ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Server Debug|Win32'"><ClCompile><WarningLevel>Level3</WarningLevel><Optimization>Disabled</Optimization><AdditionalIncludeDirectories>.;Src;;$(JXRoot)Headers;$(JXRoot)Lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories><PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32_LEAN_AND_MEAN;WINVER=0x0500;_WIN32_WINNT=0x0500;_MBCS;_TESTING;_WINDOWS;_WORKMODE_SINGLETHREAD;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions><PrecompiledHeader>NotUsing</PrecompiledHeader><ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope><AdditionalOptions>/FS /Zc:sizedDealloc- %(AdditionalOptions)</AdditionalOptions><DisableSpecificWarnings>4996;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings></ClCompile><Link><AdditionalOptions>/INCREMENTAL:NO %(AdditionalOptions)</AdditionalOptions><AdditionalDependencies>$(JXLibraryOutputDir)Engine.lib;$(JXLibraryOutputDir)Common.lib;$(JXLibraryOutputDir)LuaLibDll.lib;libdb41s.lib;legacy_stdio_definitions.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies><AdditionalLibraryDirectories>$(ProjectDir);$(JXLibraryOutputDir);$(JXBinaryOutputDir);$(JXRoot)Lib;$(JXRoot)Lib\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories><IgnoreSpecificDefaultLibraries>LIBC.lib;stlport_vc6_static.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries><ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers><GenerateDebugInformation>true</GenerateDebugInformation><ImportLibrary>$(JXLibraryOutputDir)$(TargetName).lib</ImportLibrary></Link></ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Server Release|Win32'"><ClCompile><WarningLevel>Level3</WarningLevel><Optimization>MaxSpeed</Optimization><AdditionalIncludeDirectories>.;Src;;$(JXRoot)Headers;$(JXRoot)Lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories><PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32_LEAN_AND_MEAN;WINVER=0x0500;_WIN32_WINNT=0x0500;_MBCS;_TESTING;_WINDOWS;_WORKMODE_SINGLETHREAD;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions><PrecompiledHeader>NotUsing</PrecompiledHeader><ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope><AdditionalOptions>/FS /Zc:sizedDealloc- %(AdditionalOptions)</AdditionalOptions><DisableSpecificWarnings>4996;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings></ClCompile><Link><AdditionalOptions>/INCREMENTAL:NO %(AdditionalOptions)</AdditionalOptions><AdditionalDependencies>$(JXLibraryOutputDir)Engine.lib;$(JXLibraryOutputDir)Common.lib;$(JXLibraryOutputDir)LuaLibDll.lib;libdb41s.lib;legacy_stdio_definitions.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies><AdditionalLibraryDirectories>$(ProjectDir);$(JXLibraryOutputDir);$(JXBinaryOutputDir);$(JXRoot)Lib;$(JXRoot)Lib\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories><IgnoreSpecificDefaultLibraries>LIBC.lib;stlport_vc6_static.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries><ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers><GenerateDebugInformation>true</GenerateDebugInformation><ImportLibrary>$(JXLibraryOutputDir)$(TargetName).lib</ImportLibrary></Link></ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include=".\ChannelMgr.cpp" />
+    <ClCompile Include=".\ChatConnect.cpp" />
+    <ClCompile Include=".\ChatServer.cpp" />
+    <ClCompile Include=".\DBConnect.cpp" />
+    <ClCompile Include=".\DBTable.cpp" />
+    <ClCompile Include=".\DealRelay.cpp" />
+    <ClCompile Include=".\DoScript.cpp" />
+    <ClCompile Include=".\FriendMgr.cpp" />
+    <ClCompile Include=".\GatewayCenter.cpp" />
+    <ClCompile Include=".\GatewayClient.cpp" />
+    <ClCompile Include=".\Global.cpp" />
+    <ClCompile Include=".\HeavenLib.cpp" />
+    <ClCompile Include=".\HostConnect.cpp" />
+    <ClCompile Include=".\HostServer.cpp" />
+    <ClCompile Include=".\KThread.cpp" />
+    <ClCompile Include=".\KTongControl.cpp" />
+    <ClCompile Include=".\KTongSet.cpp" />
+    <ClCompile Include=".\Lock.cpp" />
+    <ClCompile Include=".\LogFile.cpp" />
+    <ClCompile Include=".\Memory.cpp" />
+    <ClCompile Include=".\NetCenter.cpp" />
+    <ClCompile Include=".\NetClient.cpp" />
+    <ClCompile Include=".\NetConnect.cpp" />
+    <ClCompile Include=".\NetServer.cpp" />
+    <ClCompile Include=".\NetSockDupEx.cpp" />
+    <ClCompile Include=".\RainbowLib.cpp" />
+    <ClCompile Include=".\RelayCenter.cpp" />
+    <ClCompile Include=".\RelayClient.cpp" />
+    <ClCompile Include=".\RelayConnect.cpp" />
+    <ClCompile Include=".\RelayServer.cpp" />
+    <ClCompile Include=".\RootCenter.cpp" />
+    <ClCompile Include=".\RootClient.cpp" />
+    <ClCompile Include=".\S3Relay.cpp" />
+    <ClCompile Include=".\SockThread.cpp" />
+    <ClCompile Include=".\StdAfx.cpp" />
+    <ClCompile Include=".\TongConnect.cpp" />
+    <ClCompile Include=".\TONGDB.CPP" />
+    <ClCompile Include=".\TongServer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Headers\KRelayProtocol.h" />
+    <ClInclude Include="..\..\..\Headers\KTongProtocol.h" />
+    <ClInclude Include=".\ChannelMgr.h" />
+    <ClInclude Include=".\ChatConnect.h" />
+    <ClInclude Include=".\ChatServer.h" />
+    <ClInclude Include=".\DBConnect.h" />
+    <ClInclude Include=".\DBTable.h" />
+    <ClInclude Include=".\DealRelay.h" />
+    <ClInclude Include=".\DoScript.h" />
+    <ClInclude Include=".\FriendMgr.h" />
+    <ClInclude Include=".\GatewayCenter.h" />
+    <ClInclude Include=".\GatewayClient.h" />
+    <ClInclude Include=".\Global.h" />
+    <ClInclude Include=".\HeavenLib.h" />
+    <ClInclude Include=".\HostConnect.h" />
+    <ClInclude Include=".\HostServer.h" />
+    <ClInclude Include=".\KThread.h" />
+    <ClInclude Include=".\KTongControl.h" />
+    <ClInclude Include=".\KTongSet.h" />
+    <ClInclude Include=".\Lock.h" />
+    <ClInclude Include=".\LogFile.h" />
+    <ClInclude Include=".\Memory.h" />
+    <ClInclude Include=".\NetCenter.h" />
+    <ClInclude Include=".\NetClient.h" />
+    <ClInclude Include=".\NetConnect.h" />
+    <ClInclude Include=".\NetServer.h" />
+    <ClInclude Include=".\NetSockDupEx.h" />
+    <ClInclude Include=".\RainbowLib.h" />
+    <ClInclude Include=".\RelayCenter.h" />
+    <ClInclude Include=".\RelayClient.h" />
+    <ClInclude Include=".\RelayConnect.h" />
+    <ClInclude Include=".\RelayServer.h" />
+    <ClInclude Include=".\resource.h" />
+    <ClInclude Include=".\RootCenter.h" />
+    <ClInclude Include=".\RootClient.h" />
+    <ClInclude Include=".\S3Relay.h" />
+    <ClInclude Include=".\SockThread.h" />
+    <ClInclude Include=".\StdAfx.h" />
+    <ClInclude Include=".\TongConnect.h" />
+    <ClInclude Include=".\TONGDB.H" />
+    <ClInclude Include=".\TongServer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\S3Relay.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Lib\release\engine.lib" />
+    <None Include=".\libdb41s.lib" />
+    <None Include=".\ReadMe.txt" />
+    <None Include=".\S3Relay.ico" />
+    <None Include=".\small.ico" />
+  </ItemGroup>
+  <!-- Keep the VC6 ABI used by the bundled Berkeley DB 4.1 static library. -->
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>_USE_32BIT_TIME_T;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

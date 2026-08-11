@@ -1,0 +1,152 @@
+Include("\\script\\startgame\\npcpos.lua");
+
+function addtrainingnpc()
+	for i=1,getn(BALANGHUYEN) do
+	AddNpcNew(RANDOMC(31,42,43),10,53,BALANGHUYEN[i][1],BALANGHUYEN[i][2],DEATHFILE0X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,40,5,10,15,nil,600,nil,nil,DROPFILE0X);
+	end
+	for i=1,getn(GIANGTANTHON) do
+	AddNpcNew(RANDOMC(31,42,43),10,20,GIANGTANTHON[i][1],GIANGTANTHON[i][2],DEATHFILE0X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,40,5,10,15,nil,600,nil,nil,DROPFILE0X);
+	end
+	for i=1,getn(LONGMONTRAN) do
+	AddNpcNew(RANDOMC(31,42,43),10,121,LONGMONTRAN[i][1],LONGMONTRAN[i][2],DEATHFILE0X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,40,5,10,15,nil,600,nil,nil,DROPFILE0X);
+	end
+	for i=1,getn(NAMNHACTRAN) do
+	AddNpcNew(RANDOMC(31,42,43),10,54,NAMNHACTRAN[i][1],NAMNHACTRAN[i][2],DEATHFILE0X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,40,5,10,15,nil,600,nil,nil,DROPFILE0X);
+	end	
+	for i=1,getn(BIENKINH) do
+	AddNpcNew(RANDOMC(11,33,34,12),20,37,BIENKINH[i][1],BIENKINH[i][2],DEATHFILE1X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,50,10,15,20,nil,600,nil,nil,DROPFILE1X);
+	end
+	for i=1,getn(DAILY) do
+	AddNpcNew(RANDOMC(11,33,34,12),20,162,DAILY[i][1],DAILY[i][2],DEATHFILE1X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,50,10,15,20,nil,600,nil,nil,DROPFILE1X);
+	end
+	for i=1,getn(DUONGCHAU) do
+	AddNpcNew(RANDOMC(11,33,34,12),20,80,DUONGCHAU[i][1],DUONGCHAU[i][2],DEATHFILE1X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,50,10,15,20,nil,600,nil,nil,DROPFILE1X);
+	end
+	for i=1,getn(LAMAN) do
+	AddNpcNew(RANDOMC(11,33,34,12),20,176,LAMAN[i][1],LAMAN[i][2],DEATHFILE1X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,50,10,15,20,nil,600,nil,nil,DROPFILE1X);
+	end
+	for i=1,getn(PHUONGTUONG) do
+	AddNpcNew(RANDOMC(11,33,34,12),20,1,PHUONGTUONG[i][1],PHUONGTUONG[i][2],DEATHFILE1X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,50,10,15,20,nil,600,nil,nil,DROPFILE1X);
+	end
+	for i=1,getn(THANHDO) do
+	AddNpcNew(RANDOMC(11,33,34,12),20,11,THANHDO[i][1],THANHDO[i][2],DEATHFILE1X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,50,10,15,20,nil,600,nil,nil,DROPFILE1X);
+	end
+	for i=1,getn(TUONGDUONG) do
+	AddNpcNew(RANDOMC(11,33,34,12),20,78,TUONGDUONG[i][1],TUONGDUONG[i][2],DEATHFILE1X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,50,10,15,20,nil,600,nil,nil,DROPFILE1X);
+	end
+	for i=1,getn(HOASON) do
+	AddNpcNew(RANDOMC(11,12),20,2,HOASON[i][1],HOASON[i][2],DEATHFILE1X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,50,10,15,20,nil,600,nil,nil,DROPFILE1X);		
+	end
+	for i=1,getn(THANHTHANHSON) do
+	AddNpcNew(RANDOMC(24,25,26),30,21,THANHTHANHSON[i][1],THANHTHANHSON[i][2],DEATHFILE2X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,60,15,20,25,nil,600,nil,nil,DROPFILE2X);
+	end
+	--for i=1,getn(DUOCVUONGCOC) do
+	--AddNpcNew(RANDOMC(34,38,42),30,140,DUOCVUONGCOC[i][1],DUOCVUONGCOC[i][2],DEATHFILE2X,
+	--	5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,60,15,20,25,nil,600,nil,nil,DROPFILE2X);
+	--end
+	for i=1,getn(VULANGSON) do
+	AddNpcNew(RANDOMC(10,25,26),30,70,VULANGSON[i][1],VULANGSON[i][2],DEATHFILE2X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,60,15,20,25,nil,600,nil,nil,DROPFILE2X);
+	end
+	for i=1,getn(PHUCNGUUSONDONG) do	
+	AddNpcNew(RANDOMC(7,8,10),40,90,PHUCNGUUSONDONG[i][1],PHUCNGUUSONDONG[i][2],DEATHFILE3X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,70,20,25,30,nil,600,nil,nil,DROPFILE3X);
+	end
+	for i=1,getn(THUCCUONGSON) do	
+	AddNpcNew(RANDOMC(17,36,37),40,92,THUCCUONGSON[i][1],THUCCUONGSON[i][2],DEATHFILE3X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,70,20,25,30,nil,600,nil,nil,DROPFILE3X);
+	end	
+	for i=1,getn(PHUCNGUUSONTAY) do	
+	AddNpcNew(RANDOMC(7,8,10),50,41,PHUCNGUUSONTAY[i][1],PHUCNGUUSONTAY[i][2],DEATHFILE4X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,80,25,30,35,nil,600,nil,nil,DROPFILE4X);
+	end
+	for i=1,getn(HOANGHANGUYENDAU) do	
+	AddNpcNew(RANDOMC(2,4,26),50,122,HOANGHANGUYENDAU[i][1],HOANGHANGUYENDAU[i][2],DEATHFILE4X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,80,25,30,35,nil,600,nil,nil,DROPFILE4X);
+	end
+	for i=1,getn(LUUTIENDONG) do	
+	AddNpcNew(RANDOMC(146,161,162),60,125,LUUTIENDONG[i][1],LUUTIENDONG[i][2],DEATHFILE5X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,90,30,35,40,nil,600,nil,nil,DROPFILE5X);
+	end	
+	for i=1,getn(ACBADIADAO) do	
+	AddNpcNew(RANDOMC(176,1206,1207),60,163,ACBADIADAO[i][1],ACBADIADAO[i][2],DEATHFILE5X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,90,30,35,40,nil,600,nil,nil,DROPFILE5X);
+	end		
+	for i=1,getn(TRUONGGIANGNGUYENDAU) do	
+	AddNpcNew(412,70,9,TRUONGGIANGNGUYENDAU[i][1],TRUONGGIANGNGUYENDAU[i][2],DEATHFILE6X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,100,35,40,45,nil,600,nil,nil,DROPFILE6X);
+	end
+	for i=1,getn(HOANHSONPHAI) do	
+	AddNpcNew(RANDOMC(24,552,26),70,56,HOANHSONPHAI[i][1],HOANHSONPHAI[i][2],DEATHFILE6X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,100,35,40,45,nil,600,nil,nil,DROPFILE6X);
+	end
+	for i=1,getn(LAMDUQUAN) do		
+	AddNpcNew(RANDOMC(588,589),80,319,LAMDUQUAN[i][1],LAMDUQUAN[i][2],DEATHFILE7X ,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,110,40,45,50,nil,600,nil,nil,DROPFILE7X);
+	end
+	for i=1,getn(LAOHODONG) do	
+	AddNpcNew(RANDOMC(140,149,150),80,123,LAOHODONG[i][1],LAOHODONG[i][2],DEATHFILE7X ,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,110,40,45,50,nil,600,nil,nil,DROPFILE7X);
+	end
+	for i=1,getn(SAMACDIABIEU) do		
+	AddNpcNew(RANDOMC(556,557,558),90,224,SAMACDIABIEU[i][1],SAMACDIABIEU[i][2],DEATHFILE8X ,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,120,45,50,55,nil,1000,nil,nil,DROPFILE8X);
+	end
+	for i=1,getn(CHANNUITRUONGBACH) do	
+	AddNpcNew(RANDOMC(590,591,592,593),90,320,CHANNUITRUONGBACH[i][1],CHANNUITRUONGBACH[i][2],DEATHFILE8X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,120,45,50,55,nil,1000,nil,nil,DROPFILE8X);
+	end
+	for i=1,getn(TRUONGBACHNAM) do	
+	AddNpcNew(RANDOMC(598,599,600,601),100,321,TRUONGBACHNAM[i][1],TRUONGBACHNAM[i][2],DEATHFILE9X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,130,45,50,55,nil,1000,nil,nil,DROPFILE9X);
+	end
+	for i=1,getn(TRUONGBACHBAC) do		
+	AddNpcNew(RANDOMC(594,595,596,597),100,322,TRUONGBACHBAC[i][1],TRUONGBACHBAC[i][2],DEATHFILE9X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,130,45,50,55,nil,1000,nil,nil,DROPFILE9X);
+	end
+	for i=1,getn(KHOALANGDONG) do	
+	AddNpcNew(RANDOMC(155,156),100,75,KHOALANGDONG[i][1],KHOALANGDONG[i][2],DEATHFILE9X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,250,45,50,55,nil,1000,nil,nil,DROPFILE9X);
+	end
+	for i=1,getn(SAMAC1) do	
+	AddNpcNew(RANDOMC(561,560,917),100,225,SAMAC1[i][1],SAMAC1[i][2],DEATHFILE9X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,130,45,50,55,nil,1000,nil,nil,DROPFILE9X);
+	end
+	for i=1,getn(SAMAC2) do	
+	AddNpcNew(RANDOMC(561,560,917),100,226,SAMAC2[i][1],SAMAC2[i][2],DEATHFILE9X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,130,45,50,55,nil,1000,nil,nil,DROPFILE9X);
+	end
+	for i=1,getn(SAMAC3) do
+	AddNpcNew(RANDOMC(534,535,536,537,538),100,227,SAMAC3[i][1],SAMAC3[i][2],DEATHFILE9X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,130,45,50,55,nil,1000,nil,nil,DROPFILE9X);	
+	end
+	for i=1,getn(PHONGLANGDO) do	
+	AddNpcNew(RANDOMC(707,708),100,336,PHONGLANGDO[i][1],PHONGLANGDO[i][2],DEATHFILE10X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,150,50,55,60,nil,1000,nil,nil,DROPFILE9X);
+	end
+	for i=1,getn(MACCAOQUAT) do	
+	AddNpcNew(RANDOMC(703,704,705,706),100,340,MACCAOQUAT[i][1],MACCAOQUAT[i][2],DEATHFILE10X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,150,50,55,60,nil,1000,nil,nil,DROPFILE9X);
+	end	
+	for i=1,getn(CANVIENDONG) do
+	AddNpcNew(RANDOMC(13,14),100,124,CANVIENDONG[i][1],CANVIENDONG[i][2],DEATHFILE9X_PHYS ,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,250,45,50,55,nil,1000,nil,nil,DROPFILE9X);
+	end
+	for i=1,getn(TIENCUCDONG) do
+	AddNpcNew(RANDOMC(838,147,148),100,93,TIENCUCDONG[i][1],TIENCUCDONG[i][2],DEATHFILE9X,
+		5,nil,1,RANDOMC(0,1,2,3,4),nil,nil,nil,130,45,50,55,nil,1000,nil,nil,DROPFILE9X);
+	end
+end;

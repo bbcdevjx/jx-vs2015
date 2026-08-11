@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Client Debug|Win32"><Configuration>Client Debug</Configuration><Platform>Win32</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Client Release|Win32"><Configuration>Client Release</Configuration><Platform>Win32</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Server Debug|Win32"><Configuration>Server Debug</Configuration><Platform>Win32</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Server Release|Win32"><Configuration>Server Release</Configuration><Platform>Win32</Platform></ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals"><ProjectGuid>{9CEF27EF-7007-1C68-8023-F351FB2B43B1}</ProjectGuid><RootNamespace>HeavenClient</RootNamespace><WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion></PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Client Debug|Win32'" Label="Configuration"><ConfigurationType>DynamicLibrary</ConfigurationType><UseDebugLibraries>true</UseDebugLibraries><PlatformToolset>v140</PlatformToolset><CharacterSet>MultiByte</CharacterSet></PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Client Release|Win32'" Label="Configuration"><ConfigurationType>DynamicLibrary</ConfigurationType><UseDebugLibraries>false</UseDebugLibraries><PlatformToolset>v140</PlatformToolset><CharacterSet>MultiByte</CharacterSet></PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Server Debug|Win32'" Label="Configuration"><ConfigurationType>DynamicLibrary</ConfigurationType><UseDebugLibraries>true</UseDebugLibraries><PlatformToolset>v140</PlatformToolset><CharacterSet>MultiByte</CharacterSet></PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Server Release|Win32'" Label="Configuration"><ConfigurationType>DynamicLibrary</ConfigurationType><UseDebugLibraries>false</UseDebugLibraries><PlatformToolset>v140</PlatformToolset><CharacterSet>MultiByte</CharacterSet></PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets"><Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" /></ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup><JXRoot>$(SolutionDir)</JXRoot><JXBuildSide Condition="'$(Configuration)'=='Server Debug' Or '$(Configuration)'=='Server Release'">server</JXBuildSide><JXBuildSide Condition="'$(JXBuildSide)'==''">client</JXBuildSide><JXBuildFlavor Condition="'$(Configuration)'=='Client Debug' Or '$(Configuration)'=='Server Debug'">debug</JXBuildFlavor><JXBuildFlavor Condition="'$(JXBuildFlavor)'==''">release</JXBuildFlavor><JXLibraryOutputDir>$(JXRoot)lib\$(JXBuildSide)\$(JXBuildFlavor)\</JXLibraryOutputDir><JXBinaryOutputDir>$(JXRoot)bin\$(JXBuildSide)\$(JXBuildFlavor)\</JXBinaryOutputDir><OutDir Condition="'$(ConfigurationType)'=='StaticLibrary'">$(JXLibraryOutputDir)</OutDir><OutDir Condition="'$(ConfigurationType)'!='StaticLibrary'">$(JXBinaryOutputDir)</OutDir><IntDir>$(JXRoot)obj\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir><TargetName>Heaven</TargetName></PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Client Debug|Win32'"><ClCompile><WarningLevel>Level3</WarningLevel><Optimization>Disabled</Optimization><AdditionalIncludeDirectories>.;Src;;$(JXRoot)Headers;$(JXRoot)Lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories><PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32_LEAN_AND_MEAN;WINVER=0x0500;_WIN32_WINNT=0x0500;_MBCS;_USRDLL;_WINDOWS;HEAVEN_EXPORTS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions><PrecompiledHeader>NotUsing</PrecompiledHeader><ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope><AdditionalOptions>/FS /Zc:sizedDealloc- %(AdditionalOptions)</AdditionalOptions><DisableSpecificWarnings>4996;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings></ClCompile><Link><ModuleDefinitionFile>.\Heaven.def</ModuleDefinitionFile><AdditionalOptions>/INCREMENTAL:NO %(AdditionalOptions)</AdditionalOptions><AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies><AdditionalLibraryDirectories>$(ProjectDir);$(JXLibraryOutputDir);$(JXBinaryOutputDir);$(JXRoot)Lib;$(JXRoot)Lib\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories><IgnoreSpecificDefaultLibraries>LIBC.lib;stlport_vc6_static.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries><ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers><GenerateDebugInformation>true</GenerateDebugInformation><ImportLibrary>$(JXLibraryOutputDir)$(TargetName).lib</ImportLibrary></Link></ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Client Release|Win32'"><ClCompile><WarningLevel>Level3</WarningLevel><Optimization>MaxSpeed</Optimization><AdditionalIncludeDirectories>.;Src;;$(JXRoot)Headers;$(JXRoot)Lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories><PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32_LEAN_AND_MEAN;WINVER=0x0500;_WIN32_WINNT=0x0500;_MBCS;_USRDLL;_WINDOWS;HEAVEN_EXPORTS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions><PrecompiledHeader>NotUsing</PrecompiledHeader><ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope><AdditionalOptions>/FS /Zc:sizedDealloc- %(AdditionalOptions)</AdditionalOptions><DisableSpecificWarnings>4996;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings></ClCompile><Link><ModuleDefinitionFile>.\Heaven.def</ModuleDefinitionFile><AdditionalOptions>/INCREMENTAL:NO %(AdditionalOptions)</AdditionalOptions><AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies><AdditionalLibraryDirectories>$(ProjectDir);$(JXLibraryOutputDir);$(JXBinaryOutputDir);$(JXRoot)Lib;$(JXRoot)Lib\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories><IgnoreSpecificDefaultLibraries>LIBC.lib;stlport_vc6_static.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries><ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers><GenerateDebugInformation>true</GenerateDebugInformation><ImportLibrary>$(JXLibraryOutputDir)$(TargetName).lib</ImportLibrary></Link></ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Server Debug|Win32'"><ClCompile><WarningLevel>Level3</WarningLevel><Optimization>Disabled</Optimization><AdditionalIncludeDirectories>.;Src;;$(JXRoot)Headers;$(JXRoot)Lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories><PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32_LEAN_AND_MEAN;WINVER=0x0500;_WIN32_WINNT=0x0500;_MBCS;_USRDLL;_WINDOWS;HEAVEN_EXPORTS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions><PrecompiledHeader>NotUsing</PrecompiledHeader><ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope><AdditionalOptions>/FS /Zc:sizedDealloc- %(AdditionalOptions)</AdditionalOptions><DisableSpecificWarnings>4996;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings></ClCompile><Link><ModuleDefinitionFile>.\Heaven.def</ModuleDefinitionFile><AdditionalOptions>/INCREMENTAL:NO %(AdditionalOptions)</AdditionalOptions><AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies><AdditionalLibraryDirectories>$(ProjectDir);$(JXLibraryOutputDir);$(JXBinaryOutputDir);$(JXRoot)Lib;$(JXRoot)Lib\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories><IgnoreSpecificDefaultLibraries>LIBC.lib;stlport_vc6_static.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries><ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers><GenerateDebugInformation>true</GenerateDebugInformation><ImportLibrary>$(JXLibraryOutputDir)$(TargetName).lib</ImportLibrary></Link></ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Server Release|Win32'"><ClCompile><WarningLevel>Level3</WarningLevel><Optimization>MaxSpeed</Optimization><AdditionalIncludeDirectories>.;Src;;$(JXRoot)Headers;$(JXRoot)Lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories><PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32_LEAN_AND_MEAN;WINVER=0x0500;_WIN32_WINNT=0x0500;_MBCS;_USRDLL;_WINDOWS;HEAVEN_EXPORTS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions><PrecompiledHeader>NotUsing</PrecompiledHeader><ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope><AdditionalOptions>/FS /Zc:sizedDealloc- %(AdditionalOptions)</AdditionalOptions><DisableSpecificWarnings>4996;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings></ClCompile><Link><ModuleDefinitionFile>.\Heaven.def</ModuleDefinitionFile><AdditionalOptions>/INCREMENTAL:NO %(AdditionalOptions)</AdditionalOptions><AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies><AdditionalLibraryDirectories>$(ProjectDir);$(JXLibraryOutputDir);$(JXBinaryOutputDir);$(JXRoot)Lib;$(JXRoot)Lib\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories><IgnoreSpecificDefaultLibraries>LIBC.lib;stlport_vc6_static.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries><ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers><GenerateDebugInformation>true</GenerateDebugInformation><ImportLibrary>$(JXLibraryOutputDir)$(TargetName).lib</ImportLibrary></Link></ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include=".\Heaven.cpp" />
+    <ClCompile Include=".\IOCPServer\CriticalSection.cpp" />
+    <ClCompile Include=".\IOCPServer\Event.cpp" />
+    <ClCompile Include=".\IOCPServer\Exception.cpp" />
+    <ClCompile Include=".\IOCPServer\IOBuffer.cpp" />
+    <ClCompile Include=".\IOCPServer\IOCompletionPort.cpp" />
+    <ClCompile Include=".\IOCPServer\ManualResetEvent.cpp" />
+    <ClCompile Include=".\IOCPServer\NodeList.cpp" />
+    <ClCompile Include=".\IOCPServer\Socket.cpp" />
+    <ClCompile Include=".\IOCPServer\SocketServer.cpp" />
+    <ClCompile Include=".\IOCPServer\Thread.cpp" />
+    <ClCompile Include=".\IOCPServer\UsesWinsock.cpp" />
+    <ClCompile Include=".\IOCPServer\Utils.cpp" />
+    <ClCompile Include=".\IOCPServer\Win32Exception.cpp" />
+    <ClCompile Include=".\IServer.cpp" />
+    <ClCompile Include=".\ServerStage.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include=".\Interface\HeavenInterface.h" />
+    <ClInclude Include=".\Interface\IServer.h" />
+    <ClInclude Include=".\IOCPServer\CriticalSection.h" />
+    <ClInclude Include=".\IOCPServer\Event.h" />
+    <ClInclude Include=".\IOCPServer\Exception.h" />
+    <ClInclude Include=".\IOCPServer\IOBuffer.h" />
+    <ClInclude Include=".\IOCPServer\IOCompletionPort.h" />
+    <ClInclude Include=".\IOCPServer\ManualResetEvent.h" />
+    <ClInclude Include=".\IOCPServer\NodeList.h" />
+    <ClInclude Include=".\IOCPServer\OpaqueUserData.h" />
+    <ClInclude Include=".\IOCPServer\Socket.h" />
+    <ClInclude Include=".\IOCPServer\SocketServer.h" />
+    <ClInclude Include=".\IOCPServer\SystemInfo.h" />
+    <ClInclude Include=".\IOCPServer\Thread.h" />
+    <ClInclude Include=".\IOCPServer\tstring.h" />
+    <ClInclude Include=".\IOCPServer\UsesWinsock.h" />
+    <ClInclude Include=".\IOCPServer\Utils.h" />
+    <ClInclude Include=".\IOCPServer\Win32Exception.h" />
+    <ClInclude Include=".\Protocol\protocol.h" />
+    <ClInclude Include=".\ServerStage.h" />
+    <ClInclude Include=".\Toolkit.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".\Heaven.def" />
+    <None Include=".\IOCPServer\announcement.txt" />
+    <None Include=".\Protocol\Interface.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

@@ -1,0 +1,3 @@
+TASK	SCRIPT
+1	\script\两湖区\巴陵县\npc\tw_ontime.lua
+2	\script\中原南区\武当派\十方殿\npc\wd_ontime.lua

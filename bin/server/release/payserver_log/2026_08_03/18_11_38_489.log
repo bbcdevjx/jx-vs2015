@@ -1,0 +1,21 @@
+
+*
+***** Sword3PaySys Start (@ 2026/08/03 18:11:38.489) >>>>>
+*
+
+[2026/08/03 18:22:46] 1 >> DB Connect 0 is busy !
+[2026/08/03 18:22:46] 2 >> Add Gateway(127.0.0.1 : 61223) Client 0 ! -- At 0
+[2026/08/03 18:22:46] 3 >> Gateway fsjx(127.0.0.1)6045-CBA8-A761: Verify OK !
+[2026/08/03 18:22:46] 4 >> Gateway unlock OK!
+[2026/08/03 18:22:46] 5 >> Gateway Connect OK!
+[2026/08/03 18:22:49] 6 >> DB Connect 0 is free !
+[2026/08/03 18:22:49] 7 >> Remove Gateway Client 0 ! -- At 0
+[2026/08/03 18:23:50] 8 >> DB Connect 0 is busy !
+[2026/08/03 18:23:50] 9 >> [S3PDB_MSSQLServer_Connection::Do COM error: IDispatch error #3092
+[2026/08/03 18:23:50] 10 >> DB Connect 0 is free !
+[2026/08/03 19:44:43] Nomal exit !!!
+
+*
+***** Sword3PaySys Stop (@ 2026/08/03 19:44:43.206) <<<<<
+*
+

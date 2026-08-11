@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ÆäËü">
+      <UniqueIdentifier>{308a33f0-5e1a-4588-98d8-a9b657a38f0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ÍøÂçÁ¬½Ó">
+      <UniqueIdentifier>{f71a11f0-32cd-4e44-9078-8f1ee4c4fe9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ÎÄ×ÖĂüÁî¿ØÖÆ">
+      <UniqueIdentifier>{523aadf8-f13c-4549-afac-fbc35ff46d5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="login">
+      <UniqueIdentifier>{a092d6ce-b961-4035-90af-28c255b37817}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{d3700c94-99f3-4efb-a327-1ea5f09d03dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\elem">
+      <UniqueIdentifier>{178978a9-7662-4333-bdf7-841d56bfe64e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\sound">
+      <UniqueIdentifier>{a27e9c5b-27dc-4684-aa8a-4ca5467cba50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\uicase">
+      <UniqueIdentifier>{f508d595-5264-478b-b031-96bddad5a3db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\uicase\µÇÂ½½çĂæ">
+      <UniqueIdentifier>{b8db5dda-101f-4c0e-b787-ace3942cd2c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\uicase\Ö÷½ÇĐÅÏ¢,×´̀¬½çĂæ">
+      <UniqueIdentifier>{d915d22f-cded-47b6-819f-e4d8b3b6e3c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\uicase\Ñ¡Ïî½çĂæ">
+      <UniqueIdentifier>{eb5027c1-8015-4dbb-a16c-336fb1154206}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\uicase\³ơÊ¼½çĂæ">
+      <UniqueIdentifier>{268f1e7e-4eb2-4f14-98c1-b424056118d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\uicase\µÀ¾ß,×°±¸,¼¼ÄÜ½çĂæ¡¢´¢ÎïÏä">
+      <UniqueIdentifier>{f09e4dea-ce32-481f-9476-774646e8f1cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\uicase\ÆäËû½çĂæ">
+      <UniqueIdentifier>{d58c5124-78e4-4cac-a63d-8edf5640f7b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\uicase\½ÇÉ«Ñ¡Ôñ">
+      <UniqueIdentifier>{c22a5e2e-1482-46af-b69c-cc32100733b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\uicase\ÁÄ̀́">
+      <UniqueIdentifier>{c1f819cf-7c47-4931-8f2f-5fdf3340d386}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\uicase\̀áÊ¾´°¿Ú">
+      <UniqueIdentifier>{0d1098df-e297-4c7b-ac0f-d666d706398a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\uicase\ÆÁÄ»¶¥ĐĐ¿ØÖÆ̀ơÓëÏûÏ¢½çĂæ">
+      <UniqueIdentifier>{cc63ea4a-fadf-4d41-93a8-8f54145c3f4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\uicase\½»̉×">
+      <UniqueIdentifier>{4b0828b8-1a34-4a99-8e98-037e547b31b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\uicase\ÓÎÏ·ÊÀ½ç´°¿Ú">
+      <UniqueIdentifier>{fe2b8e0a-3b44-4fd7-ab2f-7a0817a222af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\uicase\ÏµÍ³ÏûÏ¢">
+      <UniqueIdentifier>{4140a8e6-083b-4274-82c2-49abebc04e98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\uicase\Đ¡µØÍ¼">
+      <UniqueIdentifier>{1fdafb7a-b15f-47c7-8a51-0ec2d1e81516}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\uicase\Ñ¡ÑƠÉ«">
+      <UniqueIdentifier>{1299b5e4-85b5-45aa-9873-253136fbc577}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\uicase\ĐÂÊÖ½øÈë½çĂæ">
+      <UniqueIdentifier>{c044d2eb-8438-438d-98d2-3ef5822374f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\uicase\ÈÎÎñ¼ÇÂ¼">
+      <UniqueIdentifier>{d82340ff-3cdf-4a17-828d-4ed7bbbc5c73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\uicase\ÊÀ½çµØÍ¼">
+      <UniqueIdentifier>{ed5b087c-93a0-4430-a9e2-c50a093517d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\uicase\ĐÂÎÅ´°¿Ú">
+      <UniqueIdentifier>{e3424da9-069a-470a-ba90-bc01d2e42e78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\uicase\ÅÅĂû½çĂæ">
+      <UniqueIdentifier>{78672e42-f56a-40da-baf0-16cb35167e84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\uicase\team">
+      <UniqueIdentifier>{ee95b464-2326-4658-95b0-614bc5abdbe5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\uicase\reconnect">
+      <UniqueIdentifier>{d97be644-8b03-492a-8f5d-60cb40446f2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\uicase\enchase">
+      <UniqueIdentifier>{43b0ed85-ef18-4708-9623-eb3ec5142093}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\uicase\tong">
+      <UniqueIdentifier>{836b4334-8fa4-4980-a374-6114f4fefc10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\uicase\helper">
+      <UniqueIdentifier>{0df177f8-be40-4dbf-8149-ebd8e9a97817}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include=".\NetConnect\NetConnectAgent.cpp" />
+    <ClCompile Include=".\S3Client.cpp" />
+    <ClCompile Include=".\stdafx.cpp" />
+    <ClCompile Include=".\TextCtrlCmd\TextCtrlCmd.cpp" />
+    <ClCompile Include=".\Ui\ChatFilter.cpp" />
+    <ClCompile Include=".\Ui\Elem\AutoLocateWnd.cpp" />
+    <ClCompile Include=".\Ui\Elem\ComWindow.cpp" />
+    <ClCompile Include=".\Ui\Elem\MouseHover.cpp" />
+    <ClCompile Include=".\Ui\Elem\PopupMenu.cpp" />
+    <ClCompile Include=".\Ui\Elem\SpecialFuncs.cpp" />
+    <ClCompile Include=".\Ui\Elem\TextPic.cpp" />
+    <ClCompile Include=".\Ui\Elem\UiCursor.cpp" />
+    <ClCompile Include=".\Ui\Elem\UiImage.cpp" />
+    <ClCompile Include=".\Ui\Elem\WndButton.cpp" />
+    <ClCompile Include=".\Ui\Elem\WndChessPanel.cpp" />
+    <ClCompile Include=".\Ui\Elem\WndEdit.cpp" />
+    <ClCompile Include=".\Ui\Elem\WndImage.cpp" />
+    <ClCompile Include=".\Ui\Elem\WndImagePart.cpp" />
+    <ClCompile Include=".\Ui\Elem\WndLabeledButton.cpp" />
+    <ClCompile Include=".\Ui\Elem\WndList.cpp" />
+    <ClCompile Include=".\Ui\Elem\WndList2.cpp" />
+    <ClCompile Include=".\Ui\Elem\WndMessageListBox.cpp" />
+    <ClCompile Include=".\Ui\Elem\WndMovingImage.cpp" />
+    <ClCompile Include=".\Ui\Elem\WndObjContainer.cpp" />
+    <ClCompile Include=".\Ui\Elem\WndPage.cpp" />
+    <ClCompile Include=".\Ui\Elem\WndPureTextBtn.cpp" />
+    <ClCompile Include=".\Ui\Elem\Wnds.cpp" />
+    <ClCompile Include=".\Ui\Elem\WndScrollBar.cpp" />
+    <ClCompile Include=".\Ui\elem\WndShadow.cpp" />
+    <ClCompile Include=".\Ui\Elem\WndShowAnimate.cpp" />
+    <ClCompile Include=".\Ui\Elem\WndText.cpp" />
+    <ClCompile Include=".\Ui\Elem\WndToolBar.cpp" />
+    <ClCompile Include=".\Ui\Elem\WndValueImage.cpp" />
+    <ClCompile Include=".\Ui\Elem\WndWindow.cpp" />
+    <ClCompile Include=".\Ui\FilterTextLib.cpp" />
+    <ClCompile Include=".\Ui\GameSpaceChangedNotify.cpp" />
+    <ClCompile Include=".\Ui\ShortcutKey.cpp" />
+    <ClCompile Include=".\Ui\UiBase.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiCaveMap.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiChannelSubscibe.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiChatCentre.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiChatStatus.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiConnectInfo.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiContainer.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiESCDlg.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiFaceSelector.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiGame.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiGetMoney.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiGetString.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiHeaderControlBar.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiHelper.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiHelper2.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiInformation.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiInformation2.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiInit.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiItem.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiLogin.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiLoginBg.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiManage.cpp" />
+    <ClCompile Include=".\Ui\uicase\UiMiniMap.cpp" />
+    <ClCompile Include=".\Ui\uicase\UiMsgCentrePad.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiMsgSel.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiNewPlayer.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiNewPlayerStartMsg.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiNewsMessage.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiOptions.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiParadeItem.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiPlayerBar.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiPlayVideo.cpp" />
+    <ClCompile Include=".\ui\uicase\UiPopupPasswordQuery.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiReconnect.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiSelColor.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiSelNativePlace.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiSelPlayer.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiSelPlayerNearby.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiSelServer.cpp" />
+    <ClCompile Include=".\Ui\UIcase\UiShop.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiSkills.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiSkillTree.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiStatus.cpp" />
+    <ClCompile Include=".\Ui\uicase\UiStoreBox.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiStrengthRank.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiSysMsgCentre.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiTaskDataFile.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiTaskNote.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiTeamManage.cpp" />
+    <ClCompile Include=".\ui\uicase\UiTongAssignBox.cpp" />
+    <ClCompile Include=".\ui\uicase\UiTongCreateSheet.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiTongGetString.cpp" />
+    <ClCompile Include=".\ui\uicase\UiTongManager.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiToolsControlBar.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiTrade.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiTradeConfirmWnd.cpp" />
+    <ClCompile Include=".\ui\uicase\UiTrembleItem.cpp" />
+    <ClCompile Include=".\Ui\UiCase\UiWorldMap.cpp" />
+    <ClCompile Include=".\Ui\UiChatPhrase.cpp" />
+    <ClCompile Include=".\Ui\UiShell.cpp" />
+    <ClCompile Include=".\Ui\UiSoundSetting.cpp" />
+    <ClCompile Include=".\ErrorCode2015.cpp" />
+    <ClCompile Include=".\Login\Login.cpp">
+      <Filter>login</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include=".\ErrorCode.h" />
+    <ClInclude Include=".\NetConnect\NetConnectAgent.h" />
+    <ClInclude Include=".\NetConnect\NetMsgTargetObject.h" />
+    <ClInclude Include=".\resource.h" />
+    <ClInclude Include=".\S3Client.h" />
+    <ClInclude Include=".\TextCtrlCmd\TextCtrlCmd.h" />
+    <ClInclude Include=".\Ui\ChatFilter.h" />
+    <ClInclude Include=".\Ui\Elem\AutoLocateWnd.h" />
+    <ClInclude Include=".\Ui\Elem\ComWindow.h" />
+    <ClInclude Include=".\Ui\Elem\MouseHover.h" />
+    <ClInclude Include=".\Ui\Elem\PopupMenu.h" />
+    <ClInclude Include=".\Ui\Elem\SpecialFuncs.h" />
+    <ClInclude Include=".\Ui\Elem\TextPic.h" />
+    <ClInclude Include=".\Ui\Elem\UiCursor.h" />
+    <ClInclude Include=".\Ui\Elem\UiImage.h" />
+    <ClInclude Include=".\Ui\Elem\WndButton.h" />
+    <ClInclude Include=".\Ui\Elem\WndChessPanel.h" />
+    <ClInclude Include=".\Ui\Elem\WndEdit.h" />
+    <ClInclude Include=".\Ui\Elem\WndGameSpace.h" />
+    <ClInclude Include=".\Ui\Elem\WndImage.h" />
+    <ClInclude Include=".\Ui\Elem\WndImagePart.h" />
+    <ClInclude Include=".\Ui\Elem\WndLabeledButton.h" />
+    <ClInclude Include=".\Ui\Elem\WndList.h" />
+    <ClInclude Include=".\Ui\Elem\WndList2.h" />
+    <ClInclude Include=".\Ui\Elem\WndMessage.h" />
+    <ClInclude Include=".\Ui\Elem\WndMessageListBox.h" />
+    <ClInclude Include=".\Ui\Elem\WndMovingImage.h" />
+    <ClInclude Include=".\Ui\Elem\WndObjContainer.h" />
+    <ClInclude Include=".\Ui\Elem\WndPage.h" />
+    <ClInclude Include=".\Ui\Elem\WndPureTextBtn.h" />
+    <ClInclude Include=".\Ui\Elem\Wnds.h" />
+    <ClInclude Include=".\Ui\Elem\WndScrollBar.h" />
+    <ClInclude Include=".\Ui\elem\WndShadow.h" />
+    <ClInclude Include=".\Ui\Elem\WndShowAnimate.h" />
+    <ClInclude Include=".\Ui\Elem\WndText.h" />
+    <ClInclude Include=".\Ui\Elem\WndToolBar.h" />
+    <ClInclude Include=".\Ui\Elem\WndValueImage.h" />
+    <ClInclude Include=".\Ui\Elem\WndWindow.h" />
+    <ClInclude Include=".\Ui\FilterTextLib.h" />
+    <ClInclude Include=".\Ui\ShortcutKey.h" />
+    <ClInclude Include=".\Ui\UiBase.h" />
+    <ClInclude Include=".\Ui\UiCase\UiCaveMap.h" />
+    <ClInclude Include=".\Ui\UiCase\UiChannelSubscibe.h" />
+    <ClInclude Include=".\Ui\UiCase\UiChatCentre.h" />
+    <ClInclude Include=".\Ui\UiCase\UiChatStatus.h" />
+    <ClInclude Include=".\Ui\UiCase\UiConnectInfo.h" />
+    <ClInclude Include=".\Ui\UiCase\UiContainer.h" />
+    <ClInclude Include=".\Ui\UiCase\UiESCDlg.h" />
+    <ClInclude Include=".\Ui\UiCase\UiFaceSelector.h" />
+    <ClInclude Include=".\Ui\UiCase\UiGame.h" />
+    <ClInclude Include=".\Ui\UiCase\UiGetMoney.h" />
+    <ClInclude Include=".\Ui\UiCase\UiGetString.h" />
+    <ClInclude Include=".\Ui\UiCase\UiHeaderControlBar.h" />
+    <ClInclude Include=".\Ui\UiCase\UiHelper.h" />
+    <ClInclude Include=".\Ui\UiCase\UiHelper2.h" />
+    <ClInclude Include=".\Ui\UiCase\UiInformation.h" />
+    <ClInclude Include=".\Ui\UiCase\UiInformation2.h" />
+    <ClInclude Include=".\Ui\UiCase\UiInit.h" />
+    <ClInclude Include=".\Ui\UiCase\UiItem.h" />
+    <ClInclude Include=".\Ui\UiCase\UiLogin.h" />
+    <ClInclude Include=".\Ui\UiCase\UiLoginBg.h" />
+    <ClInclude Include=".\Ui\UiCase\UiManage.h" />
+    <ClInclude Include=".\Ui\uicase\UiMiniMap.h" />
+    <ClInclude Include=".\Ui\UiCase\UiMsgCentrePad.h" />
+    <ClInclude Include=".\Ui\UiCase\UiMsgSel.h" />
+    <ClInclude Include=".\Ui\UiCase\UiNewPlayer.h" />
+    <ClInclude Include=".\Ui\UiCase\UiNewPlayerStartMsg.h" />
+    <ClInclude Include=".\Ui\UiCase\UiNewsMessage.h" />
+    <ClInclude Include=".\Ui\UiCase\UiOptions.h" />
+    <ClInclude Include=".\Ui\UiCase\UiParadeItem.h" />
+    <ClInclude Include=".\Ui\UiCase\UiPlayerBar.h" />
+    <ClInclude Include=".\Ui\UiCase\UiPlayVideo.h" />
+    <ClInclude Include=".\ui\uicase\UiPopupPasswordQuery.h" />
+    <ClInclude Include=".\Ui\UiCase\UiReconnect.h" />
+    <ClInclude Include=".\Ui\UiCase\UiSelColor.h" />
+    <ClInclude Include=".\Ui\UiCase\UiSelNativePlace.h" />
+    <ClInclude Include=".\Ui\UiCase\UiSelPlayer.h" />
+    <ClInclude Include=".\Ui\UiCase\UiSelPlayerNearby.h" />
+    <ClInclude Include=".\Ui\UiCase\UiSelServer.h" />
+    <ClInclude Include=".\Ui\UIcase\UiShop.h" />
+    <ClInclude Include=".\Ui\UiCase\UiSkills.h" />
+    <ClInclude Include=".\Ui\UiCase\UiSkillTree.h" />
+    <ClInclude Include=".\Ui\UiCase\UiStatus.h" />
+    <ClInclude Include=".\Ui\uicase\UiStoreBox.h" />
+    <ClInclude Include=".\Ui\UiCase\UiStrengthRank.h" />
+    <ClInclude Include=".\Ui\UiCase\UiSysMsgCentre.h" />
+    <ClInclude Include=".\Ui\UiCase\UiTaskDataFile.h" />
+    <ClInclude Include=".\Ui\UiCase\UiTaskNote.h" />
+    <ClInclude Include=".\Ui\UiCase\UiTeamManage.h" />
+    <ClInclude Include=".\ui\uicase\UiTongAssignBox.h" />
+    <ClInclude Include=".\ui\uicase\UiTongCreateSheet.h" />
+    <ClInclude Include=".\Ui\UiCase\UiTongGetString.h" />
+    <ClInclude Include=".\ui\uicase\UiTongManager.h" />
+    <ClInclude Include=".\Ui\UiCase\UiToolsControlBar.h" />
+    <ClInclude Include=".\Ui\UiCase\UiTrade.h" />
+    <ClInclude Include=".\Ui\UiCase\UiTradeConfirmWnd.h" />
+    <ClInclude Include=".\ui\uicase\UiTrembleItem.h" />
+    <ClInclude Include=".\Ui\UiCase\UiWorldMap.h" />
+    <ClInclude Include=".\Ui\UiChatPhrase.h" />
+    <ClInclude Include=".\Ui\UiShell.h" />
+    <ClInclude Include=".\Ui\UiSoundSetting.h" />
+    <ClInclude Include=".\Login\Login.h">
+      <Filter>login</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Login\LoginDef.h">
+      <Filter>login</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Script1.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".\test.ico" />
+  </ItemGroup>
+</Project>

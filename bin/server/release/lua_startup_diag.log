@@ -1,0 +1,1046 @@
+OnLunch: begin
+LuaTrace: serverscript.main begin
+LuaTrace: serverscript calling addfullnpc
+LuaTrace: addfullnpc begin
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=189 level=1 world=0 x=50944 y=100128 result=1
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=184 level=1 world=0 x=51520 y=102272 result=2
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=177 level=1 world=0 x=51616 y=101568 result=3
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=186 level=1 world=0 x=51872 y=102560 result=4
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=83 level=1 world=0 x=52352 y=101888 result=5
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=171 level=1 world=0 x=50592 y=102496 result=6
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=103 level=1 world=0 x=51232 y=99968 result=7
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=181 level=1 world=0 x=51808 y=101216 result=8
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=188 level=1 world=0 x=52320 y=102048 result=9
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=309 level=1 world=0 x=50432 y=100640 result=10
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=625 level=1 world=0 x=51584 y=101376 result=11
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=219 level=1 world=0 x=51200 y=101440 result=12
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=198 level=1 world=0 x=50752 y=100960 result=13
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=203 level=1 world=0 x=51136 y=102688 result=14
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=239 level=1 world=0 x=50496 y=103552 result=15
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=108 level=1 world=0 x=52032 y=101504 result=16
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=377 level=1 world=0 x=52150 y=102241 result=17
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=663 level=1 world=0 x=51808 y=101408 result=18
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=373 level=1 world=0 x=51232 y=102016 result=19
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=311 level=1 world=0 x=53489 y=95320 result=20
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=87 level=1 world=0 x=52189 y=101738 result=21
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=362 level=1 world=0 x=52448 y=102720 result=22
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=297 level=1 world=0 x=52224 y=102848 result=23
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=347 level=1 world=0 x=51872 y=104192 result=24
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=323 level=1 world=0 x=48192 y=101536 result=25
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=247 level=1 world=0 x=52224 y=103776 result=26
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=359 level=1 world=0 x=57538 y=98808 result=27
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=360 level=1 world=0 x=50208 y=100832 result=28
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=385 level=1 world=0 x=50048 y=100640 result=29
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=246 level=1 world=0 x=49824 y=102272 result=30
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=212 level=1 world=0 x=51360 y=99840 result=31
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=367 level=1 world=0 x=49632 y=103040 result=32
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=333 level=1 world=0 x=50176 y=101856 result=33
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=240 level=1 world=0 x=57632 y=100928 result=34
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=242 level=1 world=0 x=56896 y=101632 result=35
+AddNpc: template=242 level=1 world=0 x=49385 y=93542 result=36
+LuaTrace: addnpcbalang returned
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=43 level=10 world=0 x=45815 y=93147 result=37
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=31 level=10 world=0 x=51235 y=93153 result=38
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=42 level=10 world=0 x=53551 y=93076 result=39
+AddNpc: template=42 level=10 world=0 x=55574 y=93102 result=40
+AddNpc: template=31 level=10 world=0 x=56485 y=93031 result=41
+AddNpc: template=43 level=10 world=0 x=44533 y=93887 result=42
+AddNpc: template=31 level=10 world=0 x=44557 y=93479 result=43
+AddNpc: template=43 level=10 world=0 x=44674 y=93654 result=44
+AddNpc: template=42 level=10 world=0 x=44746 y=93487 result=45
+AddNpc: template=43 level=10 world=0 x=45256 y=93268 result=46
+AddNpc: template=31 level=10 world=0 x=45327 y=93498 result=47
+AddNpc: template=42 level=10 world=0 x=45843 y=93668 result=48
+AddNpc: template=43 level=10 world=0 x=45864 y=93465 result=49
+AddNpc: template=42 level=10 world=0 x=45970 y=93546 result=50
+AddNpc: template=43 level=10 world=0 x=46049 y=93807 result=51
+AddNpc: template=42 level=10 world=0 x=46585 y=93291 result=52
+AddNpc: template=43 level=10 world=0 x=46645 y=93518 result=53
+AddNpc: template=42 level=10 world=0 x=47016 y=93555 result=54
+AddNpc: template=42 level=10 world=0 x=46840 y=93323 result=55
+AddNpc: template=31 level=10 world=0 x=46744 y=93776 result=56
+AddNpc: template=42 level=10 world=0 x=46949 y=93895 result=57
+AddNpc: template=31 level=10 world=0 x=47290 y=93275 result=58
+AddNpc: template=43 level=10 world=0 x=47890 y=93513 result=59
+AddNpc: template=42 level=10 world=0 x=47868 y=93789 result=60
+AddNpc: template=31 level=10 world=0 x=47699 y=93517 result=61
+AddNpc: template=31 level=10 world=0 x=47963 y=93278 result=62
+AddNpc: template=43 level=10 world=0 x=48602 y=93977 result=63
+AddNpc: template=43 level=10 world=0 x=48525 y=94195 result=64
+AddNpc: template=31 level=10 world=0 x=48695 y=93775 result=65
+AddNpc: template=43 level=10 world=0 x=48783 y=94010 result=66
+AddNpc: template=43 level=10 world=0 x=49586 y=93768 result=67
+AddNpc: template=43 level=10 world=0 x=49614 y=94072 result=68
+AddNpc: template=31 level=10 world=0 x=50093 y=93569 result=69
+AddNpc: template=43 level=10 world=0 x=49962 y=93731 result=70
+AddNpc: template=43 level=10 world=0 x=49817 y=93983 result=71
+AddNpc: template=42 level=10 world=0 x=50235 y=93325 result=72
+AddNpc: template=43 level=10 world=0 x=51100 y=93258 result=73
+AddNpc: template=31 level=10 world=0 x=51198 y=93540 result=74
+AddNpc: template=43 level=10 world=0 x=52024 y=93256 result=75
+AddNpc: template=43 level=10 world=0 x=51925 y=93593 result=76
+AddNpc: template=31 level=10 world=0 x=51754 y=93344 result=77
+AddNpc: template=43 level=10 world=0 x=53098 y=93262 result=78
+AddNpc: template=31 level=10 world=0 x=53099 y=93714 result=79
+AddNpc: template=31 level=10 world=0 x=53540 y=93741 result=80
+AddNpc: template=31 level=10 world=0 x=53521 y=93401 result=81
+AddNpc: template=31 level=10 world=0 x=53305 y=93625 result=82
+AddNpc: template=31 level=10 world=0 x=53639 y=93295 result=83
+AddNpc: template=42 level=10 world=0 x=53301 y=94010 result=84
+AddNpc: template=43 level=10 world=0 x=53529 y=94077 result=85
+AddNpc: template=31 level=10 world=0 x=54140 y=93276 result=86
+AddNpc: template=31 level=10 world=0 x=54397 y=93604 result=87
+AddNpc: template=42 level=10 world=0 x=54527 y=93204 result=88
+AddNpc: template=42 level=10 world=0 x=54456 y=93380 result=89
+AddNpc: template=31 level=10 world=0 x=55280 y=93237 result=90
+AddNpc: template=42 level=10 world=0 x=55658 y=93433 result=91
+AddNpc: template=43 level=10 world=0 x=55401 y=93579 result=92
+AddNpc: template=31 level=10 world=0 x=55346 y=93929 result=93
+AddNpc: template=42 level=10 world=0 x=56240 y=93565 result=94
+AddNpc: template=31 level=10 world=0 x=56314 y=93845 result=95
+AddNpc: template=31 level=10 world=0 x=56358 y=93354 result=96
+AddNpc: template=43 level=10 world=0 x=56548 y=93401 result=97
+AddNpc: template=43 level=10 world=0 x=56455 y=94121 result=98
+AddNpc: template=31 level=10 world=0 x=57087 y=93470 result=99
+AddNpc: template=42 level=10 world=0 x=57120 y=93750 result=100
+AddNpc: template=43 level=10 world=0 x=56933 y=93731 result=101
+AddNpc: template=43 level=10 world=0 x=57032 y=93914 result=102
+AddNpc: template=42 level=10 world=0 x=57279 y=94182 result=103
+AddNpc: template=31 level=10 world=0 x=57756 y=93640 result=104
+AddNpc: template=31 level=10 world=0 x=57812 y=93945 result=105
+AddNpc: template=31 level=10 world=0 x=57363 y=93786 result=106
+AddNpc: template=43 level=10 world=0 x=44621 y=94837 result=107
+AddNpc: template=42 level=10 world=0 x=44562 y=94971 result=108
+AddNpc: template=42 level=10 world=0 x=44675 y=95184 result=109
+AddNpc: template=31 level=10 world=0 x=45383 y=94767 result=110
+AddNpc: template=31 level=10 world=0 x=45275 y=94725 result=111
+AddNpc: template=42 level=10 world=0 x=45359 y=94967 result=112
+AddNpc: template=43 level=10 world=0 x=46248 y=95225 result=113
+AddNpc: template=31 level=10 world=0 x=46282 y=95001 result=114
+AddNpc: template=31 level=10 world=0 x=47386 y=94360 result=115
+AddNpc: template=43 level=10 world=0 x=47224 y=94812 result=116
+AddNpc: template=43 level=10 world=0 x=47128 y=94986 result=117
+AddNpc: template=31 level=10 world=0 x=47443 y=94892 result=118
+AddNpc: template=42 level=10 world=0 x=47527 y=94473 result=119
+AddNpc: template=42 level=10 world=0 x=48374 y=95026 result=120
+AddNpc: template=42 level=10 world=0 x=48192 y=95158 result=121
+AddNpc: template=43 level=10 world=0 x=48158 y=94884 result=122
+AddNpc: template=31 level=10 world=0 x=49052 y=94702 result=123
+AddNpc: template=42 level=10 world=0 x=49012 y=95048 result=124
+AddNpc: template=31 level=10 world=0 x=49216 y=94943 result=125
+AddNpc: template=42 level=10 world=0 x=49576 y=94916 result=126
+AddNpc: template=31 level=10 world=0 x=50011 y=95063 result=127
+AddNpc: template=31 level=10 world=0 x=49865 y=95000 result=128
+AddNpc: template=31 level=10 world=0 x=49733 y=95106 result=129
+AddNpc: template=31 level=10 world=0 x=50508 y=95081 result=130
+AddNpc: template=31 level=10 world=0 x=50698 y=95138 result=131
+AddNpc: template=43 level=10 world=0 x=51046 y=95024 result=132
+AddNpc: template=42 level=10 world=0 x=51142 y=94799 result=133
+AddNpc: template=42 level=10 world=0 x=52459 y=95180 result=134
+AddNpc: template=31 level=10 world=0 x=53162 y=95035 result=135
+AddNpc: template=43 level=10 world=0 x=52997 y=94865 result=136
+AddNpc: template=31 level=10 world=0 x=52787 y=95147 result=137
+AddNpc: template=43 level=10 world=0 x=53324 y=95171 result=138
+AddNpc: template=42 level=10 world=0 x=55154 y=94215 result=139
+AddNpc: template=43 level=10 world=0 x=55666 y=94849 result=140
+AddNpc: template=31 level=10 world=0 x=55749 y=94619 result=141
+AddNpc: template=31 level=10 world=0 x=56872 y=95149 result=142
+AddNpc: template=31 level=10 world=0 x=57136 y=95199 result=143
+AddNpc: template=43 level=10 world=0 x=44850 y=96253 result=144
+AddNpc: template=42 level=10 world=0 x=44622 y=96220 result=145
+AddNpc: template=43 level=10 world=0 x=45408 y=95552 result=146
+AddNpc: template=31 level=10 world=0 x=45317 y=95555 result=147
+AddNpc: template=31 level=10 world=0 x=45183 y=95607 result=148
+AddNpc: template=43 level=10 world=0 x=45455 y=95861 result=149
+AddNpc: template=31 level=10 world=0 x=45676 y=95763 result=150
+AddNpc: template=31 level=10 world=0 x=45894 y=95881 result=151
+AddNpc: template=43 level=10 world=0 x=45814 y=96180 result=152
+AddNpc: template=43 level=10 world=0 x=46121 y=95446 result=153
+AddNpc: template=42 level=10 world=0 x=46997 y=95819 result=154
+AddNpc: template=42 level=10 world=0 x=46825 y=96029 result=155
+AddNpc: template=43 level=10 world=0 x=46668 y=95473 result=156
+AddNpc: template=43 level=10 world=0 x=46795 y=95333 result=157
+AddNpc: template=43 level=10 world=0 x=46629 y=95743 result=158
+AddNpc: template=43 level=10 world=0 x=47614 y=96145 result=159
+AddNpc: template=43 level=10 world=0 x=47985 y=95823 result=160
+AddNpc: template=43 level=10 world=0 x=47697 y=95883 result=161
+AddNpc: template=42 level=10 world=0 x=47904 y=96015 result=162
+AddNpc: template=42 level=10 world=0 x=49054 y=96243 result=163
+AddNpc: template=43 level=10 world=0 x=49111 y=95977 result=164
+AddNpc: template=43 level=10 world=0 x=48830 y=95818 result=165
+AddNpc: template=42 level=10 world=0 x=48886 y=96219 result=166
+AddNpc: template=42 level=10 world=0 x=48670 y=96222 result=167
+AddNpc: template=31 level=10 world=0 x=50160 y=96207 result=168
+AddNpc: template=42 level=10 world=0 x=49707 y=95380 result=169
+AddNpc: template=31 level=10 world=0 x=49924 y=96115 result=170
+AddNpc: template=31 level=10 world=0 x=50681 y=95426 result=171
+AddNpc: template=31 level=10 world=0 x=50571 y=95588 result=172
+AddNpc: template=31 level=10 world=0 x=51041 y=95560 result=173
+AddNpc: template=31 level=10 world=0 x=50921 y=95654 result=174
+AddNpc: template=31 level=10 world=0 x=51612 y=95878 result=175
+AddNpc: template=42 level=10 world=0 x=51498 y=96191 result=176
+AddNpc: template=42 level=10 world=0 x=51506 y=95874 result=177
+AddNpc: template=42 level=10 world=0 x=52419 y=95557 result=178
+AddNpc: template=43 level=10 world=0 x=52535 y=95885 result=179
+AddNpc: template=43 level=10 world=0 x=53041 y=95303 result=180
+AddNpc: template=42 level=10 world=0 x=53194 y=96244 result=181
+AddNpc: template=42 level=10 world=0 x=53441 y=95761 result=182
+AddNpc: template=31 level=10 world=0 x=53667 y=95749 result=183
+AddNpc: template=43 level=10 world=0 x=53954 y=96034 result=184
+AddNpc: template=31 level=10 world=0 x=53945 y=95255 result=185
+AddNpc: template=31 level=10 world=0 x=54107 y=95322 result=186
+AddNpc: template=43 level=10 world=0 x=54131 y=95913 result=187
+AddNpc: template=42 level=10 world=0 x=54133 y=95631 result=188
+AddNpc: template=42 level=10 world=0 x=55094 y=95511 result=189
+AddNpc: template=42 level=10 world=0 x=55212 y=95760 result=190
+AddNpc: template=43 level=10 world=0 x=54898 y=95668 result=191
+AddNpc: template=43 level=10 world=0 x=54984 y=95957 result=192
+AddNpc: template=31 level=10 world=0 x=55041 y=96201 result=193
+AddNpc: template=42 level=10 world=0 x=55265 y=96127 result=194
+AddNpc: template=43 level=10 world=0 x=55416 y=95852 result=195
+AddNpc: template=31 level=10 world=0 x=55882 y=96218 result=196
+AddNpc: template=31 level=10 world=0 x=56374 y=96169 result=197
+AddNpc: template=31 level=10 world=0 x=57271 y=95839 result=198
+AddNpc: template=31 level=10 world=0 x=57002 y=95581 result=199
+AddNpc: template=42 level=10 world=0 x=57142 y=95652 result=200
+LuaTrace: addtrainingnpc returned
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=main code=1 error=(no message)
+OnLunch: main result=0
+OnLunch: begin
+LuaTrace: serverscript.main begin
+LuaTrace: serverscript calling addfullnpc
+LuaTrace: addfullnpc begin
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=189 level=1 world=0 x=50944 y=100128 result=1
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=184 level=1 world=0 x=51520 y=102272 result=2
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=177 level=1 world=0 x=51616 y=101568 result=3
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=186 level=1 world=0 x=51872 y=102560 result=4
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=83 level=1 world=0 x=52352 y=101888 result=5
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=171 level=1 world=0 x=50592 y=102496 result=6
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=103 level=1 world=0 x=51232 y=99968 result=7
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=181 level=1 world=0 x=51808 y=101216 result=8
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=188 level=1 world=0 x=52320 y=102048 result=9
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=309 level=1 world=0 x=50432 y=100640 result=10
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=625 level=1 world=0 x=51584 y=101376 result=11
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=219 level=1 world=0 x=51200 y=101440 result=12
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=198 level=1 world=0 x=50752 y=100960 result=13
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=203 level=1 world=0 x=51136 y=102688 result=14
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=239 level=1 world=0 x=50496 y=103552 result=15
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=108 level=1 world=0 x=52032 y=101504 result=16
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=377 level=1 world=0 x=52150 y=102241 result=17
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=663 level=1 world=0 x=51808 y=101408 result=18
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=373 level=1 world=0 x=51232 y=102016 result=19
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=311 level=1 world=0 x=53489 y=95320 result=20
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=87 level=1 world=0 x=52189 y=101738 result=21
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=362 level=1 world=0 x=52448 y=102720 result=22
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=297 level=1 world=0 x=52224 y=102848 result=23
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=347 level=1 world=0 x=51872 y=104192 result=24
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=323 level=1 world=0 x=48192 y=101536 result=25
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=247 level=1 world=0 x=52224 y=103776 result=26
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=359 level=1 world=0 x=57538 y=98808 result=27
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=360 level=1 world=0 x=50208 y=100832 result=28
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=385 level=1 world=0 x=50048 y=100640 result=29
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=246 level=1 world=0 x=49824 y=102272 result=30
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=212 level=1 world=0 x=51360 y=99840 result=31
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=367 level=1 world=0 x=49632 y=103040 result=32
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+AddNpc: template=333 level=1 world=0 x=50176 y=101856 result=33
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=240 level=1 world=0 x=57632 y=100928 result=34
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=242 level=1 world=0 x=56896 y=101632 result=35
+AddNpc: template=242 level=1 world=0 x=49385 y=93542 result=36
+LuaTrace: addnpcbalang returned
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=31 level=10 world=0 x=45815 y=93147 result=37
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=42 level=10 world=0 x=51235 y=93153 result=38
+AddNpc: template=31 level=10 world=0 x=53551 y=93076 result=39
+AddNpc: template=31 level=10 world=0 x=55574 y=93102 result=40
+AddNpc: template=31 level=10 world=0 x=56485 y=93031 result=41
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+AddNpc: template=43 level=10 world=0 x=44533 y=93887 result=42
+AddNpc: template=43 level=10 world=0 x=44557 y=93479 result=43
+AddNpc: template=43 level=10 world=0 x=44674 y=93654 result=44
+AddNpc: template=43 level=10 world=0 x=44746 y=93487 result=45
+AddNpc: template=42 level=10 world=0 x=45256 y=93268 result=46
+AddNpc: template=42 level=10 world=0 x=45327 y=93498 result=47
+AddNpc: template=42 level=10 world=0 x=45843 y=93668 result=48
+AddNpc: template=31 level=10 world=0 x=45864 y=93465 result=49
+AddNpc: template=31 level=10 world=0 x=45970 y=93546 result=50
+AddNpc: template=43 level=10 world=0 x=46049 y=93807 result=51
+AddNpc: template=42 level=10 world=0 x=46585 y=93291 result=52
+AddNpc: template=43 level=10 world=0 x=46645 y=93518 result=53
+AddNpc: template=31 level=10 world=0 x=47016 y=93555 result=54
+AddNpc: template=43 level=10 world=0 x=46840 y=93323 result=55
+AddNpc: template=42 level=10 world=0 x=46744 y=93776 result=56
+AddNpc: template=43 level=10 world=0 x=46949 y=93895 result=57
+AddNpc: template=31 level=10 world=0 x=47290 y=93275 result=58
+AddNpc: template=31 level=10 world=0 x=47890 y=93513 result=59
+AddNpc: template=43 level=10 world=0 x=47868 y=93789 result=60
+AddNpc: template=42 level=10 world=0 x=47699 y=93517 result=61
+AddNpc: template=42 level=10 world=0 x=47963 y=93278 result=62
+AddNpc: template=42 level=10 world=0 x=48602 y=93977 result=63
+AddNpc: template=43 level=10 world=0 x=48525 y=94195 result=64
+AddNpc: template=31 level=10 world=0 x=48695 y=93775 result=65
+AddNpc: template=31 level=10 world=0 x=48783 y=94010 result=66
+AddNpc: template=43 level=10 world=0 x=49586 y=93768 result=67
+AddNpc: template=43 level=10 world=0 x=49614 y=94072 result=68
+AddNpc: template=42 level=10 world=0 x=50093 y=93569 result=69
+AddNpc: template=42 level=10 world=0 x=49962 y=93731 result=70
+AddNpc: template=31 level=10 world=0 x=49817 y=93983 result=71
+AddNpc: template=31 level=10 world=0 x=50235 y=93325 result=72
+AddNpc: template=42 level=10 world=0 x=51100 y=93258 result=73
+AddNpc: template=43 level=10 world=0 x=51198 y=93540 result=74
+AddNpc: template=42 level=10 world=0 x=52024 y=93256 result=75
+AddNpc: template=42 level=10 world=0 x=51925 y=93593 result=76
+AddNpc: template=42 level=10 world=0 x=51754 y=93344 result=77
+AddNpc: template=42 level=10 world=0 x=53098 y=93262 result=78
+AddNpc: template=43 level=10 world=0 x=53099 y=93714 result=79
+AddNpc: template=31 level=10 world=0 x=53540 y=93741 result=80
+AddNpc: template=31 level=10 world=0 x=53521 y=93401 result=81
+AddNpc: template=43 level=10 world=0 x=53305 y=93625 result=82
+AddNpc: template=42 level=10 world=0 x=53639 y=93295 result=83
+AddNpc: template=42 level=10 world=0 x=53301 y=94010 result=84
+AddNpc: template=43 level=10 world=0 x=53529 y=94077 result=85
+AddNpc: template=43 level=10 world=0 x=54140 y=93276 result=86
+AddNpc: template=31 level=10 world=0 x=54397 y=93604 result=87
+AddNpc: template=42 level=10 world=0 x=54527 y=93204 result=88
+AddNpc: template=42 level=10 world=0 x=54456 y=93380 result=89
+AddNpc: template=31 level=10 world=0 x=55280 y=93237 result=90
+AddNpc: template=43 level=10 world=0 x=55658 y=93433 result=91
+AddNpc: template=42 level=10 world=0 x=55401 y=93579 result=92
+AddNpc: template=43 level=10 world=0 x=55346 y=93929 result=93
+AddNpc: template=43 level=10 world=0 x=56240 y=93565 result=94
+AddNpc: template=43 level=10 world=0 x=56314 y=93845 result=95
+AddNpc: template=31 level=10 world=0 x=56358 y=93354 result=96
+AddNpc: template=43 level=10 world=0 x=56548 y=93401 result=97
+AddNpc: template=43 level=10 world=0 x=56455 y=94121 result=98
+AddNpc: template=42 level=10 world=0 x=57087 y=93470 result=99
+AddNpc: template=31 level=10 world=0 x=57120 y=93750 result=100
+AddNpc: template=43 level=10 world=0 x=56933 y=93731 result=101
+AddNpc: template=43 level=10 world=0 x=57032 y=93914 result=102
+AddNpc: template=31 level=10 world=0 x=57279 y=94182 result=103
+AddNpc: template=31 level=10 world=0 x=57756 y=93640 result=104
+AddNpc: template=43 level=10 world=0 x=57812 y=93945 result=105
+AddNpc: template=31 level=10 world=0 x=57363 y=93786 result=106
+AddNpc: template=31 level=10 world=0 x=44621 y=94837 result=107
+AddNpc: template=43 level=10 world=0 x=44562 y=94971 result=108
+AddNpc: template=42 level=10 world=0 x=44675 y=95184 result=109
+AddNpc: template=42 level=10 world=0 x=45383 y=94767 result=110
+AddNpc: template=42 level=10 world=0 x=45275 y=94725 result=111
+AddNpc: template=43 level=10 world=0 x=45359 y=94967 result=112
+AddNpc: template=31 level=10 world=0 x=46248 y=95225 result=113
+AddNpc: template=42 level=10 world=0 x=46282 y=95001 result=114
+AddNpc: template=31 level=10 world=0 x=47386 y=94360 result=115
+AddNpc: template=42 level=10 world=0 x=47224 y=94812 result=116
+AddNpc: template=31 level=10 world=0 x=47128 y=94986 result=117
+AddNpc: template=42 level=10 world=0 x=47443 y=94892 result=118
+AddNpc: template=31 level=10 world=0 x=47527 y=94473 result=119
+AddNpc: template=31 level=10 world=0 x=48374 y=95026 result=120
+AddNpc: template=42 level=10 world=0 x=48192 y=95158 result=121
+AddNpc: template=42 level=10 world=0 x=48158 y=94884 result=122
+AddNpc: template=43 level=10 world=0 x=49052 y=94702 result=123
+AddNpc: template=43 level=10 world=0 x=49012 y=95048 result=124
+AddNpc: template=31 level=10 world=0 x=49216 y=94943 result=125
+AddNpc: template=43 level=10 world=0 x=49576 y=94916 result=126
+AddNpc: template=42 level=10 world=0 x=50011 y=95063 result=127
+AddNpc: template=43 level=10 world=0 x=49865 y=95000 result=128
+AddNpc: template=42 level=10 world=0 x=49733 y=95106 result=129
+AddNpc: template=43 level=10 world=0 x=50508 y=95081 result=130
+AddNpc: template=43 level=10 world=0 x=50698 y=95138 result=131
+AddNpc: template=31 level=10 world=0 x=51046 y=95024 result=132
+AddNpc: template=31 level=10 world=0 x=51142 y=94799 result=133
+AddNpc: template=42 level=10 world=0 x=52459 y=95180 result=134
+AddNpc: template=31 level=10 world=0 x=53162 y=95035 result=135
+AddNpc: template=43 level=10 world=0 x=52997 y=94865 result=136
+AddNpc: template=42 level=10 world=0 x=52787 y=95147 result=137
+AddNpc: template=43 level=10 world=0 x=53324 y=95171 result=138
+AddNpc: template=31 level=10 world=0 x=55154 y=94215 result=139
+AddNpc: template=42 level=10 world=0 x=55666 y=94849 result=140
+AddNpc: template=43 level=10 world=0 x=55749 y=94619 result=141
+AddNpc: template=31 level=10 world=0 x=56872 y=95149 result=142
+AddNpc: template=43 level=10 world=0 x=57136 y=95199 result=143
+AddNpc: template=42 level=10 world=0 x=44850 y=96253 result=144
+AddNpc: template=31 level=10 world=0 x=44622 y=96220 result=145
+AddNpc: template=43 level=10 world=0 x=45408 y=95552 result=146
+AddNpc: template=43 level=10 world=0 x=45317 y=95555 result=147
+AddNpc: template=31 level=10 world=0 x=45183 y=95607 result=148
+AddNpc: template=42 level=10 world=0 x=45455 y=95861 result=149
+AddNpc: template=42 level=10 world=0 x=45676 y=95763 result=150
+AddNpc: template=31 level=10 world=0 x=45894 y=95881 result=151
+AddNpc: template=43 level=10 world=0 x=45814 y=96180 result=152
+AddNpc: template=42 level=10 world=0 x=46121 y=95446 result=153
+AddNpc: template=31 level=10 world=0 x=46997 y=95819 result=154
+AddNpc: template=31 level=10 world=0 x=46825 y=96029 result=155
+AddNpc: template=31 level=10 world=0 x=46668 y=95473 result=156
+AddNpc: template=42 level=10 world=0 x=46795 y=95333 result=157
+AddNpc: template=31 level=10 world=0 x=46629 y=95743 result=158
+AddNpc: template=31 level=10 world=0 x=47614 y=96145 result=159
+AddNpc: template=43 level=10 world=0 x=47985 y=95823 result=160
+AddNpc: template=31 level=10 world=0 x=47697 y=95883 result=161
+AddNpc: template=43 level=10 world=0 x=47904 y=96015 result=162
+AddNpc: template=31 level=10 world=0 x=49054 y=96243 result=163
+AddNpc: template=42 level=10 world=0 x=49111 y=95977 result=164
+AddNpc: template=31 level=10 world=0 x=48830 y=95818 result=165
+AddNpc: template=42 level=10 world=0 x=48886 y=96219 result=166
+AddNpc: template=31 level=10 world=0 x=48670 y=96222 result=167
+AddNpc: template=31 level=10 world=0 x=50160 y=96207 result=168
+AddNpc: template=42 level=10 world=0 x=49707 y=95380 result=169
+AddNpc: template=42 level=10 world=0 x=49924 y=96115 result=170
+AddNpc: template=43 level=10 world=0 x=50681 y=95426 result=171
+AddNpc: template=31 level=10 world=0 x=50571 y=95588 result=172
+AddNpc: template=43 level=10 world=0 x=51041 y=95560 result=173
+AddNpc: template=43 level=10 world=0 x=50921 y=95654 result=174
+AddNpc: template=31 level=10 world=0 x=51612 y=95878 result=175
+AddNpc: template=31 level=10 world=0 x=51498 y=96191 result=176
+AddNpc: template=43 level=10 world=0 x=51506 y=95874 result=177
+AddNpc: template=31 level=10 world=0 x=52419 y=95557 result=178
+AddNpc: template=31 level=10 world=0 x=52535 y=95885 result=179
+AddNpc: template=31 level=10 world=0 x=53041 y=95303 result=180
+AddNpc: template=31 level=10 world=0 x=53194 y=96244 result=181
+AddNpc: template=42 level=10 world=0 x=53441 y=95761 result=182
+AddNpc: template=31 level=10 world=0 x=53667 y=95749 result=183
+AddNpc: template=42 level=10 world=0 x=53954 y=96034 result=184
+AddNpc: template=31 level=10 world=0 x=53945 y=95255 result=185
+AddNpc: template=31 level=10 world=0 x=54107 y=95322 result=186
+AddNpc: template=31 level=10 world=0 x=54131 y=95913 result=187
+AddNpc: template=31 level=10 world=0 x=54133 y=95631 result=188
+AddNpc: template=42 level=10 world=0 x=55094 y=95511 result=189
+AddNpc: template=42 level=10 world=0 x=55212 y=95760 result=190
+AddNpc: template=43 level=10 world=0 x=54898 y=95668 result=191
+AddNpc: template=31 level=10 world=0 x=54984 y=95957 result=192
+AddNpc: template=42 level=10 world=0 x=55041 y=96201 result=193
+AddNpc: template=42 level=10 world=0 x=55265 y=96127 result=194
+AddNpc: template=31 level=10 world=0 x=55416 y=95852 result=195
+AddNpc: template=42 level=10 world=0 x=55882 y=96218 result=196
+AddNpc: template=31 level=10 world=0 x=56374 y=96169 result=197
+AddNpc: template=42 level=10 world=0 x=57271 y=95839 result=198
+AddNpc: template=31 level=10 world=0 x=57002 y=95581 result=199
+AddNpc: template=42 level=10 world=0 x=57142 y=95652 result=200
+LuaTrace: addtrainingnpc returned
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcKeyData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=GetNpcLevelData code=1 error=(no message)
+Lua_Call failed: function=main code=1 error=(no message)
+OnLunch: main result=0

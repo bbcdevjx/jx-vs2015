@@ -1,0 +1,43 @@
+
+*
+***** S3Relay Start (@ 2026/08/06 21:49:12.625) >>>>>
+*
+
+[2026/08/06 21:49:12] 1 -- Initializing ...
+[2026/08/06 21:49:12] 2 -- Create Channel: [Stock, GM] <00000000> GM
+[2026/08/06 21:49:12] 3 -- Create Channel: [Stock] <00000001> WORLD
+[2026/08/06 21:49:12] 4 -- relay server startup
+[2026/08/06 21:49:12] 5 -- gateway client create: 127.0.0.1
+[2026/08/06 21:49:12] 6 -- host server startup
+[2026/08/06 21:49:12] 7 -- tong server startup
+[2026/08/06 21:49:12] 8 -- chat server startup
+[2026/08/06 21:49:12] 9 -- SockThread start success
+[2026/08/06 21:49:12] 10 -- tong database open ok!
+[2026/08/06 21:49:12] 11 -- tongset init ok !
+[2026/08/06 21:49:12] 12 -- Initialize OK
+[2026/08/06 21:49:21] 13 -- host connect create: 127.0.0.1
+[2026/08/06 21:49:21] 14 -- chat connect create: 127.0.0.1
+[2026/08/06 21:49:21] 15 -- tong connect create: 127.0.0.1
+[2026/08/06 21:49:27] 16 -- load someone: Administrator
+[2026/08/06 21:49:27] 17 -- player login: 1 [Administrator] (0100007F, 00000000)
+[2026/08/06 21:49:27] 18 -- sync friend list: Administrator (full)
+[2026/08/06 21:49:27] 19 -- Query ChannelID: \S from (0100007F, 00000000)
+[2026/08/06 21:49:27] 20 -- Create Channel: <00000002> \S16777343
+[2026/08/06 21:49:27] 21 -- Query ChannelID: TEAM from (0100007F, 00000000)
+[2026/08/06 21:49:27] 22 -- Query ChannelID: WORLD from (0100007F, 00000000)
+[2026/08/06 21:49:27] 23 -- Query ChannelID: GM from (0100007F, 00000000)
+[2026/08/06 21:49:27] 24 -- Query ChannelID: \B from (0100007F, 00000000)
+[2026/08/06 21:49:27] 25 -- Create Channel: <00000003> \B16777343
+[2026/08/06 21:49:27] 26 -- Query ChannelID: CHATROOM from (0100007F, 00000000)
+[2026/08/06 21:49:27] 27 -- Subscribe Channel: 00000002 by (0100007F,00000000)
+[2026/08/06 21:49:27] 28 -- Subscribe Channel: 00000001 by (0100007F,00000000)
+[2026/08/06 21:49:27] 29 -- Subscribe Channel: GM <00000000> by (0100007F,00000000)
+[2026/08/06 21:49:27] 30 -- Subscribe Channel: 00000003 by (0100007F,00000000)
+[2026/08/06 21:51:22] 31 -- tong connect close: 127.0.0.1
+[2026/08/06 21:51:22] 32 -- chat connect close: 127.0.0.1
+[2026/08/06 21:51:22] 33 -- host connect close: 127.0.0.1
+[2026/08/06 21:51:49] 34 -- host connect create: 127.0.0.1
+[2026/08/06 21:51:49] 35 -- chat connect create: 127.0.0.1
+[2026/08/06 21:51:49] 36 -- tong connect create: 127.0.0.1
+[2026/08/06 21:51:52] 37 -- player login: 1 [Administrator] (0100007F, 00000000)
+[2026/08/06 21:51:52] 38 -- sync friend list: Administrator (full)

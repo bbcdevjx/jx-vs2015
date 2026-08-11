@@ -1,0 +1,85 @@
+
+*
+***** S3Relay Start (@ 2026/08/06 18:05:38.755) >>>>>
+*
+
+[2026/08/06 18:05:39] 1 -- Initializing ...
+[2026/08/06 18:05:39] 2 -- Create Channel: [Stock, GM] <00000000> GM
+[2026/08/06 18:05:39] 3 -- Create Channel: [Stock] <00000001> WORLD
+[2026/08/06 18:05:39] 4 -- relay server startup
+[2026/08/06 18:05:39] 5 -- gateway client create: 127.0.0.1
+[2026/08/06 18:05:39] 6 -- host server startup
+[2026/08/06 18:05:39] 7 -- tong server startup
+[2026/08/06 18:05:39] 8 -- chat server startup
+[2026/08/06 18:05:39] 9 -- SockThread start success
+[2026/08/06 18:05:39] 10 -- tong database open ok!
+[2026/08/06 18:05:39] 11 -- tongset init ok !
+[2026/08/06 18:05:39] 12 -- Initialize OK
+[2026/08/06 18:06:14] 13 -- host connect create: 127.0.0.1
+[2026/08/06 18:06:14] 14 -- chat connect create: 127.0.0.1
+[2026/08/06 18:06:14] 15 -- tong connect create: 127.0.0.1
+[2026/08/06 18:06:26] 16 -- load someone: Administrator
+[2026/08/06 18:06:26] 17 -- player login: 1 [Administrator] (0100007F, 00000000)
+[2026/08/06 18:06:26] 18 -- sync friend list: Administrator (full)
+[2026/08/06 18:06:26] 19 -- Query ChannelID: \S from (0100007F, 00000000)
+[2026/08/06 18:06:26] 20 -- Create Channel: <00000002> \S16777343
+[2026/08/06 18:06:26] 21 -- Query ChannelID: TEAM from (0100007F, 00000000)
+[2026/08/06 18:06:26] 22 -- Query ChannelID: WORLD from (0100007F, 00000000)
+[2026/08/06 18:06:26] 23 -- Query ChannelID: GM from (0100007F, 00000000)
+[2026/08/06 18:06:26] 24 -- Query ChannelID: \B from (0100007F, 00000000)
+[2026/08/06 18:06:26] 25 -- Create Channel: <00000003> \B16777343
+[2026/08/06 18:06:26] 26 -- Query ChannelID: CHATROOM from (0100007F, 00000000)
+[2026/08/06 18:06:26] 27 -- Subscribe Channel: 00000002 by (0100007F,00000000)
+[2026/08/06 18:06:26] 28 -- Subscribe Channel: 00000001 by (0100007F,00000000)
+[2026/08/06 18:06:26] 29 -- Subscribe Channel: GM <00000000> by (0100007F,00000000)
+[2026/08/06 18:06:26] 30 -- Subscribe Channel: 00000003 by (0100007F,00000000)
+[2026/08/06 18:06:50] 31 -- load someone: Admin222
+[2026/08/06 18:06:50] 32 -- player login: 2 [Admin222] (0100007F, 00000001)
+[2026/08/06 18:06:50] 33 -- sync friend list: Admin222 (full)
+[2026/08/06 18:06:50] 34 -- Query ChannelID: \S from (0100007F, 00000001)
+[2026/08/06 18:06:50] 35 -- Query ChannelID: TEAM from (0100007F, 00000001)
+[2026/08/06 18:06:50] 36 -- Query ChannelID: WORLD from (0100007F, 00000001)
+[2026/08/06 18:06:50] 37 -- Query ChannelID: GM from (0100007F, 00000001)
+[2026/08/06 18:06:50] 38 -- Query ChannelID: \B from (0100007F, 00000001)
+[2026/08/06 18:06:50] 39 -- Query ChannelID: CHATROOM from (0100007F, 00000001)
+[2026/08/06 18:06:50] 40 -- Subscribe Channel: 00000002 by (0100007F,00000001)
+[2026/08/06 18:06:50] 41 -- Subscribe Channel: 00000001 by (0100007F,00000001)
+[2026/08/06 18:06:50] 42 -- Subscribe Channel: GM <00000000> by (0100007F,00000001)
+[2026/08/06 18:06:50] 43 -- Subscribe Channel: 00000003 by (0100007F,00000001)
+[2026/08/06 18:08:00] 44 -- Query ChannelID: TEAM from (0100007F, 00000000)
+[2026/08/06 18:08:00] 45 -- Query ChannelID: CHATROOM from (0100007F, 00000000)
+[2026/08/06 18:08:03] 46 -- Query ChannelID: TEAM from (0100007F, 00000000)
+[2026/08/06 18:08:03] 47 -- Query ChannelID: CHATROOM from (0100007F, 00000000)
+[2026/08/06 18:08:03] 48 -- Query ChannelID: TEAM from (0100007F, 00000001)
+[2026/08/06 18:08:03] 49 -- Query ChannelID: CHATROOM from (0100007F, 00000001)
+[2026/08/06 18:08:03] 50 -- Query ChannelID: TEAM from (0100007F, 00000001)
+[2026/08/06 18:08:03] 51 -- Query ChannelID: CHATROOM from (0100007F, 00000001)
+[2026/08/06 18:08:27] 52 -- Player Add Friend: Admin222 [Administrator]
+[2026/08/06 18:11:06] 53 -- load someone: DuongMon
+[2026/08/06 18:11:06] 54 -- player login: 3 [DuongMon] (0100007F, 00000002)
+[2026/08/06 18:11:06] 55 -- Query ChannelID: \S from (0100007F, 00000002)
+[2026/08/06 18:11:06] 56 -- Query ChannelID: TEAM from (0100007F, 00000002)
+[2026/08/06 18:11:06] 57 -- Query ChannelID: WORLD from (0100007F, 00000002)
+[2026/08/06 18:11:06] 58 -- Query ChannelID: GM from (0100007F, 00000002)
+[2026/08/06 18:11:06] 59 -- Query ChannelID: \B from (0100007F, 00000002)
+[2026/08/06 18:11:06] 60 -- Query ChannelID: CHATROOM from (0100007F, 00000002)
+[2026/08/06 18:11:06] 61 -- sync friend list: DuongMon (full)
+[2026/08/06 18:11:06] 62 -- Subscribe Channel: 00000002 by (0100007F,00000002)
+[2026/08/06 18:11:06] 63 -- Subscribe Channel: 00000001 by (0100007F,00000002)
+[2026/08/06 18:11:06] 64 -- Subscribe Channel: GM <00000000> by (0100007F,00000002)
+[2026/08/06 18:11:06] 65 -- Subscribe Channel: 00000003 by (0100007F,00000002)
+[2026/08/06 18:16:58] 66 -- Query ChannelID: TEAM from (0100007F, 00000000)
+[2026/08/06 18:16:58] 67 -- Query ChannelID: CHATROOM from (0100007F, 00000000)
+[2026/08/06 18:16:58] 68 -- Query ChannelID: TEAM from (0100007F, 00000000)
+[2026/08/06 18:16:58] 69 -- Query ChannelID: CHATROOM from (0100007F, 00000000)
+[2026/08/06 18:16:58] 70 -- Query ChannelID: TEAM from (0100007F, 00000001)
+[2026/08/06 18:16:58] 71 -- Query ChannelID: CHATROOM from (0100007F, 00000001)
+[2026/08/06 18:16:58] 72 -- Query ChannelID: TEAM from (0100007F, 00000001)
+[2026/08/06 18:16:58] 73 -- Query ChannelID: CHATROOM from (0100007F, 00000001)
+[2026/08/06 18:17:16] 74 -- player logout: 1
+[2026/08/06 18:17:16] 75 -- Query ChannelID: TEAM from (0100007F, 00000001)
+[2026/08/06 18:17:16] 76 -- Query ChannelID: CHATROOM from (0100007F, 00000001)
+[2026/08/06 18:17:19] 77 -- player logout: 2
+[2026/08/06 18:17:22] 78 -- Destroy Channel: <00000002> \S16777343
+[2026/08/06 18:17:22] 79 -- Destroy Channel: <00000003> \B16777343
+[2026/08/06 18:17:22] 80 -- player logout: 3

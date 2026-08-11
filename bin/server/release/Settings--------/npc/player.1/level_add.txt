@@ -1,0 +1,6 @@
+系别	LifePerLevel	StaminaPerLevel	ManaPerLevel	LifePerVitality	StaminaPerVitality	ManaPerEnergy	LeadExpShare	fireres	coldres	poisonres	lightingres	physicres
+金系	4	4	4	8	4	4	30	-50	0	50	0	0
+木系	3	4	8	4	4	8	30	0	0	0	50	-30
+水系	3	4	8	4	4	8	30	50	0	0	-50	0
+火系	4	4	6	6	4	6	30	0	-50	0	0	30
+土系	2	4	6	4	4	6	30	0	50	-50	0	0

@@ -1,0 +1,38 @@
+
+*
+***** S3Relay Start (@ 2026/08/06 21:02:14.310) >>>>>
+*
+
+[2026/08/06 21:02:14] 1 -- Initializing ...
+[2026/08/06 21:02:14] 2 -- Create Channel: [Stock, GM] <00000000> GM
+[2026/08/06 21:02:14] 3 -- Create Channel: [Stock] <00000001> WORLD
+[2026/08/06 21:02:14] 4 -- relay server startup
+[2026/08/06 21:02:14] 5 -- gateway client create: 127.0.0.1
+[2026/08/06 21:02:14] 6 -- host server startup
+[2026/08/06 21:02:14] 7 -- tong server startup
+[2026/08/06 21:02:14] 8 -- chat server startup
+[2026/08/06 21:02:14] 9 -- SockThread start success
+[2026/08/06 21:02:14] 10 -- tong database open ok!
+[2026/08/06 21:02:14] 11 -- tongset init ok !
+[2026/08/06 21:02:14] 12 -- Initialize OK
+[2026/08/06 21:02:32] 13 -- host connect create: 127.0.0.1
+[2026/08/06 21:02:32] 14 -- chat connect create: 127.0.0.1
+[2026/08/06 21:02:32] 15 -- tong connect create: 127.0.0.1
+[2026/08/06 21:02:50] 16 -- load someone: Administrator
+[2026/08/06 21:02:50] 17 -- player login: 1 [Administrator] (0100007F, 00000000)
+[2026/08/06 21:02:50] 18 -- sync friend list: Administrator (full)
+[2026/08/06 21:02:50] 19 -- Query ChannelID: \S from (0100007F, 00000000)
+[2026/08/06 21:02:50] 20 -- Create Channel: <00000002> \S16777343
+[2026/08/06 21:02:50] 21 -- Query ChannelID: TEAM from (0100007F, 00000000)
+[2026/08/06 21:02:50] 22 -- Query ChannelID: WORLD from (0100007F, 00000000)
+[2026/08/06 21:02:50] 23 -- Query ChannelID: GM from (0100007F, 00000000)
+[2026/08/06 21:02:50] 24 -- Query ChannelID: \B from (0100007F, 00000000)
+[2026/08/06 21:02:50] 25 -- Create Channel: <00000003> \B16777343
+[2026/08/06 21:02:50] 26 -- Query ChannelID: CHATROOM from (0100007F, 00000000)
+[2026/08/06 21:02:50] 27 -- Subscribe Channel: 00000002 by (0100007F,00000000)
+[2026/08/06 21:02:50] 28 -- Subscribe Channel: 00000001 by (0100007F,00000000)
+[2026/08/06 21:02:50] 29 -- Subscribe Channel: GM <00000000> by (0100007F,00000000)
+[2026/08/06 21:02:50] 30 -- Subscribe Channel: 00000003 by (0100007F,00000000)
+[2026/08/06 21:03:23] 31 -- Destroy Channel: <00000002> \S16777343
+[2026/08/06 21:03:23] 32 -- Destroy Channel: <00000003> \B16777343
+[2026/08/06 21:03:23] 33 -- player logout: 1

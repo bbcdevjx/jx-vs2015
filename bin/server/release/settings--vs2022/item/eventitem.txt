@@ -1,0 +1,35 @@
+Name	Genre	DetailType	ImageName	ObjIdx	Width	Height	Intro	Script	Price	bShortKey	MaxStack
+Tói d­îc phÈm	2	0	\spr\item\script\pingzi\200805\chuntiandalibao.spr	347	1	1	NhËn thuèc hç trî t©n thñ	\script\item\event\tuiduocpham.lua	100	1	0
+Thiªn Hoµng LÔ Bao	2	1	\spr\item\twzhuanyun\zhuanyunbao_big.spr	448	1	1	1 bé trang bÞ Thiªn Hoµng ®Çy ®ñ	\script\item\event\lebaotrangbi.lua	100	0	0
+HiÖp Cèt LÔ Bao	2	2	\spr\item\twzhuanyun\zhuanyunbao_big.spr	448	1	1	1 bé trang bÞ HiÖp Cèt ®Çy ®ñ	\script\item\event\lebaotrangbi.lua	100	0	0
+Nhu T×nh LÔ Bao	2	3	\spr\item\twzhuanyun\zhuanyunbao_big.spr	448	1	1	1 bé trang bÞ Nhu T×nh ®Çy ®ñ	\script\item\event\lebaotrangbi.lua	100	0	0
+An Bang Ngäc béi b¶o r­¬ng	2	4	\spr\item\script\item_qianbaoxiang.spr	41	1	1	Bªn trong cã 1 c¸i An Bang §iÒn Hoµng Th¹ch Ngäc béi	\script\item\event\baoruongtrangbi.lua	100	0	0
+An Bang Th­îng giíi b¶o r­¬ng	2	5	\spr\item\script\item_qianbaoxiang.spr	41	1	1	Bªn trong cã 1 c¸i An Bang Cóc Hoa Th¹ch chØ hoµn	\script\item\event\baoruongtrangbi.lua	100	0	0
+An Bang H¹ giíi b¶o r­¬ng	2	6	\spr\item\script\item_qianbaoxiang.spr	41	1	1	Bªn trong cã 1 c¸i An Bang Kª HuyÕt Th¹ch giíi chØ	\script\item\event\baoruongtrangbi.lua	100	0	0
+An Bang H¹ng liªn b¶o r­¬ng	2	7	\spr\item\script\item_qianbaoxiang.spr	41	1	1	Bªn trong cã 1 c¸i An Bang B¨ng Tinh Th¹ch h¹ng liªn	\script\item\event\baoruongtrangbi.lua	100	0	0
+§Þnh Quèc ¤ Sa b¶o r­¬ng	2	8	\spr\item\oldbox\oldbox.spr	41	1	1	Bªn trong cã 1 c¸i §Þnh Quèc ¤ Sa Ph¸t qu¸n	\script\item\event\baoruongtrangbi.lua	100	0	0
+§Þnh Quèc Thanh Sa b¶o r­¬ng	2	9	\spr\item\oldbox\oldbox.spr	41	1	1	Bªn trong cã 1 c¸i §Þnh Quèc Thanh Sa tr­êng sam	\script\item\event\baoruongtrangbi.lua	100	0	0
+§Þnh Quèc XÝch Quyªn b¶o r­¬ng	2	10	\spr\item\oldbox\oldbox.spr	41	1	1	Bªn trong cã 1 c¸i §Þnh Quèc XÝch Quyªn NhuyÔn ngoa	\script\item\event\baoruongtrangbi.lua	100	0	0
+§Þnh Quèc Tö §»ng b¶o r­¬ng	2	11	\spr\item\oldbox\oldbox.spr	41	1	1	Bªn trong cã 1 c¸i §Þnh Quèc Tö §»ng hé uyÓn	\script\item\event\baoruongtrangbi.lua	100	0	0
+§Þnh Quèc Ng©n Tµm b¶o r­¬ng	2	12	\spr\item\oldbox\oldbox.spr	41	1	1	Bªn trong cã 1 c¸i §Þnh Quèc Ng©n Tµm yªu ®¸i	\script\item\event\baoruongtrangbi.lua	100	0	0
+ThÎ ®Æt c­îc	2	13	\spr\item\questkey\card_xnk.spr	38	1	1	Dïng ®Ó ®o¸n sè trß ch¬i 'Con sè may m¾n'. Xem kÕt qu¶ t¹i LÔ quan	0	100	0	0
+B¬	2	14	\spr\item\event\Avocado.spr	41	1	1	Mét lo¹i tr¸i c©y rÊt cã Ých cho søc kháe	0	100	0	999
+Bßn bon	2	15	\spr\item\event\Duku.spr	41	1	1	Mét lo¹i tr¸i c©y rÊt cã Ých cho søc kháe	0	100	0	999
+B­ëi	2	16	\spr\item\event\Pomelo.spr	41	1	1	Mét lo¹i tr¸i c©y rÊt cã Ých cho søc kháe	0	100	0	999
+Ch«m ch«m	2	17	\spr\item\event\Rambutan.spr	41	1	1	Mét lo¹i tr¸i c©y rÊt cã Ých cho søc kháe	0	100	0	999
+Chuèi	2	18	\spr\item\event\Banana.spr	41	1	1	Mét lo¹i tr¸i c©y rÊt cã Ých cho søc kháe	0	100	0	999
+§µo	2	19	\spr\item\event\Peach.spr	41	1	1	Mét lo¹i tr¸i c©y rÊt cã Ých cho søc kháe	0	100	0	999
+D©u	2	20	\spr\item\event\Strawberry.spr	41	1	1	Mét lo¹i tr¸i c©y rÊt cã Ých cho søc kháe	0	100	0	999
+Khãm	2	21	\spr\item\event\Pineapple.spr	41	1	1	Mét lo¹i tr¸i c©y rÊt cã Ých cho søc kháe	0	100	0	999
+Dõa	2	22	\spr\item\event\Coconut.spr	41	1	1	Mét lo¹i tr¸i c©y rÊt cã Ých cho søc kháe	0	100	0	999
+§u ®ñ	2	23	\spr\item\event\Papaya.spr	41	1	1	Mét lo¹i tr¸i c©y rÊt cã Ých cho søc kháe	0	100	0	999
+KhÕ	2	24	\spr\item\event\Starfruit.spr	41	1	1	Mét lo¹i tr¸i c©y rÊt cã Ých cho søc kháe	0	100	0	999
+Lª	2	25	\spr\item\event\Pear.spr	41	1	1	Mét lo¹i tr¸i c©y rÊt cã Ých cho søc kháe	0	100	0	999
+MËn	2	26	\spr\item\event\Plum.spr	41	1	1	Mét lo¹i tr¸i c©y rÊt cã Ých cho søc kháe	0	100	0	999
+M¨ng côt	2	27	\spr\item\event\Mangosteen.spr	41	1	1	Mét lo¹i tr¸i c©y rÊt cã Ých cho søc kháe	0	100	0	999
+M·ng cÇu	2	28	\spr\item\event\Custard-apple.spr	41	1	1	Mét lo¹i tr¸i c©y rÊt cã Ých cho søc kháe	0	100	0	999
+Nh·n	2	29	\spr\item\event\Longan.spr	41	1	1	Mét lo¹i tr¸i c©y rÊt cã Ých cho søc kháe	0	100	0	999
+Cam	2	30	\spr\item\event\Orange.spr	41	1	1	Mét lo¹i tr¸i c©y rÊt cã Ých cho søc kháe	0	100	0	999
+T¸o	2	31	\spr\item\event\Apple.spr	41	1	1	Mét lo¹i tr¸i c©y rÊt cã Ých cho søc kháe	0	100	0	999
+V¶i	2	32	\spr\item\event\Lychee.spr	41	1	1	Mét lo¹i tr¸i c©y rÊt cã Ých cho søc kháe	0	100	0	999
+Xoµi	2	33	\spr\item\event\Mango.spr	41	1	1	Mét lo¹i tr¸i c©y rÊt cã Ých cho søc kháe	0	100	0	999

@@ -1,0 +1,10 @@
+--description: ∆ﬂ…±∂¥µ–»À ∆’Õ®’Ω∂∑À¿Õˆ
+--author: yuanlan	
+--date: 2003/5/18
+
+
+function trenemy02_2_Default()
+end;
+
+
+

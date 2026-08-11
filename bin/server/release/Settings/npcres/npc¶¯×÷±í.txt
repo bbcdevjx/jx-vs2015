@@ -1,0 +1,15 @@
+NpcAction	EquivalentAct
+FightStand	站立01
+NormalStand1	站立01
+NormalStand2	站立01
+FightWalk	行走01
+NormalWalk	行走01
+FightRun	行走01
+NormalRun	行走01
+Wound	被击01
+Die	被击03
+Attack1	攻击00
+Attack2	攻击01
+Magic	攻击00
+SitDown	站立01
+JunpFly	行走01

@@ -1,0 +1,219 @@
+
+*
+***** S3Relay Start (@ 2026/08/10 21:16:37.756) >>>>>
+*
+
+[2026/08/10 21:16:38] 1 -- Initializing ...
+[2026/08/10 21:16:38] 2 -- Create Channel: [Stock, GM] <00000000> GM
+[2026/08/10 21:16:38] 3 -- Create Channel: [Stock] <00000001> WORLD
+[2026/08/10 21:16:38] 4 -- relay server startup
+[2026/08/10 21:16:38] 5 -- gateway client create: 127.0.0.1
+[2026/08/10 21:16:38] 6 -- host server startup
+[2026/08/10 21:16:38] 7 -- tong server startup
+[2026/08/10 21:16:38] 8 -- chat server startup
+[2026/08/10 21:16:38] 9 -- SockThread start success
+[2026/08/10 21:16:38] 10 -- tong database open ok!
+[2026/08/10 21:16:38] 11 -- tongset init ok !
+[2026/08/10 21:16:38] 12 -- Initialize OK
+[2026/08/10 21:16:46] 13 -- host connect create: 127.0.0.1
+[2026/08/10 21:16:46] 14 -- chat connect create: 127.0.0.1
+[2026/08/10 21:16:46] 15 -- tong connect create: 127.0.0.1
+[2026/08/10 21:17:28] 16 -- host connect close: 127.0.0.1
+[2026/08/10 21:17:28] 17 -- chat connect close: 127.0.0.1
+[2026/08/10 21:17:28] 18 -- tong connect close: 127.0.0.1
+[2026/08/10 21:17:31] 19 -- host connect create: 127.0.0.1
+[2026/08/10 21:17:31] 20 -- chat connect create: 127.0.0.1
+[2026/08/10 21:17:31] 21 -- tong connect create: 127.0.0.1
+[2026/08/10 21:17:34] 22 -- tong connect close: 127.0.0.1
+[2026/08/10 21:17:34] 23 -- host connect close: 127.0.0.1
+[2026/08/10 21:17:34] 24 -- chat connect close: 127.0.0.1
+[2026/08/10 21:18:07] 25 -- host connect create: 127.0.0.1
+[2026/08/10 21:18:07] 26 -- chat connect create: 127.0.0.1
+[2026/08/10 21:18:07] 27 -- tong connect create: 127.0.0.1
+[2026/08/10 21:18:13] 28 -- load someone: Administrator
+[2026/08/10 21:18:13] 29 -- player login: 1 [Administrator] (0100007F, 00000000)
+[2026/08/10 21:18:13] 30 -- Query ChannelID: \S from (0100007F, 00000000)
+[2026/08/10 21:18:13] 31 -- Create Channel: <00000002> \S16777343
+[2026/08/10 21:18:13] 32 -- Query ChannelID: TEAM from (0100007F, 00000000)
+[2026/08/10 21:18:13] 33 -- Query ChannelID: WORLD from (0100007F, 00000000)
+[2026/08/10 21:18:13] 34 -- Query ChannelID: GM from (0100007F, 00000000)
+[2026/08/10 21:18:13] 35 -- Query ChannelID: \B from (0100007F, 00000000)
+[2026/08/10 21:18:13] 36 -- Create Channel: <00000003> \B16777343
+[2026/08/10 21:18:13] 37 -- Query ChannelID: CHATROOM from (0100007F, 00000000)
+[2026/08/10 21:18:13] 38 -- sync friend list: Administrator (full)
+[2026/08/10 21:18:13] 39 -- Subscribe Channel: 00000002 by (0100007F,00000000)
+[2026/08/10 21:18:13] 40 -- Subscribe Channel: 00000001 by (0100007F,00000000)
+[2026/08/10 21:18:13] 41 -- Subscribe Channel: GM <00000000> by (0100007F,00000000)
+[2026/08/10 21:18:13] 42 -- Subscribe Channel: 00000003 by (0100007F,00000000)
+[2026/08/10 21:20:07] 43 -- Destroy Channel: <00000002> \S16777343
+[2026/08/10 21:20:07] 44 -- Destroy Channel: <00000003> \B16777343
+[2026/08/10 21:20:07] 45 -- player logout: 1
+[2026/08/10 21:20:10] 46 -- host connect close: 127.0.0.1
+[2026/08/10 21:20:10] 47 -- tong connect close: 127.0.0.1
+[2026/08/10 21:20:10] 48 -- chat connect close: 127.0.0.1
+[2026/08/10 21:20:16] 49 -- host connect create: 127.0.0.1
+[2026/08/10 21:20:16] 50 -- chat connect create: 127.0.0.1
+[2026/08/10 21:20:16] 51 -- tong connect create: 127.0.0.1
+[2026/08/10 21:20:19] 52 -- player login: 1 [Administrator] (0100007F, 00000000)
+[2026/08/10 21:20:19] 53 -- Query ChannelID: \S from (0100007F, 00000000)
+[2026/08/10 21:20:19] 54 -- Create Channel: <00000004> \S16777343
+[2026/08/10 21:20:19] 55 -- Query ChannelID: TEAM from (0100007F, 00000000)
+[2026/08/10 21:20:19] 56 -- Query ChannelID: WORLD from (0100007F, 00000000)
+[2026/08/10 21:20:19] 57 -- Query ChannelID: GM from (0100007F, 00000000)
+[2026/08/10 21:20:19] 58 -- Query ChannelID: \B from (0100007F, 00000000)
+[2026/08/10 21:20:19] 59 -- Create Channel: <00000005> \B16777343
+[2026/08/10 21:20:19] 60 -- Query ChannelID: CHATROOM from (0100007F, 00000000)
+[2026/08/10 21:20:19] 61 -- sync friend list: Administrator (full)
+[2026/08/10 21:20:19] 62 -- Subscribe Channel: 00000004 by (0100007F,00000000)
+[2026/08/10 21:20:19] 63 -- Subscribe Channel: 00000001 by (0100007F,00000000)
+[2026/08/10 21:20:19] 64 -- Subscribe Channel: GM <00000000> by (0100007F,00000000)
+[2026/08/10 21:20:19] 65 -- Subscribe Channel: 00000005 by (0100007F,00000000)
+[2026/08/10 21:22:07] 66 -- chat connect close: 127.0.0.1
+[2026/08/10 21:22:07] 67 -- host connect close: 127.0.0.1
+[2026/08/10 21:22:07] 68 -- tong connect close: 127.0.0.1
+[2026/08/10 21:22:10] 69 -- host connect create: 127.0.0.1
+[2026/08/10 21:22:10] 70 -- chat connect create: 127.0.0.1
+[2026/08/10 21:22:10] 71 -- tong connect create: 127.0.0.1
+[2026/08/10 21:22:16] 72 -- player login: 1 [Administrator] (0100007F, 00000000)
+[2026/08/10 21:22:16] 73 -- sync friend list: Administrator (full)
+[2026/08/10 21:23:49] 74 -- Destroy Channel: <00000004> \S16777343
+[2026/08/10 21:23:49] 75 -- Destroy Channel: <00000005> \B16777343
+[2026/08/10 21:23:49] 76 -- player logout: 1
+[2026/08/10 21:23:55] 77 -- host connect close: 127.0.0.1
+[2026/08/10 21:23:55] 78 -- tong connect close: 127.0.0.1
+[2026/08/10 21:23:55] 79 -- chat connect close: 127.0.0.1
+[2026/08/10 21:23:58] 80 -- host connect create: 127.0.0.1
+[2026/08/10 21:23:58] 81 -- chat connect create: 127.0.0.1
+[2026/08/10 21:23:58] 82 -- tong connect create: 127.0.0.1
+[2026/08/10 21:24:04] 83 -- player login: 1 [Administrator] (0100007F, 00000000)
+[2026/08/10 21:24:04] 84 -- Query ChannelID: \S from (0100007F, 00000000)
+[2026/08/10 21:24:04] 85 -- Create Channel: <00000006> \S16777343
+[2026/08/10 21:24:04] 86 -- Query ChannelID: TEAM from (0100007F, 00000000)
+[2026/08/10 21:24:04] 87 -- Query ChannelID: WORLD from (0100007F, 00000000)
+[2026/08/10 21:24:04] 88 -- Query ChannelID: GM from (0100007F, 00000000)
+[2026/08/10 21:24:04] 89 -- Query ChannelID: \B from (0100007F, 00000000)
+[2026/08/10 21:24:04] 90 -- Create Channel: <00000007> \B16777343
+[2026/08/10 21:24:04] 91 -- Query ChannelID: CHATROOM from (0100007F, 00000000)
+[2026/08/10 21:24:04] 92 -- sync friend list: Administrator (full)
+[2026/08/10 21:24:04] 93 -- Subscribe Channel: 00000006 by (0100007F,00000000)
+[2026/08/10 21:24:04] 94 -- Subscribe Channel: 00000001 by (0100007F,00000000)
+[2026/08/10 21:24:04] 95 -- Subscribe Channel: GM <00000000> by (0100007F,00000000)
+[2026/08/10 21:24:04] 96 -- Subscribe Channel: 00000007 by (0100007F,00000000)
+[2026/08/10 21:27:23] 97 -- tong connect close: 127.0.0.1
+[2026/08/10 21:27:23] 98 -- chat connect close: 127.0.0.1
+[2026/08/10 21:27:23] 99 -- host connect close: 127.0.0.1
+[2026/08/10 21:27:26] 100 -- host connect create: 127.0.0.1
+[2026/08/10 21:27:26] 101 -- chat connect create: 127.0.0.1
+[2026/08/10 21:27:26] 102 -- tong connect create: 127.0.0.1
+[2026/08/10 21:27:29] 103 -- player login: 1 [Administrator] (0100007F, 00000000)
+[2026/08/10 21:27:29] 104 -- sync friend list: Administrator (full)
+[2026/08/10 21:27:56] 105 -- Destroy Channel: <00000006> \S16777343
+[2026/08/10 21:27:56] 106 -- Destroy Channel: <00000007> \B16777343
+[2026/08/10 21:27:56] 107 -- player logout: 1
+[2026/08/10 21:28:47] 108 -- chat connect close: 127.0.0.1
+[2026/08/10 21:28:47] 109 -- host connect close: 127.0.0.1
+[2026/08/10 21:28:47] 110 -- tong connect close: 127.0.0.1
+[2026/08/10 21:30:53] 111 -- host connect create: 127.0.0.1
+[2026/08/10 21:30:53] 112 -- chat connect create: 127.0.0.1
+[2026/08/10 21:30:53] 113 -- tong connect create: 127.0.0.1
+[2026/08/10 21:30:59] 114 -- player login: 1 [Administrator] (0100007F, 00000000)
+[2026/08/10 21:30:59] 115 -- sync friend list: Administrator (full)
+[2026/08/10 21:30:59] 116 -- Query ChannelID: \S from (0100007F, 00000000)
+[2026/08/10 21:30:59] 117 -- Create Channel: <00000008> \S16777343
+[2026/08/10 21:30:59] 118 -- Query ChannelID: TEAM from (0100007F, 00000000)
+[2026/08/10 21:30:59] 119 -- Query ChannelID: WORLD from (0100007F, 00000000)
+[2026/08/10 21:30:59] 120 -- Query ChannelID: GM from (0100007F, 00000000)
+[2026/08/10 21:30:59] 121 -- Query ChannelID: \B from (0100007F, 00000000)
+[2026/08/10 21:30:59] 122 -- Create Channel: <00000009> \B16777343
+[2026/08/10 21:30:59] 123 -- Query ChannelID: CHATROOM from (0100007F, 00000000)
+[2026/08/10 21:30:59] 124 -- Subscribe Channel: 00000008 by (0100007F,00000000)
+[2026/08/10 21:30:59] 125 -- Subscribe Channel: 00000001 by (0100007F,00000000)
+[2026/08/10 21:30:59] 126 -- Subscribe Channel: GM <00000000> by (0100007F,00000000)
+[2026/08/10 21:30:59] 127 -- Subscribe Channel: 00000009 by (0100007F,00000000)
+[2026/08/10 21:33:23] 128 -- load someone: Admin222
+[2026/08/10 21:33:23] 129 -- player login: 2 [Admin222] (0100007F, 00000001)
+[2026/08/10 21:33:23] 130 -- sync friend list: Admin222 (full)
+[2026/08/10 21:33:23] 131 -- Query ChannelID: \S from (0100007F, 00000001)
+[2026/08/10 21:33:23] 132 -- Query ChannelID: TEAM from (0100007F, 00000001)
+[2026/08/10 21:33:23] 133 -- Query ChannelID: WORLD from (0100007F, 00000001)
+[2026/08/10 21:33:23] 134 -- Query ChannelID: GM from (0100007F, 00000001)
+[2026/08/10 21:33:23] 135 -- Query ChannelID: \B from (0100007F, 00000001)
+[2026/08/10 21:33:23] 136 -- Query ChannelID: CHATROOM from (0100007F, 00000001)
+[2026/08/10 21:33:23] 137 -- Subscribe Channel: 00000008 by (0100007F,00000001)
+[2026/08/10 21:33:23] 138 -- Subscribe Channel: 00000001 by (0100007F,00000001)
+[2026/08/10 21:33:23] 139 -- Subscribe Channel: GM <00000000> by (0100007F,00000001)
+[2026/08/10 21:33:23] 140 -- Subscribe Channel: 00000009 by (0100007F,00000001)
+[2026/08/10 21:33:29] 141 -- player logout: 2
+[2026/08/10 21:35:17] 142 -- chat connect close: 127.0.0.1
+[2026/08/10 21:35:17] 143 -- host connect close: 127.0.0.1
+[2026/08/10 21:35:17] 144 -- tong connect close: 127.0.0.1
+[2026/08/10 21:35:41] 145 -- host connect create: 127.0.0.1
+[2026/08/10 21:35:41] 146 -- chat connect create: 127.0.0.1
+[2026/08/10 21:35:41] 147 -- tong connect create: 127.0.0.1
+[2026/08/10 21:35:44] 148 -- player login: 1 [Administrator] (0100007F, 00000000)
+[2026/08/10 21:35:44] 149 -- sync friend list: Administrator (full)
+[2026/08/10 21:37:41] 150 -- player login: 2 [Admin222] (0100007F, 00000001)
+[2026/08/10 21:37:41] 151 -- Query ChannelID: \S from (0100007F, 00000001)
+[2026/08/10 21:37:41] 152 -- Query ChannelID: TEAM from (0100007F, 00000001)
+[2026/08/10 21:37:41] 153 -- Query ChannelID: WORLD from (0100007F, 00000001)
+[2026/08/10 21:37:41] 154 -- Query ChannelID: GM from (0100007F, 00000001)
+[2026/08/10 21:37:41] 155 -- Query ChannelID: \B from (0100007F, 00000001)
+[2026/08/10 21:37:41] 156 -- Query ChannelID: CHATROOM from (0100007F, 00000001)
+[2026/08/10 21:37:41] 157 -- sync friend list: Admin222 (full)
+[2026/08/10 21:37:41] 158 -- Subscribe Channel: 00000008 by (0100007F,00000001)
+[2026/08/10 21:37:41] 159 -- Subscribe Channel: 00000001 by (0100007F,00000001)
+[2026/08/10 21:37:41] 160 -- Subscribe Channel: GM <00000000> by (0100007F,00000001)
+[2026/08/10 21:37:41] 161 -- Subscribe Channel: 00000009 by (0100007F,00000001)
+[2026/08/10 21:37:53] 162 -- host connect close: 127.0.0.1
+[2026/08/10 21:37:53] 163 -- tong connect close: 127.0.0.1
+[2026/08/10 21:37:53] 164 -- chat connect close: 127.0.0.1
+[2026/08/10 21:39:50] 165 -- host connect create: 127.0.0.1
+[2026/08/10 21:39:50] 166 -- chat connect create: 127.0.0.1
+[2026/08/10 21:39:50] 167 -- tong connect create: 127.0.0.1
+[2026/08/10 21:39:53] 168 -- player login: 1 [Administrator] (0100007F, 00000000)
+[2026/08/10 21:39:53] 169 -- sync friend list: Administrator (full)
+[2026/08/10 21:39:53] 170 -- player login: 2 [Admin222] (0100007F, 00000001)
+[2026/08/10 21:39:53] 171 -- sync friend list: Admin222 (full)
+[2026/08/10 21:40:41] 172 -- player logout: 1
+[2026/08/10 21:40:44] 173 -- player login: 1 [Administrator] (0100007F, 00000002)
+[2026/08/10 21:40:44] 174 -- Query ChannelID: \S from (0100007F, 00000002)
+[2026/08/10 21:40:44] 175 -- Query ChannelID: TEAM from (0100007F, 00000002)
+[2026/08/10 21:40:44] 176 -- Query ChannelID: WORLD from (0100007F, 00000002)
+[2026/08/10 21:40:44] 177 -- Query ChannelID: GM from (0100007F, 00000002)
+[2026/08/10 21:40:44] 178 -- Query ChannelID: \B from (0100007F, 00000002)
+[2026/08/10 21:40:44] 179 -- Query ChannelID: CHATROOM from (0100007F, 00000002)
+[2026/08/10 21:40:44] 180 -- sync friend list: Administrator (full)
+[2026/08/10 21:40:44] 181 -- Subscribe Channel: 00000008 by (0100007F,00000002)
+[2026/08/10 21:40:44] 182 -- Subscribe Channel: 00000001 by (0100007F,00000002)
+[2026/08/10 21:40:44] 183 -- Subscribe Channel: GM <00000000> by (0100007F,00000002)
+[2026/08/10 21:40:44] 184 -- Subscribe Channel: 00000009 by (0100007F,00000002)
+[2026/08/10 21:41:05] 185 -- player logout: 1
+[2026/08/10 21:41:08] 186 -- host connect close: 127.0.0.1
+[2026/08/10 21:41:08] 187 -- chat connect close: 127.0.0.1
+[2026/08/10 21:41:08] 188 -- tong connect close: 127.0.0.1
+[2026/08/10 21:42:02] 189 -- host connect create: 127.0.0.1
+[2026/08/10 21:42:02] 190 -- chat connect create: 127.0.0.1
+[2026/08/10 21:42:02] 191 -- tong connect create: 127.0.0.1
+[2026/08/10 21:42:08] 192 -- player login: 1 [Administrator] (0100007F, 00000000)
+[2026/08/10 21:42:08] 193 -- sync friend list: Administrator (full)
+[2026/08/10 21:42:08] 194 -- Query ChannelID: \S from (0100007F, 00000000)
+[2026/08/10 21:42:08] 195 -- Query ChannelID: TEAM from (0100007F, 00000000)
+[2026/08/10 21:42:08] 196 -- Query ChannelID: WORLD from (0100007F, 00000000)
+[2026/08/10 21:42:08] 197 -- Query ChannelID: GM from (0100007F, 00000000)
+[2026/08/10 21:42:08] 198 -- Query ChannelID: \B from (0100007F, 00000000)
+[2026/08/10 21:42:08] 199 -- Query ChannelID: CHATROOM from (0100007F, 00000000)
+[2026/08/10 21:42:08] 200 -- Subscribe Channel: 00000008 by (0100007F,00000000)
+[2026/08/10 21:42:08] 201 -- Subscribe Channel: 00000001 by (0100007F,00000000)
+[2026/08/10 21:42:08] 202 -- Subscribe Channel: GM <00000000> by (0100007F,00000000)
+[2026/08/10 21:42:08] 203 -- Subscribe Channel: 00000009 by (0100007F,00000000)
+[2026/08/10 21:42:08] 204 -- player login: 2 [Admin222] (0100007F, 00000001)
+[2026/08/10 21:42:08] 205 -- sync friend list: Admin222 (full)
+[2026/08/10 21:50:47] 206 -- host connect close: 127.0.0.1
+[2026/08/10 21:50:47] 207 -- chat connect close: 127.0.0.1
+[2026/08/10 21:50:47] 208 -- tong connect close: 127.0.0.1
+[2026/08/10 21:55:50] 209 -- host connect create: 127.0.0.1
+[2026/08/10 21:55:50] 210 -- chat connect create: 127.0.0.1
+[2026/08/10 21:55:50] 211 -- tong connect create: 127.0.0.1
+[2026/08/10 21:57:26] 212 -- host connect close: 127.0.0.1
+[2026/08/10 21:57:26] 213 -- chat connect close: 127.0.0.1
+[2026/08/10 21:57:26] 214 -- tong connect close: 127.0.0.1

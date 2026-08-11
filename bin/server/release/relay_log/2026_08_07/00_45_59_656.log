@@ -1,0 +1,23 @@
+
+*
+***** S3Relay Start (@ 2026/08/07 00:45:59.656) >>>>>
+*
+
+[2026/08/07 00:45:59] 1 -- Initializing ...
+[2026/08/07 00:45:59] 2 -- Create Channel: [Stock, GM] <00000000> GM
+[2026/08/07 00:45:59] 3 -- Create Channel: [Stock] <00000001> WORLD
+[2026/08/07 00:45:59] 4 -- relay server startup
+[2026/08/07 00:45:59] 5 -- gateway client create: 127.0.0.1
+[2026/08/07 00:45:59] 6 -- host server startup
+[2026/08/07 00:45:59] 7 -- tong server startup
+[2026/08/07 00:45:59] 8 -- chat server startup
+[2026/08/07 00:45:59] 9 -- SockThread start success
+[2026/08/07 00:45:59] 10 -- tong database open ok!
+[2026/08/07 00:45:59] 11 -- tongset init ok !
+[2026/08/07 00:45:59] 12 -- Initialize OK
+[2026/08/07 00:46:08] 13 -- host connect create: 127.0.0.1
+[2026/08/07 00:46:08] 14 -- chat connect create: 127.0.0.1
+[2026/08/07 00:46:08] 15 -- tong connect create: 127.0.0.1
+[2026/08/07 00:46:08] 16 -- load someone: Administrator
+[2026/08/07 00:46:08] 17 -- player login: 1 [Administrator] (0100007F, 00000000)
+[2026/08/07 00:46:08] 18 -- sync friend list: Administrator (full)

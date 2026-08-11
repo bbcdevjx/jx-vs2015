@@ -1,0 +1,5 @@
+- FPS 60
+- Chat Unicode VN ok. (chưa check input đặt tên bang và function đổi tên nhân vật)
+- Render: Fix mất frame đánh chiu ok.
+- Port Lua Function (chưa hoàn toàn khớp)
+- Eat item (dùng được THP, TDP)

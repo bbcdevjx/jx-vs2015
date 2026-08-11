@@ -1,0 +1,13 @@
+167880896 : 167880896
+LoadMap[53] Succ
+LoadMap[20] Succ
+Database IP : 127.0.0.1 - Port : 5001
+Connect database successful!
+Transfer IP : 127.0.0.1 - Port : 5003
+Connect transfer successful!
+Chat IP : 127.0.0.1 - Port : 5004
+Connect chat successful!
+Tong IP : 127.0.0.1 - Port : 5005
+Connect tong successful!
+Gateway IP : 127.0.0.1 - Port : 5632
+Connect gateway successful!

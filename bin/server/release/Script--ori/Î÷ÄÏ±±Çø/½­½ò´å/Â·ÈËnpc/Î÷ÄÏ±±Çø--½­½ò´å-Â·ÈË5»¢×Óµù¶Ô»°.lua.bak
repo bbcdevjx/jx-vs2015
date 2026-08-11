@@ -1,0 +1,80 @@
+--西南北区 江津村 路人5虎子爹对话
+--江津村新手任务：虎子拜师
+--suyu
+-------------------------------------------
+function UTaskMain()
+
+if(UTask_world20 == 0) then
+	UTask_world20_0()
+end;
+
+if(UTask_world20 == 1) then
+	UTask_world20_1()
+end;
+
+if(UTask_world20 == 2) then
+	UTask_world20_2()
+end;
+
+end;
+
+-------------------------------------------
+function Default()
+	Say(11064 , 0)
+end;
+
+-------------------------------------------
+function UTask_world20_0()
+
+	Say(11065 , 2, "帮忙/yes", "不帮/no")
+
+end;
+
+-------------------------------------------
+function UTask_world20_1()
+
+	Say(11066 ,0)
+
+end;
+
+-------------------------------------------
+function UTask_worldXX_2()
+
+Say(11067 , 0)
+if(GetSex() == 0) then
+	AddItem(0, 7, 6, 1, 0, 0)
+else
+	AddItem(0, 7, 4, 1, 0, 0)
+end
+
+SetTask(48, 3)
+
+end;
+
+-------------------------------------------
+function yes()
+	
+	Say(11068 ,0)
+	SetTask(48, 1)
+
+end;
+
+-------------------------------------------
+function no()
+
+end;
+
+-------------------------------------------
+function main(sel)
+
+UTask_world20 = GetTask(48);
+
+if ((GetCamp() == 0) and (UTask_world20 <= 2)) then
+	UTaskMain()
+else
+	Default()
+end;	
+	
+end;
+
+-------------------------------------------

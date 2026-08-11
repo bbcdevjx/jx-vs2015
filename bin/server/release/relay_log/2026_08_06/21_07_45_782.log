@@ -1,0 +1,17 @@
+
+*
+***** S3Relay Start (@ 2026/08/06 21:07:45.782) >>>>>
+*
+
+[2026/08/06 21:07:46] 1 -- Initializing ...
+[2026/08/06 21:07:46] 2 -- Create Channel: [Stock, GM] <00000000> GM
+[2026/08/06 21:07:46] 3 -- Create Channel: [Stock] <00000001> WORLD
+[2026/08/06 21:07:46] 4 -- relay server startup
+[2026/08/06 21:07:46] 5 -- gateway client create: 127.0.0.1
+[2026/08/06 21:07:46] 6 -- host server startup
+[2026/08/06 21:07:46] 7 -- tong server startup
+[2026/08/06 21:07:46] 8 -- chat server startup
+[2026/08/06 21:07:46] 9 -- SockThread start success
+[2026/08/06 21:07:46] 10 -- tong database open ok!
+[2026/08/06 21:07:46] 11 -- tongset init ok !
+[2026/08/06 21:07:46] 12 -- Initialize OK

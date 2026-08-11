@@ -1,0 +1,7 @@
+167880896 : 167880896
+LoadMap[53] Succ
+LoadMap[20] Succ
+[LuaStartup] calling ServerScript.lua main
+[LuaStartup] ServerScript.lua main result=1
+Database IP : 127.0.0.1 - Port : 5001
+Connect to database is failed!

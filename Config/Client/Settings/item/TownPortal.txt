@@ -1,0 +1,6 @@
+Name	Genre	DetailType	ImageName	ObjIdx	Width	Height	Intro	Script	Price	ShortKey	MaxStack
+Thæ §Þa Phï	5	0	\spr\item\special\Obj_TownPortal.spr	38	1	1	Mét lo¹i bïa ph¸p, gióp b¹n mau chãng ®Õn n¬i muèn ®Õn	\script\item\townportal.lua	500	1	0
+Thæ ®Þa phï (sö dông v« h¹n)	5	1	\spr\item\special\Obj_TownPortal.spr	38	1	1	Mét lo¹i bïa ph¸p, gióp b¹n mau chãng ®Õn n¬i muèn ®Õn	\script\item\townportal_ever.lua	500	1	0
+ThÇn Hµnh Phï	5	2	\spr\item\special\Obj_TownPortal_l.spr	38	1	1	ThÇn Hµnh ThuËt, lµm cho ®¹i hiÖp ®i bÊt cø thµnh thÞ th«n trÊn chØ ®Þnh nµo	\script\item\ib\shenxingfu.lua	500	0	0
+Håi thµnh phï (nhá)	5	3	\spr\item\special\Obj_TownPortal.spr	38	1	1	Sö dông lËp tøc trë vÒ thµnh trÊn. Sö dông tèi ®a 100 lÇn	\script\item\townportal_l.lua	100	0	0
+Håi thµnh phï (lín)	5	4	\spr\item\special\Obj_TownPortal.spr	38	1	1	Sö dông lËp tøc trë vÒ thµnh trÊn. Sö dông tèi ®a 1000 lÇn	\script\item\townportal_l.lua	100	0	0

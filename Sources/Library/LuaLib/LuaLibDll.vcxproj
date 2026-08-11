@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Client Debug|Win32"><Configuration>Client Debug</Configuration><Platform>Win32</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Client Release|Win32"><Configuration>Client Release</Configuration><Platform>Win32</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Server Debug|Win32"><Configuration>Server Debug</Configuration><Platform>Win32</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Server Release|Win32"><Configuration>Server Release</Configuration><Platform>Win32</Platform></ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals"><ProjectGuid>{1D9FEC05-F35A-200A-9624-8ACF1BDD7B41}</ProjectGuid><RootNamespace>LuaLibDll</RootNamespace><WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion></PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Client Debug|Win32'" Label="Configuration"><ConfigurationType>DynamicLibrary</ConfigurationType><UseDebugLibraries>true</UseDebugLibraries><PlatformToolset>v140</PlatformToolset><CharacterSet>MultiByte</CharacterSet></PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Client Release|Win32'" Label="Configuration"><ConfigurationType>DynamicLibrary</ConfigurationType><UseDebugLibraries>false</UseDebugLibraries><PlatformToolset>v140</PlatformToolset><CharacterSet>MultiByte</CharacterSet></PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Server Debug|Win32'" Label="Configuration"><ConfigurationType>DynamicLibrary</ConfigurationType><UseDebugLibraries>true</UseDebugLibraries><PlatformToolset>v140</PlatformToolset><CharacterSet>MultiByte</CharacterSet></PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Server Release|Win32'" Label="Configuration"><ConfigurationType>DynamicLibrary</ConfigurationType><UseDebugLibraries>false</UseDebugLibraries><PlatformToolset>v140</PlatformToolset><CharacterSet>MultiByte</CharacterSet></PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets"><Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" /></ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup><JXRoot>$(SolutionDir)</JXRoot><JXBuildSide Condition="'$(Configuration)'=='Server Debug' Or '$(Configuration)'=='Server Release'">server</JXBuildSide><JXBuildSide Condition="'$(JXBuildSide)'==''">client</JXBuildSide><JXBuildFlavor Condition="'$(Configuration)'=='Client Debug' Or '$(Configuration)'=='Server Debug'">debug</JXBuildFlavor><JXBuildFlavor Condition="'$(JXBuildFlavor)'==''">release</JXBuildFlavor><JXLibraryOutputDir>$(JXRoot)lib\$(JXBuildSide)\$(JXBuildFlavor)\</JXLibraryOutputDir><JXBinaryOutputDir>$(JXRoot)bin\$(JXBuildSide)\$(JXBuildFlavor)\</JXBinaryOutputDir><OutDir Condition="'$(ConfigurationType)'=='StaticLibrary'">$(JXLibraryOutputDir)</OutDir><OutDir Condition="'$(ConfigurationType)'!='StaticLibrary'">$(JXBinaryOutputDir)</OutDir><IntDir>$(JXRoot)obj\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir><TargetName>LuaLibDll</TargetName></PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Client Debug|Win32'"><ClCompile><WarningLevel>Level3</WarningLevel><Optimization>Disabled</Optimization><AdditionalIncludeDirectories>.;Src;.\LuaLibDll\src;.\src;$(JXRoot)Headers;$(JXRoot)Lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories><PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32_LEAN_AND_MEAN;WINVER=0x0500;_WIN32_WINNT=0x0500;_MBCS;_USRDLL;_WINDOWS;LUALIBDLL_EXPORTS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions><PrecompiledHeader>NotUsing</PrecompiledHeader><ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope><AdditionalOptions>/FS /Zc:sizedDealloc- %(AdditionalOptions)</AdditionalOptions><DisableSpecificWarnings>4996;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings></ClCompile><Link><AdditionalOptions>/INCREMENTAL:NO %(AdditionalOptions)</AdditionalOptions><AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies><AdditionalLibraryDirectories>$(ProjectDir);$(JXLibraryOutputDir);$(JXBinaryOutputDir);$(JXRoot)Lib;$(JXRoot)Lib\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories><IgnoreSpecificDefaultLibraries>LIBC.lib;stlport_vc6_static.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries><ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers><GenerateDebugInformation>true</GenerateDebugInformation><ImportLibrary>$(JXLibraryOutputDir)$(TargetName).lib</ImportLibrary></Link></ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Client Release|Win32'"><ClCompile><WarningLevel>Level3</WarningLevel><Optimization>MaxSpeed</Optimization><AdditionalIncludeDirectories>.;Src;.\LuaLibDll\src;.\src;$(JXRoot)Headers;$(JXRoot)Lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories><PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32_LEAN_AND_MEAN;WINVER=0x0500;_WIN32_WINNT=0x0500;_MBCS;_USRDLL;_WINDOWS;LUALIBDLL_EXPORTS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions><PrecompiledHeader>NotUsing</PrecompiledHeader><ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope><AdditionalOptions>/FS /Zc:sizedDealloc- %(AdditionalOptions)</AdditionalOptions><DisableSpecificWarnings>4996;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings></ClCompile><Link><AdditionalOptions>/INCREMENTAL:NO %(AdditionalOptions)</AdditionalOptions><AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies><AdditionalLibraryDirectories>$(ProjectDir);$(JXLibraryOutputDir);$(JXBinaryOutputDir);$(JXRoot)Lib;$(JXRoot)Lib\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories><IgnoreSpecificDefaultLibraries>LIBC.lib;stlport_vc6_static.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries><ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers><GenerateDebugInformation>true</GenerateDebugInformation><ImportLibrary>$(JXLibraryOutputDir)$(TargetName).lib</ImportLibrary></Link></ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Server Debug|Win32'"><ClCompile><WarningLevel>Level3</WarningLevel><Optimization>Disabled</Optimization><AdditionalIncludeDirectories>.;Src;.\LuaLibDll\src;.\src;$(JXRoot)Headers;$(JXRoot)Lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories><PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32_LEAN_AND_MEAN;WINVER=0x0500;_WIN32_WINNT=0x0500;_MBCS;_USRDLL;_WINDOWS;LUALIBDLL_EXPORTS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions><PrecompiledHeader>NotUsing</PrecompiledHeader><ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope><AdditionalOptions>/FS /Zc:sizedDealloc- %(AdditionalOptions)</AdditionalOptions><DisableSpecificWarnings>4996;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings></ClCompile><Link><AdditionalOptions>/INCREMENTAL:NO %(AdditionalOptions)</AdditionalOptions><AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies><AdditionalLibraryDirectories>$(ProjectDir);$(JXLibraryOutputDir);$(JXBinaryOutputDir);$(JXRoot)Lib;$(JXRoot)Lib\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories><IgnoreSpecificDefaultLibraries>LIBC.lib;stlport_vc6_static.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries><ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers><GenerateDebugInformation>true</GenerateDebugInformation><ImportLibrary>$(JXLibraryOutputDir)$(TargetName).lib</ImportLibrary></Link></ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Server Release|Win32'"><ClCompile><WarningLevel>Level3</WarningLevel><Optimization>MaxSpeed</Optimization><AdditionalIncludeDirectories>.;Src;.\LuaLibDll\src;.\src;$(JXRoot)Headers;$(JXRoot)Lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories><PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32_LEAN_AND_MEAN;WINVER=0x0500;_WIN32_WINNT=0x0500;_MBCS;_USRDLL;_WINDOWS;LUALIBDLL_EXPORTS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions><PrecompiledHeader>NotUsing</PrecompiledHeader><ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope><AdditionalOptions>/FS /Zc:sizedDealloc- %(AdditionalOptions)</AdditionalOptions><DisableSpecificWarnings>4996;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings></ClCompile><Link><AdditionalOptions>/INCREMENTAL:NO %(AdditionalOptions)</AdditionalOptions><AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies><AdditionalLibraryDirectories>$(ProjectDir);$(JXLibraryOutputDir);$(JXBinaryOutputDir);$(JXRoot)Lib;$(JXRoot)Lib\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories><IgnoreSpecificDefaultLibraries>LIBC.lib;stlport_vc6_static.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries><ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers><GenerateDebugInformation>true</GenerateDebugInformation><ImportLibrary>$(JXLibraryOutputDir)$(TargetName).lib</ImportLibrary></Link></ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include=".\src\baselib\lauxlib.c" />
+    <ClCompile Include=".\src\baselib\lbaselib.c" />
+    <ClCompile Include=".\src\baselib\ldblib.c" />
+    <ClCompile Include=".\src\baselib\liolib.c" />
+    <ClCompile Include=".\src\baselib\lmathlib.c" />
+    <ClCompile Include=".\src\baselib\lstrlib.c" />
+    <ClCompile Include=".\src\lapi.c" />
+    <ClCompile Include=".\src\lcode.c" />
+    <ClCompile Include=".\src\ldebug.c" />
+    <ClCompile Include=".\src\ldo.c" />
+    <ClCompile Include=".\src\lfunc.c" />
+    <ClCompile Include=".\src\lgc.c" />
+    <ClCompile Include=".\src\llex.c" />
+    <ClCompile Include=".\src\lmem.c" />
+    <ClCompile Include=".\src\lobject.c" />
+    <ClCompile Include=".\src\lparser.c" />
+    <ClCompile Include=".\src\lstate.c" />
+    <ClCompile Include=".\src\lstring.c" />
+    <ClCompile Include=".\src\ltable.c" />
+    <ClCompile Include=".\src\ltests.c" />
+    <ClCompile Include=".\src\ltm.c" />
+    <ClCompile Include=".\src\lua.c" />
+    <ClCompile Include=".\src\LuaExtend.c" />
+    <ClCompile Include=".\src\lundump.c" />
+    <ClCompile Include=".\src\lvm.c" />
+    <ClCompile Include=".\src\lzio.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include=".\src\lapi.h" />
+    <ClInclude Include=".\src\lauxlib.h" />
+    <ClInclude Include=".\src\lcode.h" />
+    <ClInclude Include=".\src\ldebug.h" />
+    <ClInclude Include=".\src\ldo.h" />
+    <ClInclude Include=".\src\lfunc.h" />
+    <ClInclude Include=".\src\lgc.h" />
+    <ClInclude Include=".\src\llex.h" />
+    <ClInclude Include=".\src\llimits.h" />
+    <ClInclude Include=".\src\lmem.h" />
+    <ClInclude Include=".\src\lobject.h" />
+    <ClInclude Include=".\src\lopcodes.h" />
+    <ClInclude Include=".\src\lparser.h" />
+    <ClInclude Include=".\src\lstate.h" />
+    <ClInclude Include=".\src\lstring.h" />
+    <ClInclude Include=".\src\ltable.h" />
+    <ClInclude Include=".\src\ltm.h" />
+    <ClInclude Include=".\src\lua.h" />
+    <ClInclude Include=".\src\luadebug.h" />
+    <ClInclude Include=".\src\LuaDef.h" />
+    <ClInclude Include=".\src\lualib.h" />
+    <ClInclude Include=".\src\lundump.h" />
+    <ClInclude Include=".\src\lvm.h" />
+    <ClInclude Include=".\src\lzio.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
